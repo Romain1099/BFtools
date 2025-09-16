@@ -1,0 +1,22 @@
+# Environnement virtuel
+venv/
+env/
+.env
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Configuration utilisateur
+config/config.json
+config/logs/
+
+# Logs
+*.log
+
+# Fichiers temporaires
+.tmp/
+temp/

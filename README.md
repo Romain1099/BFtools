@@ -1,12 +1,13 @@
 # BFtools
 A repo where i upload the tools i made and use everyday
 
+# Fonctionnalités disponibles 
 
-# Utilisation via IDE : 
+## usb-synchro
 
-Ouvrir le dossier et exécuter Creer_v4.py
+Un programme permettant de synchroniser des fichiers sur une clé usb. 
 
-# Utilisation compilée : 
+## lottery
 
-Dans un terminal, exécuter la commande suivante : 
-one_file_instructions = '''pyinstaller --onefile --name Nouveau_document_tex_par_modele --icon connaisseur.ico --hidden-import "document_handlers" --add-data "document_handlers/*:document_handlers" --noconsole Creer_v4.py'''
+Programme générant des fichiers html permettant de choisir au hasard un élève parmi une liste. 
+

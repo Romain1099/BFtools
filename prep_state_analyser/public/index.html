@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi de Progression - Préparations de Cours</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Suivi de Progression des Préparations</h1>
+
+        <nav class="tabs">
+            <button class="tab-button active" onclick="showTab('progression')">Gestion des Progressions</button>
+            <button class="tab-button" onclick="showTab('dashboard')">Tableau de Bord</button>
+            <button class="tab-button" onclick="showTab('config')">⚙️ Configuration</button>
+        </nav>
+
+        <div id="progression-tab" class="tab-content active">
+            <div class="level-selector">
+                <label for="levelSelect">Sélectionner un niveau :</label>
+                <select id="levelSelect" onchange="loadProgression()">
+                    <option value="">-- Choisir un niveau --</option>
+                </select>
+                <button class="btn-add" onclick="addChapter()">➕ Ajouter un chapitre</button>
+            </div>
+
+            <div id="progressionTable" class="progression-table">
+                <div class="no-data">Sélectionnez un niveau pour afficher la progression</div>
+            </div>
+
+            <div class="actions">
+                <button class="btn-save" onclick="saveProgression()" style="display:none">💾 Enregistrer les modifications</button>
+            </div>
+        </div>
+
+        <div id="dashboard-tab" class="tab-content">
+            <h2>📊 Vue d'ensemble des progressions</h2>
+            <div id="summaryTable" class="summary-table">
+                <div class="loading">Chargement...</div>
+            </div>
+        </div>
+
+        <div id="config-tab" class="tab-content">
+            <h2>⚙️ Configuration des colonnes</h2>
+            <div class="config-container">
+                <div class="config-section">
+                    <h3>Colonnes de préparation</h3>
+                    <div id="prepColumns" class="columns-list"></div>
+                    <button onclick="addCustomColumn('preparation')" class="btn-add-column">➕ Ajouter une colonne</button>
+                </div>
+
+                <div class="config-section">
+                    <h3>Colonnes d'avancement en classe</h3>
+                    <div id="classeColumns" class="columns-list"></div>
+                    <button onclick="addCustomColumn('classe')" class="btn-add-column">➕ Ajouter une colonne</button>
+                </div>
+
+                <div class="config-section">
+                    <h3>Colonnes personnalisées</h3>
+                    <div id="customColumns" class="columns-list"></div>
+                    <button onclick="addCustomColumn('custom')" class="btn-add-column">➕ Ajouter une colonne personnalisée</button>
+                </div>
+
+                <div class="config-actions">
+                    <button onclick="saveConfiguration()" class="btn-save-config">💾 Sauvegarder la configuration</button>
+                    <button onclick="resetConfiguration()" class="btn-reset-config">🔄 Réinitialiser</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input caché pour la sélection de dossier -->
+    <input type="file" id="folderPicker" style="display: none;" webkitdirectory directory multiple />
+
+    <script src="app.js"></script>
+</body>
+</html>

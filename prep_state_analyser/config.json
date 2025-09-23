@@ -1,0 +1,98 @@
+{
+  "columns": {
+    "fixed": [
+      {
+        "id": "nom",
+        "label": "Chapitre",
+        "type": "text",
+        "required": true,
+        "editable": true
+      },
+      {
+        "id": "dossier_sequence",
+        "label": "Dossier",
+        "type": "text",
+        "required": false,
+        "editable": true
+      }
+    ],
+    "preparation": [
+      {
+        "id": "prep_cours",
+        "label": "Cours",
+        "type": "checkbox",
+        "category": "preparation",
+        "required": false
+      },
+      {
+        "id": "prep_exercices",
+        "label": "Exercices",
+        "type": "checkbox",
+        "category": "preparation",
+        "required": false
+      },
+      {
+        "id": "prep_evaluation",
+        "label": "Évaluation",
+        "type": "checkbox",
+        "category": "preparation",
+        "required": false
+      },
+      {
+        "id": "dm",
+        "label": "DM",
+        "type": "checkbox",
+        "category": "preparation",
+        "required": false
+      }
+    ],
+    "classe": [
+      {
+        "id": "classe_cours",
+        "label": "Cours",
+        "type": "checkbox",
+        "category": "classe",
+        "required": false
+      },
+      {
+        "id": "classe_exercices",
+        "label": "Exercices",
+        "type": "checkbox",
+        "category": "classe",
+        "required": false
+      },
+      {
+        "id": "classe_evaluation",
+        "label": "Évaluation",
+        "type": "checkbox",
+        "category": "classe",
+        "required": false
+      },
+      {
+        "id": "dm",
+        "label": "DM",
+        "type": "checkbox",
+        "category": "classe",
+        "required": false
+      }
+    ],
+    "custom": []
+  },
+  "categories": [
+    {
+      "id": "preparation",
+      "label": "📝 Préparation des documents",
+      "color": "#667eea"
+    },
+    {
+      "id": "classe",
+      "label": "🎓 Avancement en classe",
+      "color": "#f093fb"
+    }
+  ],
+  "settings": {
+    "showProgressBars": true,
+    "autoSave": false,
+    "dateFormat": "DD/MM/YYYY"
+  }
+}

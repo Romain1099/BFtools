@@ -1,0 +1,37 @@
+{
+    "heartbeat": {
+        "intervalMs": 5000,
+        "timeoutMs": 10000,
+        "checkIntervalMs": 2000,
+        "description": "Heartbeat configuration for server auto-shutdown"
+    },
+    "server": {
+        "autoShutdown": true,
+        "shutdownOnClose": true
+    },
+    "animation": {
+        "shuffle": {
+            "maxShuffles": 6,
+            "angleIncrement": 25,
+            "angleOffset": 35,
+            "baseRadius": 6,
+            "radiusVariation": 8,
+            "radiusFrequency": 0.15,
+            "offsetMultiplier": 0.25,
+            "movementDuration": 800,
+            "delayMin": 450,
+            "delayVariation": 100,
+            "pulseProbability": 0.1,
+            "pulseDuration": 500
+        },
+        "highlight": {
+            "maxRounds": 4,
+            "delayMin": 400,
+            "delayVariation": 200
+        },
+        "general": {
+            "initialDisplayDelay": 50,
+            "transitionDisableDuration": 250
+        }
+    }
+}

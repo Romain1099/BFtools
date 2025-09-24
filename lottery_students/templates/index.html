@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Sessions - Tirage au sort avec historique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<!-- Sélecteur de classe -->
+<div id="class-selector" class="modal">
+    <div class="modal-content">
+        <h2>📚 Sélectionner une classe</h2>
+        <div id="class-list">
+            <!-- Généré dynamiquement -->
+        </div>
+        <div class="class-actions">
+            <button id="create-class-btn" class="secondary-btn">➕ Créer une nouvelle classe</button>
+            <button id="import-class-btn" class="secondary-btn">📤 Importer un CSV</button>
+        </div>
+    </div>
+</div>
+
+<!-- Interface principale (reprend le design existant) -->
+<button id="sidebar-toggle">&#9776;</button>
+
+<div id="sidebar">
+    <div class="sidebar-header">
+        <h3>Paramètres</h3>
+        <div class="current-class">
+            <span id="current-class-name">Aucune classe</span>
+            <button id="change-class-btn" title="Changer de classe">🔄</button>
+        </div>
+    </div>
+
+    <!-- Mode de tirage -->
+    <div class="setting-row">
+        <span id="without-replacement">Sans remise</span>
+        <label class="switch">
+            <input type="checkbox" id="draw-mode-switch" checked>
+            <span class="slider"></span>
+        </label>
+        <span id="with-replacement">Avec remise</span>
+    </div>
+
+    <hr>
+
+    <!-- Mode historique -->
+    <div class="setting-row">
+        <span class="setting-label">Mode cycle complet</span>
+        <label class="switch">
+            <input type="checkbox" id="history-mode-switch" checked>
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="setting-description">
+        Décoché : ignore l'historique (tous disponibles)<br>
+        Coché : exclut les élèves déjà interrogés depuis le début du cycle
+    </div>
+
+    <hr>
+
+    <!-- Nombre de gagnants -->
+    <div class="range-container">
+        <div class="range-label">
+            <span>Nombre de choix/tirage</span>
+            <span id="winners-count-display">1</span>
+        </div>
+        <div class="range-slider-container">
+            <span>1</span>
+            <input type="range" id="winners-count" value="1" min="1" max="4" step="1">
+            <span>4</span>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Confettis -->
+    <div class="confetti-container-toggle">
+        <div class="confetti-label">
+            <span>Confettis 🎉</span>
+            <label class="switch">
+                <input type="checkbox" id="confetti-switch" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Liste des élèves -->
+    <div style="display:flex;justify-content: space-between;align-items: center;margin-bottom:10px;">
+        <h4>Liste des élèves</h4>
+        <div class="button-group">
+            <button id="select-all" title="Tout cocher">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 512.123" width="20" height="20" fill="currentColor">
+                    <path fill-rule="nonzero" d="M62.282 0h323.575c34.292 0 62.283 27.991 62.283 62.283v322.76c0 34.292-27.991 62.282-62.283 62.282H62.282C27.99 447.325 0 419.335 0 385.043V62.283C0 27.991 27.99 0 62.282 0zm56.183 246.083c-8.285-10.729-6.304-26.144 4.425-34.43 10.729-8.286 26.144-6.305 34.43 4.424l26.972 34.79L292.84 142.07c9.56-9.613 25.105-9.656 34.718-.096 9.614 9.56 9.657 25.105.096 34.719L199.386 305.255a24.983 24.983 0 01-2.405 2.116c-10.729 8.286-26.144 6.305-34.43-4.424l-44.086-56.864z"/>
+                </svg>
+            </button>
+            <button id="deselect-all" title="Tout décocher">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 509 512.123" width="20" height="20" fill="currentColor">
+                    <path fill-rule="nonzero" d="M62.283 0h323.575c34.292 0 62.282 27.991 62.282 62.283v322.76c0 34.292-27.99 62.282-62.282 62.282H62.283C27.991 447.325 0 419.335 0 385.043V62.283C0 27.991 27.991 0 62.283 0zm409.36 81.803a103.296 103.296 0 017.464 6.765C497.551 107.013 509 132.47 509 160.487v249.824c0 56.03-45.781 101.812-101.812 101.812H162.671c-28.016 0-53.473-11.449-71.918-29.894a102.796 102.796 0 01-6.763-7.462h323.198c34.81 0 63.6-28.117 64.438-62.901h.017v-1.141l.002-.414V160.487l-.002-.414v-78.27z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div id="people-list">
+        <!-- Liste des élèves générée dynamiquement -->
+    </div>
+
+    <hr>
+
+    <!-- Progression du cycle -->
+    <div class="cycle-progress">
+        <h4>Progression du cycle</h4>
+        <div id="cycle-info">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                </div>
+                <span id="progress-text">0/0 élèves</span>
+            </div>
+            <div class="stat-row">
+                <span>Restants :</span>
+                <span id="remaining-students">--</span>
+            </div>
+            <button id="reset-cycle-btn" class="reset-btn hidden" title="Démarrer un nouveau cycle">
+                🔄 Nouveau cycle
+            </button>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Statistiques de session -->
+    <div class="session-stats">
+        <h4>Session du jour</h4>
+        <div id="session-info">
+            <div class="stat-row">
+                <span>Date :</span>
+                <span id="session-date">--</span>
+            </div>
+            <div class="stat-row">
+                <span>Interrogés :</span>
+                <span id="students-questioned">0</span>
+            </div>
+            <div class="stat-row">
+                <span>Moyenne :</span>
+                <span id="average-score">--</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Bouton Quitter -->
+    <div class="quit-container">
+        <button id="quit-app-btn" class="quit-btn" title="Quitter l'application">
+            🚪 Quitter l'application
+        </button>
+    </div>
+</div>
+
+<!-- Zone principale -->
+<div id="name-container"></div>
+
+<!-- Panel de notation -->
+<div id="scoring-panel" class="hidden">
+    <div class="scoring-content">
+        <h3>Noter l'élève</h3>
+        <div id="student-to-score">--</div>
+        <div class="score-buttons">
+            <button class="score-btn" data-score="0">
+                <span class="score-value">0</span>
+                <span class="score-label">❌ Erreur</span>
+            </button>
+            <button class="score-btn" data-score="1">
+                <span class="score-value">1</span>
+                <span class="score-label">⚠️ Partiel</span>
+            </button>
+            <button class="score-btn" data-score="2">
+                <span class="score-value">2</span>
+                <span class="score-label">✅ Correct</span>
+            </button>
+        </div>
+        <button id="skip-scoring" class="secondary-btn">Passer</button>
+    </div>
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+<button id="draw-button">🎲 Tirage au sort</button>
+
+<!-- Chargement initial -->
+<div id="loading-overlay" class="modal">
+    <div class="loading-spinner"></div>
+    <p>Chargement...</p>
+</div>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+<script src="{{ url_for('static', filename='animations.js') }}"></script>
+</body>
+</html>

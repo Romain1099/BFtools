@@ -1,0 +1,25 @@
+{
+  "shuffle": {
+    "max_shuffles": 6,
+    "angle_increment": 25,
+    "angle_offset": 35,
+    "base_radius": 6,
+    "radius_variation": 8,
+    "radius_frequency": 0.15,
+    "offset_multiplier": 0.25,
+    "movement_duration": 800,
+    "delay_min": 450,
+    "delay_variation": 100,
+    "pulse_probability": 0.1,
+    "pulse_duration": 500
+  },
+  "highlight": {
+    "max_rounds": 4,
+    "delay_min": 400,
+    "delay_variation": 200
+  },
+  "general": {
+    "initial_display_delay": 50,
+    "transition_disable_duration": 250
+  }
+}

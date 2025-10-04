@@ -19,9 +19,23 @@ Intégration de l'IA pour utilisation dans le logiciel.
 
 Un programme permettant de synchroniser des fichiers sur une clé usb. 
 
-## lottery_students
+## lottery_sessions
+
+Programe permettant la gestion de l'oral en classe par sélection aléatoire d'étudiants. 
+
+Plusieurs versions par classe, plusieurs classe, gestion des sauvegardes
+
+L'exécutable disponible permet une utilisation sur les postes enseignants des établissements. 
+
+Le dossier **data** doit être présent pour le bon fonctionnemet de l'application. 
+
+Version en cours de développement, peut buguer.
+
+## lottery_students_light
 
 Programme générant des fichiers html permettant de choisir au hasard un élève parmi une liste. 
+
+Il s'agit d'une version légère de lottery_sessions
 
 ## prep_state_analyser
 

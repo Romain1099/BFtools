@@ -1,0 +1,800 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry}
+
+\geometry{paperwidth=18cm, paperheight=8.7cm, margin=0.2cm}
+
+\usepackage{bfcours}
+\usepackage{bfcours-fonts}
+\usepackage{pagecolor} % Pour colorer le fond de la page
+%\usetikzlibrary{backgrounds}
+\usepackage{expl3} % Nécessaire pour utiliser le langage LaTeX3
+
+% Retourne la valeur absolue d'un entier
+\newcommand{\absnum}[1]{%
+    \ifnum #1<0 \number\numexpr -#1\relax\else \number\numexpr #1\relax\fi%
+}
+
+% Retourne le minimum de deux entiers
+\newcommand{\minnum}[2]{%
+    \ifnum #1<#2 #1\else #2\fi%
+}
+
+% Calcul récursif du PGCD de deux entiers (les arguments doivent être entiers)
+\newcommand{\gcdcalc}[2]{%
+    \ifnum #2=0 %
+    \absnum{#1}%
+    \else %
+    \gcdcalc{#2}{\the\numexpr #1 - (#1/#2)*#2 \relax}%
+    \fi%
+}
+\ExplSyntaxOn
+% Définition de la commande \mprefix
+\cs_new:Npn \mprefix #1
+{
+    \int_case:nnF {#1}
+    {
+        {-12} { \text{pico} }
+        {-9}  { \text{nano} }
+        {-6}  { \text{micro} }
+        {-3}  { \text{milli} }
+        {-2}  { \text{centi} }
+        {-1}  { \text{deci} }
+        {0}   { \text{} } % Aucun préfixe pour la puissance 0
+        {1}   { \text{deca} }
+        {2}   { \text{hecto} }
+        {3}   { \text{kilo} }
+        {6}   { \text{mega} }
+        {9}   { \text{giga} }
+        {12}  { \text{tera} }
+    }
+    { \text{Valeur inconnue} } % Gestion des cas non pris en charge
+}
+\ExplSyntaxOff
+
+
+% Calcul et affichage des diviseurs avec Lua
+\begin{luacode*}
+    function generate_divisors_table(n)
+    local seen = {} -- Table pour suivre les nombres déjà rencontrés
+    tex.print("\\noindent\\begin{tabular}{c|c}")
+    for i = 1, n do
+    if n % i == 0 then
+    local complement = math.floor(n / i) -- Calcul de la partie entière
+    -- Vérifier si le complément est déjà dans la table 'seen'
+    if seen[complement] then break end
+    -- Ajouter le diviseur et le complément dans la table
+    seen[i] = true
+    tex.print(i .. " & " .. complement .. " \\\\")
+    end
+    end
+    tex.print("\\end{tabular}")
+    end
+\end{luacode*}
+
+\newcommand{\divisorstable}[1]{%
+    \directlua{generate_divisors_table(#1)}%
+}
+
+% Commande pour s'adapter en fonction du choix
+\newcommand{\marchandcmd}[1]{%
+    \IfStrEqCase{#1}{%
+        {marchand}{\xdef\munite{articles}\def\intro{}\def\vend{vend}\def\tousSes{$\proportion$ de ses }\def\oeufs{$\quantite$\ articles}\def\labelvente{le nombre d'articles vendus}}
+        {agriculteur}{\xdef\munite{tonnes}\def\intro{Suite à des intempéries,}\def\vend{perd}\def\tousSes{les $\proportion$èmes}\def\oeufs{sa récolte, estimée à \quantite\  tonnes}\def\labelvente{la masse perdue}}
+        {boulanger}{\xdef\munite{baguettes}\def\intro{}\def\vend{vend}\def\tousSes{les $\proportion$èmes}\def\oeufs{de ses $\quantite$ baguettes}\def\labelvente{le nombre de baguettes vendues}}
+    }[\textcolor{red}{\textbf{Métier inconnu : #1}}]% Si aucune correspondance
+}
+
+% Définition de la commande criteredivisibilite
+\newcommand{\criteredivisibilite}[2]{%
+    % #1 est le diviseur (n), #2 est le nombre à tester (N)
+    \def\diviseur{#1}%
+    \def\nombre{#2}%
+    
+    % Calcul du dernier chiffre du nombre
+    \def\dernierchiffre{\intcalcMod{#2}{10}}
+    
+    % Calcul des deux derniers chiffres du nombre
+    \def\deuxdernierchiffres{\intcalcMod{#2}{100}}
+    
+    % Vérifier quel diviseur a été spécifié
+    \ifthenelse{\equal{\diviseur}{2}}{%
+        % Cas 2
+        \textbf{Critère de divisibilité par 2 :} Un nombre est divisible par 2 si son dernier chiffre est pair (0, 2, 4, 6 ou 8).
+        
+        \textbf{Application à \nombre :} Le dernier chiffre de \nombre{} est \dernierchiffre.
+        
+        \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+            Comme le dernier chiffre est \dernierchiffre{} (qui est pair), \nombre{} est divisible par 2.
+            }{%
+            Comme le dernier chiffre est \dernierchiffre{} (qui n'est pas pair), \nombre{} n'est pas divisible par 2.
+        }%
+        }{%
+        \ifthenelse{\equal{\diviseur}{3}}{%
+            % Cas 3
+            \textbf{Critère de divisibilité par 3 :} Un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3.
+            
+            \textbf{Application à \nombre :}
+            
+            Pour vérifier si \nombre{} est divisible par 3, calculons la somme de ses chiffres.
+            
+            % Dans un cas réel, on calculerait la somme des chiffres
+            \ifthenelse{\equal{\intcalcMod{\nombre}{3}}{0}}{%
+                La somme des chiffres de \nombre{} est divisible par 3, donc \nombre{} est divisible par 3.
+                }{%
+                La somme des chiffres de \nombre{} n'est pas divisible par 3, donc \nombre{} n'est pas divisible par 3.
+            }%
+            }{%
+            \ifthenelse{\equal{\diviseur}{4}}{%
+                % Cas 4
+                \textbf{Critère de divisibilité par 4 :} Un nombre est divisible par 4 si le nombre formé par ses deux derniers chiffres est divisible par 4.
+                
+                \textbf{Application à \nombre :}
+                \ifthenelse{\nombre < 100}{%
+                    Comme \nombre{} est inférieur à 100, nous vérifions directement si \nombre{} est divisible par 4.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\nombre}{4}}{0}}{%
+                        Le reste de la division de \nombre{} par 4 est 0, donc \nombre{} est divisible par 4.
+                        }{%
+                        Le reste de la division de \nombre{} par 4 est \intcalcMod{\nombre}{4}, donc \nombre{} n'est pas divisible par 4.
+                    }%
+                    }{%
+                    Les deux derniers chiffres de \nombre{} forment le nombre \deuxdernierchiffres.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\deuxdernierchiffres}{4}}{0}}{%
+                        Comme \deuxdernierchiffres{} est divisible par 4, \nombre{} est divisible par 4.
+                        }{%
+                        Comme \deuxdernierchiffres{} n'est pas divisible par 4 (reste \intcalcMod{\deuxdernierchiffres}{4}), \nombre{} n'est pas divisible par 4.
+                    }%
+                }%
+                }{%
+                \ifthenelse{\equal{\diviseur}{5}}{%
+                    % Cas 5
+                    \textbf{Critère de divisibilité par 5 :} Un nombre est divisible par 5 si son dernier chiffre est 0 ou 5.
+                    
+                    \textbf{Application à \nombre :} Le dernier chiffre de \nombre{} est \dernierchiffre.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\nombre}{5}}{0}}{%
+                        Comme le dernier chiffre est \dernierchiffre{} (qui est
+                        \ifthenelse{\equal{\dernierchiffre}{0}}{0}{5}), \nombre{} est divisible par 5.
+                        }{%
+                        Comme le dernier chiffre est \dernierchiffre, qui n'est ni 0 ni 5, \nombre{} n'est pas divisible par 5.
+                    }%
+                    }{%
+                    \ifthenelse{\equal{\diviseur}{6}}{%
+                        % Cas 6
+                        \textbf{Critère de divisibilité par 6 :} Un nombre est divisible par 6 s'il est divisible à la fois par 2 et par 3.
+                        
+                        \textbf{Application à \nombre :}
+                        
+                        \textbf{Divisibilité par 2 :} Un nombre est divisible par 2 si son dernier chiffre est pair.
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+                            Le dernier chiffre de \nombre{} est \dernierchiffre, qui est pair, donc \nombre{} est divisible par 2.
+                            }{%
+                            Le dernier chiffre de \nombre{} est \dernierchiffre, qui n'est pas pair, donc \nombre{} n'est pas divisible par 2.
+                        }%
+                        
+                        \textbf{Divisibilité par 3 :} Un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3.
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{3}}{0}}{%
+                            La somme des chiffres de \nombre{} est divisible par 3, donc \nombre{} est divisible par 3.
+                            }{%
+                            La somme des chiffres de \nombre{} n'est pas divisible par 3, donc \nombre{} n'est pas divisible par 3.
+                        }%
+                        
+                        \textbf{Conclusion :}
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{6}}{0}}{%
+                            Comme \nombre{} est divisible à la fois par 2 et par 3, \nombre{} est divisible par 6.
+                            }{%
+                            \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+                                Comme \nombre{} n'est pas divisible par 3, \nombre{} n'est pas divisible par 6.
+                                }{%
+                                Comme \nombre{} n'est pas divisible par 2, \nombre{} n'est pas divisible par 6.
+                            }%
+                        }%
+                        }{%
+                        \ifthenelse{\equal{\diviseur}{9}}{%
+                            % Cas 9
+                            \textbf{Critère de divisibilité par 9 :} Un nombre est divisible par 9 si la somme de ses chiffres est divisible par 9.
+                            
+                            \textbf{Application à \nombre :}
+                            
+                            Pour vérifier si \nombre{} est divisible par 9, calculons la somme de ses chiffres.
+                            
+                            % Pour les besoins de l'exemple, nous affichons directement le résultat
+                            \ifthenelse{\equal{\intcalcMod{\nombre}{9}}{0}}{%
+                                La somme des chiffres de \nombre{} est divisible par 9, donc \nombre{} est divisible par 9.
+                                }{%
+                                La somme des chiffres de \nombre{} n'est pas divisible par 9, donc \nombre{} n'est pas divisible par 9.
+                            }%
+                            }{%
+                            % Diviseur invalide
+                            %\textbf{Erreur :} Le diviseur \diviseur{} n'est pas dans la liste autorisée (2, 3, 4, 5, 6, 9).
+                            Aucun critère ne fonctionne.
+                        }%
+                    }%
+                }%
+            }%
+        }%
+    }%
+}
+
+
+\ExplSyntaxOn
+
+% Définition de la commande \para
+% Si \na > 0, retourne \na ; si \na < 0, retourne (\na)
+\cs_new:Npn \para #1
+{
+    \int_compare:nNnTF {#1} > {0}
+    {#1} % Si #1 est positif, retourne #1
+    {(#1)} % Si #1 est négatif, retourne (#1)
+}
+
+% Définition de la commande \expa
+% Si \puisxa = 0, retourne \para x^{\puisxa}, sinon retourne \para
+\cs_new:Npn \expa #1 #2
+{
+    \int_compare:nNnTF {#2} = {0}
+    {\para{#1}} % Si la puissance est 0, affiche avec x^{#2}
+    {
+        \int_compare:nNnTF {#2} = {1}
+        {\para{#1}~x}
+        {\para{#1}~x^{#2}}
+    } % Sinon, retourne simplement \para
+}
+\cs_new:Npn \expan #1 #2
+{
+    \int_compare:nNnTF {#2} = {0}
+    {#1} % Si la puissance est 0, affiche avec x^{#2}
+    {
+        \int_compare:nNnTF {#2} = {1}
+        {#1~x}
+        {#1~x^{#2}}
+    } % Sinon, retourne simplement \para
+}
+\cs_new:Npn \finalsigne #1
+{
+    \int_compare:nNnTF {#1} > {0}
+    {+} % Si la puissance est 0, affiche avec x^{#2}
+    {-} % Sinon, retourne simplement \para
+}
+\ExplSyntaxOff
+% Définition de la couleur personnalisée
+\definecolor{customBackground}{RGB}{0, 43, 54}
+
+\def\boiteQFdetcouleur{customBackground}%{green!75!black}
+
+\newcommand\boiteQFdet[2]{
+    \begin{tcolorbox}[nobeforeafter,title=#1,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boiteQFdetcouleur,colframe=customBackground,coltitle=white,colback=white,left=0.2pt,right=0.2pt,width=17.5cm]
+        #2
+    \end{tcolorbox}
+}
+\newcommand{\calculatriceAutorisee}{}
+% On définit un booléen pour la détection
+\newif\ifcalcAllowed
+\newcommand\boiteQFQ[2]{%
+    % Vérifie si #2 contient la chaîne "\calculatriceAutorisee"
+    \IfSubStr{\detokenize{#2}}{\string\calculatriceAutorisee}{%
+        % Si trouvé : titre avec l'icône
+        \calcAllowedtrue
+        }{%
+        \calcAllowedfalse
+    }%
+    %\def\mytitle{#1}
+    \begin{tcolorbox}[%
+        nobeforeafter,
+        title=#1,
+        halign title=flush left,
+        fonttitle=\bfseries,
+        colbacktitle=customBackground,
+        colframe=customBackground,
+        coltitle=white,
+        colback=white,
+        left=0.2pt,
+        right=0.2pt,
+        height=4cm,
+        width=8.2cm,
+        % L'overlay ne modifie pas la géométrie du titre
+        overlay={%
+            \ifcalcAllowed
+            % Place l'image en overlay à la droite du titre (ajustez xshift/yshift si besoin)
+        \node[anchor=base west] at ([xshift=2.5cm,yshift=-0.325cm]title.west) {%xshift=-0.93cm,yshift=-0.325cm]title.east
+            \includegraphics[width=0.8cm,height=0.8cm]{C:/Users/Utilisateur/Desktop/Faire/Macros/Programmes_de_facilitation/QF_generator/images/je_calcule.png}%
+        };
+        \fi
+    }%
+]
+%\begin{itembox}\textbf{#1}\end{itembox}
+#2
+\end{tcolorbox}
+}
+%\def\boitereponsecouleur{gray!65!red}
+\def\boitereponsecouleur{red!75!black}
+\newcommand\boiteQFA[1]{
+\begin{tcolorbox}[nobeforeafter,title=Réponses :,halign title=center,fonttitle=\bfseries,colbacktitle=\boitereponsecouleur,colframe=customBackground,coltitle=white,colback=white,left=5pt,right=0.2pt,height=4cm,width=8.2cm]
+#1
+\end{tcolorbox}
+}
+
+\def\myiconpath{}
+
+\getRandomIconPath
+
+\renewcommand\boiteQFA[1]{
+\begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left,
+fonttitle=\bfseries, colbacktitle=\boitereponsecouleur,
+coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+height=4cm, width=8.2cm, enhanced, overlay={
+    \node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm]
+    {
+        %\includegraphics[width=1.5cm]{../../../images/sticker_eclair.png}
+        \includegraphics[width=1.5cm]{\myiconpath }
+        %\randomincludegraphics[2cm][0cm][0cm]
+    };
+}]
+#1
+\end{tcolorbox}
+}
+\newcommand\boiteQzeroFA[1]{
+\begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left,
+fonttitle=\bfseries, colbacktitle=\boitereponsecouleur,
+coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+height=4cm, width=8.2cm, enhanced, overlay={
+\node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm]
+{
+    \includegraphics[width=1.5cm]{C:/Users/Utilisateur/Desktop/Faire/Macros/Programmes_de_facilitation/QF_generator/images/sticker_eclair.png}%{../../../images/sticker_eclair.png}
+    %\includegraphics[width=1.5cm]{\myiconpath }
+    %\randomincludegraphics[2cm][0cm][0cm]
+};
+}]
+\begin{center}
+\includegraphics[height=2.8cm]{\myiconpath }%
+\end{center}
+\end{tcolorbox}
+}
+\newtcolorbox{itembox}[1][]{
+baseline,
+nobeforeafter, % Supprime les espaces avant et après
+colframe=customBackground,
+colback=customBackground,
+coltext=white,
+coltitle=white,
+boxsep=1pt,
+boxrule=0.5pt,
+arc=2pt,
+left=2pt,
+right=2pt,
+top=1pt,
+bottom=1pt,
+width=0.7cm,
+#1
+}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{siunitx} % Pour la notation avec virgule
+\usepackage{xfp}
+% Configurer siunitx pour utiliser la virgule comme séparateur décimal
+%\sisetup{output-decimal-marker={,}}
+\newcommand{\cperso}[1]{\num{\fpeval{ #1 }}}
+% Configuration locale pour le formatage des nombres
+\sisetup{%
+%  round-mode=places,
+%  round-precision=5,
+output-decimal-marker={,},
+%  group-separator={}
+}
+
+% Définir la commande \response
+\newcommand{\fracrep}[2]{%
+\FPeval{\result}{round(#1/#2:8)} % Calculer la fraction et arrondir à 4 décimales
+\num{\result} % Afficher le résultat avec une virgule
+}
+\opset{decimalsepsymbol={,}}
+%\newcommand{\degree}{^\circ}
+\begin{document}
+%niveau estimé : 2nde
+%date de projection : 22_09_2025
+%themes abordés : Puissances, Racines carrées, Equations
+\pagecolor{customBackground}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 4 - Court
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} :
+\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}
+\end{center}
+}
+\boiteQFQ{Question 2 :}{
+%version 7 - Court
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+}
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 14 - Court
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+
+
+\acc{Résoudre l'équation :}
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+}
+\boiteQzeroFA{}
+\end{multicols}
+
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 4 - Court
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} :
+\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}
+\end{center}
+}
+\boiteQFQ{Question 2 :}{
+%version 7 - Court
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 14 - Court
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+
+
+\acc{Résoudre l'équation :}
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\a{11}\def\b{4}\def\m{-5}\def\n{9}\def\mode{3}\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$}{\ifthenelse{\mode=2}{$\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$}{\ifthenelse{\mode=3}{$\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$}{\ifthenelse{\mode=4}{$\affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$}{$\dfrac{1}{\affiche{\a}^{\affiche{\n}}}$}}}}
+\end{itemize}
+}
+\end{multicols}
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 4 - Court
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} :
+\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}
+\end{center}
+}
+\boiteQFQ{Question 2 :}{
+%version 7 - Court
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 14 - Court
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+
+
+\acc{Résoudre l'équation :}
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\a{11}\def\b{4}\def\m{-5}\def\n{9}\def\mode{3}\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$}{\ifthenelse{\mode=2}{$\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$}{\ifthenelse{\mode=3}{$\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$}{\ifthenelse{\mode=4}{$\affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$}{$\dfrac{1}{\affiche{\a}^{\affiche{\n}}}$}}}}
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\numa{36}\def\numb{8}\def\typeoperation{1}$\SimplificationRacine{\numa*\numb}$
+\end{itemize}
+}
+\end{multicols}
+\newpage
+
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 4 - Court
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} :
+\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}
+\end{center}
+}
+\boiteQFQ{Question 2 :}{
+%version 7 - Court
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 14 - Court
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+
+
+\acc{Résoudre l'équation :}
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\a{11}\def\b{4}\def\m{-5}\def\n{9}\def\mode{3}\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$}{\ifthenelse{\mode=2}{$\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$}{\ifthenelse{\mode=3}{$\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$}{\ifthenelse{\mode=4}{$\affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$}{$\dfrac{1}{\affiche{\a}^{\affiche{\n}}}$}}}}
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\numa{36}\def\numb{8}\def\typeoperation{1}$\SimplificationRacine{\numa*\numb}$
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{3.} \end{itembox}}] \def\numa{18}\def\numb{4}\def\signe{-}$\displaystyle{\Simplification{\fpeval{(\signe \numb * (-1) )}}{\numa}} $
+\end{itemize}
+}
+\end{multicols}
+
+\newpage
+
+%\begin{multicols}{2}
+\boiteQFdet{Solution détaillée de la question 1 :}{
+
+%version 4 - Court
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} :
+\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}
+\end{center}
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+
+%version 4 - solutions
+
+\def\a{11}
+\def\b{4}
+\def\m{-5}
+\def\n{9}
+\def\mode{3}
+
+
+
+\ifthenelse{\mode=1}{
+\textbf{Formule :} $a^m \times a^n = a^{m+n}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+
+$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \affiche{\a}^{\affiche{\m} + \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m + \n}}}$
+}{
+\ifthenelse{\mode=2}{
+\textbf{Formule :} $\dfrac{a^m}{a^n} = a^{m-n}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+
+$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \affiche{\a}^{\affiche{\m} - \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m - \n}}}$
+}{
+\ifthenelse{\mode=3}{
+    \textbf{Formule :} $(a^m)^n = a^{mn}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+    
+    $(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \affiche{\a}^{\affiche{\m} \times \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m * \n}}}$
+    }{
+    \ifthenelse{\mode=4}{
+        \textbf{Formule :} $(ab)^n = a^n b^n$ avec $a = \affiche{\a}$, $b = \affiche{\b}$ et $n = \affiche{\n}$
+        
+        $(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$
+        }{
+        \textbf{Formule :} $a^{-n} = \dfrac{1}{a^n}$ avec $a = \affiche{\a}$ et $n = \affiche{\n}$
+        
+        $\affiche{\a}^{-\affiche{\n}} = \dfrac{1}{\affiche{\a}^{\affiche{\n}}}$
+}}}}
+
+\end{multicols}
+}
+
+\newpage
+
+\boiteQFdet{Solution détaillée de la question 2 :}{
+
+%version 7 - Court
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+%version 7 - solutions
+
+\def\numa{36}
+\def\numb{8}
+\def\typeoperation{1}
+
+
+Pour simplifier, on cherche les carrés parfaits dans la décomposition :
+\begin{center}$\fpeval{\numa*\numb}=\Decomposition[Exposant]{\fpeval{\numa*\numb}}=\left(2^2\right)^2 \times3^2\times2 = (4\times3)^2\times 2$\end{center}
+
+Donc $\fpeval{\numa*\numb}=(12)^2\times 2$
+
+\columnbreak
+
+Ensuite on utilise la formule : $\sqrt{ab} = \sqrt{a} \times \sqrt{b}$ (si $a,b \geq 0$) et on simplifie l'écriture des racines avec des termes au carré.
+
+
+
+Résultat simplifié : \begin{center}$\fpeval{\numa*\numb}=\sqrt{12^2}\times\sqrt{2}$
+
+$\fpeval{\numa*\numb}=\SimplificationRacine{\numa*\numb}$\end{center}
+
+\end{multicols}
+}
+
+%\columnbreak
+\newpage
+
+
+\boiteQFdet{Solution détaillée de la question 3 :}{
+
+%version 14 - Court
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+
+
+\acc{Résoudre l'équation :}
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+%version 14 - solutions
+
+\def\numa{18}
+\def\numb{4}
+\def\signe{-}
+
+
+\providecommand{\antisigne}[1]{%
+\ifdim\fpeval{#1 * 1}pt<0pt%
++% Si l'expression évaluée est négative, on retourne +
+\else%
+-% Si l'expression évaluée est positive ou nulle, on retourne -
+\fi%
+}
+\edef\anti{\antisigne{\signe1}}
+On \acc{isole} $x$ du côté gauche de l'égalité en effectuant des \acc{manipulation algébriques} :
+
+
+$\affiche{\numa}\times x \signe \affiche{\numb}=0$
+
+$\Longleftrightarrow \affiche{\numa}\times x \signe \affiche{\numb}\red{ \anti \affiche {\numb}}= \red{\anti \affiche {\numb}}$
+
+$\Longleftrightarrow \affiche{\numa}\times x= \affiche{\fpeval{\anti \numb}}$
+
+$\Longleftrightarrow \dfrac{\affiche{\numa}\times x}{\red{\numa}}= \dfrac{\affiche{\fpeval{\anti \numb}}}{\red{\numa}}$
+
+$\Longleftrightarrow x = \dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}  = \displaystyle{\Simplification{\fpeval{(\signe\numb*(-1))}}{\numa}}$
+
+\columnbreak
+
+On vérifie que la solution est correcte en remplaçant $x$ par $ \dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}$ :
+
+$\affiche{\numa}\times \red{\dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}} \signe \affiche{\numb}$
+
+$= \fpeval{\numa * (\signe\numb*(-1))/\numa} \signe \affiche{\numb}$
+
+$=  \fpeval{\numa * (\signe\numb*(-1))/\numa  \signe \numb}$
+
+\end{multicols}
+}
+%\end{multicols}
+\end{document}

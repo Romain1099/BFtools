@@ -1,5 +1,5 @@
 # BFtools
-Un dépot ou je place les outils que j'utilise dans mon quotidient de professeur de mathématiques. 
+Un dépot ou je place les outils que j'utilise dans mon quotidien de professeur de mathématiques. 
 
 # Fonctionnalités disponibles 
 

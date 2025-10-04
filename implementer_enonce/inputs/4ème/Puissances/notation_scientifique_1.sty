@@ -1,0 +1,53 @@
+30
+    %%
+\def\puissance{-9<=x<9 x!=0 x!=1 int}
+\def\nombrebase{1<=x<10 x!=0 x!=1 float decimalesD3}
+\def\decalage{-5<=x<5 x!=0}
+
+%%
+%court
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance - \decalage}}}
+Donner la \acc{notation scientifique} du nombre suivant :
+\begin{center}
+    $\numerreur$
+\end{center}
+
+%%
+%help
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance - \decalage}}}
+\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : 
+\begin{center}
+    $a \times 10^n$
+\end{center}
+où $1 \leq |a| < 10$ et $n$ est un entier relatif.
+
+\columnbreak
+
+Le nombre $\numerreur$ correspond au nombre $\num{\numerique}$ en écriture décimale.\\
+Son écriture scientifique est donc : $\numa$
+%%
+%qcm
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance - \decalage}}}
+\def\erreura{\num{\nombrebase} \times 10^{\fpeval{\puissance-1}}}
+\def\erreurb{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance + \decalage}}}
+\def\erreurc{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance}}}
+\textbf{Cocher} la réponse correcte pour déterminer si $\numerreur$ est en notation scientifique :\\
+\begin{center} 
+    \listnode{\cb}{$\erreurb$} 
+    \listnode{\ccb}{$\numa$} 
+    \listnode{\cb}{$\numerreur$} 
+    \listnode{\cb}{$\erreurc$} 
+\end{center}
+%%
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\fpeval{\nombrebase*10^(\decalage)}\times 10^{\fpeval{\puissance - \decalage}}}
+$\numa$
+%%
+Notation scientifique (1)

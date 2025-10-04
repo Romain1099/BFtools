@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n    \\def\\na{13}\n    \\def\\da{-24}\n    \\def\\nb{-10}\n    \\def\\db{22}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{13}    \\def\\da{-24}    \\def\\nb{-10}    \\def\\db{22}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 1 - solutions\n\t\n    \\def\\na{13}\n    \\def\\da{-24}\n    \\def\\nb{-10}\n    \\def\\db{22}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n    \\def\\na{-28}\n    \\def\\da{-11}\n    \\def\\nb{29}\n    \\def\\db{7}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-28}    \\def\\da{-11}    \\def\\nb{29}    \\def\\db{7}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 2 - solutions\n\t\n    \\def\\na{-28}\n    \\def\\da{-11}\n    \\def\\nb{29}\n    \\def\\db{7}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n    \\def\\na{-4}\n    \\def\\da{-1}\n    \\def\\nb{14}\n    \\def\\db{-6}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-4}    \\def\\da{-1}    \\def\\nb{14}    \\def\\db{-6}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 3 - solutions\n\t\n    \\def\\na{-4}\n    \\def\\da{-1}\n    \\def\\nb{14}\n    \\def\\db{-6}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n    \\def\\na{21}\n    \\def\\da{-26}\n    \\def\\nb{26}\n    \\def\\db{-27}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{21}    \\def\\da{-26}    \\def\\nb{26}    \\def\\db{-27}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 4 - solutions\n\t\n    \\def\\na{21}\n    \\def\\da{-26}\n    \\def\\nb{26}\n    \\def\\db{-27}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n    \\def\\na{-13}\n    \\def\\da{22}\n    \\def\\nb{-17}\n    \\def\\db{-17}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-13}    \\def\\da{22}    \\def\\nb{-17}    \\def\\db{-17}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 5 - solutions\n\t\n    \\def\\na{-13}\n    \\def\\da{22}\n    \\def\\nb{-17}\n    \\def\\db{-17}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n    \\def\\na{-24}\n    \\def\\da{16}\n    \\def\\nb{6}\n    \\def\\db{-24}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-24}    \\def\\da{16}    \\def\\nb{6}    \\def\\db{-24}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 6 - solutions\n\t\n    \\def\\na{-24}\n    \\def\\da{16}\n    \\def\\nb{6}\n    \\def\\db{-24}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n    \\def\\na{-10}\n    \\def\\da{-20}\n    \\def\\nb{-21}\n    \\def\\db{26}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-10}    \\def\\da{-20}    \\def\\nb{-21}    \\def\\db{26}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 7 - solutions\n\t\n    \\def\\na{-10}\n    \\def\\da{-20}\n    \\def\\nb{-21}\n    \\def\\db{26}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n    \\def\\na{-4}\n    \\def\\da{29}\n    \\def\\nb{-1}\n    \\def\\db{-7}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-4}    \\def\\da{29}    \\def\\nb{-1}    \\def\\db{-7}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 8 - solutions\n\t\n    \\def\\na{-4}\n    \\def\\da{29}\n    \\def\\nb{-1}\n    \\def\\db{-7}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n    \\def\\na{23}\n    \\def\\da{21}\n    \\def\\nb{10}\n    \\def\\db{-28}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{23}    \\def\\da{21}    \\def\\nb{10}    \\def\\db{-28}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 9 - solutions\n\t\n    \\def\\na{23}\n    \\def\\da{21}\n    \\def\\nb{10}\n    \\def\\db{-28}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n    \\def\\na{23}\n    \\def\\da{26}\n    \\def\\nb{-12}\n    \\def\\db{-8}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{23}    \\def\\da{26}    \\def\\nb{-12}    \\def\\db{-8}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 10 - solutions\n\t\n    \\def\\na{23}\n    \\def\\da{26}\n    \\def\\nb{-12}\n    \\def\\db{-8}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n    \\def\\na{-24}\n    \\def\\da{-8}\n    \\def\\nb{-7}\n    \\def\\db{-15}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-24}    \\def\\da{-8}    \\def\\nb{-7}    \\def\\db{-15}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 11 - solutions\n\t\n    \\def\\na{-24}\n    \\def\\da{-8}\n    \\def\\nb{-7}\n    \\def\\db{-15}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n    \\def\\na{17}\n    \\def\\da{7}\n    \\def\\nb{26}\n    \\def\\db{14}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{17}    \\def\\da{7}    \\def\\nb{26}    \\def\\db{14}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 12 - solutions\n\t\n    \\def\\na{17}\n    \\def\\da{7}\n    \\def\\nb{26}\n    \\def\\db{14}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n    \\def\\na{-23}\n    \\def\\da{23}\n    \\def\\nb{24}\n    \\def\\db{10}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-23}    \\def\\da{23}    \\def\\nb{24}    \\def\\db{10}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 13 - solutions\n\t\n    \\def\\na{-23}\n    \\def\\da{23}\n    \\def\\nb{24}\n    \\def\\db{10}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n    \\def\\na{-22}\n    \\def\\da{-5}\n    \\def\\nb{-5}\n    \\def\\db{26}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-22}    \\def\\da{-5}    \\def\\nb{-5}    \\def\\db{26}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 14 - solutions\n\t\n    \\def\\na{-22}\n    \\def\\da{-5}\n    \\def\\nb{-5}\n    \\def\\db{26}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n    \\def\\na{3}\n    \\def\\da{-10}\n    \\def\\nb{-5}\n    \\def\\db{-15}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{3}    \\def\\da{-10}    \\def\\nb{-5}    \\def\\db{-15}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 15 - solutions\n\t\n    \\def\\na{3}\n    \\def\\da{-10}\n    \\def\\nb{-5}\n    \\def\\db{-15}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n    \\def\\na{12}\n    \\def\\da{21}\n    \\def\\nb{12}\n    \\def\\db{28}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{12}    \\def\\da{21}    \\def\\nb{12}    \\def\\db{28}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 16 - solutions\n\t\n    \\def\\na{12}\n    \\def\\da{21}\n    \\def\\nb{12}\n    \\def\\db{28}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n    \\def\\na{-1}\n    \\def\\da{17}\n    \\def\\nb{-7}\n    \\def\\db{-27}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-1}    \\def\\da{17}    \\def\\nb{-7}    \\def\\db{-27}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 17 - solutions\n\t\n    \\def\\na{-1}\n    \\def\\da{17}\n    \\def\\nb{-7}\n    \\def\\db{-27}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n    \\def\\na{29}\n    \\def\\da{-14}\n    \\def\\nb{-8}\n    \\def\\db{-10}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{29}    \\def\\da{-14}    \\def\\nb{-8}    \\def\\db{-10}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 18 - solutions\n\t\n    \\def\\na{29}\n    \\def\\da{-14}\n    \\def\\nb{-8}\n    \\def\\db{-10}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n    \\def\\na{-9}\n    \\def\\da{9}\n    \\def\\nb{25}\n    \\def\\db{-20}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-9}    \\def\\da{9}    \\def\\nb{25}    \\def\\db{-20}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 19 - solutions\n\t\n    \\def\\na{-9}\n    \\def\\da{9}\n    \\def\\nb{25}\n    \\def\\db{-20}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n    \\def\\na{23}\n    \\def\\da{-12}\n    \\def\\nb{29}\n    \\def\\db{-15}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{23}    \\def\\da{-12}    \\def\\nb{29}    \\def\\db{-15}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 20 - solutions\n\t\n    \\def\\na{23}\n    \\def\\da{-12}\n    \\def\\nb{29}\n    \\def\\db{-15}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n    \\def\\na{-20}\n    \\def\\da{-13}\n    \\def\\nb{-24}\n    \\def\\db{-4}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-20}    \\def\\da{-13}    \\def\\nb{-24}    \\def\\db{-4}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 21 - solutions\n\t\n    \\def\\na{-20}\n    \\def\\da{-13}\n    \\def\\nb{-24}\n    \\def\\db{-4}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n    \\def\\na{-1}\n    \\def\\da{-9}\n    \\def\\nb{-17}\n    \\def\\db{-4}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-1}    \\def\\da{-9}    \\def\\nb{-17}    \\def\\db{-4}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 22 - solutions\n\t\n    \\def\\na{-1}\n    \\def\\da{-9}\n    \\def\\nb{-17}\n    \\def\\db{-4}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n    \\def\\na{-20}\n    \\def\\da{7}\n    \\def\\nb{12}\n    \\def\\db{-7}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-20}    \\def\\da{7}    \\def\\nb{12}    \\def\\db{-7}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 23 - solutions\n\t\n    \\def\\na{-20}\n    \\def\\da{7}\n    \\def\\nb{12}\n    \\def\\db{-7}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{-7}\n    \\def\\nb{29}\n    \\def\\db{-14}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{-7}    \\def\\nb{29}    \\def\\db{-14}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 24 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{-7}\n    \\def\\nb{29}\n    \\def\\db{-14}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n    \\def\\na{-21}\n    \\def\\da{-1}\n    \\def\\nb{-11}\n    \\def\\db{-28}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-21}    \\def\\da{-1}    \\def\\nb{-11}    \\def\\db{-28}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 25 - solutions\n\t\n    \\def\\na{-21}\n    \\def\\da{-1}\n    \\def\\nb{-11}\n    \\def\\db{-28}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n    \\def\\na{27}\n    \\def\\da{-28}\n    \\def\\nb{16}\n    \\def\\db{30}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{27}    \\def\\da{-28}    \\def\\nb{16}    \\def\\db{30}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 26 - solutions\n\t\n    \\def\\na{27}\n    \\def\\da{-28}\n    \\def\\nb{16}\n    \\def\\db{30}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{6}\n    \\def\\nb{22}\n    \\def\\db{25}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{6}    \\def\\nb{22}    \\def\\db{25}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 27 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{6}\n    \\def\\nb{22}\n    \\def\\db{25}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n    \\def\\na{21}\n    \\def\\da{6}\n    \\def\\nb{-6}\n    \\def\\db{13}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{21}    \\def\\da{6}    \\def\\nb{-6}    \\def\\db{13}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 28 - solutions\n\t\n    \\def\\na{21}\n    \\def\\da{6}\n    \\def\\nb{-6}\n    \\def\\db{13}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n    \\def\\na{18}\n    \\def\\da{25}\n    \\def\\nb{-18}\n    \\def\\db{11}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{18}    \\def\\da{25}    \\def\\nb{-18}    \\def\\db{11}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 29 - solutions\n\t\n    \\def\\na{18}\n    \\def\\da{25}\n    \\def\\nb{-18}\n    \\def\\db{11}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n    \\def\\na{-12}\n    \\def\\da{-8}\n    \\def\\nb{3}\n    \\def\\db{-28}\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}}$\\end{center}\n    ",
+        "reponse": "\\def\\na{-12}    \\def\\da{-8}    \\def\\nb{3}    \\def\\db{-28}            $\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+        "details": "%version 30 - solutions\n\t\n    \\def\\na{-12}\n    \\def\\da{-8}\n    \\def\\nb{3}\n    \\def\\db{-28}\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\dfrac{\\na}{\\da}}{ \\dfrac{\\nb}{\\db}} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Divisions de fractions (3)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

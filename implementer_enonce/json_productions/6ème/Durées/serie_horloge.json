@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\na{2}\n\\def\\nb{14}\n\\def\\nc{18}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{14}\\def\\nc{18}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 1 - solutions\n\t\n\\def\\na{2}\n\\def\\nb{14}\n\\def\\nc{18}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\na{12}\n\\def\\nb{56}\n\\def\\nc{42}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{12}\\def\\nb{56}\\def\\nc{42}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 2 - solutions\n\t\n\\def\\na{12}\n\\def\\nb{56}\n\\def\\nc{42}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\na{6}\n\\def\\nb{11}\n\\def\\nc{14}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{6}\\def\\nb{11}\\def\\nc{14}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 3 - solutions\n\t\n\\def\\na{6}\n\\def\\nb{11}\n\\def\\nc{14}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\na{21}\n\\def\\nb{21}\n\\def\\nc{4}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{21}\\def\\nb{21}\\def\\nc{4}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 4 - solutions\n\t\n\\def\\na{21}\n\\def\\nb{21}\n\\def\\nc{4}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\na{5}\n\\def\\nb{3}\n\\def\\nc{35}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{3}\\def\\nc{35}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 5 - solutions\n\t\n\\def\\na{5}\n\\def\\nb{3}\n\\def\\nc{35}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{44}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{44}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 6 - solutions\n\t\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{44}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\na{1}\n\\def\\nb{27}\n\\def\\nc{33}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{1}\\def\\nb{27}\\def\\nc{33}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 7 - solutions\n\t\n\\def\\na{1}\n\\def\\nb{27}\n\\def\\nc{33}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\na{9}\n\\def\\nb{35}\n\\def\\nc{42}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{9}\\def\\nb{35}\\def\\nc{42}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 8 - solutions\n\t\n\\def\\na{9}\n\\def\\nb{35}\n\\def\\nc{42}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{22}\\def\\nb{18}\\def\\nc{44}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 9 - solutions\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\na{24}\n\\def\\nb{1}\n\\def\\nc{40}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{24}\\def\\nb{1}\\def\\nc{40}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 10 - solutions\n\t\n\\def\\na{24}\n\\def\\nb{1}\n\\def\\nc{40}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\na{20}\n\\def\\nb{54}\n\\def\\nc{16}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{20}\\def\\nb{54}\\def\\nc{16}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 11 - solutions\n\t\n\\def\\na{20}\n\\def\\nb{54}\n\\def\\nc{16}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\na{5}\n\\def\\nb{18}\n\\def\\nc{38}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{18}\\def\\nc{38}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 12 - solutions\n\t\n\\def\\na{5}\n\\def\\nb{18}\n\\def\\nc{38}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\na{12}\n\\def\\nb{5}\n\\def\\nc{33}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{12}\\def\\nb{5}\\def\\nc{33}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 13 - solutions\n\t\n\\def\\na{12}\n\\def\\nb{5}\n\\def\\nc{33}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\na{18}\n\\def\\nb{24}\n\\def\\nc{12}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{18}\\def\\nb{24}\\def\\nc{12}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 14 - solutions\n\t\n\\def\\na{18}\n\\def\\nb{24}\n\\def\\nc{12}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\na{7}\n\\def\\nb{11}\n\\def\\nc{29}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{11}\\def\\nc{29}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 15 - solutions\n\t\n\\def\\na{7}\n\\def\\nb{11}\n\\def\\nc{29}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\na{2}\n\\def\\nb{49}\n\\def\\nc{48}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{49}\\def\\nc{48}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 16 - solutions\n\t\n\\def\\na{2}\n\\def\\nb{49}\n\\def\\nc{48}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\na{4}\n\\def\\nb{42}\n\\def\\nc{13}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{4}\\def\\nb{42}\\def\\nc{13}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 17 - solutions\n\t\n\\def\\na{4}\n\\def\\nb{42}\n\\def\\nc{13}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\na{0}\n\\def\\nb{49}\n\\def\\nc{55}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{0}\\def\\nb{49}\\def\\nc{55}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 18 - solutions\n\t\n\\def\\na{0}\n\\def\\nb{49}\n\\def\\nc{55}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\na{9}\n\\def\\nb{26}\n\\def\\nc{8}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{9}\\def\\nb{26}\\def\\nc{8}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 19 - solutions\n\t\n\\def\\na{9}\n\\def\\nb{26}\n\\def\\nc{8}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\na{20}\n\\def\\nb{59}\n\\def\\nc{19}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{20}\\def\\nb{59}\\def\\nc{19}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 20 - solutions\n\t\n\\def\\na{20}\n\\def\\nb{59}\n\\def\\nc{19}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\na{7}\n\\def\\nb{30}\n\\def\\nc{20}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{30}\\def\\nc{20}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 21 - solutions\n\t\n\\def\\na{7}\n\\def\\nb{30}\n\\def\\nc{20}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{23}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{2}\\def\\nc{23}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 22 - solutions\n\t\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{23}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\na{21}\n\\def\\nb{55}\n\\def\\nc{27}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{21}\\def\\nb{55}\\def\\nc{27}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 23 - solutions\n\t\n\\def\\na{21}\n\\def\\nb{55}\n\\def\\nc{27}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\na{0}\n\\def\\nb{46}\n\\def\\nc{17}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{0}\\def\\nb{46}\\def\\nc{17}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 24 - solutions\n\t\n\\def\\na{0}\n\\def\\nb{46}\n\\def\\nc{17}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\na{16}\n\\def\\nb{8}\n\\def\\nc{45}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{16}\\def\\nb{8}\\def\\nc{45}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 25 - solutions\n\t\n\\def\\na{16}\n\\def\\nb{8}\n\\def\\nc{45}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\na{13}\n\\def\\nb{16}\n\\def\\nc{9}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{13}\\def\\nb{16}\\def\\nc{9}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 26 - solutions\n\t\n\\def\\na{13}\n\\def\\nb{16}\n\\def\\nc{9}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\na{17}\n\\def\\nb{11}\n\\def\\nc{47}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{17}\\def\\nb{11}\\def\\nc{47}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 27 - solutions\n\t\n\\def\\na{17}\n\\def\\nb{11}\n\\def\\nc{47}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\na{4}\n\\def\\nb{30}\n\\def\\nc{34}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{4}\\def\\nb{30}\\def\\nc{34}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 28 - solutions\n\t\n\\def\\na{4}\n\\def\\nb{30}\n\\def\\nc{34}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\na{11}\n\\def\\nb{24}\n\\def\\nc{55}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{11}\\def\\nb{24}\\def\\nc{55}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 29 - solutions\n\t\n\\def\\na{11}\n\\def\\nb{24}\n\\def\\nc{55}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\na{18}\n\\def\\nb{36}\n\\def\\nc{30}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\n\n\n",
+        "reponse": "\\def\\na{18}\\def\\nb{36}\\def\\nc{30}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+        "details": "%version 30 - solutions\n\t\n\\def\\na{18}\n\\def\\nb{36}\n\\def\\nc{30}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$\n\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

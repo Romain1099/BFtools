@@ -1,0 +1,41 @@
+
+30
+%%
+\def\he{2<=x<5 x!=0 int}
+\def\mi{0<=x<59 int}
+\def\dia{50<=x<120 int}
+%%
+			
+Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.   	
+	
+Quel est le \acc{pourcentage} de dialogues ? ( arrondi au dixième près )
+
+
+%%
+
+La série dure $\he \times 60 + \mi = \mathbf{\num{\fpeval{\he * 60 + \mi}}}~$minutes au total.		
+
+Dans cette série, il y a $\dia~$minutes de dialogues.  	
+
+\begin{center}    	
+\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \cellcolor{gray!10}\bfseries Dialogues & $\dia$ &{\color{red} $\mathbf{\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}}$ }\\	
+\hline        	
+\cellcolor{gray!10}\bfseries Total & $\mathbf{\num{\fpeval{\he * 60 + \mi}}}$ & 100\\
+\end{tcbtab}    	
+\end{center}    	
+Le pourcentage voulu est calculé par : 	
+	
+$100 \times \dia \div \num{\fpeval{(\he * 60 + \mi)}} = \mathbf{\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}}$   	
+	
+Ainsi, $\dia~$minutes de dialogues représentent environ $\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$ de la série.
+
+
+%%
+
+%qcm    \def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    \textbf{Cocher} la ou les réponses correctes : \\    $\dfrac{\n}{\d} + \dfrac{\nb}{\db} = ... $\\    \begin{center}         \listnode{\cb}{$\dfrac{\nresa}{\dresa}$}         \listnode{\ccb}{$\dfrac{\nresb}{\dresb}$}         \listnode{\ccb}{$\Simplification{\nresb}{\dresb}$}         \listnode{\cb}{$\Simplification{\nresd}{\dresd}$}     \end{center}
+
+
+%%
+$\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$
+%%
+Pourcentages

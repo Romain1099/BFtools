@@ -1,0 +1,17 @@
+
+30
+%%
+\def\n{2<=x<20 x!=0 int}
+\def\d{2<=x<20 x!=0 x!=1 int}
+\def\nb{2<=x<20 x!=0 int}
+\def\db{2<=x<20 x!=0 x!=1 int}
+%%
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$    
+%%
+    \def\decnum{\Decomposition[Longue]{\fpeval{\n * \db + \nb * \d}}}    \def\decden{\Decomposition[Longue]{\fpeval{\d * \db}}}    \begin{align*}        \dfrac{\n}{\d} + \dfrac{\nb}{\db}         &=~ \dfrac{\n \times \db}{\d \times \db} + \dfrac{\nb \times \d}{\db \times \d}\\        &=~ \dfrac{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}\\        &=~ \dfrac{\decnum}{\decden}\\        &=~ \Simplification{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}    \end{align*}    
+%%
+   \def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    \textbf{Cocher} la ou les réponses correctes : \\    $\dfrac{\n}{\d} + \dfrac{\nb}{\db} = ... $\\    \begin{center}         \listnode{\cb}{$\dfrac{\nresa}{\dresa}$}         \listnode{\ccb}{$\dfrac{\nresb}{\dresb}$}         \listnode{\ccb}{$\Simplification{\nresb}{\dresb}$}         \listnode{\cb}{$\Simplification{\nresd}{\dresd}$}     \end{center}    
+%%
+\def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    $\Simplification{\nresb}{\dresb}$
+%%
+Fractions

@@ -1,0 +1,539 @@
+%niveau estimé : 4ème
+%date de projection : 25_11_2024
+%themes abordés : , , Multiplier des fractions (1)
+\pagecolor{customBackground}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+    \def\he{4}
+    \def\mi{54}
+    \def\dia{85}
+    
+    
+    %court
+    Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+    Quel est le pourcentage de dialogues ?
+}
+\boiteQFQ{Question 2 :}{
+    \def\na{89.7}
+    \def\augmentation{-24}
+    
+    
+    
+    %court
+    \def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { % Cas augmentation
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+            
+            \def\sign{+}
+        }
+        { % Cas réduction
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+            
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+}
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+    %version 3 - Court
+    
+    \def\n{3}
+    \def\d{14}
+    \def\nb{19}
+    \def\db{7}
+    
+    
+    %court
+    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :
+    $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{}
+\end{multicols}
+
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+    \def\he{4}
+    \def\mi{54}
+    \def\dia{85}
+    
+    
+    %court
+    Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+    Quel est le pourcentage de dialogues ?
+}
+\boiteQFQ{Question 2 :}{
+    \def\na{89.7}
+    \def\augmentation{-24}
+    
+    
+    
+    %court
+    \def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { % Cas augmentation
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+            
+            \def\sign{+}
+        }
+        { % Cas réduction
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+            
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+    %version 3 - Court
+    
+    \def\n{3}
+    \def\d{14}
+    \def\nb{19}
+    \def\db{7}
+    
+    
+    %court
+    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :
+    $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+    \vspace{-0.35cm}
+    \begin{itemize}[itemsep=0.2em]
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\he{4}
+        \def\mi{54}
+        \def\dia{85}
+        $\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$
+    \end{itemize}
+}
+\end{multicols}
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+    \def\he{4}
+    \def\mi{54}
+    \def\dia{85}
+    
+    
+    %court
+    Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+    Quel est le pourcentage de dialogues ?
+}
+\boiteQFQ{Question 2 :}{
+    \def\na{89.7}
+    \def\augmentation{-24}
+    
+    
+    
+    %court
+    \def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { % Cas augmentation
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+            
+            \def\sign{+}
+        }
+        { % Cas réduction
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+            
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+    %version 3 - Court
+    
+    \def\n{3}
+    \def\d{14}
+    \def\nb{19}
+    \def\db{7}
+    
+    
+    %court
+    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :
+    $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+    \vspace{-0.35cm}
+    \begin{itemize}[itemsep=0.2em]
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\he{4}
+        \def\mi{54}
+        \def\dia{85}
+        $\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\na{89.7}
+        \def\augmentation{-24}
+        
+        
+        
+        %court
+        \def\checkaugmentation{
+            \ifthenelse{\augmentation > 0}
+            { % Cas augmentation
+                \def\operation{augmentation}
+                \def\operationtext{augmenté}
+                \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+                \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+                
+                \def\sign{+}
+            }
+            { % Cas réduction
+                \def\operation{réduction}
+                \def\operationtext{diminué}
+                \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+                
+                \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+                \def\sign{-}
+            }
+        }
+        \checkaugmentation
+        
+        $\rounded$
+    \end{itemize}
+}
+\end{multicols}
+\newpage
+
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+    \def\he{4}
+    \def\mi{54}
+    \def\dia{85}
+    
+    
+    %court
+    Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+    Quel est le pourcentage de dialogues ?
+}
+\boiteQFQ{Question 2 :}{
+    \def\na{89.7}
+    \def\augmentation{-24}
+    
+    
+    
+    %court
+    \def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { % Cas augmentation
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+            
+            \def\sign{+}
+        }
+        { % Cas réduction
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+            
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+    %version 3 - Court
+    
+    \def\n{3}
+    \def\d{14}
+    \def\nb{19}
+    \def\db{7}
+    
+    
+    %court
+    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :
+    $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+    \vspace{-0.35cm}
+    \begin{itemize}[itemsep=0.2em]
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\he{4}
+        \def\mi{54}
+        \def\dia{85}
+        $\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\na{89.7}
+        \def\augmentation{-24}
+        
+        
+        
+        %court
+        \def\checkaugmentation{
+            \ifthenelse{\augmentation > 0}
+            { % Cas augmentation
+                \def\operation{augmentation}
+                \def\operationtext{augmenté}
+                \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+                \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+                
+                \def\sign{+}
+            }
+            { % Cas réduction
+                \def\operation{réduction}
+                \def\operationtext{diminué}
+                \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+                
+                \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+                \def\sign{-}
+            }
+        }
+        \checkaugmentation
+        
+        $\rounded$
+        \item[\raisebox{-0.1cm}{\begin{itembox} \textbf{3.} \end{itembox}}] \def\n{3}    \def\d{14}    \def\nb{19}    \def\db{7}        \def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    $\Simplification{\nresb}{\dresb}$
+    \end{itemize}
+}
+\end{multicols}
+
+\newpage
+
+%\begin{multicols}{2}
+\boiteQFdet{Solution détaillée de la question 1 :}{
+
+\def\he{4}
+\def\mi{54}
+\def\dia{85}
+
+
+%court
+Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+Quel est le pourcentage de dialogues ?
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\begin{multicols}{2}
+
+
+\def\he{4}
+\def\mi{54}
+\def\dia{85}
+
+
+%court
+Dans une série de $\he$ h $\mi$ min, il y a $\dia$ min de dialogues.
+Quel est le pourcentage de dialogues ?\\
+
+
+
+%help
+
+Dans la série, il y a $\num{\fpeval{\he * 60 + \mi}}~$minutes de dialogues.
+
+
+\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}
+    \cellcolor{gray!10}\bfseries Quantité & $\dia$ & \color{red} \bfseries \num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}\\\hline
+    \cellcolor{gray!10}\bfseries Total& \num{\fpeval{\he * 60 + \mi}} & 100\\
+\end{tcbtab}
+
+Ainsi, $\num{\fpeval{\he * 60 + \mi}}~$minutes de dialogues représentent $\num{\fpeval{round(100 * \dia / (\he * 60 + \mi),1)}}~\%$ de la série.
+
+\end{multicols}
+}
+
+\newpage
+
+\boiteQFdet{Solution détaillée de la question 2 :}{
+
+\def\na{89.7}
+\def\augmentation{-24}
+
+
+
+%court
+\def\checkaugmentation{
+\ifthenelse{\augmentation > 0}
+{ % Cas augmentation
+    \def\operation{augmentation}
+    \def\operationtext{augmenté}
+    \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+    \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+    
+    \def\sign{+}
+}
+{ % Cas réduction
+    \def\operation{réduction}
+    \def\operationtext{diminué}
+    \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+    
+    \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+    \def\sign{-}
+}
+}
+\checkaugmentation
+Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+
+\vspace{-0.25cm}\begin{multicols}{2}
+
+\def\na{89.7}
+\def\augmentation{-24}
+
+
+
+%court
+\def\checkaugmentation{
+\ifthenelse{\augmentation > 0}
+{ % Cas augmentation
+    \def\operation{augmentation}
+    \def\operationtext{augmenté}
+    \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+    \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+    
+    \def\sign{+}
+}
+{ % Cas réduction
+    \def\operation{réduction}
+    \def\operationtext{diminué}
+    \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+    
+    \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+    \def\sign{-}
+}
+}
+\checkaugmentation
+
+
+%help
+
+% Définitions des macros
+% Définir le texte et le calcul en fonction du signe
+\def\checkaugmentation{
+\ifthenelse{\augmentation > 0}
+{ % Cas augmentation
+    \def\operation{augmentation}
+    \def\operationtext{augmenté}
+    \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+    \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+    
+    \def\sign{+}
+}
+{ % Cas réduction
+    \def\operation{réduction}
+    \def\operationtext{diminué}
+    \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+    
+    \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100), 2)}}
+    \def\sign{-}
+}
+}
+
+\def\afficherresultat{
+\ifthenelse{\equal{\calculation}{\rounded}}
+{Nouveau Prix $= \num{\rounded}$\\ } % Si égaux
+{Nouveau Prix $= \num{\calculation} \approx \num{\rounded}$\\
+On donne l'arrondi au \textbf{centième} près car il s'agit d'un prix en euros.} % Si différents
+}
+\checkaugmentation
+On utilise la formule suivante : \\
+
+Nouveau Prix $= \text{Ancien Prix} \sign \text{Ancien Prix} \times \left( \dfrac{t}{100}\right)  $ \\
+
+où $t$ est le taux d'augmentation ou de réduction.
+
+Ici il s'agit d'une \operation, avec $\text{Ancien Prix} = \num{\na}$ et $t = \num{\fpeval{abs(\augmentation)}}$.\\
+
+Nouveau Prix $= \num{\na} \sign \num{\na} \times \dfrac{\num{\fpeval{abs(\augmentation)}}}{100}$\\
+
+Nouveau Prix $=\num{\na} \sign \num{\fpeval{\na * abs(\augmentation) / 100}} $\\
+
+Ainsi  :\\
+\afficherresultat
+
+\end{multicols}
+}
+
+%\columnbreak
+\newpage
+
+
+\boiteQFdet{Solution détaillée de la question 3 :}{
+
+%version 3 - Court
+
+\def\n{3}
+\def\d{14}
+\def\nb{19}
+\def\db{7}
+
+
+%court
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :
+$$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\begin{multicols}{2}
+
+%version 3 - solutions
+
+\def\n{3}
+\def\d{14}
+\def\nb{19}
+\def\db{7}
+
+
+%help
+
+% Définitions des macros
+\def\decnum{\Decomposition[Longue]{\fpeval{\n * \db + \nb * \d}}}
+\def\decden{\Decomposition[Longue]{\fpeval{\d * \db}}}
+
+\begin{align*}
+\dfrac{\n}{\d} + \dfrac{\nb}{\db}
+&=~ \dfrac{\n \times \db}{\d \times \db} + \dfrac{\nb \times \d}{\db \times \d}\\
+&=~ \dfrac{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}\\
+&=~ \dfrac{\decnum}{\decden}\\
+&=~ \Simplification{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}
+\end{align*}
+
+\end{multicols}
+}
+%\end{multicols}

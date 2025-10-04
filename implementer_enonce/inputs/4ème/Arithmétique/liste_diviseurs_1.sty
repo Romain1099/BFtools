@@ -1,0 +1,58 @@
+
+30
+
+%%
+
+\def\na[2,3,5,7,11]
+\def\nb[2,3,5,7,11]
+\def\nc[2,3,5,7,11]
+
+%%
+
+%court
+\def\nombre{ \fpeval{\na *  \nb * \nc}}
+\def\mnombre{ \num{\fpeval{\na *  \nb * \nc}}}
+
+\acc{Déterminer} la liste des diviseurs de $\mnombre$.
+
+%%
+
+\def\nombre{ \fpeval{\na *\nb *\nc}}
+\def\mnombre{ \num{\fpeval{\na *\nb *\nc}}}
+On détermine la liste des diviseurs de $\nombre$ en calculant les \acc{produits} de deux nombres qui sont égaux à $\nombre$.
+
+On a :
+
+\begin{center}\divisorstable{\nombre}\end{center}
+
+\columnbreak
+
+
+La liste des diviseurs de $\mnombre$ est : 
+
+\Decomposition[Diviseurs]{\nombre}
+
+%%
+
+%qcm
+\def\erreura{a}
+\def\erreurb{b}
+\def\erreurc{c}
+\def\nombre{ \fpeval{\na *  \nb * \nc}}
+\def\mnombre{ \num{\fpeval{\na *  \nb * \nc}}}
+\acc{Déterminer} la liste des diviseurs de $\mnombre$. 
+\begin{center} 
+    \listnode{\cb}{$\erreurb$} 
+    \listnode{\ccb}{\Decomposition[Diviseurs]{\nombre}} 
+    \listnode{\cb}{$\numerreur$} 
+    \listnode{\cb}{$\erreurc$} 
+\end{center}
+
+%%
+
+\def\nombre{ \fpeval{\na *  \nb * \nc}}
+\Decomposition[Diviseurs]{\nombre}
+
+%%
+
+Arithmétique

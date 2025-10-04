@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{1}    \\def\\nb{2}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 1 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n    \\def\\na{5}\n    \\def\\da{5}\n    \\def\\nb{9}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{5}    \\def\\da{5}    \\def\\nb{9}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 2 - solutions\n\t\n    \\def\\na{5}\n    \\def\\da{5}\n    \\def\\nb{9}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n    \\def\\na{9}\n    \\def\\da{3}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{9}    \\def\\da{3}    \\def\\nb{2}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 3 - solutions\n\t\n    \\def\\na{9}\n    \\def\\da{3}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{8}\n    \\def\\nb{9}\n    \\def\\db{7}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{8}    \\def\\nb{9}    \\def\\db{7}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 4 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{8}\n    \\def\\nb{9}\n    \\def\\db{7}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{6}\n    \\def\\nb{6}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{6}    \\def\\nb{6}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 5 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{6}\n    \\def\\nb{6}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{5}\n    \\def\\nb{7}\n    \\def\\db{2}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{5}    \\def\\nb{7}    \\def\\db{2}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 6 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{5}\n    \\def\\nb{7}\n    \\def\\db{2}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n    \\def\\na{8}\n    \\def\\da{6}\n    \\def\\nb{9}\n    \\def\\db{7}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{8}    \\def\\da{6}    \\def\\nb{9}    \\def\\db{7}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 7 - solutions\n\t\n    \\def\\na{8}\n    \\def\\da{6}\n    \\def\\nb{9}\n    \\def\\db{7}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{9}\n    \\def\\nb{1}\n    \\def\\db{5}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{9}    \\def\\nb{1}    \\def\\db{5}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 8 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{9}\n    \\def\\nb{1}\n    \\def\\db{5}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n    \\def\\na{9}\n    \\def\\da{4}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{9}    \\def\\da{4}    \\def\\nb{2}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 9 - solutions\n\t\n    \\def\\na{9}\n    \\def\\da{4}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n    \\def\\na{2}\n    \\def\\da{6}\n    \\def\\nb{7}\n    \\def\\db{5}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{2}    \\def\\da{6}    \\def\\nb{7}    \\def\\db{5}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 10 - solutions\n\t\n    \\def\\na{2}\n    \\def\\da{6}\n    \\def\\nb{7}\n    \\def\\db{5}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{5}\n    \\def\\nb{8}\n    \\def\\db{7}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{5}    \\def\\nb{8}    \\def\\db{7}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 11 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{5}\n    \\def\\nb{8}\n    \\def\\db{7}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n    \\def\\na{6}\n    \\def\\da{7}\n    \\def\\nb{2}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{6}    \\def\\da{7}    \\def\\nb{2}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 12 - solutions\n\t\n    \\def\\na{6}\n    \\def\\da{7}\n    \\def\\nb{2}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n    \\def\\na{8}\n    \\def\\da{3}\n    \\def\\nb{9}\n    \\def\\db{3}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{8}    \\def\\da{3}    \\def\\nb{9}    \\def\\db{3}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 13 - solutions\n\t\n    \\def\\na{8}\n    \\def\\da{3}\n    \\def\\nb{9}\n    \\def\\db{3}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{4}\n    \\def\\nb{3}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{4}    \\def\\nb{3}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 14 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{4}\n    \\def\\nb{3}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n    \\def\\na{9}\n    \\def\\da{4}\n    \\def\\nb{5}\n    \\def\\db{1}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{9}    \\def\\da{4}    \\def\\nb{5}    \\def\\db{1}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 15 - solutions\n\t\n    \\def\\na{9}\n    \\def\\da{4}\n    \\def\\nb{5}\n    \\def\\db{1}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n    \\def\\na{8}\n    \\def\\da{4}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{8}    \\def\\da{4}    \\def\\nb{2}    \\def\\db{4}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 16 - solutions\n\t\n    \\def\\na{8}\n    \\def\\da{4}\n    \\def\\nb{2}\n    \\def\\db{4}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{3}\n    \\def\\nb{8}\n    \\def\\db{5}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{7}    \\def\\da{3}    \\def\\nb{8}    \\def\\db{5}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 17 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{3}\n    \\def\\nb{8}\n    \\def\\db{5}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n    \\def\\na{6}\n    \\def\\da{9}\n    \\def\\nb{7}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{6}    \\def\\da{9}    \\def\\nb{7}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 18 - solutions\n\t\n    \\def\\na{6}\n    \\def\\da{9}\n    \\def\\nb{7}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n    \\def\\na{2}\n    \\def\\da{2}\n    \\def\\nb{9}\n    \\def\\db{2}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{2}    \\def\\da{2}    \\def\\nb{9}    \\def\\db{2}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 19 - solutions\n\t\n    \\def\\na{2}\n    \\def\\da{2}\n    \\def\\nb{9}\n    \\def\\db{2}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n    \\def\\na{8}\n    \\def\\da{2}\n    \\def\\nb{3}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{8}    \\def\\da{2}    \\def\\nb{3}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 20 - solutions\n\t\n    \\def\\na{8}\n    \\def\\da{2}\n    \\def\\nb{3}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n    \\def\\na{5}\n    \\def\\da{3}\n    \\def\\nb{6}\n    \\def\\db{9}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{5}    \\def\\da{3}    \\def\\nb{6}    \\def\\db{9}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 21 - solutions\n\t\n    \\def\\na{5}\n    \\def\\da{3}\n    \\def\\nb{6}\n    \\def\\db{9}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n    \\def\\na{2}\n    \\def\\da{6}\n    \\def\\nb{7}\n    \\def\\db{2}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{2}    \\def\\da{6}    \\def\\nb{7}    \\def\\db{2}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 22 - solutions\n\t\n    \\def\\na{2}\n    \\def\\da{6}\n    \\def\\nb{7}\n    \\def\\db{2}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n    \\def\\na{8}\n    \\def\\da{6}\n    \\def\\nb{1}\n    \\def\\db{2}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{8}    \\def\\da{6}    \\def\\nb{1}    \\def\\db{2}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 23 - solutions\n\t\n    \\def\\na{8}\n    \\def\\da{6}\n    \\def\\nb{1}\n    \\def\\db{2}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n    \\def\\na{5}\n    \\def\\da{1}\n    \\def\\nb{5}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{5}    \\def\\da{1}    \\def\\nb{5}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 24 - solutions\n\t\n    \\def\\na{5}\n    \\def\\da{1}\n    \\def\\nb{5}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{7}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{1}    \\def\\nb{7}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 25 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{7}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{8}\n    \\def\\nb{8}\n    \\def\\db{7}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{8}    \\def\\nb{8}    \\def\\db{7}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 26 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{8}\n    \\def\\nb{8}\n    \\def\\db{7}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n    \\def\\na{6}\n    \\def\\da{7}\n    \\def\\nb{5}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{6}    \\def\\da{7}    \\def\\nb{5}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 27 - solutions\n\t\n    \\def\\na{6}\n    \\def\\da{7}\n    \\def\\nb{5}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n    \\def\\na{2}\n    \\def\\da{8}\n    \\def\\nb{8}\n    \\def\\db{6}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{2}    \\def\\da{8}    \\def\\nb{8}    \\def\\db{6}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 28 - solutions\n\t\n    \\def\\na{2}\n    \\def\\da{8}\n    \\def\\nb{8}\n    \\def\\db{6}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n    \\def\\na{6}\n    \\def\\da{5}\n    \\def\\nb{9}\n    \\def\\db{8}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{6}    \\def\\da{5}    \\def\\nb{9}    \\def\\db{8}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 29 - solutions\n\t\n    \\def\\na{6}\n    \\def\\da{5}\n    \\def\\nb{9}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{2}\n    \\def\\db{5}\n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}\n    ",
+        "reponse": "\\def\\na{4}    \\def\\da{1}    \\def\\nb{2}    \\def\\db{5}        $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+        "details": "%version 30 - solutions\n\t\n    \\def\\na{4}\n    \\def\\da{1}\n    \\def\\nb{2}\n    \\def\\db{5}\n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}\n        \n    ",
+        "theme": "\n    Multiplier des fractions (1)",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

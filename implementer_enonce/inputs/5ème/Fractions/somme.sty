@@ -1,0 +1,79 @@
+
+30
+
+%%
+
+\def\ma{2<=x<10 x!=0 int}
+    \def\d{2<=x<10 x!=0 x!=1 int}
+    \def\mb{2<=x<10 x!=0 int}
+     \def\multa{2<=x<10 x!=0 int}
+
+%%
+
+%court
+    \def\db{\fpeval{\d*\multa}}
+
+    \acc{Effectuer} le calcul suivant en donnant le résultat sous \acc{forme simplifiée} lorsque c'est possible : 
+    $$\dfrac{\ma}{\d} + \dfrac{\mb}{\db}$$
+
+%%
+
+%help
+    \def\db{\fpeval{\d*\multa}}
+
+    % Définitions des macros
+    \def\decnum{\Decomposition[Longue]{\fpeval{\ma * \multa + \mb}}}
+    \def\decden{\Decomposition[Longue]{\fpeval{\d * \multa}}}
+	
+On remarque que $\d \times \blue{\multa} = \db$ donc on peut \acc{réduire} les deux fractions au \acc{dénominateur} $\db$.
+
+\columnbreak
+
+
+
+    \begin{align*}
+        \dfrac{\ma}{\d} + \dfrac{\mb}{\db} 
+        &=~ \dfrac{\ma \times \blue{\multa}}{\d \times \blue{\multa}} + \dfrac{\mb}{\d \times \blue{\multa}}\\
+        &=~ \dfrac{\ma \times \blue{\multa} + \mb}{\d \times \blue{\multa}}\\
+        &=~ \dfrac{\fpeval{\ma * \multa + \mb}}{\fpeval{\d * \multa}}\\
+        &=~ \Simplification{\fpeval{\ma * \multa + \mb}}{\fpeval{\d * \multa}}
+    \end{align*}
+
+%%
+
+%qcm
+    \def\db{\fpeval{\d*\multa}}
+
+    \def\maresa{\fpeval{\ma + \mb}}
+    \def\maresb{\fpeval{\ma * \db + \mb * \d}}
+    \def\maresc{\fpeval{\ma + \mb * \d / \db}}
+    \def\maresd{\fpeval{\ma * \db + \mb * \d}}
+    \def\dresa{\fpeval{\d + \db}}
+    \def\dresb{\fpeval{\d * \db}}
+    \def\dresc{\fpeval{\d}}
+    \def\dresd{\fpeval{\d + \db}}
+    \textbf{Cocher} la ou les réponses correctes : \\
+    $\dfrac{\ma}{\d} + \dfrac{\mb}{\db} = ... $\\
+    \begin{center} 
+        \listnode{\cb}{$\dfrac{\maresa}{\dresa}$} 
+        \listnode{\ccb}{$\dfrac{\maresb}{\dresb}$} 
+        \listnode{\ccb}{$\Simplification{\maresb}{\dresb}$} 
+        \listnode{\cb}{$\Simplification{\maresd}{\dresd}$} 
+    \end{center}
+
+%%
+
+\def\db{\fpeval{\d*\multa}}
+\def\maresa{\fpeval{\ma + \mb}}
+    \def\maresb{\fpeval{\ma * \db + \mb * \d}}
+    \def\maresc{\fpeval{\ma + \mb * \d / \db}}
+    \def\maresd{\fpeval{\ma * \db + \mb * \d}}
+    \def\dresa{\fpeval{\d + \db}}
+    \def\dresb{\fpeval{\d * \db}}
+    \def\dresc{\fpeval{\d}}
+    \def\dresd{\fpeval{\d + \db}}
+    $\Simplification{\fpeval{\ma * \multa + \mb}}{\fpeval{\d * \multa}}$
+
+%%
+
+Fractions

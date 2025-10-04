@@ -1,0 +1,104 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{fourier}
+\geometry{paperwidth=18cm, paperheight=9cm, margin=0.2cm}
+\def\boiteQFcouleur{blue!75!black}
+\newcommand\boiteQFQ[2]{
+\begin{tcolorbox}[nobeforeafter,title=#1,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boiteQFcouleur,coltitle=white,colback=white,height=4cm,width=7.8cm]
+#2
+\end{tcolorbox}
+}
+\def\boitereponsecouleur{gray!65!red}
+\newcommand\boiteQFA[1]{
+\begin{tcolorbox}[nobeforeafter,title=Réponses :,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boitereponsecouleur,coltitle=white,colback=white,height=4cm,width=7.8cm]
+#1
+\end{tcolorbox}
+}
+
+\newtcolorbox{itembox}[1][]{
+  baseline,
+  colframe=black,
+  colback=white,
+  boxsep=1pt,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=2pt,
+  right=2pt,
+  top=1pt,
+  bottom=1pt,
+  width=1cm,
+  #1
+}
+\newcommand{\degree}{^\circ}
+\begin{document}
+
+
+\boiteQFQ{Question 1 :}{$13 - 2\times4+5=$}
+            \boiteQFQ{Question 2 :}{Si je parcours $20$km en 15 minutes. \\
+Combien de temps me faut-il pour parcourir $47km$ ?
+Donner la réponse en \textbf{minutes et secondes}}
+            
+\boiteQFQ{Question 3 :}{\textbf{Tracer} un triangle ABC rectangle en A avec $AB = 5cm$ et $\widehat{ABC}=45\degree$.\\
+\textbf{Que peut-on dire du triangle ABC ? }\\
+\textbf{Calculer son aire.}}
+            \boiteQFA{}
+
+\newpage
+
+\boiteQFQ{Question 1 :}{$13 - 2\times4+5=$}
+            \boiteQFQ{Question 2 :}{Si je parcours $20$km en 15 minutes. \\
+Combien de temps me faut-il pour parcourir $47km$ ?
+Donner la réponse en \textbf{minutes et secondes}}
+            
+\boiteQFQ{Question 3 :}{\textbf{Tracer} un triangle ABC rectangle en A avec $AB = 5cm$ et $\widehat{ABC}=45\degree$.\\
+\textbf{Que peut-on dire du triangle ABC ? }\\
+\textbf{Calculer son aire.}}
+            \boiteQFA{
+\begin{itemize}
+\item[\begin{itembox} \textbf{Q.1} \end{itembox}] $13 - 2\times4+5=10$
+\end{itemize}
+}
+\newpage
+
+\boiteQFQ{Question 1 :}{$13 - 2\times4+5=$}
+            \boiteQFQ{Question 2 :}{Si je parcours $20$km en 15 minutes. \\
+Combien de temps me faut-il pour parcourir $47km$ ?
+Donner la réponse en \textbf{minutes et secondes}}
+            
+\boiteQFQ{Question 3 :}{\textbf{Tracer} un triangle ABC rectangle en A avec $AB = 5cm$ et $\widehat{ABC}=45\degree$.\\
+\textbf{Que peut-on dire du triangle ABC ? }\\
+\textbf{Calculer son aire.}}
+            \boiteQFA{
+\begin{itemize}
+\item[\begin{itembox} \textbf{Q.1} \end{itembox}] $13 - 2\times4+5=10$\item[\begin{itembox} \textbf{Q.2} \end{itembox}] $35$ minutes et $15$secondes.
+\end{itemize}
+}
+\newpage
+
+\boiteQFQ{Question 1 :}{$13 - 2\times4+5=$}
+            \boiteQFQ{Question 2 :}{Si je parcours $20$km en 15 minutes. \\
+Combien de temps me faut-il pour parcourir $47km$ ?
+Donner la réponse en \textbf{minutes et secondes}}
+            
+\boiteQFQ{Question 3 :}{\textbf{Tracer} un triangle ABC rectangle en A avec $AB = 5cm$ et $\widehat{ABC}=45\degree$.\\
+\textbf{Que peut-on dire du triangle ABC ? }\\
+\textbf{Calculer son aire.}}
+            \boiteQFA{
+\vspace{-0.2cm}\begin{itemize}
+\item[\begin{itembox} \textbf{Q.1} \end{itembox}] $13 - 2\times4+5=10$\item[\begin{itembox} \textbf{Q.2} \end{itembox}] $35$ minutes et $15$secondes.\item[\begin{itembox} \textbf{Q.3} \end{itembox}] ABC est \textbf{rectangle et isocèle en A}. 
+Aire=$5\times5=25$cm$^2$
+\end{itemize}
+}
+\newpage
+
+
+
+\end{document}

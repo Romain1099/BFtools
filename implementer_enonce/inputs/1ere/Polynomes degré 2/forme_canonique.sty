@@ -1,0 +1,136 @@
+
+30
+%%
+\def\coeffa{-15<=x<=15 x!=0 int}
+\def\coeffb{-15<=x<=15 x!=0 int}
+\def\coeffc{-15<=x<=15 x!=0 int}
+\def\mode{1<=x<=2 int}
+%%
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+
+
+
+
+
+%%
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(-4*\coeffa)}}
+\def\mybetanum{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}
+\def\mybetaden{\fpeval{-4*\coeffa}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}
+
+\ifthenelse{\mode=1}{
+\textbf{Rappel :} $(x - \alpha)^2 = x^2 - 2\alpha x + \alpha^2$
+
+Développons :
+\begin{align*}
+&\affiche{\coeffa}(x - \myalphasimp)^2 + \mybetasimp\\
+&= \affiche{\coeffa}\left[x^2 - 2 \times \myalphasimp \times x + \left(\myalphasimp\right)^2\right] + \mybetasimp\\
+&\approx \affiche{\coeffa}x^2 - \affiche{\fpeval{round(\coeffa*2*\myalpha,0)}}x + \affiche{\fpeval{round(\coeffa*\myalpha^2,2)}} + \affiche{\fpeval{round(\mybetanum/\mybetaden,2)}} \\
+&= \affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}
+\end{align*}
+}{
+\textbf{Détermination de la forme canonique :}
+
+Pour $ax^2 + bx + c$, la forme canonique est $a(x - \alpha)^2 + \beta$ avec :
+\begin{multicols}{2}
+    \begin{itemize}
+\item $\alpha = -\dfrac{b}{2a}$
+\item $\beta = -\dfrac{b^2 - 4ac}{4a}$
+\end{itemize}
+    \columnbreak
+    
+    Avec $a = \affiche{\coeffa}$, 
+
+$b = \affiche{\coeffb}$ et $c = \affiche{\coeffc}$ :
+\end{multicols}
+
+\columnbreak
+
+$\alpha = -\dfrac{\affiche{\coeffb}}{2 \times \affiche{\coeffa}} = \myalphafrac =$ \encadrer[defi]{$\myalphasimp$}
+
+$\beta = -\dfrac{\affiche{\coeffb}^2 - 4 \times \affiche{\coeffa} \times \affiche{\coeffc}}{4 \times \affiche{\coeffa}} = -\dfrac{\affiche{\fpeval{\coeffb*\coeffb}} - \affiche{\fpeval{4*\coeffa*\coeffc}}}{\affiche{\fpeval{4*\coeffa}}}$
+
+$\phantom{\beta } = \mybetafrac = $\encadrer[defi]{$\mybetasimp$}
+
+Donc : 
+
+\begin{center}
+\encadrer[defi]{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc} = \affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+\end{center}
+}
+
+
+
+
+
+%%
+
+
+
+
+\ifthenelse{\mode=1}{
+\begin{enumerate}
+    \item $\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$
+    \item $\affiche{\coeffa}x^2 + \affiche{\fpeval{\coeffb+1}}x + \affiche{\coeffc}$
+    \item $\affiche{\fpeval{\coeffa+1}}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$
+    \item $\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\fpeval{\coeffc+2}}$
+\end{enumerate}
+}{
+\begin{enumerate}
+    \item $\affiche{\coeffa}(x - \affiche{\myalpha})^2 + \affiche{\mybeta}$
+    \item $\affiche{\coeffa}(x - \affiche{\fpeval{\myalpha+1}})^2 + \affiche{\mybeta}$
+    \item $\affiche{\coeffa}(x - \affiche{\myalpha})^2 + \affiche{\fpeval{\mybeta+1}}$
+    \item $\affiche{\fpeval{\coeffa+1}}(x - \affiche{\myalpha})^2 + \affiche{\mybeta}$
+\end{enumerate}
+} 
+
+
+
+
+
+
+
+%%
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}\ifthenelse{\mode=1}{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$}{$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+%%
+Polynomes degré 2
+%%
+{
+{
+{
+
+{
+    "instructions": "Déterminer la forme canonique ou développer selon le mode",
+    "latex": [
+        "\\ifthenelse{\\mode=1}{Développer $\\affiche{\\coeffa}(x - \\affiche{\\myalpha})^2 + \\affiche{\\mybeta}$ \\tcfillcrep{}}{Forme canonique de $\\affiche{\\coeffa}x^2 + \\affiche{\\coeffb}x + \\affiche{\\coeffc}$ \\tcfillcrep{}}"
+    ],
+    "points": 2,
+    "correction": [
+        "\\ifthenelse{\\mode=1}{\\(\\affiche{\\coeffa}x^2 + \\affiche{\\coeffb}x + \\affiche{\\coeffc}\\)}{\\(\\affiche{\\coeffa}(x - \\affiche{\\myalpha})^2 + \\affiche{\\mybeta}\\)}"
+    ]
+}
+```
+
+}
+
+}
+
+}
+

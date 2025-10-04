@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\nombre{2134.718}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{2134.718}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 1 - solutions\n\t\n\\def\\nombre{2134.718}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\nombre{6468.096}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{6468.096}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 2 - solutions\n\t\n\\def\\nombre{6468.096}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\nombre{4996.687}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{4996.687}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 3 - solutions\n\t\n\\def\\nombre{4996.687}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\nombre{9419.269}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{9419.269}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 4 - solutions\n\t\n\\def\\nombre{9419.269}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\nombre{9622.502}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{9622.502}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 5 - solutions\n\t\n\\def\\nombre{9622.502}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\nombre{9281.663}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{9281.663}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 6 - solutions\n\t\n\\def\\nombre{9281.663}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\nombre{8711.898}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8711.898}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 7 - solutions\n\t\n\\def\\nombre{8711.898}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\nombre{8780.283}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8780.283}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 8 - solutions\n\t\n\\def\\nombre{8780.283}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\nombre{7154.84}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{7154.84}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 9 - solutions\n\t\n\\def\\nombre{7154.84}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\nombre{3660.571}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{3660.571}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 10 - solutions\n\t\n\\def\\nombre{3660.571}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\nombre{7211.351}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{7211.351}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 11 - solutions\n\t\n\\def\\nombre{7211.351}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\nombre{2441.363}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{2441.363}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 12 - solutions\n\t\n\\def\\nombre{2441.363}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\nombre{8301.1}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8301.1}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 13 - solutions\n\t\n\\def\\nombre{8301.1}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\nombre{8864.955}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8864.955}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 14 - solutions\n\t\n\\def\\nombre{8864.955}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\nombre{1863.771}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{1863.771}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 15 - solutions\n\t\n\\def\\nombre{1863.771}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\nombre{7926.093}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{7926.093}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 16 - solutions\n\t\n\\def\\nombre{7926.093}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\nombre{4280.238}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{4280.238}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 17 - solutions\n\t\n\\def\\nombre{4280.238}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\nombre{8864.982}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8864.982}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 18 - solutions\n\t\n\\def\\nombre{8864.982}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\nombre{7842.192}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{7842.192}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 19 - solutions\n\t\n\\def\\nombre{7842.192}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\nombre{2629.186}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{2629.186}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 20 - solutions\n\t\n\\def\\nombre{2629.186}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\nombre{8908.429}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8908.429}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 21 - solutions\n\t\n\\def\\nombre{8908.429}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\nombre{2840.967}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{2840.967}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 22 - solutions\n\t\n\\def\\nombre{2840.967}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\nombre{7884.048}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{7884.048}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 23 - solutions\n\t\n\\def\\nombre{7884.048}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\nombre{6915.749}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{6915.749}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 24 - solutions\n\t\n\\def\\nombre{6915.749}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\nombre{5946.052}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{5946.052}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 25 - solutions\n\t\n\\def\\nombre{5946.052}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\nombre{5124.247}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{5124.247}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 26 - solutions\n\t\n\\def\\nombre{5124.247}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\nombre{2864.513}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{2864.513}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 27 - solutions\n\t\n\\def\\nombre{2864.513}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\nombre{8221.177}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{8221.177}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 28 - solutions\n\t\n\\def\\nombre{8221.177}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\nombre{3544.602}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{3544.602}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 29 - solutions\n\t\n\\def\\nombre{3544.602}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\nombre{4785.699}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.\n\n\n",
+        "reponse": "\\def\\nombre{4785.699}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 30 - solutions\n\t\n\\def\\nombre{4785.699}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n\n",
+        "theme": "\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

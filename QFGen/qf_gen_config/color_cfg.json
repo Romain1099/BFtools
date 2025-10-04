@@ -1,0 +1,54 @@
+{
+    "global": {
+        "fontsize": 14,
+        "undo": true,
+        "wrap": "word",
+        "background": "#2e2e2e",
+        "foreground": "#ffffff",
+        "insertbackground": "#ffffff",
+        "selectbackground": "#4a4a4a",
+        "selectforeground": "#ffffff"
+    },
+    "tags": {
+        "Token.Keyword": {
+            "foreground": "#569CD6",
+            "style": "bold"
+        },
+        "Token.Comment": {
+            "foreground": "#808080",
+            "style": "italic"
+        },
+        "Token.String": {
+            "foreground": "#CE9178",
+            "style": "normal"
+        },
+        "Token.Number": {
+            "foreground": "#B5CEA8",
+            "style": "normal"
+        },
+        "braces": {
+            "foreground": "#E6C200",
+            "style": "normal"
+        },
+        "brackets": {
+            "foreground": "#ff8c00",
+            "style": "normal"
+        },
+        "number_braces": {
+            "foreground": "#B5CEA8",
+            "style": "bold"
+        },
+        "number_brackets": {
+            "foreground": "#A5B8C8",
+            "style": "bold"
+        },
+        "math": {
+            "foreground": "#B5CEA8",
+            "style": "bold"
+        },
+        "command": {
+            "foreground": "#569CD6",
+            "style": "normal"
+        }
+    }
+}

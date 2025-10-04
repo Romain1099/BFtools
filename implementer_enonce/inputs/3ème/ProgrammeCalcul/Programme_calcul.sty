@@ -1,0 +1,48 @@
+
+30
+%%
+\def\numa{INT -15<=x<15 x!=0}
+\def\numb{INT -15<=x<15 x!=0 x!=1}
+\def\numd{INT -5<=x<5 x!=0}
+%%
+\begin{multicols}{2}	
+Déterminer :
+
+\acc{a.} la valeur renvoyée si on choisit $\numd$.
+
+\acc{b.} L'expression obtenue si on choisit $x$.
+
+\columnbreak
+
+\vspace{-0.5cm}\begin{itemize}[label=$\bullet$,itemsep=0em]
+    \item \scriptsize{Choisir un nombre.}
+    \item \scriptsize{Lui ajouter $\numa$.}
+    \item \scriptsize{Multiplier le résultat par $\numb$.}
+    \item \scriptsize{Soustraire le nombre de départ au résultat.}
+\end{itemize}
+\end{multicols}
+
+%%
+\acc{a.} Si l'on choisit $\numd$ au départ on obtient 	:		
+	$$( \numd + \affiche{\numa} ) \times \affiche{\numb} - \affiche{\numd}$$	
+$$ = \affiche{\fpeval{\numd + \numa}} \times \affiche{\numb} - \affiche{\numd} 	$$
+$$= \affiche{\fpeval{(\numd + \numa)*\numb}} - \affiche{\numd}	$$
+$$ = \affiche{\fpeval{\numd * \numb + \numa * \numb - \numd}}$$	
+	
+\columnbreak	
+	
+\acc{b.} Si l'on choisit $x$ au départ on obtient :	
+	
+$$( x + \affiche{\numa} ) \times \affiche{\numb} - x = \fpeval{\numb - 1}x + \affiche{\fpeval{\numa*\numb}}$$
+
+
+%%
+
+
+%%
+\acc{a.} $\affiche{\fpeval{\numd * \numb + \numa * \numb - \numd}}$\\	\acc{b.} $\fpeval{\numb - 1}x + \affiche{\fpeval{\numa*\numb}}$
+%%
+ProgrammeCalcul
+%%
+
+

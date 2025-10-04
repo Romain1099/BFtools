@@ -1,0 +1,118 @@
+
+30
+
+%%
+
+\def\na{2<=x<150 float decimalesD1 decimalesG2}
+    \def\augmentation{-50<=x<50 x!=0 int}
+
+%%
+
+\def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { 
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+
+            \def\sign{+}
+        }
+        {
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100 ), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    Déterminer le nouveau prix d'un article coutant $\num{\na}~$\euro{} et dont le nouveau prix a une \operation\  de $\fpeval{abs(\augmentation)}~\%$
+
+%%
+
+\def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        { 
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+
+            \def\sign{+}
+        }
+        { 
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100), 2)}}
+            \def\sign{-}
+        }
+    }
+    
+    \def\afficherresultat{
+        \ifthenelse{\equal{\calculation}{\rounded}}
+          {Nouveau Prix $= \num{\rounded}$\\ } % Si égaux
+          {Nouveau Prix $= \num{\calculation} \approx \num{\rounded}$ \euro{}\\
+          On donne l'arrondi au \textbf{centième} près car il s'agit d'un prix en euros.} 
+      }
+    \checkaugmentation
+        On utilise la formule suivante : \\
+        
+        Nouveau Prix $= \text{Ancien Prix} \sign \text{Ancien Prix} \times \left( \dfrac{t}{100}\right)  $ \\
+        
+        où $t$ est le taux d'augmentation ou de réduction. 
+        
+        Ici il s'agit d'une \operation, avec
+
+ $\text{Ancien Prix} = \num{\na}$ et $t = \num{\fpeval{abs(\augmentation)}}$.
+
+\columnbreak
+        
+        Nouveau Prix $= \num{\na} \sign \num{\na} \times \dfrac{\num{\fpeval{abs(\augmentation)}}}{100}$\\
+        
+        \phantom{Nouveau Prix} $=\num{\na} \sign \num{\fpeval{\na * abs(\augmentation) / 100}} $\\
+        
+        Ainsi  :\\
+        \afficherresultat
+
+%%
+
+\textbf{Cocher} la ou les réponses correctes : \\
+    Le nouveau prix d'un article coutant $\na~$\euro{} et dont le nouveau prix a une augmentation de $\augmentation~\%$ est : 
+    \begin{center} 
+        \listnode{\cb}{$\dfrac{\na}{100}$} 
+        \listnode{\ccb}{$\num{\na} \times \dfrac{\augmentation}{100}$} 
+        \listnode{\ccb}{$\num{\fpeval{\na*(1 + \augmentation)}}$} 
+        \listnode{\cb}{$rep\ D$} 
+    \end{center}
+
+%%
+
+\def\checkaugmentation{
+        \ifthenelse{\augmentation > 0}
+        {
+            \def\operation{augmentation}
+            \def\operationtext{augmenté}
+            \def\calculation{\fpeval{\na * (1 + abs(\augmentation) / 100)}}
+            \def\rounded{\fpeval{round(\na * (1 + abs(\augmentation) / 100), 2)}}
+
+            \def\sign{+}
+        }
+        {
+            \def\operation{réduction}
+            \def\operationtext{diminué}
+            \def\calculation{\fpeval{\na * (1 - abs(\augmentation) / 100)}}
+
+            \def\rounded{\fpeval{round(\na * (1 - abs(\augmentation) / 100), 2)}}
+            \def\sign{-}
+        }
+    }
+    \checkaugmentation
+    $\num{\rounded}$ \euro{}
+
+%%
+
+Pourcentages

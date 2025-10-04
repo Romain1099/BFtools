@@ -1,0 +1,7 @@
+# Dépendances externes installables via pip
+customtkinter
+tqdm
+pygments
+pillow
+PyMuPDF
+openai

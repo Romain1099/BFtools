@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\mina{37}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{37}\\def\\heurea{18}\\def\\ajoutmin{38}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 1 - solutions\n\t\n\\def\\mina{37}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\mina{46}\n\\def\\heurea{17}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{46}\\def\\heurea{17}\\def\\ajoutmin{49}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 2 - solutions\n\t\n\\def\\mina{46}\n\\def\\heurea{17}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\mina{43}\n\\def\\heurea{21}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{43}\\def\\heurea{21}\\def\\ajoutmin{33}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 3 - solutions\n\t\n\\def\\mina{43}\n\\def\\heurea{21}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\mina{52}\n\\def\\heurea{19}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{52}\\def\\heurea{19}\\def\\ajoutmin{40}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 4 - solutions\n\t\n\\def\\mina{52}\n\\def\\heurea{19}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\mina{36}\n\\def\\heurea{21}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{36}\\def\\heurea{21}\\def\\ajoutmin{49}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 5 - solutions\n\t\n\\def\\mina{36}\n\\def\\heurea{21}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\mina{23}\n\\def\\heurea{18}\n\\def\\ajoutmin{54}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{23}\\def\\heurea{18}\\def\\ajoutmin{54}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 6 - solutions\n\t\n\\def\\mina{23}\n\\def\\heurea{18}\n\\def\\ajoutmin{54}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\mina{33}\n\\def\\heurea{20}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{33}\\def\\heurea{20}\\def\\ajoutmin{40}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 7 - solutions\n\t\n\\def\\mina{33}\n\\def\\heurea{20}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\mina{45}\n\\def\\heurea{17}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{45}\\def\\heurea{17}\\def\\ajoutmin{43}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 8 - solutions\n\t\n\\def\\mina{45}\n\\def\\heurea{17}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\mina{57}\n\\def\\heurea{20}\n\\def\\ajoutmin{53}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{57}\\def\\heurea{20}\\def\\ajoutmin{53}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 9 - solutions\n\t\n\\def\\mina{57}\n\\def\\heurea{20}\n\\def\\ajoutmin{53}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\mina{34}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{34}\\def\\heurea{18}\\def\\ajoutmin{38}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 10 - solutions\n\t\n\\def\\mina{34}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\mina{32}\n\\def\\heurea{20}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{32}\\def\\heurea{20}\\def\\ajoutmin{43}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 11 - solutions\n\t\n\\def\\mina{32}\n\\def\\heurea{20}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\mina{37}\n\\def\\heurea{21}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{37}\\def\\heurea{21}\\def\\ajoutmin{33}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 12 - solutions\n\t\n\\def\\mina{37}\n\\def\\heurea{21}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\mina{31}\n\\def\\heurea{17}\n\\def\\ajoutmin{36}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{31}\\def\\heurea{17}\\def\\ajoutmin{36}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 13 - solutions\n\t\n\\def\\mina{31}\n\\def\\heurea{17}\n\\def\\ajoutmin{36}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\mina{46}\n\\def\\heurea{18}\n\\def\\ajoutmin{46}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{46}\\def\\heurea{18}\\def\\ajoutmin{46}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 14 - solutions\n\t\n\\def\\mina{46}\n\\def\\heurea{18}\n\\def\\ajoutmin{46}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\mina{46}\n\\def\\heurea{19}\n\\def\\ajoutmin{52}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{46}\\def\\heurea{19}\\def\\ajoutmin{52}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 15 - solutions\n\t\n\\def\\mina{46}\n\\def\\heurea{19}\n\\def\\ajoutmin{52}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\mina{27}\n\\def\\heurea{20}\n\\def\\ajoutmin{56}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{27}\\def\\heurea{20}\\def\\ajoutmin{56}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 16 - solutions\n\t\n\\def\\mina{27}\n\\def\\heurea{20}\n\\def\\ajoutmin{56}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\mina{38}\n\\def\\heurea{19}\n\\def\\ajoutmin{31}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{38}\\def\\heurea{19}\\def\\ajoutmin{31}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 17 - solutions\n\t\n\\def\\mina{38}\n\\def\\heurea{19}\n\\def\\ajoutmin{31}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\mina{48}\n\\def\\heurea{21}\n\\def\\ajoutmin{47}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{48}\\def\\heurea{21}\\def\\ajoutmin{47}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 18 - solutions\n\t\n\\def\\mina{48}\n\\def\\heurea{21}\n\\def\\ajoutmin{47}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\mina{60}\n\\def\\heurea{19}\n\\def\\ajoutmin{35}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{60}\\def\\heurea{19}\\def\\ajoutmin{35}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 19 - solutions\n\t\n\\def\\mina{60}\n\\def\\heurea{19}\n\\def\\ajoutmin{35}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\mina{60}\n\\def\\heurea{18}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{60}\\def\\heurea{18}\\def\\ajoutmin{57}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 20 - solutions\n\t\n\\def\\mina{60}\n\\def\\heurea{18}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\mina{48}\n\\def\\heurea{18}\n\\def\\ajoutmin{59}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{48}\\def\\heurea{18}\\def\\ajoutmin{59}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 21 - solutions\n\t\n\\def\\mina{48}\n\\def\\heurea{18}\n\\def\\ajoutmin{59}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\mina{35}\n\\def\\heurea{19}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{35}\\def\\heurea{19}\\def\\ajoutmin{33}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 22 - solutions\n\t\n\\def\\mina{35}\n\\def\\heurea{19}\n\\def\\ajoutmin{33}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\mina{43}\n\\def\\heurea{21}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{43}\\def\\heurea{21}\\def\\ajoutmin{57}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 23 - solutions\n\t\n\\def\\mina{43}\n\\def\\heurea{21}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\mina{25}\n\\def\\heurea{21}\n\\def\\ajoutmin{60}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{25}\\def\\heurea{21}\\def\\ajoutmin{60}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 24 - solutions\n\t\n\\def\\mina{25}\n\\def\\heurea{21}\n\\def\\ajoutmin{60}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\mina{47}\n\\def\\heurea{17}\n\\def\\ajoutmin{32}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{47}\\def\\heurea{17}\\def\\ajoutmin{32}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 25 - solutions\n\t\n\\def\\mina{47}\n\\def\\heurea{17}\n\\def\\ajoutmin{32}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\mina{55}\n\\def\\heurea{18}\n\\def\\ajoutmin{48}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{55}\\def\\heurea{18}\\def\\ajoutmin{48}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 26 - solutions\n\t\n\\def\\mina{55}\n\\def\\heurea{18}\n\\def\\ajoutmin{48}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\mina{38}\n\\def\\heurea{21}\n\\def\\ajoutmin{55}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{38}\\def\\heurea{21}\\def\\ajoutmin{55}\\def\\ajoutheure{3}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 27 - solutions\n\t\n\\def\\mina{38}\n\\def\\heurea{21}\n\\def\\ajoutmin{55}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\mina{53}\n\\def\\heurea{21}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{53}\\def\\heurea{21}\\def\\ajoutmin{57}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 28 - solutions\n\t\n\\def\\mina{53}\n\\def\\heurea{21}\n\\def\\ajoutmin{57}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\mina{56}\n\\def\\heurea{20}\n\\def\\ajoutmin{41}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{56}\\def\\heurea{20}\\def\\ajoutmin{41}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 29 - solutions\n\t\n\\def\\mina{56}\n\\def\\heurea{20}\n\\def\\ajoutmin{41}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\mina{42}\n\\def\\heurea{17}\n\\def\\ajoutmin{35}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.\n\n",
+        "reponse": "\\def\\mina{42}\\def\\heurea{17}\\def\\ajoutmin{35}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+        "details": "%version 30 - solutions\n\t\n\\def\\mina{42}\n\\def\\heurea{17}\n\\def\\ajoutmin{35}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.\n\n",
+        "theme": "\nDurées\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

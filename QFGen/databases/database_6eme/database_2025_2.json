@@ -1,0 +1,272 @@
+{
+    "QF_03_02_2025": {
+        "classe": "6ème",
+        "date": "03_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\na{7}\n    \n\n\\def\\nb{30}\n    \n\n\\def\\nc{56}\n    \n\t\\hfill \\begin{minipage}[t]{0.4\\linewidth}\\phantom{a}\t\t\t    \\vspace{-0.4cm}\\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage} \\hfill \\begin{minipage}[t]{0.55\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}\\hfill",
+                "reponse": "\\def\\na{7}    \\def\\nb{30}    \\def\\nc{56}    $\\na~\\text{h}~\\nb\\text{min}$ ou $\\affiche{\\fpeval{\\na + 12}}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 3 - solutions\n\t\n\\def\\na{7}\n    \n\n\\def\\nb{30}\n    \n\n\\def\\nc{56}\n    \n\n\n\t\nIl est $\\na~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\affiche{\\fpeval{\\na + 12}}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\n\\def\\ma{281.2}\t\n\n\n\n\n\n\n\n\\def\\mb{25.2}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{281.2}\t\\def\\mb{25.2}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 8 - solutions\n\t\n\n\\def\\ma{281.2}\t\n\n\n\n\n\n\n\n\\def\\mb{25.2}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\ma{458.63}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{458.63}\t\\def\\mb{100}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 10 - solutions\n\t\n\\def\\ma{458.63}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_02_2025": {
+        "classe": "6ème",
+        "date": "06_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 9 - Court\n\t\n\n\\def\\ma{766.88}\t\n\n\n\n\n\n\n\n\\def\\mb{51.4}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{766.88}\t\\def\\mb{51.4}\t\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 9 - solutions\n\t\n\n\\def\\ma{766.88}\t\n\n\n\n\n\n\n\n\\def\\mb{51.4}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\ma{198.08}\t\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{198.08}\t\\def\\mb{10}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 11 - solutions\n\t\n\\def\\ma{198.08}\t\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{22}\\def\\nb{18}\\def\\nc{44}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 9 - solutions\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_06_02_2025": {
+        "classe": "6ème",
+        "date": "06_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\ma{84.1}\t\n\n\n\n\n\n\n\n\\def\\mb{54.321}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{84.1}\t\t\\def\\mb{54.321}\t\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\ma{84.1}\t\n\n\n\n\n\n\n\n\\def\\mb{54.321}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\ma{380.88}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{380.88}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 12 - solutions\n\t\n\\def\\ma{380.88}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\na{24}\n\\def\\nb{1}\n\\def\\nc{40}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{24}\\def\\nb{1}\\def\\nc{40}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 10 - solutions\n\t\n\\def\\na{24}\n\\def\\nb{1}\n\\def\\nc{40}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_07_02_2025": {
+        "classe": "6ème",
+        "date": "07_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numa{47.6}\n\\def\\numb{11}\n\n\t\n\n\\acc{Effectuer la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{47.6}\\def\\numb{11}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 4 - solutions\n\t\n\\def\\numa{47.6}\n\\def\\numb{11}\n\n\t\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe quotient exact est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\na{20}\n\\def\\nb{54}\n\\def\\nc{16}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{20}\\def\\nb{54}\\def\\nc{16}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 11 - solutions\n\t\n\\def\\na{20}\n\\def\\nb{54}\n\\def\\nc{16}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\ma{307.38}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{307.38}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 13 - solutions\n\t\n\\def\\ma{307.38}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_09_02_2025": {
+        "classe": "6ème",
+        "date": "07_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\coef{13}\n\\def\\facta{20}\n\\def\\factb{3}\n\n\t\n\n\\acc{Développer l'expression} $\\affiche{\\coef}\\left(\\affiche{\\facta}x + \\affiche{\\factb}\\right)$",
+                "reponse": "\\def\\coef{13}\\def\\facta{20}\\def\\factb{3}$\\affiche{\\fpeval{\\coef * 5}}x + \\affiche{\\fpeval{\\coef * \\factb}}$",
+                "details": "%version 1 - solutions\n\t\n\\def\\coef{13}\n\\def\\facta{20}\n\\def\\factb{3}\n\n\t\n\n$\\affiche{\\coef}\\left(\\affiche{\\facta} + \\affiche{\\factb}\\right) = \\affiche{\\coef} \\cdot \\affiche{\\facta} + \\affiche{\\coef} \\cdot \\affiche{\\factb} = \\affiche{\\fpeval{\\coef * 5}}x + \\affiche{\\fpeval{\\coef * \\factb}}$",
+                "theme": "Calcul littéral",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\ma{198.08}\t\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{198.08}\t\\def\\mb{10}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 11 - solutions\n\t\n\\def\\ma{198.08}\t\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{22}\\def\\nb{18}\\def\\nc{44}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 9 - solutions\n\t\n\\def\\na{22}\n\\def\\nb{18}\n\\def\\nc{44}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_24_02_2025": {
+        "classe": "6ème",
+        "date": "24_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 15 - Court\n\t\n\\def\\ma{335.86}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{335.86}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 15 - solutions\n\t\n\\def\\ma{335.86}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numa{50.5}\n\\def\\numb{13}\n\n\t\n\n\\acc{Effectuer la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{50.5}\\def\\numb{13}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 5 - solutions\n\t\n\\def\\numa{50.5}\n\\def\\numb{13}\n\n\t\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe quotient exact est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\na{5}\n\\def\\nb{18}\n\\def\\nc{38}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{5}\\def\\nb{18}\\def\\nc{38}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 12 - solutions\n\t\n\\def\\na{5}\n\\def\\nb{18}\n\\def\\nc{38}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_25_02_2025": {
+        "classe": "6ème",
+        "date": "25_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\na{12}\n\\def\\nb{5}\n\\def\\nc{33}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{12}\\def\\nb{5}\\def\\nc{33}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 13 - solutions\n\t\n\\def\\na{12}\n\\def\\nb{5}\n\\def\\nc{33}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\numa{73.36}\n\\def\\numb{12}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{73.36}\\def\\numb{12}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 9 - solutions\n\t\n\\def\\numa{73.36}\n\\def\\numb{12}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\ma{88.83}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{88.83}\t\\def\\mb{100}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 12 - solutions\n\t\n\\def\\ma{88.83}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_28_02_2025": {
+        "classe": "6ème",
+        "date": "28_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 14 - Court\n\t\n\\def\\na{18}\n\\def\\nb{24}\n\\def\\nc{12}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{18}\\def\\nb{24}\\def\\nc{12}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 14 - solutions\n\t\n\\def\\na{18}\n\\def\\nb{24}\n\\def\\nc{12}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 17 - Court\n\t\n\\def\\ma{493.28}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{493.28}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 17 - solutions\n\t\n\\def\\ma{493.28}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\numa{69.43}\n\\def\\numb{17}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{69.43}\\def\\numb{17}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 10 - solutions\n\t\n\\def\\numa{69.43}\n\\def\\numb{17}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_28_02_2025": {
+        "classe": "6ème",
+        "date": "28_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 10 - Court\n\t\n\n\\def\\ma{437.13}\t\n\n\n\n\n\n\n\n\\def\\mb{36.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{437.13}\t\\def\\mb{36.8}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 10 - solutions\n\t\n\n\\def\\ma{437.13}\t\n\\def\\mb{36.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\ma{497.84}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{497.84}\t\\def\\mb{100}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 13 - solutions\n\t\n\\def\\ma{497.84}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\numa{34.7}\n\\def\\numb{5}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{34.7}\\def\\numb{5}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 11 - solutions\n\t\n\\def\\numa{34.7}\n\\def\\numb{5}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF2_28_02_2025": {
+        "classe": "6ème",
+        "date": "28_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 15 - Court\n\t\n\\def\\na{7}\n\\def\\nb{11}\n\\def\\nc{29}\n\n\t\n\\vspace{-0.35cm}\\begin{minipage}{0.5\\linewidth} \\Horloge[Secondes=false]{\\na:\\nb} \\end{minipage}\\hfill\\begin{minipage}{0.42\\linewidth}Quelle heure affiche l'horloge ?\\end{minipage}",
+                "reponse": "\\def\\na{7}\\def\\nb{11}\\def\\nc{29}$\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$ ou $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 15 - solutions\n\t\n\\def\\na{7}\n\\def\\nb{11}\n\\def\\nc{29}\n\n\t\n  Il est $\\intcalcMod{\\na}{24}~\\text{h}~\\nb\\text{min}$\\\\\tou bien :  $\\intcalcMod{\\fpeval{\\na + 12}}{24}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 24 - Court\n\t\n\\def\\ma{227.43}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{227.43}\t\\def\\mb{1000}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 24 - solutions\n\t\n\\def\\ma{227.43}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\numa{55.73}\n\\def\\numb{23}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{55.73}\\def\\numb{23}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 12 - solutions\n\t\n\\def\\numa{55.73}\n\\def\\numb{23}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    }
+}

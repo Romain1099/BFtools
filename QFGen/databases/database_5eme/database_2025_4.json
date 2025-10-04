@@ -1,0 +1,29 @@
+{
+    "QF_01_04_2025": {
+        "classe": "5ème",
+        "date": "01_04_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 29 - Court\n\t\n\\def\\na{8}\n\\def\\addna{6}\n\\def\\quantite{910}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{8}\\def\\addna{6}\\def\\quantite{910}\\def\\marchand{marchand}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 29 - solutions\n\t\n\\def\\na{8}\n\\def\\addna{6}\n\\def\\quantite{910}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 19 - Court\n\t\n\n\\def\\n{2}\n    \\def\\d{8}\n    \\def\\nb{3}\n     \\def\\multa{9}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{2}    \\def\\d{8}    \\def\\nb{3}     \\def\\multa{9}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 19 - solutions\n\t\n\n\\def\\n{2}\n    \\def\\d{8}\n    \\def\\nb{3}\n     \\def\\multa{9}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 17 - Court\n\t\n\\def\\he{4}\n\\def\\mi{58}\n\\def\\dia{80}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{4}\\def\\mi{58}\\def\\dia{80}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 17 - solutions\n\t\n\\def\\he{4}\n\\def\\mi{58}\n\\def\\dia{80}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    }
+}

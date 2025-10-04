@@ -1,0 +1,608 @@
+{
+    "QF_22_05_2024": {
+        "classe": "6ème",
+        "date": "22/05/2024",
+        "questions": {
+            "question1": {
+                "enonce": "$13 - 2\\times4+5=$",
+                "reponse": "$13 - 2\\times4+5=10$",
+                "details": "",
+                "theme": "Opérations variées"
+            },
+            "question2": {
+                "enonce": "Si je parcours $20$km en 15 minutes. \\\\\nCombien de temps me faut-il pour parcourir $47km$ ?\nDonner la réponse en \\textbf{minutes et secondes}",
+                "reponse": "$35$ minutes et $15$ secondes.",
+                "details": "",
+                "theme": "Proportionnalité"
+            },
+            "question3": {
+                "enonce": "\\textbf{Tracer} un triangle ABC rectangle en A avec $AB = 5cm$ et $\\widehat{ABC}=45\\degree$.\n\\textbf{Que peut-on dire du triangle ABC ? }\n\\textbf{Calculer son aire.}",
+                "reponse": "ABC est un triangle \\textbf{rectangle et isocèle en A}. \\\\\nAire=$5\\times5=25$cm$^2$",
+                "details": "",
+                "theme": "Périmètres et aires"
+            }
+        }
+    },
+    "QF_24_05_2024": {
+        "classe": "6ème",
+        "date": "24/05/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} la somme des deux nombres suivants : $23\\,871$ et $45\\,932$.",
+                "reponse": "La \\textbf{solution} est donc $69\\,803$.",
+                "details": "\\textbf{Calculons} la somme des deux nombres. \n\n\\[ 23\\,871 + 45\\,932 \\]\n\n\\[ \\begin{aligned}\n&= 23\\,871\\\\\n&\\quad + 45\\,932\\\\\n&\\textcolor{red}{= 69\\,803}\n\\end{aligned} \\]\n\nLa \\textbf{solution} est donc $69\\,803$.",
+                "theme": "addition",
+                "prompt": "question pour poser une opération d'addition de nombres entiers avec 5 chiffres dans leur écriture décimale"
+            },
+            "question2": {
+                "enonce": "Un bus effectue un voyage de $2h36$ et arrive à $15h35$.\\\\\nA quelle heure est-il parti ?",
+                "reponse": "$12h59$",
+                "details": "On commence par retirer 2h35 à l'horaire d'arrivée puisque cela fait arriver sur une \"heure juste\". \\\\\n$15h35 - 2h35=13h$.\\\\\nPuis : $13h - 1min =12h59$.",
+                "theme": "Calculs de durées",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "Calculer l'aire de la figure suivante :\n\n\\vspace{-0.5cm}\\begin{tikzpicture}[baseline,baseline=(current bounding box.north),scale = 0.3]\n\n    \\tikzset{\n      point/.style={\n        thick,\n        draw,\n        cross out,\n        inner sep=0pt,\n        minimum width=5pt,\n        minimum height=5pt,\n      },\n    }\n    \\clip (-1.2,-1.1) rectangle (14.759090909090908,7.7);\n    \t\\draw[color ={black}] (0,0)--(0,7);\n\t\\draw[color ={black}] (0,7)--(10.659090909090908,7);\n\t\\draw[color ={black}] (0,0)--(10.659090909090908,0);\n\t\\draw[color={black}] (10.659090909090908,0) arc (-90:90:3.5) ;\n\t\\draw[color ={black}, dashed ] (10.659090909090908,7)--(10.659090909090908,0);\n\t\\draw[color ={black}, dashed ] (10.659090909090908,3.5)--(14.145772352412017,3.1949549003831965);\n\t\\draw[color={black},line width = 0.5] (0,7)--(0,6.6)--(0.4,6.6)--(0.4,7)--cycle;\n\t\\draw[color={black},line width = 0.5] (0,0)--(0.4,0)--(0.4,0.4)--(0,0.4)--cycle;\n\t\\draw [color={black}] (5.33,0) node[anchor = center,scale=1, rotate = 0] {/};\n\t\\draw [color={black}] (5.33,7) node[anchor = center,scale=1, rotate = 0] {/};\n\t\n\t\\draw[color ={{black}},line width = 0.625,opacity = 0.8] (10.471590909090908,7.1875)--(10.846590909090908,6.8125);\n\t\\draw[color ={{black}},line width = 0.625,opacity = 0.8] (10.471590909090908,6.8125)--(10.846590909090908,7.1875);\n\t\\draw[color ={{black}},line width = 0.625,opacity = 0.8] (10.471590909090908,0.1875)--(10.846590909090908,-0.1875);\n\t\\draw[color ={{black}},line width = 0.625,opacity = 0.8] (10.471590909090908,-0.1875)--(10.846590909090908,0.1875);\n\t\\draw[color={black},line width = 0.5] (10.66,7)--(10.26,7)--(10.26,6.6)--(10.66,6.6)--cycle;\n\t\\draw[color={black},line width = 0.5] (10.66,0)--(10.26,0)--(10.26,0.4)--(10.66,0.4)--cycle;\n\t\\draw [color={black}] (12.4,3.35) node[anchor = center,scale=1, rotate = -4] {//};\n\t\\draw [color={black}] (10.66,1.75) node[anchor = center,scale=1, rotate = -269] {//};\n\t\\draw [color={black}] (10.66,5.25) node[anchor = center,scale=1, rotate = -91] {//};\n\t\\draw [color={black}] (-0.7,3.5) node[anchor = center,scale=1.1, rotate = -89.99987] {\\scriptsize 4,4 cm};\n\t\\draw [color={black}] (5.33,0.7) node[anchor = center,scale=1.1, rotate = 0] {\\scriptsize 6,7 cm};\n\t\\draw [color={black}] (12.46,4.04) node[anchor = center,scale=1.1, rotate = -4.99917] {\\scriptsize 2,2 cm};\n\n\\end{tikzpicture}",
+                "reponse": "$\\mathcal{A}\\approx {\\boldsymbol{37}}\\,~\\text{cm}^2$.",
+                "details": "La figure est composée d'un rectangle de 6,7 cm par 4,4 cm et d'un demi disque de rayon 2,2 cm.\\\\$\\mathcal{A}=(6{,}7\\times4{,}4)+(2{,}2\\times2{,}2\\times\\pi \\div 2) \\approx 37{,}082\\,~\\text{cm}^2$\\\\Une valeur approchée au cm$^2$ est donc $\\mathcal{A}\\approx {\\boldsymbol{37}}\\,~\\text{cm}^2$.\\",
+                "theme": "Périmètres et aires",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_30_05_2024": {
+        "classe": "6ème",
+        "date": "30/05/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Donner l'écriture décimale de $\\dfrac{1234}{100}$",
+                "reponse": "$12{,}34$",
+                "details": "",
+                "theme": "Numération"
+            },
+            "question2": {
+                "enonce": "Donner l'aire suivante en $\\text{m}^2$ :\\\\\n$25{,}754\\text{cm}^2$",
+                "reponse": "$0{,}0025754$m$^{2}$",
+                "details": "",
+                "theme": "Conversions"
+            },
+            "question3": {
+                "enonce": "Arrondir aux centièmes le nombre suivants : \\\\\n\\textbf{a.} $4{,}54768\\approx$ \\\\\n\\textbf{b.} $75{,}69214 \\approx$",
+                "reponse": "\\textbf{a.} $4{,}54768\\approx 4{,}55$ \\\\\n\\textbf{b.} $75{,}69214 \\approx 75{,}69$",
+                "details": "\\textbf{a.} Le chiffre des millièmes est $7>5$ donc on augmente de 1 le chiffre des centièmes. L'arrondi demandé est $4{,}55$.\\\\\n\n\\textbf{b.} Le chiffre des millièmes est $2<5$ donc on ne modifie pas le chiffre des centièmes. L'arrondi demandé est $75{,}69$.",
+                "theme": "Arrondis"
+            }
+        }
+    },
+    "QF_04_06_2024": {
+        "classe": "6ème",
+        "date": "04/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Le triangle $KXY$ est-il \\textbf{constructible} ? \\\\\n\\hfill $KX = 21$ cm \\hfill $KY = 14$ cm \\hfill $XY = 50$ cm",
+                "reponse": "Le triangle $KXY$ n'est \\textbf{pas constructible}",
+                "details": "Pour qu'un triangle soit \\textbf{constructible}, il faut que la \\textbf{somme} des longueurs \\textbf{deux plus petits côtés} soit \\textbf{supérieure} à la longueur du \\textbf{plus grand côté}.\\\\\nPuisque $21 + 14 = 35 < 50$ alors :\\\\\nLe triangle $KXY$ n'est \\textbf{pas constructible}",
+                "theme": "Triangles"
+            },
+            "question2": {
+                "enonce": "$4$ cubes identiques empilés ont une hauteur de $16$ cm. \\\\ \nQuelle est la hauteur de $6$ cubes empilés?",
+                "reponse": "$24$ cm",
+                "details": "On calcule la \\textbf{hauteur d'une cube} : \\\\\n$16\\div 4=4$ cm. \\\\\n$6$ cubes empilés mesureront : $6\\times 4=24cm$.",
+                "theme": "Proportionnalité"
+            },
+            "question3": {
+                "enonce": "\\textbf{Donner l’abscisse du point F de deux manières différentes}\n\\begin{center}\n \\begin{tikzpicture}[scale=2]\n    % Axe des x\n    \\draw[->] (-0.2,0) -- (3.2,0);\n    \n    % Graduation et labels\n    \\foreach \\x in {0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3} {\n        \\draw (\\x,2pt) -- (\\x,-2pt); % Graduation\n    }\n    \\draw[line width=1.2pt] (0,2pt) -- (0,-2pt);\n     \\draw[line width=1.2pt] (1,2pt) -- (1,-2pt);\n      \\draw[line width=1.2pt] (2,2pt) -- (2,-2pt);\n       \\draw[line width=1.2pt] (3,2pt) -- (3,-2pt);\n    % Labels\n    \\draw (0,-0.1) node[below] {0};\n    \\draw (1,-0.1) node[below] {1};\n    \\draw (2,-0.1) node[below] {2};\n    \\draw (3,-0.1) node[below] {3};\n\n    \n    % Point F\n    \\draw[fill] (1.8,0) circle [radius=1pt];\n    \\draw (1.8,0) node[above] {F};\n\\end{tikzpicture}\n\\end{center}",
+                "reponse": "$F(1{,}8) \\text{ ou } F(\\dfrac{9}{5})$",
+                "details": "On peut remarquer que chaque \\textbf{unité} est divisée en $5$ \\textbf{parts égales}.\\\\\nChaque graduation correspond à $\\mathbf{0{,}2}$ ou $\\mathbf{\\dfrac{1}{5}}$. \\\\\nOn peut donc écrire l'abscisse de $F$ de deux manières différentes : \n\\[\n    F(1{,}8) \\text{ ou } F(\\dfrac{9}{5})\n\\]",
+                "theme": "Numération"
+            }
+        }
+    },
+    "QF_05_06_2024": {
+        "classe": "6ème",
+        "date": "05/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Quel est le triple de $31{,}9$ ?",
+                "reponse": "$95{,}7$",
+                "details": "Le triple de $31{,}9$ est $3 \\times 31{,}9=95{,}7$",
+                "theme": "Numération",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "Une voiture roule à une vitesse constante de $100$ km/h. \\\\\nCombien de kilomètres parcourt-elle en\\\\ $1$ h et $30$ min ?",
+                "reponse": "$150$ km",
+                "details": "$100\\times 1{,}5 = 150$ km",
+                "theme": "Proportionnalité - Durées",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "Déterminer l'abscisse du point A situé ci-dessous :\\\\\\begin{tikzpicture}[baseline,scale = 0.5]\n\n    \\tikzset{\n      point/.style={\n        thick,\n        draw,\n        cross out,\n        inner sep=0pt,\n        minimum width=5pt,\n        minimum height=5pt,\n      },\n    }\n    \\clip (-1,-1) rectangle (14,1.5);\n    \t\\draw[color ={black},line width = 2,|->] (0,0)--(13.100000000000001,0);\n\t\\draw[color ={black},line width = 2] (0,-0.25)--(0,0.25);\n\t\\draw[color ={black},opacity = 0.8] (0.75,-0.16666666666666666)--(0.75,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (1.5,-0.16666666666666666)--(1.5,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (2.25,-0.16666666666666666)--(2.25,0.16666666666666666);\n\t\\draw[color ={black},line width = 2] (3,-0.25)--(3,0.25);\n\t\\draw[color ={black},opacity = 0.8] (3.75,-0.16666666666666666)--(3.75,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (4.5,-0.16666666666666666)--(4.5,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (5.25,-0.16666666666666666)--(5.25,0.16666666666666666);\n\t\\draw[color ={black},line width = 2] (6,-0.25)--(6,0.25);\n\t\\draw[color ={black},opacity = 0.8] (6.75,-0.16666666666666666)--(6.75,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (7.5,-0.16666666666666666)--(7.5,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (8.25,-0.16666666666666666)--(8.25,0.16666666666666666);\n\t\\draw[color ={black},line width = 2] (9,-0.25)--(9,0.25);\n\t\\draw[color ={black},opacity = 0.8] (9.75,-0.16666666666666666)--(9.75,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (10.5,-0.16666666666666666)--(10.5,0.16666666666666666);\n\t\\draw[color ={black},opacity = 0.8] (11.25,-0.16666666666666666)--(11.25,0.16666666666666666);\n\t\\draw[color ={black},line width = 2] (12,-0.25)--(12,0.25);\n\t\\draw (0,-0.7) node[anchor = center] {\\footnotesize \\color{black}{$0$}};\n\t\\draw (3,-0.7) node[anchor = center] {\\footnotesize \\color{black}{$1$}};\n\t\\draw (6,-0.7) node[anchor = center] {\\footnotesize \\color{black}{$2$}};\n\t\\draw (9,-0.7) node[anchor = center] {\\footnotesize \\color{black}{$3$}};\n\t\\draw (12,-0.7) node[anchor = center] {\\footnotesize \\color{black}{$4$}};\n\t\\draw[color ={{blue}},line width = 1.25,opacity = 0.8] (4.25,0.25)--(4.75,-0.25);\\draw[color ={{blue}},line width = 1.25,opacity = 0.8] (4.25,-0.25)--(4.75,0.25);\n\t\\draw (4.5,0.8) node[anchor = center] {\\normalsize \\color{blue}{$A$}};\n\n\\end{tikzpicture}",
+                "reponse": "$\\dfrac{6}{4}$",
+                "details": "L'abscisse du point A est $\\dfrac{6}{4}$",
+                "theme": "Numération - Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_06_2024": {
+        "classe": "6ème",
+        "date": "06/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "$34$ centaines et $69$ dizaines = ?",
+                "reponse": "$4090$",
+                "details": "$34 \\times 100 + 69 \\times 10 = 4090$",
+                "theme": "Numération"
+            },
+            "question2": {
+                "enonce": "Quel est le plus grand nombre entier de sept chiffres que l'on peut écrire en utilisant, deux fois maximum, les quatre chiffres : $2$, $0$, $2$ et $4$ ?",
+                "reponse": "$4\\,422\\,220$",
+                "details": "Le plus grand nombre entier est $4\\,422\\,220$",
+                "theme": "Proportionnalité - Durées"
+            },
+            "question3": {
+                "enonce": "Donner l'écriture exacte du nombre qui, multiplié par $11$ donne $23$.",
+                "reponse": "$\\dfrac{23}{11}$",
+                "details": "C'est l'écriture sous forme de \\textbf{fraction} qui est l'écriture exacte : $\\dfrac{23}{11}$. \\\\\nEn effet son écriture décimale n'a \\textbf{pas de fin}, on ne peut en donner qu'une  \\textbf{valeur approchée} : \n$\\dfrac{23}{11}\\approx \\fracrep{23}{11}$",
+                "theme": "Numération - Fractions"
+            }
+        }
+    },
+    "QF_07_06_2024": {
+        "classe": "6ème",
+        "date": "07/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Un sac de 3kg de pommes coûte 6€. Combien coûte un sac de 8kg de pommes si le prix est proportionnel au poids ?",
+                "reponse": "16€",
+                "details": "La proportionnalité implique que le rapport entre le montant payé et le poids est constant. On cherche le coût de 8 kg de pommes :\\[\\dfrac{6\\,€}{3\\,kg} = \\dfrac{x\\,€}{8\\,kg}\\]\\[3x = 6 \\times 8\\]\\[3x = 48\\]\\[x = \\dfrac{48}{3}\\]\\[x = 16\\,€\\]",
+                "theme": "Proportionnalité"
+            },
+            "question2": {
+                "enonce": "Classer les fractions suivantes dans l'ordre croissant : \\( \\dfrac{3}{4}, \\dfrac{2}{3}, \\dfrac{5}{6}, \\dfrac{1}{2} \\)",
+                "reponse": "\\( \\dfrac{1}{2} < \\dfrac{2}{3} < \\dfrac{3}{4} < \\dfrac{5}{6} \\)",
+                "details": "Pour comparer des fractions, on peut les convertir en fractions de même dénominateur ou en décimales :\\[\\dfrac{1}{2} = 0{,}5\\]\\[\\dfrac{2}{3} \\approx 0{,}6667\\]\\[\\dfrac{3}{4} = 0{,}75\\]\\[\\dfrac{5}{6} \\approx 0{,}8333\\]\\Ainsi : \\( \\dfrac{1}{2} < \\dfrac{2}{3} < \\dfrac{3}{4} < \\dfrac{5}{6} \\)",
+                "theme": "Fractions"
+            },
+            "question3": {
+                "enonce": "Quels sont les multiples de 4 parmi les nombres suivants : 8, 12, 15, 20, 25, 28 ?",
+                "reponse": "8, 12, 20, 28",
+                "details": "Un multiple de 4 est un nombre qui peut être écrit sous la forme \\(4k\\) où \\(k\\) est un entier.\\[\\text{Les multiples de 4 parmi ces nombres sont : } 8, 12, 20, 28\\]\\because\\ ( 8 = 4 \\times 2, 12 = 4 \\times 3, 20 = 4 \\times 5, 28 = 4 \\times 7 ) ",
+                "theme": "Multiples et Diviseurs"
+            }
+        }
+    },
+    "QF_11_06_2024": {
+        "classe": "6ème",
+        "date": "11/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Compléter l'égalité de \\textbf{fractions} suivante : \\\\\n\\[\\dfrac{3}{7} + \\dfrac{2}{7} = \\dfrac{\\phantom{a}\\textbf{?}\\phantom{a}}{7}\\]",
+                "reponse": "$\\dfrac{3}{7} + \\dfrac{2}{7} = \\dfrac{5}{7}$",
+                "details": "Nous additionnons les \\textbf{numérateurs} car les \\textbf{dénominateurs} sont égaux :\\\\\n$\\dfrac{3}{7} + \\dfrac{2}{7} = \\dfrac{5}{7}$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\textbf{Compléter} : \\\\\nUn plan est à l'\\textit{échelle} $1:25\\,000$, donc $1$ cm sur la carte \\textbf{représente} ... km.",
+                "reponse": "L'échelle est $1:25\\,000$, donc $1$ cm sur la carte \\textbf{représente} $0{,}25$ km.",
+                "details": "D'après l'échelle donnée : $1$ cm correspond à $25\\,000$ cm. \\\\\n\\textbf{Conversion} : $25\\,000$ cm $ =0{,}25$ km.\\\\\n\nLa phrase correcte est : \\\\\n\\textit{L'échelle} est $1:25\\,000$, donc $1$ cm sur la carte \\textbf{représente} $0{,}25$ km.\\\\",
+                "theme": "Échelle",
+                "prompt": "Un exercice demandant de traduire l'échelle d'un plan en complétant une phrase du type l'échelle est .. donc 1 cm sur la carte représente ... ."
+            },
+            "question3": {
+                "enonce": "\\textbf{Poser} et \\textbf{calculer} le produit de $12{,}7$ et $3{,}8$ sans calculatrice.",
+                "reponse": "\\(\n12{,}7 \\times 3{,}8 = 48{,}26\n\\)",
+                "details": "\\[\n\\opmul[decimalsepsymbol={,}]{12.7}{3.8}\n\\]",
+                "theme": "Produit",
+                "prompt": "Poser et calculer une multiplication de nombres décimaux sans calculatrice"
+            }
+        }
+    },
+    "QF_14_06_2024": {
+        "classe": "6ème",
+        "date": "14/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Détermine} le nombre de \\textbf{dizaines complètes} dans le nombre $45\\,678{,}295$.",
+                "reponse": "$4\\,567$",
+                "details": "Il suffit de recopier les chiffres de l'écriture décimales en s'\\textbf{arrêtant} au \\textbf{chiffre des dizaines} : \n\n\\columnbreak\n\nDans $\\mathbf{\\color{red}45\\,67}8{,}295$ il y a $\\mathbf{\\color{red}4\\,567}$ dizaines.",
+                "theme": "Numération",
+                "prompt": "Un exercice de numération demandant d'identifier le nombre de dizaines complètes dans un nombre décimal non entier avec 5 chiffres dans la partie entière"
+            },
+            "question2": {
+                "enonce": "\\textbf{Calculer} la superficie en $dm^2$ d'un rectangle dont la surface est de $12\\,500\\,000\\, mm^2$.",
+                "reponse": "$12\\,500\\,000\\, \\text{mm}^2 = 1\\,250\\, \\text{dm}^2 $",
+                "details": "Pour \\textbf{calculer} la superficie en $dm^2$ d'un rectangle dont la surface est de $12\\,500\\,000\\, mm^2$, il faut effectuer une conversion d'unités.\n\n\\textbf{Propriété utilisée} :\nPuisque $1\\, dm^2 = 10\\,000\\, mm^2$ il suffit de \\textbf{diviser} l'aire en mm$^2$ par $10\\,000$.\n\n\\columnbreak\n\n\nLa \\textbf{conversion} est donc :\n\\[\n\\text{Superficie}  = \\dfrac{12\\,500\\,000}{10\\,000}\\, dm^2 = 1\\,250\\, dm^2 \n\\]\n\nAinsi, la superficie du rectangle est de $1\\,250\\, dm^2$.",
+                "theme": "Aires",
+                "prompt": "Une question de conversion d'aires. Passer de mm^2 aux dm^2"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} la \\textbf{durée} du trajet entre $11\\text{h}45$ et $17\\text{h}12$.",
+                "reponse": "$332 \\, \\text{minutes} = 5 \\, \\text{heures} \\, 27 \\, \\text{minutes}$",
+                "details": "La \\textbf{durée} du trajet peut être calculée en soustrayant l'heure de départ de l'heure d'arrivée.\n\n\\textbf{Convertir} les heures en minutes :\n\\begin{align*}\n    11\\text{h}45 & : 11 \\times 60 + 45 = 705 \\text{ minutes}, \\\\\n    17\\text{h}12 & : 17 \\times 60 + 12 = 1\\,032 \\text{ minutes}.\n\\end{align*}\n\n\\textbf{Calculer la différence} en minutes :\n\\begin{align*}\n    1\\,032 - 705 = 327 \\text{ minutes}.\n\\end{align*}\n\n\\textbf{Reconvertir en heures et minutes} :\n\\begin{align*}\n    327=5 \\times 60 + 27 & \\text{ ( division euclidienne )}%327 \\div 60 = 5\\, \\text{heures} \\, 27 \\, \\text{minutes}.\n\\end{align*}\n\nAinsi, la \\textbf{durée du trajet} est de $\\mathbf{5\\, \\text{ heures et } \\, 27 \\, \\text{ minutes}}$.",
+                "theme": "Durées",
+                "prompt": "Une question d'opérations de durées. genre départ 11h45 arrivée 17h12 ; quelle est la durée du trajet"
+            }
+        }
+    },
+    "QF_18_06_2024": {
+        "classe": "6ème",
+        "date": "18/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Un agriculteur récolte 120 kg de pommes sur un terrain de 0{,}5 hectare. \\textbf{Calcule} la quantité de pommes qu'il récolterait sur un terrain de 1{,}2 hectare en supposant que la récolte est \\textbf{proportionnelle} à la surface.",
+                "reponse": "\\[\nx = \\dfrac{120 \\times 1{,}2}{0{,}5} = \\dfrac{144}{0{,}5} = 288\n\\]\n\nAinsi, l'agriculteur \\textbf{récolterait} $288$ kg de pommes sur $1{,}2$ hectare.",
+                "details": "L'agriculteur récolte $120$ kg de pommes sur $0{,}5$ hectare.\n\nSoit $x$ la quantité de pommes récoltées sur $1{,}2$ hectare.\n\nÉtant donné que la récolte est \\textbf{proportionnelle} à la surface :\n\\[\n\\dfrac{120}{0{,}5} = \\dfrac{x}{1{,}2}\n\\]\n\nEn \\textbf{résolvant} cette proportion :\n\\[\nx = \\dfrac{120 \\times 1{,}2}{0{,}5} \n\\]\n\n\\textbf{Calculons} cette quantité :\n\\[\nx = \\dfrac{144}{0{,}5} \n\\]\n\\[\nx = 288\n\\]\n\nAinsi, l'agriculteur récolterait $288$ kg de pommes sur $1{,}2$ hectare.",
+                "theme": "proportionnalité",
+                "prompt": "Une question de proportionnalité"
+            },
+            "question2": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": "Un boulanger dispose de 170 croissants et de 374 brioches.\nIl veut, en utilisant toutes ses viennoiseries, réaliser un maximum de corbeilles contenant toutes le même nombre de croissants et le même nombre de brioches.\n\na) Quel est le nombre maximal de corbeilles ?\n\nb) Quel est le nombre de croissants dans chaque corbeille ?"
+            },
+            "question3": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": "\\textbf{a.}\\'Ecrire $ \\dfrac{1}{(-8)\\times(-8)\\times(-8)}$ sous forme de puissance.\n\\textbf{b.}Écrire $-5^{5}$ avec des $\\times$ et sans utiliser la notation puissance."
+            }
+        }
+    },
+    "QF_18_06_2024_1": {
+        "classe": "6ème",
+        "date": "18/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Arrondissez $123{,}908$ au centième près.",
+                "reponse": "$ 123{,}91 $",
+                "details": "Pour \\textbf{arrondir} $123{,}908$ au \\textbf{centième} près, suivez ces étapes :\n\\begin{enumerate}\n    \\item Identifiez le chiffre des centième, ici $9$.\n    \\item Regardez le chiffre suivant, ici $0$.\n    \\item Si le chiffre suivant est inférieur à $5$, le chiffre au centième reste le même. Si le chiffre est $5$ ou plus, augmentez le chiffre au centième de $1$.\n\\end{enumerate}\n\nAinsi, en suivant la méthode :\n\\[\n123{,}908 \\approx 123{,}91\n\\]",
+                "theme": "Valeur approchée",
+                "prompt": "Arrondi au centième près de 123,908"
+            },
+            "question2": {
+                "enonce": "\\textbf{Calculer} le quart de $3\\,600$.",
+                "reponse": "Ainsi, \\textbf{le quart} de $3\\,600$ est \n$\n900. \n$",
+                "details": "\\textbf{Pour calculer} le quart de $3\\,600$, il faut \\textbf{diviser} $3\\,600$ par $4$ :\n\n\\[\n\\dfrac{3\\,600}{4} = 900\n\\]\n\nAinsi, \\textbf{le quart} de $3\\,600$ est \\textcolor{red}{$900$}.",
+                "theme": "Division",
+                "prompt": "Calculer Le quart de 3 600"
+            },
+            "question3": {
+                "enonce": "\\textbf{Encadrer} $37{,}591$ par $2$ nombres entiers \\textbf{consécutifs} :",
+                "reponse": "$ 37 < 37{,}591 < 38 $",
+                "details": "$37{,}591$ est compris entre $37$ et $38$, donc les deux \\textbf{entiers consécutifs} qui \\textbf{encadrent} $37{,}591$ sont :\n\n\\[ 37 < 37{,}591 < 38 \\]",
+                "theme": "Encadrement",
+                "prompt": "Encadrer 37,591 par 2 entiers consécutifs :"
+            }
+        }
+    },
+    "QF_21_06_2024": {
+        "classe": "6ème",
+        "date": "21/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Réduire} au même \\textbf{dénominateur} les \\textbf{fractions} suivantes : $\\dfrac{15}{7}$ et $\\dfrac{13}{21}$.",
+                "reponse": "$\\dfrac{45}{21} \\quad \\text{et} \\quad \\dfrac{13}{21}$",
+                "details": "Pour \\textbf{réduire} au même \\textbf{dénominateur}, trouvons le \\textbf{plus petit commun multiple} (PPCM) des dénominateurs $7$ et $21$. Le PPCM de $7$ et $21$ est $21$. \n\n\\textbf{Modifier} les fractions pour obtenir le même dénominateur :\n\nPour $\\dfrac{15}{7}$ :\n\\[\n\\dfrac{15}{7} = \\dfrac{15 \\times 3}{7 \\times 3} = \\dfrac{45}{21}\n\\]\n\nLa fraction $\\dfrac{13}{21}$ a déjà $21$ comme dénominateur. Pas de modification nécessaire.\n\nAinsi, les fractions \\textbf{réduites} au même dénominateur sont :\n\\[\n\\dfrac{45}{21} \\quad \\text{et} \\quad \\dfrac{13}{21}\n\\]",
+                "theme": "fractions",
+                "prompt": "Une question demandant de réduire au même dénomimnateur deux fractions genre 15/7 et 13/21"
+            },
+            "question2": {
+                "enonce": "\\textbf{Encadrer} le nombre $4891{,}2375$ aux \\textbf{dixièmes}.",
+                "reponse": "${\\mathbf{\\color{red}4891{,}2}} \\leq 4891{,}2375 \\leq {\\mathbf{\\color{red}4891{,}3}}$",
+                "details": "Pour \\textbf{encadrer} le nombre $4891{,}2375$ aux \\textbf{dixièmes}, il faut identifier deux nombres qui : \n\\begin{itemize}\n    \\item N'ont qu'un chiffre à droite de la virgule.\n    \\item Sont les plus proches possibles du nombre d'origine.\n\\end{itemize}\n\n\\columnbreak\n\nDe plus, l'un est un est inférieur au nombre de départ, et l'autre est supérieur au nombre de départ.\n\n\\textbf{Encadrement :} \n\\[\n\\quad 4891{,}2 \\leq 4891{,}2375 < 4891{,}3\n\\]",
+                "theme": "Encadrement",
+                "prompt": "Encadrer un nombre décimal aux dixièmes ( genre 4891,2375"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} $\\dfrac{3}{5}$ \\textbf{de} $125$.",
+                "reponse": "$125 \\times \\dfrac{3}{5} = 75$",
+                "details": "Pour calculer $\\dfrac{3}{5}$ de $125$, nous \\textbf{multiplions} $125$ par $\\dfrac{3}{5}$.\n\n\\[\n\\textbf{Calcul :} \\quad 125 \\times \\dfrac{3}{5} = 25 \\times 3\\div 5 = 375 \\div 5 = 75\n\\]\n\nLa valeur de $\\dfrac{3}{5}$ de $125$ est donc \\textbf{75}.",
+                "theme": "fractions",
+                "prompt": "Calculer une fraction d'un nombre entier"
+            }
+        }
+    },
+    "QF_25_06_2024": {
+        "classe": "6ème",
+        "date": "25/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Déterminer} l'arrondi aux \\textbf{centièmes} du nombre $45\\,328\\,123{,}397\\,582$.",
+                "reponse": "$45\\,328\\,123{,}40$",
+                "details": "Le nombre $45\\,328\\,123{,}3\\mathbf{9}7\\,582$ peut être arrondi aux \\textbf{centièmes} de cette manière : \\\\\n\nLe chiffre des \\textbf{centièmes} est le $\\mathbf{9}$\\\\\nLe chiffre suivant est $\\mathbf{5}>=5$ donc on arrondit au \\textbf{centième supérieur}.\n\n\\columnbreak\n\n\nIl y a alors $\\mathbf{40}$ centièmes dans l'écriture de ce nombre. \nAinsi :\n\\[\n45\\,328\\,123{,}397\\,582 \\approx 45\\,328\\,123{,}40.\n\\]",
+                "theme": "arrondi",
+                "prompt": "\\textbf{Déterminer} l'arrondi aux \\textbf{centièmes} du nombre $45\\,328\\,123{,}397\\,582$."
+            },
+            "question2": {
+                "enonce": "\\textbf{Encadrer} le nombre $41\\,285{,}237\\,5$ à la\\\\\n\\textbf{centaine} près.",
+                "reponse": "${\\mathbf{\\color{red}41\\,200 }} \\leq 41\\,285{,}237\\,5  \\leq {\\mathbf{\\color{red}41\\,300}}$",
+                "details": "Pour \\textbf{encadrer} le nombre $41\\,285{,}237\\,5$ aux \\textbf{dixièmes}, il faut identifier deux nombres qui : \n\\begin{itemize}[label=\\faPen]\n    \\item Sont des nombres entiers \\textbf{multiples} de $100$.\n    \\item Sont les \\textbf{plus proches possibles} du nombre d'origine.\n\\end{itemize}\n\n\\columnbreak\n\nDe plus, l'un est inférieur au nombre de départ, et l'autre est supérieur au nombre de départ.\n\n\\textbf{Encadrement :} \n\\[\n\\quad 41\\,200 \\leq 41\\,285{,}237\\,5 < 41\\,300\n\\]",
+                "theme": "Encadrement",
+                "prompt": "Encadrer un nombre décimal aux dixièmes ( genre $41285{,}2375$"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} $25\\%$ de $32$.",
+                "reponse": "$25\\%$ de $32$ vaut $\\mathbf{8}$",
+                "details": "Pour calculer $25\\%$ de $32$, on effectue le calcul suivant :\\\\\n$\\quad 32 \\times 25 \\div 100 = \\dfrac{32 \\times 25}{100} = \\dfrac{800}{100} = 8$\\\\\n\nLa valeur de $25\\%$ de $32$ est donc \\textbf{8}.",
+                "theme": "fractions",
+                "prompt": "Calculer une fraction d'un nombre entier"
+            }
+        }
+    },
+    "QF_05_06_2024_1": {
+        "classe": "6ème",
+        "date": "05/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": "une question de division euclidienne pour retrouver le reste de 78:5"
+            },
+            "question2": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_09_12_2024": {
+        "classe": "6ème",
+        "date": "09_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} $15{,}372 - 3{,}7$.",
+                "reponse": "$11{,}672$",
+                "details": "\\textbf{Effectuons} la \\textbf{soustraction} suivante : \n\n\\vspace{1mm}\n\n$15{,}372 - 3{,}7 = 15{,}372 - 3{,}700$\n\n\\vspace{1mm}\n\n\\textbf{En alignant} la virgule : \n\n\\vspace{1mm}\n\n\n\\begin{align*}\n15{,}372 \\\\\n- \\, 3{,}700 \\\\\n\\hline\n\\textbf{\\color{red}{$11{,}672$}} \n\\end{align*}\n\n\nAinsi, $15{,}372 - 3{,}7 = \\textbf{\\color{red}{11{,}672}}$.",
+                "theme": "soustraction",
+                "prompt": "Une soustraction de nombres décimaux. Les nombres n'ont pas le même nombre de chiffres à droite de lavirgule."
+            },
+            "question2": {
+                "enonce": "\\textbf{Déterminer} le nombre de \\textbf{dixièmes} dans le nombre :\t\n\t\n$12{,}75$.",
+                "reponse": "$127$ \\textbf{dixièmes} .",
+                "details": "Pour \\textbf{déterminer} combien de \\textbf{dixièmes} il y a dans le nombre $12{,}75$, il suffit de lire les chiffres du nombre, en \\acc{s'arrêtant au chiffre des dixièmes}.\t\n\n\t\n\\columnbreak\t\n\t\n\nAinsi, il y a $\\mathbf{127}$ \\textbf{dixièmes} dans $12{,}75$.",
+                "theme": "Nombres",
+                "prompt": "Une question demandant le nombre de dixèmes dans un nombre"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculez} le produit de $325$ et $1{,}5$.",
+                "reponse": "$487{,}5$",
+                "details": "\\begin{align*}\n325 \\times 1{,}5 &= 325 \\times 3 \\div 2 \\\\\n                 &= 975 \\div 2 \\\\\n                 &= 487{,}5 \n\\end{align*}\n\nAinsi, le \\textbf{produit} de $325$ et $1{,}5$ est $487{,}5$.",
+                "theme": "multiplier",
+                "prompt": "Une question de multiplication astuctieuse : un nombre eentre 100 et 400 multiplié par 1.5"
+            }
+        }
+    },
+    "QF_06_12_2025": {
+        "classe": "6ème",
+        "date": "06_12_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{83.0}\t\n\n\n\n\n\n\n\n\\def\\mb{62}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{83.0}\t\\def\\mb{62}\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\ma{83.0}\t\n\n\n\n\n\n\n\n\\def\\mb{62}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{977.7}\t\n\n\n\n\n\n\n\n\\def\\mb{78.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} + \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{977.7}\t\\def\\mb{78.0}\t\\opadd[style=text]{\\ma}{\\mb}",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\ma{977.7}\t\n\n\n\n\n\n\n\n\\def\\mb{78.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}",
+                "theme": "Sommes",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{798.0}\t\n\n\n\n\n\n\n\n\\def\\mb{42.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{798.0}\t\\def\\mb{42.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\ma{798.0}\t\n\n\n\n\n\n\n\n\\def\\mb{42.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_09_01_2025": {
+        "classe": "6ème",
+        "date": "09_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{518.231}\t\n\\def\\mb{76.45}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{518.231}\t\n\\def\\mb{76.45}\t\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 3 - solutions\n\t\n\\def\\ma{518.231}\t\n\\def\\mb{76.45}\t\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.5}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{712.83}\t\\def\\mb{31.5}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.5}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{654.96}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\def\\mb{74.365}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} + \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{654.96}\t\\def\\mb{74.365}\t\\opadd[style=text]{\\ma}{\\mb}",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\ma{654.96}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\def\\mb{74.365}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}",
+                "theme": "Sommes",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_09_01_2025_1": {
+        "classe": "6ème",
+        "date": "09_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{67.621}\t\n\\def\\mb{12.453}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{67.621}\t\n\\def\\mb{12.453}\t\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 4 - solutions\n\\def\\ma{67.621}\t\n\\def\\mb{12.453}\t\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{407.45}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\def\\mb{82.303}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} + \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{407.45}\t\\def\\mb{82.303}\t\\opadd[style=text]{\\ma}{\\mb}",
+                "details": "%version 4 - solutions\n\t\n\n\\def\\ma{407.45}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\def\\mb{82.303}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}",
+                "theme": "Sommes",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{505.51}\t\n\\def\\mb{0.32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{505.51}\t\n\\def\\mb{0.32}\t\n\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 4 - solutions\n\\def\\ma{505.51}\t\n\\def\\mb{0.32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_13_01_2025": {
+        "classe": "6ème",
+        "date": "13_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{62.34}\t\\def\\mb{9.871}\t\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{62.34}\t\\def\\mb{9.871}\t\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 1 - solutions\n\t\n\\def\\ma{62.34}\t\\def\\mb{9.871}\t\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\ma{952.56}\t\n\n\n\n\n\n\n\n\\def\\mb{5.4}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{952.56}\t\\def\\mb{5.4}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\ma{952.56}\t\n\n\n\n\n\n\n\n\\def\\mb{5.4}\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n    \\def\\na{4}\n    \\def\\nb{46}\n    \\def\\nc{18}\n    \\begin{multicols}{2}\t\n        Quelle heure affiche\t\n\t\n l'horloge ?\n\t\n    \t\n\\columnbreak\t\n\t\n%court\n    \\Horloge[Secondes=false]{\\na:\\nb}\n\n    \\end{multicols}",
+                "reponse": "\\def\\na{4}    \\def\\nb{46}    \\def\\nc{18}        $\\na~\\text{h}~\\nb\\text{min}$ ou $\\fpeval{12+\\na}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 1 - solutions\n\t\n    \\def\\na{4}\n    \\def\\nb{46}\n    \\def\\nc{18}\n    \n\t\n    %help\n\n    Il est $\\na~\\text{h}~\\nb\\text{min}$\n\n    %Ou encore : \\\\\n    %$\\dfrac{\\dia}{\\minutefilm} = \\Simplification{\\dia}{\\fpeval{\\he * 60 + \\mi}} = \\dfrac{\\fpeval{round(100 * \\dia / \\he * 60 + \\mi ,1)}}{100}$",
+                "theme": "Lire l'heure",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_01_2025": {
+        "classe": "6ème",
+        "date": "16_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n    \\def\\na{2}\n    \\def\\nb{19}\n    \\def\\nc{34}\n    \n\t\n    %court\n\\hfill%\n\\begin{minipage}[t]{0.4\\linewidth}\n\\phantom{a}\t\n\t\n\t    \\vspace{-0.4cm}\\Horloge[Secondes=false]{\\na:\\nb} \n\n\\end{minipage}%\n\\hfill%\n\\begin{minipage}[t]{0.55\\linewidth}\nQuelle heure affiche l'horloge ?\n\n\\end{minipage}\\hfill",
+                "reponse": "\\def\\na{2}    \\def\\nb{19}    \\def\\nc{34}        $\\na~\\text{h}~\\nb\\text{min}$ ou $\\affiche{\\fpeval{\\na + 12}}~\\text{h}~\\nb\\text{min}$",
+                "details": "%version 2 - solutions\n\t\n    \\def\\na{2}\n    \\def\\nb{19}\n    \\def\\nc{34}\n    \n\t\n    %help\n\n    Il est $\\na~\\text{h}~\\nb\\text{min}$\\\\\n\t\nou bien :  $\\affiche{\\fpeval{\\na + 12}}~\\text{h}~\\nb\\text{min}$",
+                "theme": "Lire l'heure",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\n\\def\\ma{503.79}\t\n\n\n\\def\\mb{77}\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{503.79}\t\\def\\mb{77}\t\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 5 - solutions\n\t\n\n\\def\\ma{503.79}\t\n\n\n\n\n\n\n\n\\def\\mb{77}\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 5 - Court\n\t\n\n\\def\\ma{544.3}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{544.3}\t \\def\\mb{48}\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 5 - solutions\n\t\n\n\\def\\ma{544.3}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_01_2025_1": {
+        "classe": "6ème",
+        "date": "16_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{5}\n\n\n\n\\def\\numc{5}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{7}\n\n\n\n\\def\\numf{6}\n\n\n\n\\def\\numg{9}\n\n\n\n\\def\\numh{5}\n\n\n\n\\def\\numi{7}\n\n\n\n\\def\\numj{4}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{6}\\def\\numb{5}\\def\\numc{5}\\def\\numd{5}\\def\\nume{7}\\def\\numf{6}\\def\\numg{9}\\def\\numh{5}\\def\\numi{7}\\def\\numj{4}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 1 - solutions\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{5}\n\n\n\n\\def\\numc{5}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{7}\n\n\n\n\\def\\numf{6}\n\n\n\n\\def\\numg{9}\n\n\n\n\\def\\numh{5}\n\n\n\n\\def\\numi{7}\n\n\n\n\\def\\numj{4}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\numa{8}\n\n\n\n\\def\\numb{7}\n\n\n\n\\def\\numc{4}\n\n\n\n\\def\\numd{2}\n\n\n\n\\def\\nume{3}\n\n\n\n\\def\\numf{3}\n\n\n\n\\def\\numg{4}\n\n\n\n\\def\\numh{2}\n\n\n\n\\def\\numi{9}\n\n\n\n\\def\\numj{4}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{8}\\def\\numb{7}\\def\\numc{4}\\def\\numd{2}\\def\\nume{3}\\def\\numf{3}\\def\\numg{4}\\def\\numh{2}\\def\\numi{9}\\def\\numj{4}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 2 - solutions\n\t\n\\def\\numa{8}\n\n\n\n\\def\\numb{7}\n\n\n\n\\def\\numc{4}\n\n\n\n\\def\\numd{2}\n\n\n\n\\def\\nume{3}\n\n\n\n\\def\\numf{3}\n\n\n\n\\def\\numg{4}\n\n\n\n\\def\\numh{2}\n\n\n\n\\def\\numi{9}\n\n\n\n\\def\\numj{4}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\numa{9}\n\n\n\n\\def\\numb{2}\n\n\n\n\\def\\numc{6}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{5}\n\n\n\n\\def\\numf{2}\n\n\n\n\\def\\numg{6}\n\n\n\n\\def\\numh{3}\n\n\n\n\\def\\numi{2}\n\n\n\n\\def\\numj{7}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{9}\\def\\numb{2}\\def\\numc{6}\\def\\numd{5}\\def\\nume{5}\\def\\numf{2}\\def\\numg{6}\\def\\numh{3}\\def\\numi{2}\\def\\numj{7}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 3 - solutions\n\t\n\\def\\numa{9}\n\n\n\n\\def\\numb{2}\n\n\n\n\\def\\numc{6}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{5}\n\n\n\n\\def\\numf{2}\n\n\n\n\\def\\numg{6}\n\n\n\n\\def\\numh{3}\n\n\n\n\\def\\numi{2}\n\n\n\n\\def\\numj{7}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_01_2025": {
+        "classe": "6ème",
+        "date": "17_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\ma{713.4}\n\\def\\mb{68.71}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{713.4}\n\\def\\mb{68.71}\t\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 6 - solutions\n\t\n\\def\\ma{713.4}\n\\def\\mb{68.71}\t\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\ma{366.63}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{366.63}\t\\def\\mb{1000}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 5 - solutions\n\t\n\\def\\ma{366.63}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\ma{470.03}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{470.03}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 4 - solutions\n\t\n\\def\\ma{470.03}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_01_2025_1": {
+        "classe": "6ème",
+        "date": "17_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numa{8}\n\n\n\n\\def\\numb{4}\n\n\n\n\\def\\numc{8}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{3}\n\n\n\n\\def\\numf{7}\n\n\n\n\\def\\numg{3}\n\n\n\n\\def\\numh{4}\n\n\n\n\\def\\numi{9}\n\n\n\n\\def\\numj{2}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{8}\\def\\numb{4}\\def\\numc{8}\\def\\numd{5}\\def\\nume{3}\\def\\numf{7}\\def\\numg{3}\\def\\numh{4}\\def\\numi{9}\\def\\numj{2}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 4 - solutions\n\t\n\\def\\numa{8}\n\n\n\n\\def\\numb{4}\n\n\n\n\\def\\numc{8}\n\n\n\n\\def\\numd{5}\n\n\n\n\\def\\nume{3}\n\n\n\n\\def\\numf{7}\n\n\n\n\\def\\numg{3}\n\n\n\n\\def\\numh{4}\n\n\n\n\\def\\numi{9}\n\n\n\n\\def\\numj{2}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{9}\n\n\n\n\\def\\numc{9}\n\n\n\n\\def\\numd{8}\n\n\n\n\\def\\nume{6}\n\n\n\n\\def\\numf{8}\n\n\n\n\\def\\numg{2}\n\n\n\n\\def\\numh{8}\n\n\n\n\\def\\numi{5}\n\n\n\n\\def\\numj{8}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{6}\\def\\numb{9}\\def\\numc{9}\\def\\numd{8}\\def\\nume{6}\\def\\numf{8}\\def\\numg{2}\\def\\numh{8}\\def\\numi{5}\\def\\numj{8}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 5 - solutions\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{9}\n\n\n\n\\def\\numc{9}\n\n\n\n\\def\\numd{8}\n\n\n\n\\def\\nume{6}\n\n\n\n\\def\\numf{8}\n\n\n\n\\def\\numg{2}\n\n\n\n\\def\\numh{8}\n\n\n\n\\def\\numi{5}\n\n\n\n\\def\\numj{8}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{7}\n\n\n\n\\def\\numc{7}\n\n\n\n\\def\\numd{8}\n\n\n\n\\def\\nume{7}\n\n\n\n\\def\\numf{8}\n\n\n\n\\def\\numg{6}\n\n\n\n\\def\\numh{5}\n\n\n\n\\def\\numi{8}\n\n\n\n\\def\\numj{3}\n\n\n\n\n\t\n\\acc{Effectuer les calculs de multiplications suivants:}\t\\begin{multicols}{2}\t    \t\\begin{itemize}[label=$\\bullet$]\t\\item $\\affiche{\\numa} \\times \\affiche{\\numb}$\t\\item $\\affiche{\\numc} \\times \\affiche{\\numd}$\t\\item $\\affiche{\\nume} \\times \\affiche{\\numf}$\t\\item $\\affiche{\\numg} \\times \\affiche{\\numh}$\t\\item $\\affiche{\\numi} \\times \\affiche{\\numj}$\t\\end{itemize}\\end{multicols}",
+                "reponse": "\\def\\numa{6}\\def\\numb{7}\\def\\numc{7}\\def\\numd{8}\\def\\nume{7}\\def\\numf{8}\\def\\numg{6}\\def\\numh{5}\\def\\numi{8}\\def\\numj{3}\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "details": "%version 6 - solutions\n\t\n\\def\\numa{6}\n\n\n\n\\def\\numb{7}\n\n\n\n\\def\\numc{7}\n\n\n\n\\def\\numd{8}\n\n\n\n\\def\\nume{7}\n\n\n\n\\def\\numf{8}\n\n\n\n\\def\\numg{6}\n\n\n\n\\def\\numh{5}\n\n\n\n\\def\\numi{8}\n\n\n\n\\def\\numj{3}\n\n\n\n\n\t\n\\begin{itemize}[label=$\\bullet$]\\item $\\affiche{\\numa} \\times \\affiche{\\numb} = \\affiche{\\fpeval{\\numa * \\numb}}$\\item $\\affiche{\\numc} \\times \\affiche{\\numd} = \\affiche{\\fpeval{\\numc * \\numd}}$\\item $\\affiche{\\nume} \\times \\affiche{\\numf} = \\affiche{\\fpeval{\\nume * \\numf}}$\\item $\\affiche{\\numg} \\times \\affiche{\\numh} = \\affiche{\\fpeval{\\numg * \\numh}}$\\item $\\affiche{\\numi} \\times \\affiche{\\numj} = \\affiche{\\fpeval{\\numi * \\numj}}$\\end{itemize}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    }
+}

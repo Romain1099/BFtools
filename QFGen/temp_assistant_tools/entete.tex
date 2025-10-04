@@ -1,0 +1,1779 @@
+\documentclass[a4paper,11pt,fleqn]{article}
+
+      \usepackage[left=1cm,right=0.5cm,top=0.5cm,bottom=2cm]{geometry}
+\usepackage{mathtools,amssymb,amsfonts,mathrsfs} 
+
+\usepackage{unicode-math}
+\setmainfont{TeX Gyre Schola}
+\setmathfont{TeX Gyre Schola Math}
+
+\setmathfont{STIX Two Math}[
+  range={\blacktriangledown}
+]
+
+%%% COULEURS %%%
+\usepackage[table,svgnames]{xcolor}
+\definecolor{nombres}{cmyk}{0,.8,.95,0}
+\definecolor{gestion}{cmyk}{.75,1,.11,.12}
+\definecolor{gestionbis}{cmyk}{.75,1,.11,.12}
+\definecolor{grandeurs}{cmyk}{.02,.44,1,0}
+\definecolor{geo}{cmyk}{.62,.1,0,0}
+\definecolor{algo}{cmyk}{.69,.02,.36,0}
+\definecolor{correction}{cmyk}{.63,.23,.93,.06}
+\definecolor{couleur_theme}{HTML}{000000}
+\arrayrulecolor{couleur_theme} % Couleur des filets des tableaux
+
+\usepackage[autolanguage,np]{numprint}
+
+\newcommand\degree{\degres}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{documentation}
+
+%%%%%%%% Modification paramétrage pour footnotes
+% Le paquet semble déjà appelé en amont, curieux qu'il n'y ait pas eu de clash
+% avec l'appel ci-dessous mais seulement quand j'ai essayé de l'inclure avec l'option lualatex
+
+% \usepackage{hyperref}
+% Parametrages
+\hypersetup{
+    colorlinks=true,% On active la couleur pour les liens. Couleur par défaut rouge
+    linkcolor=black,% On définit la couleur pour les liens internes
+    % filecolor=magenta,% On définit la couleur pour les liens vers les fichiers locaux      
+    urlcolor=black,% On définit la couleur pour les liens vers des sites web
+    % pdftitle={Puissance Quatre},% On définit un titre pour le document pdf
+    % pdfpagemode=FullScreen,% On fixe l'affichage par défaut à plein écran
+    }
+% Pour avoir les numérotations arabic y compris dans les environnements tcolorbox
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
+%%%%%%%%
+\usepackage{multicol} 
+\usepackage{calc}
+
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+
+
+\newcommand{\scoreRD}[1][]{\tccrep[seyes=false]{1.2cm}{}{\Large /} \large{\points}}
+\setlength{\parindent}{0mm}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumi}{\textbf{\theenumi{}.}}
+\renewcommand{\labelenumii}{\textbf{\theenumii{}.}}
+\setlength{\fboxsep}{3mm}
+
+\setlength{\headheight}{14.5pt}
+
+\setlength{\premulticols}{0pt}
+
+\newcounter{ExoMA}
+
+\newlength{\parindentMA}%
+\setlength{\parindentMA}{\parindent}
+\addtolength{\parindentMA}{30pt}
+\newcounter{pagecounter}
+\setcounter{pagecounter}{0}
+
+\usepackage{simplekv}
+
+\setKVdefault[Theme]{Coopmath,Classiques=false,CANs=false}
+\defKV[Theme]{Classique=\setKV[Theme]{Coopmath=false}\setKV[Theme]{Classiques}}
+\defKV[Theme]{CAN=\setKV[Theme]{Coopmath=false}\setKV[Theme]{CANs}}
+
+\usepackage{fancyhdr}
+\fancyhead[C]{}
+\fancyfoot{}
+
+\def\bla{}
+
+\NewDocumentCommand\Theme{o m m m m}{%
+  \useKVdefault[Theme]%
+  \setKV[Theme]{#1}%
+  \ifboolKV[Theme]{CANs}{%
+    %\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}%
+    \fancypagestyle{premierePage}{%
+      \fancyhead[C]{\textsc{\ifx\bla#2\bla Course aux nombres\else#2\fi}}%
+      \fancyfoot[R]{\scriptsize Coopmaths.fr -- CC-BY-SA}%
+      \setlength{\headheight}{14.5pt}%
+      \NewDocumentCommand\dureeCan{}{\ifx\bla#4\bla 9 minutes\else #4\fi}
+      \NewDocumentCommand\titreSujetCan{}{\ifx\bla#3\bla\else\textbf{#3}\fi}
+    }%
+    %\pagestyle{premierePage}
+    \colorlet{couleur_theme}{black}%
+    \colorlet{couleur_numerotation}{couleur_theme}%
+    \let\EXO\EXOCan\let\endEXO\endEXOCan%
+  }{%
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    %\pagestyle{fancy}
+    \ifboolKV[Theme]{Classiques}{%
+      %\usepackage[left=0.65cm,right=0.65cm,top=2cm,bottom=1.5cm]{geometry}
+      \let\EXO\EXOlibre\let\endEXO\endEXOlibre%
+      \colorlet{couleur_theme}{black}%
+      \colorlet{couleur_numerotation}{couleur_theme}%
+      %\fancyhead[C]{\bfseries #3}
+      %\fancyhead[L]{\bfseries #4}
+      %\fancyfoot[R]{#5}
+    }{%
+      %\usepackage[left=0.5cm,right=0.5cm,top=4cm,bottom=2cm]{geometry}
+      %\theme{#2}{#3}{#4}{#5}%
+      \let\EXO\EXOcoop\let\endEXO\endEXOcoop%
+    }%
+  }%
+}%
+
+\NewDocumentEnvironment{EXOCan}{m m +b}{%
+  #3
+}
+
+\def\difficulty{\faStar}
+\newcommand{\difficulte}{
+	 \ifthenelse{\equal{\difficulty}{\phantom{AAA}}}
+    {} % Ne fait rien si \points est égal à \phantom{AAA}
+    {\begin{pgfonlayer}{main}
+          \node[%
+          anchor=east,
+         xshift=-0.08cm,
+          yshift=-0.30cm,
+	rotate=90,
+          text=black,
+          rounded corners,
+          draw=black, % Ajout pour voir les bordures
+          line width=1.2pt, % Épaisseur des bordures
+          fill=white,
+          path picture={
+            \fill[top color=white, bottom color=gray!20]
+            (path picture bounding box.south west) rectangle
+            (path picture bounding box.north east);
+          }
+          ]
+          at (frame.north west)
+          {\bfseries\tiny{Niveau : \difficulty}};
+        \end{pgfonlayer} 
+}
+} 
+\newcommand{\conditionalScore}{
+  \ifthenelse{\equal{\points}{\phantom{AAA}}}
+    {} % Ne fait rien si \points est égal à \phantom{AAA}
+    {\begin{pgfonlayer}{main}
+          \node[%
+          anchor=north east,
+          %xshift=-3.5cm,
+%          yshift=-8.5pt,
+          text=black,
+          rounded corners,
+          draw=black, % Ajout pour voir les bordures
+          line width=1.2pt, % Épaisseur des bordures
+          fill=white,
+          path picture={
+            \fill[top color=white, bottom color=gray!20]
+            (path picture bounding box.south west) rectangle
+            (path picture bounding box.north east);
+          }
+          ]
+          at (title.north east)
+          {\vspace{1.5cm}\score[\points] };
+        \end{pgfonlayer}} % Affiche \score[\points] sinon
+}
+\newcommand{\conditionalSlash}{
+  \ifthenelse{\equal{\points}{\phantom{AAA}}}
+    {{\huge{\phantom{/}}}} % Ne fait rien si \points est égal à \phantom{AAA}
+    { {\huge{\phantom{/}}} }
+}
+\newcommand{\conditionalComp}[1][]{
+\ifthenelse{\equal{#1}{} }
+    {} % Ne fait rien si \points est égal à \phantom{AAA}
+    { \begin{pgfonlayer}{main}
+          \node[%
+          anchor=west,
+         xshift=-0.08cm,
+          yshift=0.015cm,
+	rotate=90,
+          text=black,
+          sharp corners,
+          draw=black, % Ajout pour voir les bordures
+          line width=1.2pt, % Épaisseur des bordures
+          fill=white,
+          path picture={
+            \fill[top color=white, bottom color=gray!20]
+            (path picture bounding box.south west) rectangle
+            (path picture bounding box.north east);
+          }
+          ]
+          at (frame.south west)
+          { \textbf{\scriptsize{#1}}};
+        \end{pgfonlayer} }
+}
+\newcommand{\cornersouthwest}{
+  \tikz{
+    \draw[line width=1.2pt] (0,0) -- ++(15pt,0);% -- ++(0,15pt); % Bas et droit
+    \draw[line width=1.2pt] (0,0) -- ++(0,15pt); % Prolonge vers le haut
+%    \draw[line width=1.2pt] (15pt,0) -- ++(-15pt,0); % Prolonge vers la gauche
+  }
+}
+
+\newcommand{\cornersoutheast}{
+  \tikz{
+    \draw[line width=1.2pt] (0,0) -- ++(15pt,0);% -- ++(0,15pt); % Bas et gauche
+    \draw[line width=1.2pt] (15pt,0) -- ++(0,15pt); % Prolonge vers le haut
+%    \draw[line width=1.2pt] (0,0) -- ++(15pt,0); % Prolonge vers la droite
+  }
+}
+
+\NewDocumentEnvironment{EXOcoop}{m m +b}{%
+\stepcounter{ExoMA}
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,
+    colbacktitle=white,
+    coltitle=black,
+%    title style = {align=left},
+    %boxed title style={colframe=black},
+    %title=\IfNoValueTF{#1}{\conditionalSlash}{\hspace{-4.5cm}\begin{minipage}{0.65\columnwidth}\conditionalSlash\textmd{#1}\end{minipage}},%
+    %title=\IfNoValueTF{#1}{ }{\hspace{-3cm}\textmd{#1}},%
+    boxed title style={
+      colframe=black, % Couleur de la bordure du titre
+      boxrule=1.2pt,  % Épaisseur de la bordure du titre
+      rounded corners
+%      outer arc=2mm,  % Coins extérieurs arrondis
+    },
+    attach boxed title to top={yshift=-2mm, yshifttext=-1mm}, % Attachement du titre
+    title=\IfNoValueTF{#1}{\conditionalSlash}{\hspace{-4.5cm}\begin{minipage}{0.65\columnwidth}\conditionalSlash\textmd{#1}\end{minipage}},%
+    overlay unbroken and first={%
+%      \IfNoValueTF{#2}{}{%
+	\conditionalComp[#2]
+	\conditionalScore
+\difficulte
+%      }
+      \node[anchor=west,xshift=12pt,yshift=-16pt] at (title.north west) {\numb{\arabic{ExoMA}}};
+    \node[anchor=east,yshift=3mm] at (frame.south east) {\cornersoutheast};
+    \node[anchor=west,yshift=3mm] at (frame.south west) {\cornersouthwest};
+    },
+    overlay first={%
+%      \IfNoValueTF{#2}{}{%
+	\conditionalComp[#2]
+	\conditionalScore
+\difficulte
+%      }
+      \node[anchor=west,xshift=12pt,yshift=-16pt] at (title.north west) {\numb{\arabic{ExoMA}}};
+    },
+    overlay last={%
+      \conditionalComp
+      \node[anchor=east,yshift=3mm] at (frame.south east) {\cornersoutheast};
+      \node[anchor=west,yshift=3mm] at (frame.south west) {\cornersouthwest};
+    }
+    ]
+    \qquad 
+   #3
+  \end{tcolorbox}
+}
+
+\NewDocumentEnvironment{EXOlibre}{m m +b}{%
+  \begin{tcolorbox}[%
+    enhanced,
+    breakable,
+    colback=white,
+    colframe=white,%couleur_theme,
+    coltitle=black,
+    title=\stepcounter{ExoMA}\textbf{Exercice \arabic{ExoMA}},%
+    ]
+    \IfNoValueTF{#1}{}{#1\par}%
+    #3
+  \end{tcolorbox}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SPÉCIFIQUE SUJETS CAN                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{longtable}
+
+\tikzset{
+  mybox/.style={
+    rectangle,
+    drop shadow, 
+    inner sep=17pt,
+    draw=gray,
+    shade,
+    top color=gray,
+    every shadow/.append style={fill=gray!40}, 
+    bottom color=gray!20
+    }
+  }
+  
+  \newcommand\MyBox[2][]{%
+    \tikz\node[mybox,#1] {#2}; 
+  }
+  % Un compteur pour les questions CAN
+  \newcounter{nbEx}
+  % Pour travailler avec les compteurs
+  \usepackage{totcount}
+  \regtotcounter{nbEx}  
+
+  % Une checkmark !
+  \def\myCheckmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}  
+  % Repiqué sans vergogne dans lemanuel TikZ pour l'impatient
+  \def\arete{3}   \def\epaisseur{5}   \def\rayon{2}
+
+  \newcommand{\ruban}{(0,0)
+    ++(0:0.57735*\arete-0.57735*\epaisseur+2*\rayon)
+    ++(-30:\epaisseur-1.73205*\rayon)
+    arc (60:0:\rayon)   -- ++(90:\epaisseur)
+    arc (0:60:\rayon)   -- ++(150:\arete)
+    arc (60:120:\rayon) -- ++(210:\epaisseur)
+    arc (120:60:\rayon) -- cycle}
+
+  \newcommand{\mobiusCan}{
+    % Repiqué sans vergogne dans lemanuel TikZ pour l'impatient
+    \begin{tikzpicture}[very thick,top color=white,bottom color=gray,scale=1.2]
+      \shadedraw \ruban;
+      \shadedraw [rotate=120] \ruban;
+      \shadedraw [rotate=-120] \ruban;
+      \draw (-60:4) node[scale=5,rotate=30]{CAN};
+      \draw (180:4) node[scale=3,rotate=-90]{MathALEA};
+      \clip (0,-6) rectangle (6,6); % pour croiser
+      \shadedraw  \ruban;
+      \draw (60:4) node [gray,xscale=2.5,yscale=2.5,rotate=-30]{CoopMaths};
+    \end{tikzpicture} 
+  }
+  
+  \newcommand{\pageDeGardeCan}[1]{
+    % #1 --> nom du compteur pour le nombre de questions
+
+    %\vspace*{10mm}
+    \textsc{Nom} : \makebox[.35\linewidth]{\dotfill} \hfill \textsc{Prénom} : \makebox[.35\linewidth]{\dotfill}
+
+    \vspace{10mm}
+    \textsc{Classe} : \makebox[.33\linewidth]{\dotfill} \hfill
+    \MyBox{\Large\textsc{Score} : \makebox[.15\linewidth]{\dotfill} / \total{#1}}      
+    \par\medskip \hrulefill \par
+    \myCheckmark \textit{\textbf{Durée :  \dureeCan}}
+
+    \smallskip
+    \myCheckmark \textit{L'épreuve comporte \total{#1} questions.}
+
+    \smallskip  
+    \myCheckmark \textit{L'usage de la calculatrice et du brouillon sont interdits.}
+
+    \smallskip
+    \myCheckmark \textit{Il n'est pas permis d'écrire des calculs intermédiaires.}
+    \par \hrulefill \par\vspace{5mm}
+    \begin{center}
+      \textsc{\titreSujetCan}
+      \par\vspace{5mm}
+      \mobiusCan
+    \end{center}
+  }
+
+  \newlength{\Largeurcp}
+  
+  % Structure globale pour les tableaux des livrets CAN
+  \NewDocumentEnvironment{TableauCan}{b}{%
+    % #1 --> corps de tableau
+    \setlength{\Largeurcp}{0.35\textwidth-8\tabcolsep}
+    \renewcommand*{\arraystretch}{2.5}
+    \begin{spacing}{1.1}
+      \begin{longtable}{|>{\columncolor{gray!20}\centering}m{0.05\textwidth}|>{\centering}m{0.45\textwidth}|>{\centering}m{\Largeurcp}|>{\centering}p{0.1\textwidth}|}%
+        \hline
+        \rowcolor{gray!20}\#&Énoncé&Réponse&Jury\tabularnewline \hline
+        % \endfirsthead
+        % \hline
+        % \rowcolor{gray!20}\#&Énoncé&Réponse&Jury\tabularnewline \hline
+        % \endhead
+        #1
+      \end{longtable}
+    \end{spacing}
+    \renewcommand*{\arraystretch}{1}
+  }{}
+
+%%% MISE EN PAGE %%%
+
+\usepackage{setspace}
+\usepackage{pdfpages}
+\usepackage{tkz-tab,tkz-fct}
+\usepackage{tkz-euclide}
+\usepackage{pgf}%
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel,arrows,calc,fit,patterns,plotmarks,shapes.geometric,shapes.misc,shapes.symbols,shapes.arrows,shapes.callouts, shapes.multipart, shapes.gates.logic.US,shapes.gates.logic.IEC, er, automata,backgrounds,chains,topaths,trees,petri,mindmap,matrix, calendar, folding,fadings,through,positioning,scopes,decorations.fractals,decorations.shapes,decorations.text,decorations.pathmorphing,decorations.pathreplacing,decorations.footprints,decorations.markings,shadows}
+\pgfdeclarelayer{foreground}
+\pgfdeclarelayer{semi}
+\pgfdeclarelayer{sup}
+\pgfsetlayers{semi, main,foreground,sup}
+\spaceskip=2\fontdimen2\font plus 3\fontdimen3\font minus3\fontdimen4\font\relax %Pour doubler l'espace entre les mots
+\newcommand\numb[1]{ % Dessin autour du numéro d'exercice
+  \begin{tikzpicture}[overlay,scale=.8]%,yshift=-.3cm
+    \begin{pgfonlayer}{semi}
+    \draw[fill=gray!40,gray!40](-.6,0)rectangle(.7,.6);
+    \draw[line width=.05cm,black,fill=white] (0,-0.2)--(.5,.3)--(1,-0.2)--(.5,-.7)--cycle;
+    \draw (0.5,-0.2) node[anchor=center,black]{\large\bfseries#1};
+    \draw (-.7,.6) node[black,anchor=north west]{\bfseries EX}; 
+    \end{pgfonlayer}
+  \end{tikzpicture}
+ % \begin{tikzpicture}
+%     \begin{pgfonlayer}{main}
+%    \node[anchor=north] at (0,2cm) {\includegraphics[width=0.75\paperwidth]{../../../366_fonctionnement/365_Icones/Fonds de page/Exercices/entete_exo.png}};
+ %   \end{pgfonlayer}
+%  \end{tikzpicture}
+}
+
+% echelle pour le dé
+\def\globalscale {0.04}
+% abscisse initiale pour les chevrons
+\def\xini {3}
+
+\newcommand\theme[4]{%
+  \fancyhead[C]{%
+    % Tracé du dé
+    \begin{tikzpicture}[y=0.80pt, x=0.80pt, yscale=-\globalscale, xscale=\globalscale,remember picture, overlay,transform canvas={xshift=-0.45\linewidth,yshift=2.7cm},fill=gray!40]%,xshift=17cm,yshift=9.5cm
+      %%%% Arc supérieur gauche%%%%
+      \path[fill](523,1424)..controls(474,1413)and(404,1372)..(362,1333)..controls(322,1295)and(313,1272)..(331,1254)..controls(348,1236)and(369,1245)..(410,1283)..controls(458,1328)and(517,1356)..(575,1362)..controls(635,1368)and(646,1375)..(643,1404)..controls(641,1428)and(641,1428)..(596,1430)..controls(571,1431)and(538,1428)..(523,1424)--cycle;
+      %%%% Dé face supérieur%%%%
+      \path[fill](512,1272)..controls(490,1260)and(195,878)..(195,861)..controls(195,854)and(198,846)..(202,843)..controls(210,838)and(677,772)..(707,772)..controls(720,772)and(737,781)..(753,796)..controls(792,833)and(1057,1179)..(1057,1193)..controls(1057,1200)and(1053,1209)..(1048,1212)..controls(1038,1220)and(590,1283)..(551,1282)..controls(539,1282)and(521,1278)..(512,1272)--cycle;
+      %%%% Dé faces gauche et droite%%%%
+      \path[fill](1061,1167)..controls(1050,1158)and(978,1068)..(900,967)..controls(792,829)and(756,777)..(753,756)--(748,729)--(724,745)..controls(704,759)and(660,767)..(456,794)..controls(322,813)and(207,825)..(200,822)..controls(193,820)and(187,812)..(187,804)..controls(188,797)and(229,688)..(279,563)..controls(349,390)and(376,331)..(391,320)..controls(406,309)and(462,299)..(649,273)..controls(780,254)and(897,240)..(907,241)..controls(918,243)and(927,249)..(928,256)..controls(930,264)and(912,315)..(889,372)..controls(866,429)and(848,476)..(849,477)..controls(851,479)and(872,432)..(897,373)..controls(936,276)and(942,266)..(960,266)..controls(975,266)and(999,292)..(1089,408)..controls(1281,654)and(1290,666)..(1290,691)..controls(1290,720)and(1104,1175)..(1090,1180)..controls(1085,1182)and (1071,1176)..(1061,1167)--cycle;
+      %%%% Arc inférieur bas%%%%
+      \path[fill](1329,861)..controls(1316,848)and(1317,844)..(1339,788)..controls(1364,726)and(1367,654)..(1347,591)..controls(1330,539)and(1338,522)..(1375,526)..controls(1395,528)and(1400,533)..(1412,566)..controls(1432,624)and(1426,760)..(1401,821)..controls(1386,861)and(1380,866)..(1361,868)..controls(1348,870)and(1334,866)..(1329,861)--cycle;
+      %%%% Arc inférieur gauche%%%%
+      \path[fill](196,373)..controls(181,358)and(186,335)..(213,294)..controls(252,237)and(304,190)..(363,161)..controls(435,124)and(472,127)..(472,170)..controls(472,183)and(462,192)..(414,213)..controls(350,243)and(303,283)..(264,343)..controls(239,383)and(216,393)..(196,373)--cycle;
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=east, fill=white] at ($(current page.north east)+(-18.1,-2.3cm)$) {\footnotesize \bfseries{Mathématiques}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay, shift={(current page.north west)},yshift=-8.5cm]
+      \fill[fill=gray!20] (0,5) rectangle (21,6);
+      \fill[fill=gray!20] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=gray!20] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=gray!20] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;   
+      \node[color=black] at (10.5,5.5) {\LARGE \bfseries{ #4}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(0,-.8cm)$) {};
+      \node[anchor=east, fill=white] at ($(current page.north east)+(-1,-1.5cm)$) {\huge \textcolor{black}{\bfseries{\#}} \bfseries{#2} \textcolor{black}{\bfseries \ -- #3}};
+    \end{tikzpicture}
+  }%
+  \fancyfoot[R]{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south east] at ($(current page.south east)+(-2,0.25cm)$) {\scriptsize {\bfseries \href{https://coopmaths.fr/}{Source originale : Coopmaths.fr} -- \href{http://creativecommons.fr/licences/}{CC-BY-SA}}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south west] at ($(current page.south west)+(5,0.25cm)$) {\scriptsize {\bfseries Collège Les Jacobins}};
+    \end{tikzpicture}
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=south west] at ($(current page.south west)+(0.5,0.25cm)$) {\scriptsize {\bfseries Page \stepcounter{pagecounter}\arabic{pagecounter} }};
+    \end{tikzpicture}
+    \begin{tikzpicture}[line cap=round,line join=round,remember picture, overlay,xscale=0.5,yscale=0.5, shift={(current page.south west)},xshift=35.7cm,yshift=-6cm]
+      \fill[fill=gray!20] (\xini,6)--(\xini+1.5,6)--(\xini+2.5,7)--(\xini+1.5,8)--(\xini,8)--(\xini+1,7)-- cycle;
+      \fill[fill=gray!20] (\xini+2,6)--(\xini+2.5,6)--(\xini+3.5,7)--(\xini+2.5,8)--(\xini+2,8)--(\xini+3,7)-- cycle;  
+      \fill[fill=gray!20] (\xini+3,6)--(\xini+3.5,6)--(\xini+4.5,7)--(\xini+3.5,8)--(\xini+3,8)--(\xini+4,7)-- cycle;  
+    \end{tikzpicture}
+  }
+  \fancyfoot[C]{}
+  \colorlet{couleur_theme}{#1}
+  \colorlet{couleur_numerotation}{couleur_theme}
+  \def\iconeobjectif{icone-objectif-#1}
+  \def\urliconeomethode{icone-methode-#1}
+}%
+
+%%%%%%% NOTATIONS DES ENSEMBLES %%%%%%%
+\newcommand\R{\mathbb{R}}
+\newcommand\N{\mathbb{N}}
+\newcommand\D{\mathbb{D}}
+\newcommand\Z{\mathbb{Z}}
+\newcommand\Q{\mathbb{Q}}
+
+\newcommand*\tikzfootMA{%
+  \ifboolKV[Theme]{CANs}{
+    \begin{tikzpicture}[remember picture,overlay,shift=(current page.north west)]
+      \begin{scope}[x=\textwidth-\oddsidemargin,y=\textheight+5pt]
+        \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt,shift={(-\oddsidemargin,\topmargin)}] (0,0) rectangle (1,-1);
+      \end{scope}
+    \end{tikzpicture} 
+  }{%
+  \ifboolKV[Theme]{Classiques}{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1cm)$) rectangle ($(1,1)+(-5mm,-1.75cm)$);
+    \end{scope}
+  \end{tikzpicture} 
+  }{%
+  \begin{tikzpicture}[remember picture,overlay,shift=(current page.south west)]
+	\begin{pgfonlayer}{sup}
+    \begin{scope}[x={(current page.south east)},y={(current page.north west)}]
+      \draw[correction,line width=4pt,dashed,dash pattern= on 10pt off 10pt] ($(0,0)+(5mm,1.5cm)$) rectangle ($(1,1)+(-5mm,-3.75cm)$);
+    \end{scope}
+	\end{pgfonlayer}
+  \end{tikzpicture} 
+  }%
+  }
+}
+
+
+
+\newcommand\version[1]{
+  \fancyhead[R]{
+    \begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=north east,inner sep=0pt] at ($(current page.north east)+(-.5,-.5cm)$) {\large \textcolor{couleur_theme}{\bfseries V#1}};
+    \end{tikzpicture}
+  }
+}
+
+\newcommand\dotfills[1][4cm]{\makebox[#1]{\dotfill}}
+
+%%%%% NOMBRES PREMIERS %%%%%
+\usepackage{xlop} % JM pour les opérations
+\opset{voperator=bottom}
+%%% Table des nombres premiers  %%%%
+\newcount\primeindex
+\newcount\tryindex
+\newif\ifprime
+\newif\ifagain
+\newcommand\getprime[1]{%
+  \opcopy{2}{P0}%
+  \opcopy{3}{P1}%
+  \opcopy{5}{try}
+  \primeindex=2
+  \loop
+  \ifnum\primeindex<#1\relax
+  \testprimality
+  \ifprime
+  \opcopy{try}{P\the\primeindex}%
+  \advance\primeindex by1
+  \fi
+  \opadd*{try}{2}{try}%
+  \ifnum\primeindex<#1\relax
+  \testprimality
+  \ifprime
+  \opcopy{try}{P\the\primeindex}%
+  \advance\primeindex by1
+  \fi
+  \opadd*{try}{4}{try}%
+  \fi
+  \repeat
+}
+\newcommand\testprimality{%
+  \begingroup
+  \againtrue
+  \global\primetrue
+  \tryindex=0
+  \loop
+  \opidiv*{try}{P\the\tryindex}{q}{r}%
+  \opcmp{r}{0}%
+  \ifopeq \global\primefalse \againfalse \fi
+  \opcmp{q}{P\the\tryindex}%
+  \ifoplt \againfalse \fi
+  \advance\tryindex by1
+  \ifagain
+  \repeat
+  \endgroup
+}
+
+%%% Décomposition en nombres premiers %%%
+\newcommand\primedecomp[2][nil]{%
+  \begingroup
+  \opset{#1}%
+  \opcopy{#2}{NbtoDecompose}%
+  \opabs{NbtoDecompose}{NbtoDecompose}%
+  \opinteger{NbtoDecompose}{NbtoDecompose}%
+  \opcmp{NbtoDecompose}{0}%
+  \ifopeq
+  Je refuse de décomposer zéro.
+  \else
+  \setbox1=\hbox{\opdisplay{operandstyle.1}%
+    {NbtoDecompose}}%
+  {\setbox2=\box2{}}%
+  \count255=1
+  \primeindex=0
+  \loop
+  \opcmp{NbtoDecompose}{1}\ifopneq
+  \opidiv*{NbtoDecompose}{P\the\primeindex}{q}{r}%
+  \opcmp{0}{r}\ifopeq
+  \ifvoid2
+  \setbox2=\hbox{%
+    \opdisplay{intermediarystyle.\the\count255}%
+    {P\the\primeindex}}%
+  \else
+  \setbox2=\vtop{%
+    \hbox{\box2}
+    \hbox{%
+      \opdisplay{intermediarystyle.\the\count255}%
+      {P\the\primeindex}}}
+  \fi
+  \opcopy{q}{NbtoDecompose}%
+  \advance\count255 by1
+  \setbox1=\vtop{%
+    \hbox{\box1}
+    \hbox{%
+      \opdisplay{operandstyle.\the\count255}%
+      {NbtoDecompose}}
+  }%
+  \else
+  \advance\primeindex by1
+  \fi
+  \repeat
+  \hbox{\box1
+    \kern0.5\opcolumnwidth
+    \opvline(0,0.75){\the\count255.25}
+    \kern0.5\opcolumnwidth
+    \box2}%
+  \fi
+  \endgroup
+}
+
+\usepackage{scratch3}
+\usepackage{ProfCollege} % à appeler avant le paquet cancel sinon option clash
+\usepackage{cancel}
+
+\usepackage[tikz]{bclogo}
+
+%%%%%%% PSTRICKS %%%%%%%
+%\usepackage{pstricks,pst-plot,pst-tree,pstricks-add}
+%\usepackage{pst-eucl}% permet de faire des dessins de géométrie simplement
+%\usepackage{pst-text}
+%\usepackage{pst-node,pst-all}
+%\usepackage{pst-func,pst-math,pst-bspline,pst-3dplot}  %%% POUR LE BAC %%%
+
+%\renewcommand{\pstEllipse}[5][]{% arc d'ellipse pour le sujet de Polynésie septembre 2013
+%  \psset{#1}
+%  \parametricplot{#4}{#5}{#2\space t cos mul #3\space t sin mul}
+%}
+
+%%%%% TRACÉS DANS UN REPÈRE %%%%%
+\newcommand{\vect}[1]{\overrightarrow{\,\mathstrut#1\,}}
+\def\Oij{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath}\right)$}
+\def\Oijk{$\left(\text{O}~;~\vect{\imath},~\vect{\jmath},~\vect{k}\right)$}
+\def\Ouv{$\left(\text{O}~;~\vect{u},~\vect{v}\right)$}
+
+\newcommand{\e}{\mathrm{\,e\,}} %%% POUR LE BAC %%% le e de l'exponentielle
+\newcommand{\ds}{\displaystyle} %%% POUR LE BAC %%%
+
+%%%%% COMMANDES SPRECIFIQUES %%%%%
+%\usepackage{esvect} %%% POUR LE BAC %%%
+%\newcommand{\vvt}[1]{\vv{\text{#1}}} %%% POUR LE BAC %%%
+%\newcommand{\vectt}[1]{\overrightarrow{\,\mathstrut\text{#1}\,}} %%% POUR LE BAC %%%
+
+\usepackage{multirow} % fusionner plusieurs lignes de tableau
+\usepackage{diagbox} % des diagonales dans une cellule de tableau
+\usepackage{forest} % arbre en proba
+
+%%%%% PROBABILITÉS %%%%%
+% Structure servant à avoir l'événement et la probabilité.
+\def\getEvene#1/#2\endget{$#1$}
+\def\getProba#1/#2\endget{$#2$}
+
+\usepackage{pifont} % symboles
+\newcommand{\textding}[1]{\text{\ding{#1}}}
+
+\usepackage{booktabs} % tableaux de qualité
+
+\usepackage[french]{babel}
+\usepackage{eurosym}
+
+\usepackage{rdcrep}
+\usepackage{rdexo}
+
+\definecolor{monrose}{HTML}{FF1493}
+% Nouvelle commande pour définir couleur_theme
+\newcommand{\setcouleurtheme}[1]{%
+    \ifnumequal{#1}{0}{%
+        \arrayrulecolor{black} % Noir si profseyes = 0
+    }{%
+        \arrayrulecolor{monrose} % monrose si profseyes = 1
+    }%
+}
+\newcommand{\repfill}[2][2cm]{
+\tcfillcrep[seyes]{\tccrep{#1}{#2}}}
+
+\newcommand{\measuretext}[1]{%
+  \settowidth{\textlength}{#1} % Mesure la longueur du texte
+  \the\textlength % Affiche la longueur
+}
+
+\newcommand{\repline}[2][1]{
+\begin{crep}[extra lines = #1]
+	#2
+\end{crep}
+}
+
+\newcommand{\repsim}[2][1.5cm]{
+\tccrep{#1}{#2}}
+
+
+% Packages pour les environnements et commandes standard
+\usepackage{amsmath}       % Pour \text, \textbf
+\usepackage{graphicx}      % Pour \clip
+\usepackage{enumitem}      % Pour \item dans enumerate et itemize
+\usepackage{multicol}      % Pour l'environnement multicols
+\usepackage{array}         % Pour l'environnement array
+\usepackage{tikz}          % Pour \draw, \tikzset, tikzpicture
+\usepackage{geometry}      % Pour \newpage, \linewidth
+\usepackage{amssymb}       % Pour \degree
+
+% Packages requis pour les fonctionnalités standard
+\usepackage{calc}              % Calculs simples dans LaTeX
+\usepackage{tcolorbox}         % Création de boîtes colorées
+\tcbuselibrary{skins, hooks, breakable, xparse} % Bibliothèques pour tcolorbox
+
+\usepackage{tikz}              % Création de graphiques
+\usetikzlibrary{shapes.geometric, babel} % Bibliothèques TikZ
+
+\usepackage{pifont}            % Police de symboles Pi
+\usepackage{ifluatex}          % Condition pour vérifier si LuaTeX est utilisé
+\ifluatex
+    \usepackage{pdftexcmds}    % Commandes pdfTeX pour LuaTeX
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Skin : bouyachakka
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tcbset{%
+    % les styles pour un skin doivent �tre rang�s dans la branche /tcb/rdexo/<nom du skin>
+    rdexo/bouyachakka/.cd,
+    % Couleurs
+    bg color/.initial=gray!20,
+    fg color/.initial=black,
+    frame color/.initial=black,
+    star fg color/.initial=orange,
+    star bg color/.initial=white,
+    star line color/.initial=black,
+    score fg color/.initial=black,
+    score bg color/.initial=gray!20,
+    tags bg color/.initial=black!70,
+    tags fg color/.initial=white,
+    title color/.forward to=/tcb/rdexo/exotitle color,
+    % Style optionnel
+    %exo style/.style={},
+    exo title style/.style={
+        adjusted title=\ding{110}~\thelabel\thenumexo*[~]\theExotitle*[~--~],
+        fonttitle=\sffamily\bfseries,
+        coltitle=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/fg color},
+        colbacktitle=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/bg color},
+        lefttitle=3pt, righttitle=3pt, toptitle=3pt, bottomtitle=3pt,
+        attach boxed title to top={yshift=-\tcboxedtitleheight+\rdexoheaderskip},
+        boxed title style={frame engine=empty, sharp corners, rounded corners=east, arc=6pt, rdexo/bouyachakka/score and level},
+        before upper pre=\TFTags{%
+                        \begin{tcolorbox}[rdexo/bouyachakka/tags tcolorbox, before=\vspace*{-\rdexoheaderskip+1ex}, after skip=\rdexoheaderskip]
+                        \thetags%
+                        \end{tcolorbox}}{}%
+    },
+    %   style optionnel pour la bo�te destin�e � contenir la lowerbox
+    lower style/.style={
+        boxsep=3pt
+    },
+    %   style optionnel pour les bo�tes lowerbox d�port�es
+    saved lower style/.style={
+        enhanced jigsaw,
+        opacityback=0,
+        fontupper=\footnotesize,
+        adjusted title=\ding{110}~\thelabel~\thelowernum~:,
+        coltitle=black,
+        fonttitle=\sffamily\footnotesize,
+        opacitybacktitle=0,
+        titlerule=0.6pt,
+        bottomtitle=1pt, toptitle=0pt,
+        top=5pt
+    },
+    % style optionnel pour les tags
+    tag style/.style={
+        enhanced jigsaw, on line, boxsep=3pt,
+        rdexo resest padding,
+        frame engine=empty, boxrule=0pt,
+        colback=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/tags bg color},
+        coltext=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/tags fg color},
+        fontupper=\sffamily\bfseries\tiny,
+        before upper=\vphantom{\'Ey}
+    },
+    % Styles pour exo header=tcbox ou tcolorbox
+    header tcolorbox/.style={
+        bicolor jigsaw,
+        rdexo resest padding,
+        sidebyside, sidebyside align=center seam,
+        sidebyside gap=0pt, righthand width=2.8cm,
+        before upper=\vphantom{\'Ep},
+        before lower=\hspace*{3pt},
+        fontupper=\sffamily\bfseries,
+        colback=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/bg color},
+        colbacklower=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/score bg color},
+        colframe=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/frame color},
+        colupper=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/fg color},
+        collower=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/score fg color},
+        sharp corners,
+        halign lower=center,
+        fontlower=\TFScore{\sffamily\bfseries\scriptsize}{},
+        boxsep=3pt, arc=6pt, rounded corners=east,
+        frame engine=empty, boxrule=0pt,
+        after skip=0pt,% ! Important !
+    },
+    header tcbox/.style={
+        enhanced jigsaw,
+        on line,
+        rdexo resest padding,
+        fontupper=\sffamily\bfseries,
+        colback=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/bg color},
+        coltext=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/fg color},
+        boxsep=3pt, boxrule=0pt, frame engine=empty,
+        sharp corners,
+        rounded corners=east, arc=6pt,
+        width=\TFScore{\TFLevel{7cm}{6cm}}{6cm},
+        tcbox width=forced left,
+        rdexo/bouyachakka/score and level,
+        overlay app={
+            \TFTags{%
+                \node[anchor=north east, inner sep=0pt, outer sep=0pt] at ([xshift=-1em]frame.north west) {\thetags[1]};
+                    }{}
+        }
+    },
+    % Styles auxiliaires
+    tags tcolorbox/.style={
+        blankest,
+        after skip=0pt,
+        before skip=1ex,
+        halign=right
+    },
+    score and level/.style={
+        overlay={
+            \begin{tcbclipframe}
+                \fill[\pgfkeysvalueof{/tcb/rdexo/bouyachakka/score bg color}] ([xshift=-1.8cm]frame.north east) rectangle (frame.south east) coordinate[pos=0.5] (x);
+                \TFScore{%
+                    \node[inner sep=0pt, node font=\sffamily\bfseries\scriptsize, text=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/score fg color}] at (x) {};
+
+                    \TFLevel{%
+                        \node[inner sep=0pt, inner xsep=3pt, anchor=east] at ([xshift=-2.8cm]frame.east) {%
+                                \rdexostars[star color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star fg color},
+                                    star background=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star bg color},
+                                    line color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star line color}]{\thelevel}{3}%
+                            };
+                    }
+                    {}
+                }{%
+                    \TFLevel{%
+                        \node[inner sep=0pt] at (x) {%
+                            \rdexostars[line width=0pt, star color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star fg color},
+                                star background=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star bg color},
+                                line color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star line color}]{\thelevel}{3}};
+                            }%
+                            {}
+                }
+            \end{tcbclipframe}
+        }
+    },
+    exotitle tcbox/.style={
+        enhanced jigsaw,
+        on line,
+        rdexo resest padding,
+        boxsep=1.5pt,
+        sharp corners,
+        frame engine=empty,
+        interior engine=empty,
+        fontupper=\rdexotitlefont\itshape,
+        coltext=rdexotitlecol
+    }
+}
+
+\rdexoSkin{bouyachakka}%
+{%
+\tcbox[rdexo/bouyachakka/header tcbox]{\ding{110}~\thelabel\thenumexo*[~]}\TFTitle{~\tcbox[rdexo/bouyachakka/exotitle tcbox]{\frquote{\theexotitle}}}{}%
+}%
+{%
+\begin{tcolorbox}[rdexo/bouyachakka/header tcolorbox]
+\ding{110}~\thelabel\thenumexo*[~]\theExotitle*[~--~]%
+\hfill\TFScore{\TFLevel{\rdexostars[raise=-1pt, star color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star fg color},
+                        star background=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star bg color},
+                        line color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star line color}]{\thelevel}{3}}{}~\mbox{}}{}%
+\tcblower\TFScore{\scoreRD[\points]}{\TFLevel{\rdexostars[line width=0pt, star color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star fg color},
+                        star background=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star bg color},
+                        line color=\pgfkeysvalueof{/tcb/rdexo/bouyachakka/star line color}]{\thelevel}{3}}{}}
+\end{tcolorbox}%
+\TFTags{%
+\begin{tcolorbox}[rdexo/bouyachakka/tags tcolorbox]
+\thetags%
+\end{tcolorbox}}{}%
+}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % Effacer tous les en-têtes et pieds de page existants
+\renewcommand{\headrulewidth}{0pt} % Supprimer la ligne d'en-tête
+
+\NewDocumentCommand{\chapitre}{O{} m m m m m}{
+  \fancypagestyle{monStyle}{%
+  \fancyfoot[L]{%
+    \tikz[baseline]{
+	\addtocounter{pagecounter}{1}
+ \node [circle, fill=black, scale=0.8, text=white] (leftnode) {\textbf{\arabic{pagecounter}}};
+%    \node [xshift=0.45cm] {\huge \textbf{/}};
+%\node [circle, fill=black, scale=0.8, text=white, right=of leftnode, xshift=-0.8cm] {\textbf{\pageref*{LastPage}}};
+    }%
+    %\scriptsize \textbf{Chapitre : #2}
+  }%
+  \fancyfoot[C]{%
+	\hspace{1.5cm}
+    \begin{minipage}[t]{0.4\textwidth}
+      \scriptsize \textbf{#6 #2} % Remplacer par le titre du chapitre
+    \end{minipage}%
+	\hfill
+    \begin{minipage}[t]{0.4\textwidth}
+      \centering
+      \scriptsize \textbf{#3 #4} % Remplacer par le nom de l'établissement
+    \end{minipage}%
+  }%
+  \renewcommand{\footrulewidth}{0.4pt}
+  %\renewcommand{\footrule}{\vskip-10pt \tikz \draw [decorate,decoration={snake,amplitude=0.5mm,segment length=2cm}] (0,0) -- (\textwidth,0); \vskip 10pt}   
+}
+
+  \pagestyle{monStyle}
+  \begin{tcolorbox}[
+    enhanced,
+    width=\textwidth,
+    height=1.5cm,
+    colback=white,
+    colframe=white,
+    boxrule=0pt,
+    sharp corners,
+    interior style={
+      left color=gray!80,
+      right color=gray!10
+    },
+    valign=center,
+    borderline north={1pt}{0pt}{shading angle=0, left color=gray!80, right color=gray!10},
+    borderline south={1pt}{0pt}{shading angle=0, left color=gray!80, right color=gray!10}
+  ]
+   \begin{minipage}{1.5cm}
+    \begin{tcolorbox}[
+      width=1.5cm,
+      height=1.5cm,
+      colback=black,
+      colframe=black,
+      valign=center,
+      halign=center,
+      boxrule=0pt,
+      sharp corners,
+      left=0pt,  % Ajouté ici
+        right=0pt  % Ajouté ici
+    ]
+      \textcolor{white}{\Large #1}
+      \end{tcolorbox}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{\dimexpr\textwidth-2.5cm}
+      %\hspace{2cm}\textbf{\Large #6 : #2}
+	\textbf{\Large #6 #2}
+    \end{minipage}
+  \end{tcolorbox}
+   %\tableofcontents % Génère le sommaire
+   %\section*{Index des Compétences}
+   #5
+}
+
+\newcommand{\tableauPresenteEvalSixieme}[2]{
+  \begin{tcolorbox}[colback=white, colframe=black, width=0.705\textwidth, boxrule=2pt, arc=2pt,bottom=0pt, auto outer arc, boxsep=0pt, nobeforeafter]
+    \begin{tabularx}{\textwidth}{XXX}
+      \textbf{Nom :} \tcfillcrep{} &\textbf{Prénom :} \tcfillcrep{} 
+    \end{tabularx}
+  \end{tcolorbox}  \begin{tcolorbox}[colback=white, colframe=black, width=0.285\textwidth, boxrule=2pt, arc=2pt,bottom=0pt, auto outer arc, boxsep=0pt, nobeforeafter]
+ \textbf{Bilan :\repsim[1cm]{}/#2\repsim[1.2cm]{}} 
+  \end{tcolorbox} \vspace{-0.5cm}
+}
+
+\usepackage{varwidth}
+\definecolor{defi}{RGB}{56,128,77}
+\definecolor{ex}{RGB}{39,61,112}
+\definecolor{nota}{RGB}{144,55,222}
+\definecolor{rem}{RGB}{128,128,128}
+\definecolor{thm}{RGB}{207,8,77}
+\definecolor{prop}{RGB}{255,0,0}
+\definecolor{demo}{RGB}{255,128,0}
+\definecolor{act}{RGB}{255,128,0}
+\definecolor{meth}{RGB}{151,74,0}
+
+\newtcolorbox{Env}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=#1!5,colframe=#1!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!#1]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!#1,right color=tcbcolback!60!#1,
+middle color=tcbcolback!80!#1]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{#2}},
+coltitle =#1!80!black!,
+drop shadow,
+borderline west={1mm}{0pt}{#1!50},
+borderline south={1mm}{0pt}{#1!50},
+overlay={
+  \draw[line width=1mm, #1!50] 
+    ([xshift=0.5mm]frame.south west)--([xshift=0.5mm]frame.north west); % Bordure gauche
+  \draw[line width=1mm, #1!50] 
+    ([yshift=0.5mm]frame.south west)--([yshift=0.5mm]frame.south east); % Bordure du bas
+}}
+%\tcbset{enhanced,fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+%colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!30!white,
+%coltitle=black,center title}
+% Environnement Theo basé sur Env
+\NewEnviron{env}[1]{
+	\begin{#1}
+	
+	\colorlet{itemcolor}{nota}%
+	\BODY
+        \end{#1}
+}
+\newtcolorbox{Theo}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=thm!5,colframe=thm!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!red]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=red!100!black,right color=red!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Théorème}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{thm!80},
+borderline south={0.05mm}{0pt}{thm!80!black},
+overlay={
+  \draw[line width=0.5mm, thm!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, thm!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+}}
+
+\newtcolorbox{TheoA}[2][thm]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=#1!5,colframe=#1!50,boxrule=0.2mm,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=tcbcolback!30!#1]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=tcbcolback!60!#1,right color=tcbcolback!60!#1,
+middle color=tcbcolback!80!#1]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\Large{#2}},
+coltitle =#1!80!black!}
+%\tcbset{enhanced,fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+%colback=yellow!10!white,colframe=red!50!black,colbacktitle=Salmon!30!white,
+%coltitle=black,center title}
+
+%Définitions
+\newtcolorbox{Defi}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=defi!5,colframe=defi!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!defi]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=defi!100!black,right color=defi!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Définition}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{defi!80},
+borderline south={0.05mm}{0pt}{defi!80!black},
+overlay={
+  \draw[line width=0.5mm, defi!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, defi!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=defi!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+\newtcolorbox{DefiDEUX}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=defi!5,colframe=defi!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!defi]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=defi!100!black,right color=defi!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Définition}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{defi!80},
+borderline south={0.05mm}{0pt}{defi!80!black},
+overlay={
+  \draw[line width=0.5mm, defi!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, defi!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=defi!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+  %\node[anchor=north east, fill=white, draw=defi!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth}\textbf{#1} \end{minipage}}; % Boîte en overlay
+}}
+\newtcolorbox{DefiTROIS}[1][]{
+  enhanced,
+  before skip=2mm,
+  after skip=2mm,
+  colback=defi!5,
+  colframe=defi!50,
+  boxrule=0pt,
+  attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+  varwidth boxed title*=-3cm,
+  boxed title style={frame code={
+    % ... (same as before)
+  }},
+  fonttitle=\bfseries,
+  title={\large{Définition}},
+  coltitle=white,
+  drop shadow,
+  borderline west={0.05mm}{0pt}{defi!80},
+  borderline south={0.05mm}{0pt}{defi!80!black},
+  overlaytext={},
+  code={\def\overlaytext{#1}},
+  overlay={
+    % ... (same as before)
+    \if\relax\detokenize{\overlaytext}\relax
+    \else
+      \node[anchor=north east, fill=white, draw=defi!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth}\underline{\textbf{\overlaytext}} \end{minipage}};
+    \fi
+  }
+}
+%Exemples
+\newtcolorbox{Exemple}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=ex!5,colframe=ex!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!ex]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=ex!100!black,right color=ex!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Exemple}\scriptsize{(s)}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{ex!80},
+borderline south={0.05mm}{0pt}{ex!80!black},
+overlay={
+  \draw[line width=0.5mm, ex!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, ex!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=ex!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+%Notations
+
+\newtcolorbox{Notation}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=nota!5,colframe=nota!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!nota]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=nota!100!black,right color=nota!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Notation}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{nota!80},
+borderline south={0.05mm}{0pt}{nota!80!black},
+overlay={
+  \draw[line width=0.5mm, nota!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, nota!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=nota!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}
+}
+
+%Notations
+
+\newtcolorbox{Vocabulaire}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=nota!5,colframe=nota!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!nota]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=nota!100!black,right color=nota!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Vocabulaire}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{nota!80},
+borderline south={0.05mm}{0pt}{nota!80!black},
+overlay={
+  \draw[line width=0.5mm, nota!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, nota!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=nota!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}
+}
+
+%Aides
+
+\newtcolorbox{Aide}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=nota!5,colframe=nota!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!nota]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=nota!100!black,right color=nota!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Aide}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{nota!80},
+borderline south={0.05mm}{0pt}{nota!80!black},
+overlay={
+  \draw[line width=0.5mm, nota!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, nota!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=nota!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}
+}
+
+%Démonstrations
+
+\newtcolorbox{Demo}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=nota!5,colframe=demo!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!demo]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=demo!100!black,right color=demo!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Démonstration}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{demo!80},
+borderline south={0.05mm}{0pt}{demo!80!black},
+overlay={
+  \draw[line width=0.5mm, demo!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, demo!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=nota!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}
+}
+
+%Remarques 
+\newtcolorbox{Remarque}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=green!5,colframe=green!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=black!20!green]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=green!80!black,right color=green!80!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Remarque}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{rem!80},
+borderline south={0.05mm}{0pt}{rem!80!black},
+overlay={
+  \draw[line width=0.5mm, rem!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, rem!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=rem!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+%Solutions
+\newcounter{tempprofseyes}
+
+\newtcolorbox{Solution}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=green!5,colframe=green!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=black!20!green]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=green!80!black,right color=green!80!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Solution}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{rem!80},
+borderline south={0.05mm}{0pt}{rem!80!black},
+overlay={
+  \draw[line width=0.5mm, rem!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, rem!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=rem!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+%Solutions
+
+
+\newtcolorbox{Correction}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=green!5,colframe=green!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=black!20!green]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=green!80!black,right color=green!80!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Correction}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{rem!80},
+borderline south={0.05mm}{0pt}{rem!80!black},
+overlay={
+  \draw[line width=0.5mm, rem!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, rem!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=rem!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+
+\newcommand{\lienhautpage}[1]{%
+  \centering \bfseries \color{nota!70!black}\hyperlink{hautpage}{#1}
+}
+%\newcommand{\liensubsection}[1]{%
+%  \subsection[#1]{Recette}\label{subsec:#1}
+%}
+%\newcommand{\liensubsection}[1]{%
+%  \addcontentsline{toc}{subsection}{#1}
+%  \textbf{Recette}\label{subsec:#1}
+%}
+\newcommand{\liensubsection}[1]{%
+  \hypertarget{subsec:#1}{}
+  \addcontentsline{toc}{subsection}{\protect\numberline{}#1}
+  \textbf{Recette}\label{subsec:#1}
+}
+
+
+\newtcolorbox{Recette}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=green!5,colframe=green!50,boxrule=0pt,
+  before upper={\setcounter{tempprofseyes}{\value{profseyescounter}}\setcounter{profseyescounter}{1}},
+  after upper={\setcounter{profseyescounter}{\value{tempprofseyes}}},
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=black!20!green]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=green!80!black,right color=green!80!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\liensubsection{#1}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{rem!80},
+borderline south={0.05mm}{0pt}{rem!80!black},
+overlay={
+  \draw[line width=0.5mm, rem!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, rem!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=rem!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth}\liensubsection{#1}\vspace{-10pt}\end{minipage}};
+    \fi%
+}}
+\newtcolorbox{RecetteAcinq}[2][]{enhanced,
+before skip=2mm,after skip=2mm, breakable,
+colback=green!5,colframe=green!50,boxrule=0pt,
+  before upper={\setcounter{tempprofseyes}{\value{profseyescounter}}\setcounter{profseyescounter}{1}},
+  after upper={\setcounter{profseyescounter}{\value{tempprofseyes}}},
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=nota!70!black]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=nota!70!black,right color=nota!70!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\liensubsection{#1}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{rem!80},
+borderline south={0.05mm}{0pt}{rem!80!black},
+overlay={
+  \draw[line width=0.5mm, rem!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, rem!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=rem!50, rounded corners] at (frame.north east) {\begin{minipage}{0.5\textwidth}\lienhautpage{#1}\end{minipage}};
+    \fi%
+}}
+
+%Propriétés 
+\newtcolorbox{Propriete}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=prop!5,colframe=prop!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!prop]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=prop!100!black,right color=prop!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Propriété}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{prop!80},
+borderline south={0.05mm}{0pt}{prop!80!black},
+overlay={
+  \draw[line width=0.5mm, prop!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, prop!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=prop!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+
+%Activités
+\newtcolorbox{Activite}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=act!5,colframe=act!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!act]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=act!100!black,right color=act!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Activité}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{act!80},
+borderline south={0.05mm}{0pt}{act!80!black},
+overlay={
+  \draw[line width=0.5mm, act!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, act!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=act!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+
+%Méthodes
+\newtcolorbox{Methode}[2][]{enhanced,
+before skip=2mm,after skip=2mm,
+colback=meth!5,colframe=meth!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!meth]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=meth!100!black,right color=meth!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Méthode}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{meth!80},
+borderline south={0.05mm}{0pt}{meth!80!black},
+overlay={
+  \draw[line width=0.5mm, meth!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, meth!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+\ifx#1\empty
+    \else
+      \node[anchor=north east, fill=white, draw=meth!50, rounded corners] at ([xshift=-4cm]frame.north east) {\begin{minipage}{0.5\textwidth} \centering \textbf{#1} \end{minipage}};
+    \fi%
+}}
+\tcbset{enhanced,fonttitle=\bfseries\large,fontupper=\normalsize\sffamily,
+colback=gray!10!white,colframe=black,colbacktitle=gray!30!white,
+coltitle=black,center title}
+
+\newtcolorbox{pointerBox}[1][]{%
+  colback=red!5!white,
+  colframe=red!75!black,
+  fonttitle=\bfseries,
+  title=#1}
+
+%Punitions
+\newtcolorbox{PunitionBox}{enhanced,
+before skip=2mm,after skip=2mm,
+colback=defi!5,colframe=defi!50,boxrule=0pt,
+attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+varwidth boxed title*=-3cm,
+boxed title style={frame code={
+\path[fill=white!20!defi]
+([yshift=-1mm,xshift=-1mm]frame.north west)
+arc[start angle=0,end angle=180,radius=1mm]
+([yshift=-1mm,xshift=1mm]frame.north east)
+arc[start angle=180,end angle=0,radius=1mm];
+\path[left color=defi!100!black,right color=defi!100!black]
+([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+-- (frame.south east) -- (frame.south west)
+-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+[sharp corners]-- cycle;
+},interior engine=empty,
+},
+fonttitle=\bfseries,
+title={\large{Punition}},
+coltitle =white,
+drop shadow,
+borderline west={0.05mm}{0pt}{defi!80},
+borderline south={0.05mm}{0pt}{defi!80!black},
+overlay={
+  \draw[line width=0.5mm, defi!50] 
+    ([xshift=0mm,yshift=-0.25mm]frame.south west)--([xshift=0mm]frame.north west); % Bordure gauche
+  \draw[line width=0.5mm, defi!50] 
+    ([yshift=0mm]frame.south west)--([yshift=0mm]frame.south east); % Bordure du bas
+      \node[anchor=north east, fill=white, draw=defi!50, rounded corners] at (frame.north east) {\begin{minipage}{0.7\textwidth} \textbf{Prénom : }\masquer{Nom et prénom de l'élève puni \hfill \phantom{a}}\textbf{Classe : }\masquer{Classe \ldots\ldots} \end{minipage} };
+}}
+
+\newcommand\punition[1]{
+\begin{PunitionBox}
+
+\phantom{a}\\\phantom{a}\\
+\boite{Motif }{\vspace{1cm}}
+
+\tcblower
+
+\hfill \begin{minipage}{0.7\textwidth} \textbf{Prénom : }\masquer{Nom et prénom de l'élève puni \hfill \phantom{a}}\textbf{Classe : }\masquer{Classe \ldots}\hfill \end{minipage}\\
+
+\boite{Sujet}{\vspace{2cm}}
+
+\textbf{A rendre pour le : } \masquer{\today} \hfill \textbf{Rendu le : } \masquer{\today} \hfill \boiteT[6cm]{Signature des parents}{\phantom{a} \vspace{1cm}}\hfill
+
+
+
+
+\end{PunitionBox}
+}
+
+\def\boitecouleur{gray!75!black}
+\newcommand\boite[2]{
+\begin{tcolorbox}[nobeforeafter,title=#1,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boitecouleur,coltitle=white,colback=white]%red!50!black
+#2
+\end{tcolorbox}
+}
+\newcommand{\cperso}[1]{\num{\fpeval{ #1 }}}

@@ -1,0 +1,50 @@
+
+30
+%%
+\def\numa{0<=x<=75 x!=0 x!=1 decimalesD2 float}
+\def\numb{2<=x<=25 x!=0 x!=1 int}
+%%
+
+
+\acc{Poser la division} $\affiche{\numa} \div \affiche{\numb}$ et donner la valeur approchée aux centièmes du quotient. 
+
+
+
+%%
+
+
+Calculons $\affiche{\numa} \div \affiche{\numb}$ :	
+	
+	
+$\opdiv[displayintermediary=nonzero,maxdivstep=4]{\numa}{\numb}$
+	
+\columnbreak 	
+
+Le valeur affichée par la calculatrice est $\affiche{\fpeval{\numa/\numb}}$.	
+	
+
+Valeur approchée aux centièmes :	
+	
+ $\affiche{\fpeval{round(\numa/\numb,2)}}$. 
+
+
+
+%%
+
+
+\begin{enumerate}
+    \item $\affiche[decim=2]{\fpeval{\numa/\numb+0.1}}$
+    \item $\affiche[decim=2]{\fpeval{\numa/\numb-0.1}}$
+    \item $\affiche[decim=2]{\fpeval{\numa/\numb}}$
+    \item $\affiche[decim=2]{\fpeval{\numa/\numb+0.01}}$
+\end{enumerate} 
+
+
+
+%%
+$\affiche{\fpeval{round(\numa/\numb,2)}}$.
+%%
+Quotients
+%%
+
+

@@ -1,0 +1,37 @@
+30
+    %%
+    \def\na{2<=x<100 x!=0 x!=1 int int decimalesG2}
+    \def\da{-100<=x<100 x!=0 x!=1 int int decimalesG1}
+    \def\nb{-100<=x<100 x!=0 x!=1 int int decimalesG1}
+    \def\db{2<=x<100 x!=0 x!=1 int int decimalesG2}
+
+    
+    %%
+    %court
+    
+    \acc{Effectuer} le calcul suivant et donner le résultat sous \acc{forme simplifiée}\\
+    \begin{center}$\dfrac{\na}{\da} \times \dfrac{\nb}{\db}$\end{center}
+    %%
+    %help
+
+    \begin{align*}
+        \dfrac{\na}{\da} \times \dfrac{\nb}{\db} = & \dfrac{\na\times \nb}{\da\times \db} \\
+        = & \dfrac{\fpeval{\na * \nb}}{\fpeval{\da * \db}}\\
+        = & \Simplification{\fpeval{\na * \nb}}{\fpeval{\da * \db}}
+    \end{align*}
+        
+    %%
+    %qcm
+
+    \textbf{Cocher} la réponse correcte : \\
+    $\dfrac{\na}{\da} \times \dfrac{\nb}{\db} = $
+    \begin{center} 
+        \listnode{\cb}{$\dfrac{\fpeval{\na + \nb}}{\fpeval{\da + \db}}$} 
+        \listnode{\ccb}{$\dfrac{\fpeval{\na + \nb}}{\fpeval{\da * \db}}$} 
+        \listnode{\ccb}{$\dfrac{\fpeval{\na * \nb}}{\fpeval{\da + \db}}$} 
+        \listnode{\cb}{$\Simplification{\fpeval{\na * \nb}}{\fpeval{\da * \db}}$} 
+    \end{center}
+    %%
+    $\Simplification{\fpeval{\na * \nb}}{\fpeval{\da * \db}}$
+    %%
+    Multiplier des fractions (2)

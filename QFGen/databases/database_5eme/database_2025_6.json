@@ -1,0 +1,83 @@
+{
+    "QF_02_06_2025": {
+        "classe": "5ème",
+        "date": "02_06_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numa{2.98}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{2.98}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 5 - solutions\n\t\n\\def\\numa{2.98}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\nombre{2411.245}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.",
+                "reponse": "\\def\\nombre{2411.245}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\nombre{2411.245}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 28 - Court\n\t\n\\def\\numa{13.95}\n\\def\\numb{10}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{13.95}\\def\\numb{10}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 28 - solutions\n\t\n\\def\\numa{13.95}\n\\def\\numb{10}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_06_2025": {
+        "classe": "5ème",
+        "date": "06_06_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 17 - Court\n\t\n\n\\def\\nombre{3901.547}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{3901.547}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 17 - solutions\n\t\n\n\\def\\nombre{3901.547}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\numa{0.72}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{0.72}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 6 - solutions\n\t\n\\def\\numa{0.72}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\numAB{5.0}\n\\def\\numBC{4.5}\n\\def\\numCA{2.5}\n\n\t\n  \nTracer un \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{5.0}\n\\def\\numBC{4.5}\n\\def\\numCA{2.5}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-4.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 12 - solutions\n\\def\\numAB{5.0}\n\\def\\numBC{4.5}\n\\def\\numCA{2.5}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_13_06_2025": {
+        "classe": "5ème",
+        "date": "13_06_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\numa{-6}\n\\def\\numb{11}\n\\def\\numc{33}\n\\def\\numd{-37}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-6}\\def\\numb{11}\\def\\numc{33}\\def\\numd{-37}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 11 - solutions\n\t\n\\def\\numa{-6}\n\\def\\numb{11}\n\\def\\numc{33}\n\\def\\numd{-37}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 18 - Court\n\t\n\n\\def\\nombre{6413.554}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{6413.554}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 18 - solutions\n\t\n\n\\def\\nombre{6413.554}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\numAB{6.3}\n\\def\\numBC{5.0}\n\\def\\numCA{6.3}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{6.3}\\def\\numBC{5.0}\\def\\numCA{6.3}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-0.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 11 - solutions\n\t\n\\def\\numAB{6.3}\n\\def\\numBC{5.0}\n\\def\\numCA{6.3}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            }
+        }
+    }
+}

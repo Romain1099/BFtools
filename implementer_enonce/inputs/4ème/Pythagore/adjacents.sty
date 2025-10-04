@@ -1,0 +1,52 @@
+
+30
+%%
+\def\cota{1<=x<=30 float decimalesD2}
+\def\diffhyp{1<=x<=30 float decimalesD2}
+%%
+
+\edef\hyp{\fpeval{\cota+\diffhyp}}
+\acc{Calculez la longueur} du côté manquant dans un \textbf{triangle rectangle} dont un côté de l'angle droit mesure $\affiche{\cota}$ cm et l'hypoténuse mesure $\affiche{\hyp}$ cm.	
+	
+Donner l'arrondi au \acc{mm} près.
+
+
+%%
+
+Dans un \textbf{triangle rectangle}, l'\textbf{hypoténuse} $c$ est \textbf{calculée} à l'aide du \textbf{théorème de Pythagore}, qui énonce que	 $$c^2 = a^2 + b^2 $$ 	, où $a$ et $b$ sont les \textbf{côtés de l'angle droit}. 			
+
+En remplaçant les longueurs connues : 	
+	
+$\num{\hyp}^2 = \affiche{\cota}^2 + b^2$			
+
+Ainsi la longueur cherchée est : 	
+	
+$b = \sqrt{\num{\hyp}^2 - \affiche{\cota}^2}$	
+	
+\columnbreak	
+	
+
+\textbf{Calculons} les carrés des côtés :			
+
+$ \affiche{\cota}^2 = \affiche{\fpeval{\cota^2}} $ \hfill et \hfill $ \affiche{\hyp}^2 = \affiche{\fpeval{\hyp^2}}$			
+
+\textbf{Soustrayons-les} :				
+
+$ \affiche{\hyp}^2 - \affiche{\cota}^2 = \affiche{\fpeval{\hyp^2 - \cota^2}}$			
+
+\textbf{En passant à la racine carrée}, on obtient la longueur manquante :
+
+    $b = \sqrt{\affiche{\fpeval{\hyp^2 - \cota^2}}} = \affiche{\fpeval{sqrt(\hyp^2 - \cota^2)}}$		
+
+Ainsi, $b \approx \affiche{\fpeval{round(sqrt(\hyp^2 - \cota^2),1)}}\ \mathrm{cm}$.
+
+
+%%
+
+\begin{enumerate}    \item $\affiche{\fpeval{round(sqrt(3.2^2 + 4.7^2),2)+0.5}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2+4.7^2),2)-0.2}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2+4.7^2),2)}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2 + 4.5^2),2)}}$\end{enumerate}
+
+
+%%
+\edef\hyp{\fpeval{\cota+\diffhyp}} $b \approx \affiche{\fpeval{round(sqrt(\hyp^2 - \cota^2),1)}}\ \mathrm{cm}$.
+%%
+Pythagore

@@ -1,0 +1,47 @@
+
+30
+%%
+\def\nombre{150<=x<1000 x!=0 float decimalesG4 decimalesD3}
+%%
+
+\xdef\mnombre{\num{\nombre}}\acc{Encadrer} le nombre $\mnombre$ aux dixièmes.
+
+
+%%
+
+La méthode pour \textbf{encadrer} un nombre aux \textbf{dixièmes} consiste à \textbf{déterminer} deux nombres  avec $1$ chiffre à \acc{droite} de la virgule :	\\	Le plus proche \textbf{inférieur} et le plus proche \textbf{supérieur}.			
+
+\columnbreak
+
+\edef\arrondiinf{\fpeval{trunc(\nombre * 10) / 10}} \edef\arrondisup{\fpeval{\arrondiinf + 0.1}}       	
+Pour le nombre $\mnombre$, nous avons :
+\begin{itemize}[label=$\bullet$]    
+    \item \textbf{Valeur inférieure} = $\blue{\num{\arrondiinf}}$    
+    \item \textbf{Valeur supérieure} = $\red{\num{\arrondisup}}$
+\end{itemize}
+    Ainsi : $\blue{\num{\arrondiinf}} < \mnombre < \red{\num{\arrondisup}}$
+
+
+%%
+
+%qcm   		 
+\def\db{\fpeval{\d*\multa}}    
+\def\nresa{\fpeval{\n + \nb}}    
+\def\nresb{\fpeval{\n * \db + \nb * \d}}    
+\def\nresc{\fpeval{\n + \nb * \d / \db}}    
+\def\nresd{\fpeval{\n * \db + \nb * \d}}    
+\def\dresa{\fpeval{\d + \db}}    
+\def\dresb{\fpeval{\d * \db}}    
+\def\dresc{\fpeval{\d}}    
+\def\dresd{\fpeval{\d + \db}}    
+\textbf{Cocher} la ou les réponses correctes : \\    
+$\dfrac{\n}{\d} + \dfrac{\nb}{\db} = ... $\\    \begin{center}         \listnode{\cb}{$\dfrac{\nresa}{\dresa}$}         \listnode{\ccb}{$\dfrac{\nresb}{\dresb}$}         \listnode{\ccb}{$\Simplification{\nresb}{\dresb}$}         \listnode{\cb}{$\Simplification{\nresd}{\dresd}$}     \end{center}
+
+
+%%
+\edef\arrondiinf{\fpeval{trunc(\nombre * 10) / 10}}\edef\arrondisup{\fpeval{\arrondiinf + 0.1}} $\blue{\num{\arrondiinf}} < \mnombre < \red{\num{\arrondisup}}$
+%%
+Encadrements
+%%
+
+

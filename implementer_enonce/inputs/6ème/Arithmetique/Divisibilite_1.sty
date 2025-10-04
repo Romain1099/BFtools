@@ -1,0 +1,45 @@
+
+30
+%%
+\def\numa{0<=x<=9 int}
+\def\numb[2,3,4,5,6,8,9]
+\def\numc[0,1]
+\def\vocab[un diviseur de, un multiple de, divisible par]
+%%
+\acc{Déterminer si} le nombre \affiche{\fpeval{\numa*\numb+\numc}} est \vocab \affiche{\numb} ?	
+	
+Justifie ta réponse à l'aide d'un critère de divisibilité. 
+
+%%
+  
+Pour savoir si un nombre est \vocab \affiche{\numb} on utilise le critère de divisibilité par \affiche{\numb}.
+
+\criteredivisbilite{\numb}{\fpeval{\numa*\numb+\numc}}
+
+%%
+  
+\begin{enumerate}[label=\alph*)]
+    \item Oui, car \affiche{\numa} est divisible par 2 et 3.
+    \item Non, car \affiche{\numa} n'est pas divisible par 3.
+    \item Oui, car \affiche{\numa} est pair.
+    \item Non, car \affiche{\numa} n'est pas divisible par 2.
+\end{enumerate} 
+
+%%
+oui
+%%
+Arithmetique
+%%
+  
+{
+    "instructions": "Justifier si le nombre 56 est un multiple de 6 à l'aide d'un critère de divisibilité.",
+    "latex": [
+        "Le nombre 56 est-il un multiple de 6 ? \\tcfillcrep{}",
+        "Justifie ta réponse à l'aide d'un critère de divisibilité. \\tcfillcrep{}"
+    ],
+    "points": 1,
+    "correction": [
+        "\\(56\\) est divisible par 2 (se termine par 6, un chiffre pair) mais la somme de ses chiffres est \\(5+6=11\\), qui n'est pas divisible par 3. Donc, \\(56\\) n'est pas un multiple de \\(6\\)."
+    ]
+}
+

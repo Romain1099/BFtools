@@ -1,0 +1,61 @@
+import os
+
+def get_tex_content(file):
+    """
+    Récupère le contenu d'un fichier LaTeX, extrait uniquement le contenu
+    entre \begin{document} et \end{document}, puis crée un fichier
+    dans le répertoire '__file__/extraits' avec le même contenu.
+
+    :param file: Chemin du fichier LaTeX source
+    :return: Chemin du fichier extrait produit
+    """
+    if not os.path.isfile(file):
+        raise FileNotFoundError(f"Le fichier spécifié '{file}' est introuvable.")
+
+    # Lire le contenu du fichier d'origine
+    with open(file, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Localiser \begin{document} et \end{document}
+    begin_doc = content.find(r'\begin{document}')
+    end_doc = content.find(r'\end{document}')
+    
+    if begin_doc == -1 or end_doc == -1:
+        raise ValueError("Le fichier ne contient pas les balises \\begin{document} et \\end{document}.")
+    
+    start_content = begin_doc + len(r'\begin{document}')
+    extracted_content = content[start_content:end_doc].strip()
+
+    # Construire le chemin du répertoire '__file__/extraits'
+    output_dir = os.path.join(os.path.dirname(file), 'extraits')
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Nommer le fichier extrait
+    output_file = os.path.join(output_dir, os.path.basename(file))
+
+    # Écrire le contenu extrait dans le fichier de sortie
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(extracted_content)
+
+    return output_file
+
+def import_many_files_content(folder_path):
+    # Vérifier que le chemin est valide
+    if not os.path.isdir(folder_path):
+        raise ValueError(f"Le dossier spécifié '{folder_path}' est introuvable.")
+
+    # Parcourir les fichiers dans le dossier
+    for file_name in os.listdir(folder_path):
+        if file_name.endswith('.tex') and not file_name.startswith('bfpoints'):
+            file_path = os.path.join(folder_path, file_name)
+            try:
+                result = get_tex_content(file_path)
+                print(f"Fichier extrait : {result}")
+            except (FileNotFoundError, ValueError) as e:
+                print(f"Erreur pour le fichier {file_name} : {e}")
+if __name__=='__main__':
+    # Exemple d'utilisation
+    folder_path = r"C:\Users\Utilisateur\Desktop\Faire\Macros\Programmes_de_facilitation\QF_generator\generated\tex\4ème"
+    #file_path=""
+    #print(f"Fichier extrait : {get_tex_content(file_path)}") #extraction d'un seul fichier
+    import_many_files_content(folder_path=folder_path) #import de plusieurs fichiers sans parcours ast

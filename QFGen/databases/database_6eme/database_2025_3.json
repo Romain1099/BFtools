@@ -1,0 +1,434 @@
+{
+    "QF_04_03_2025": {
+        "classe": "6ème",
+        "date": "04_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.9}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{712.83}\t\\def\\mb{31.9}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.9}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\numa{35.49}\n\\def\\numb{15}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{35.49}\\def\\numb{15}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 13 - solutions\n\t\n\\def\\numa{35.49}\n\\def\\numb{15}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\n\n\n\n\\def\\numa{11}\n\\def\\numb{19}\n\\def\\numc{12}\n\\def\\numd{50}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}",
+                "reponse": "\\def\\numa{11}\\def\\numb{19}\\def\\numc{12}\\def\\numd{50}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "details": "%version 1 - solutions\n\t\n\n\n\n\n\\def\\numa{11}\n\\def\\numb{19}\n\\def\\numc{12}\n\\def\\numd{50}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "theme": "Calcul_ligne",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_10_03_2025": {
+        "classe": "6ème",
+        "date": "10_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 11 - Court\n\t\n\n\\def\\ma{55.73}\t\n\\def\\mb{98.6}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{55.73}\t\n\\def\\mb{98.6}\t\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 11 - solutions\n\\def\\ma{55.73}\t\n\\def\\mb{98.6}\t\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 14 - Court\n\t\n\\def\\numa{2.6}\n\\def\\numb{21}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{2.6}\\def\\numb{21}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 14 - solutions\n\t\n\\def\\numa{2.6}\n\\def\\numb{21}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\mina{52}\n\\def\\heurea{19}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{52}\\def\\heurea{19}\\def\\ajoutmin{40}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 4 - solutions\n\t\n\\def\\mina{52}\n\\def\\heurea{19}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_11_03_2025": {
+        "classe": "6ème",
+        "date": "11_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\n\n\n\\def\\numa{17}\n\\def\\numb{80}\n\\def\\numc{50}\n\\def\\numd{12}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}",
+                "reponse": "\\def\\numa{17}\\def\\numb{80}\\def\\numc{50}\\def\\numd{12}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "details": "%version 3 - solutions\n\t\n\n\n\n\n\\def\\numa{17}\n\\def\\numb{80}\n\\def\\numc{50}\n\\def\\numd{12}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "theme": "Calcul_ligne",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 15 - Court\n\t\n\\def\\numa{11.24}\n\\def\\numb{4}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{11.24}\\def\\numb{4}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 15 - solutions\n\t\n\\def\\numa{11.24}\n\\def\\numb{4}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\t\n\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 12 - Court\n\t\n\n\\def\\ma{721.23}\t\n\\def\\mb{55.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{721.23}\t\\def\\mb{55.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 12 - solutions\n\t\n\n\\def\\ma{721.23}\t\n\n\n\n\n\n\n\n\\def\\mb{55.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_13_03_2025": {
+        "classe": "6ème",
+        "date": "13_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\mina{36}\n\\def\\heurea{21}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{36}\\def\\heurea{21}\\def\\ajoutmin{49}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 5 - solutions\n\t\n\\def\\mina{36}\n\\def\\heurea{21}\n\\def\\ajoutmin{49}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 16 - Court\n\t\n\\def\\numa{57.32}\n\\def\\numb{24}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{57.32}\\def\\numb{24}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 16 - solutions\n\t\n\\def\\numa{57.32}\n\\def\\numb{24}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "Tracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont : \t\n\t\n $AB=7{,}25~\\text{cm}$ ;  $BC=5{,}10~\\text{cm}$ ;  $CA=8{,}50~\\text{cm}$.",
+                "reponse": "\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (5.10,0);\n\n  \\pgfmathsetmacro{\\xA}{(5.10*5.10-(8.50*8.50-7.25*7.25))/(2*5.10)}\n  \\pgfmathsetmacro{\\yA}{sqrt(7.25*7.25-\\xA*\\xA)}\n  \\coordinate (A) at (\\xA,\\yA);\n\n  \\draw (A) -- (B) -- (C) -- cycle;\n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n\n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n\n  \\node[left] at (ABmid) {$7{,}25~\\text{cm}$};\n  \\node[right] at (ACmid) {$8{,}50~\\text{cm}$};\n  \\node[below] at (BCmid) {$5{,}10~\\text{cm}$};\n\\end{tikzpicture}",
+                "details": "$\\mathbf{Vérif.}:\\;7{,}25+5{,}10=\\fpeval{round(7.25+5.10,2)}>8{,}50,\\quad5{,}10+8{,}50=\\fpeval{round(5.10+8.50,2)} >7{,}25,\\quad8{,}50+7{,}25=\\fpeval{round(8.50+7.25,2)}>5{,}10.$ \n\n$\\mathbf{Conclusion:}$ La \\textbf{condition} d'\\textbf{existence} est vérifiée, donc le \\textbf{triangle} peut être \\textbf{tracé}.\n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  % Points B et C fixes\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (5.10,0);\n\n  % Calcul du point A\n  \\pgfmathsetmacro{\\xA}{(5.10*5.10-(8.50*8.50-7.25*7.25))/(2*5.10)}\n  \\pgfmathsetmacro{\\yA}{sqrt(7.25*7.25-\\xA*\\xA)}\n  \\coordinate (A) at (\\xA,\\yA);\n\n  % Triangle ABC\n  \\draw (A) -- (B) -- (C) -- cycle;\n  % Marquage des points par des croix\t\n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  % Placement des noms des sommets\n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n\n  % Milieux des segments avec indication des longueurs\n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n\n  % Longueurs affichées aux milieux\n  \\node[left] at (ABmid) {$7{,}25~\\text{cm}$};\n  \\node[right] at (ACmid) {$8{,}50~\\text{cm}$};\n  \\node[below] at (BCmid) {$5{,}10~\\text{cm}$};\n\n\\end{tikzpicture}",
+                "theme": "",
+                "prompt": "Un exercice demandant de tracer un triangle dont on donne les longueurs des trois côtés."
+            }
+        }
+    },
+    "QF1_13_03_2025": {
+        "classe": "6ème",
+        "date": "13_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 13 - Court\n\t\n\n\\def\\ma{800.23}\t\n\n\n\n\n\n\n\n\\def\\mb{86.2}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{800.23}\t\\def\\mb{86.2}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 13 - solutions\n\t\n\n\\def\\ma{800.23}\t\n\n\n\n\n\n\n\n\\def\\mb{86.2}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 17 - Court\n\t\n\\def\\numa{34.61}\n\\def\\numb{22}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{34.61}\\def\\numb{22}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 17 - solutions\n\t\n\\def\\numa{34.61}\n\\def\\numb{22}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\mina{23}\n\\def\\heurea{18}\n\\def\\ajoutmin{54}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{23}\\def\\heurea{18}\\def\\ajoutmin{54}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 6 - solutions\n\t\n\\def\\mina{23}\n\\def\\heurea{18}\n\\def\\ajoutmin{54}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_14_03_2025": {
+        "classe": "6ème",
+        "date": "14_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\numAB{2.5}\n\\def\\numBC{4.7}\n\\def\\numCA{6.9}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{2.5}\n\\def\\numBC{4.7}\\def\\numCA{6.9}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-1.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 1 - solutions\n\t\n\\def\\numAB{2.5}\n\n\\def\\numBC{4.7}\n\\def\\numCA{6.9}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 14 - Court\n\t\n\n\\def\\ma{563.64}\t\n\n\n\n\n\n\n\n\\def\\mb{30.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{563.64}\t\\def\\mb{30.8}\t\n\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 14 - solutions\n\t\n\n\\def\\ma{563.64}\t\n\n\\def\\mb{30.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 18 - Court\n\t\n\\def\\numa{63.82}\n\\def\\numb{8}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{63.82}\\def\\numb{8}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 18 - solutions\n\t\n\\def\\numa{63.82}\n\\def\\numb{8}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_03_2025": {
+        "classe": "6ème",
+        "date": "17_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\numc{40}\n\\def\\numd{12}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}",
+                "reponse": "\\def\\numa{30}\\def\\numb{20}\\def\\numc{40}\\def\\numd{12}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "details": "%version 4 - solutions\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\numc{40}\n\\def\\numd{12}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "theme": "Calcul_ligne",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\mina{33}\n\\def\\heurea{20}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{3}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{33}\\def\\heurea{20}\\def\\ajoutmin{40}\\def\\ajoutheure{3}$00~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 7 - solutions\n\t\n\\def\\mina{33}\n\\def\\heurea{20}\n\\def\\ajoutmin{40}\n\\def\\ajoutheure{3}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= 00~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $00~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\numAB{2.9}\n\\def\\numBC{3.9}\n\\def\\numCA{4.1}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{2.9}\\def\\numBC{3.9}\\def\\numCA{4.1}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=1cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 2 - solutions\n\t\n\\def\\numAB{2.9}\n\\def\\numBC{3.9}\n\\def\\numCA{4.1}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_17_03_2025": {
+        "classe": "6ème",
+        "date": "17_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\mina{45}\n\\def\\heurea{17}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{1}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{45}\\def\\heurea{17}\\def\\ajoutmin{43}\\def\\ajoutheure{1}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 8 - solutions\n\t\n\\def\\mina{45}\n\\def\\heurea{17}\n\\def\\ajoutmin{43}\n\\def\\ajoutheure{1}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 19 - Court\n\t\n\\def\\numa{1.6}\n\\def\\numb{5}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{1.6}\\def\\numb{5}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 19 - solutions\n\t\n\\def\\numa{1.6}\n\\def\\numb{5}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 18 - Court\n\t\n\\def\\ma{209.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{209.77}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 18 - solutions\n\t\n\\def\\ma{209.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_18_03_2025": {
+        "classe": "6ème",
+        "date": "18_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 15 - Court\n\t\n\n\\def\\ma{553.6}\t\n\n\n\n\n\n\n\n\\def\\mb{25.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{553.6}\t\\def\\mb{25.8}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 15 - solutions\n\t\n\n\\def\\ma{553.6}\t\n\n\n\n\n\n\n\n\\def\\mb{25.8}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numAB{4.6}\n\\def\\numBC{3.6}\n\\def\\numCA{5.8}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{4.6}\n\\def\\numBC{3.6}\n\\def\\numCA{5.8}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 4 - solutions\n\\def\\numAB{4.6}\n\\def\\numBC{3.6}\n\\def\\numCA{5.8}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 20 - Court\n\t\n\\def\\numa{42.81}\n\\def\\numb{21}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{42.81}\\def\\numb{21}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 20 - solutions\n\t\n\\def\\numa{42.81}\n\\def\\numb{21}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_20_03_2025": {
+        "classe": "6ème",
+        "date": "20_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 21 - Court\n\t\n\\def\\numa{39.2}\n\\def\\numb{19}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{39.2}\\def\\numb{19}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 21 - solutions\n\t\n\\def\\numa{39.2}\n\\def\\numb{19}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numAB{3.4}\n\\def\\numBC{4.5}\n\\def\\numCA{5.5}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{3.4}\\def\\numBC{4.5}\\def\\numCA{5.5}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 5 - solutions\n\t\n\\def\\numAB{3.4}\n\\def\\numBC{4.5}\n\\def\\numCA{5.5}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 16 - Court\n\t\n\n\\def\\ma{106.07}\t\n\n\n\n\n\n\n\n\\def\\mb{27.9}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{106.07}\t\\def\\mb{27.9}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 16 - solutions\n\t\n\n\\def\\ma{106.07}\t\n\n\n\n\n\n\n\n\\def\\mb{27.9}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_21_03_2025": {
+        "classe": "6ème",
+        "date": "21_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 22 - Court\n\t\n\\def\\numa{16.58}\n\\def\\numb{20}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{16.58}\\def\\numb{20}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 22 - solutions\n\t\n\\def\\numa{16.58}\n\\def\\numb{20}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\numAB{6.0}\n\\def\\numBC{4.7}\n\\def\\numCA{3.8}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{6.0}\\def\\numBC{4.7}\\def\\numCA{3.8}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 6 - solutions\n\t\n\\def\\numAB{6.0}\n\\def\\numBC{4.7}\n\\def\\numCA{3.8}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 17 - Court\n\t\n\n\\def\\ma{860.24}\t\n\n\n\n\n\n\n\n\\def\\mb{87.5}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{860.24}\t\\def\\mb{87.5}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 17 - solutions\n\t\n\n\\def\\ma{860.24}\t\n\n\n\n\n\n\n\n\\def\\mb{87.5}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_21_03_2025": {
+        "classe": "6ème",
+        "date": "21_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\numa{2.93}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{2.93}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 3 - solutions\n\t\n\\def\\numa{2.93}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 18 - Court\n\t\n\n\\def\\ma{81.77}\t\n\n\n\n\n\n\n\n\\def\\mb{39.814}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{81.77}\t\\def\\mb{39.814}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 18 - solutions\n\t\n\n\\def\\ma{81.77}\t\n\n\n\n\n\n\n\n\\def\\mb{39.814}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\mina{57}\n\\def\\heurea{20}\n\\def\\ajoutmin{53}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{57}\\def\\heurea{20}\\def\\ajoutmin{53}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 9 - solutions\n\t\n\\def\\mina{57}\n\\def\\heurea{20}\n\\def\\ajoutmin{53}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_25_03_2025": {
+        "classe": "6ème",
+        "date": "25_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 23 - Court\n\t\n\\def\\numa{4.69}\n\\def\\numb{9}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{4.69}\\def\\numb{9}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 23 - solutions\n\t\n\\def\\numa{4.69}\n\\def\\numb{9}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 19 - Court\n\t\n\n\\def\\ma{312.1}\t\n\n\n\n\n\n\n\n\\def\\mb{67.9}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{312.1}\t\\def\\mb{67.9}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 19 - solutions\n\t\n\n\\def\\ma{312.1}\t\n\n\n\n\n\n\n\n\\def\\mb{67.9}\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 19 - Court\n\t\n\\def\\ma{256.82}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{256.82}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 19 - solutions\n\t\n\\def\\ma{256.82}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_27_03_2025": {
+        "classe": "6ème",
+        "date": "27_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 20 - Court\n\t\n\n\\def\\ma{712.75}\t\n\n\n\n\n\n\n\n\\def\\mb{93.345}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{712.75}\t\\def\\mb{93.345}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 20 - solutions\n\t\n\n\\def\\ma{712.75}\t\n\n\n\n\n\n\n\n\\def\\mb{93.345}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\numAB{5.3}\n\\def\\numBC{3.0}\n\\def\\numCA{4.4}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{5.3}\\def\\numBC{3.0}\\def\\numCA{4.4}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 7 - solutions\n\t\n\\def\\numAB{5.3}\n\\def\\numBC{3.0}\n\\def\\numCA{4.4}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 24 - Court\n\t\n\\def\\numa{32.49}\n\\def\\numb{15}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{32.49}\\def\\numb{15}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 24 - solutions\n\t\n\\def\\numa{32.49}\n\\def\\numb{15}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_27_03_2025": {
+        "classe": "6ème",
+        "date": "27_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\mina{34}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{2}\n\n\t\n\nUne série qui a commencé à $\\heurea~\\text{h}~\\mina~\\text{min}$ doit durer $\\ajoutheure~\\text{h}~\\ajoutmin~\\text{min}$.\t\n\t\n\\acc{Déterminer} en \\acc{justifiant par un calcul} à quelle heure la série se termine.",
+                "reponse": "\\def\\mina{34}\\def\\heurea{18}\\def\\ajoutmin{38}\\def\\ajoutheure{2}$\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$",
+                "details": "%version 10 - solutions\n\t\n\\def\\mina{34}\n\\def\\heurea{18}\n\\def\\ajoutmin{38}\n\\def\\ajoutheure{2}\n\n\t\nCalculons \t\n$\\heurea~\\text{h}~\\mina~\\text{min} + \\ajoutheure~\\text{h}~\\ajoutmin~\\text{min} \\\\\t\n= \\fpeval{\\heurea+\\ajoutheure}~\\text{h} + \\fpeval{\\mina + \\ajoutmin}~\\text{min} \\\\\t\t\n= \\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}+ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t\t\n\t\n\\columnbreak\n\t\nLa série se terminera à $\\fpeval{\\heurea+\\ajoutheure + floor((\\mina+\\ajoutmin)/60)}~\\text{h}~ \\fpeval{(\\mina+\\ajoutmin)-60*floor((\\mina+\\ajoutmin)/60)}~\\text{min}$\t.",
+                "theme": "Durées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 25 - Court\n\t\n\\def\\numa{54.28}\n\\def\\numb{21}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{54.28}\\def\\numb{21}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 25 - solutions\n\t\n\\def\\numa{54.28}\n\\def\\numb{21}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 20 - Court\n\t\n\\def\\ma{230.17}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{230.17}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 20 - solutions\n\t\n\\def\\ma{230.17}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_28_03_2025": {
+        "classe": "6ème",
+        "date": "28_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 21 - Court\n\t\n\\def\\ma{485.32}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{485.32}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 21 - solutions\n\t\n\\def\\ma{485.32}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 26 - Court\n\t\n\\def\\numa{31.99}\n\\def\\numb{24}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{31.99}\\def\\numb{24}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 26 - solutions\n\t\n\\def\\numa{31.99}\n\\def\\numb{24}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\nombre{6988.908}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.",
+                "reponse": "\\def\\nombre{6988.908}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\nombre{6988.908}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "QF_19_01_2025": {
+        "classe": "6ème",
+        "date": "19_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\ma{166.62}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{166.62}\t\\def\\mb{1000}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 7 - solutions\n\t\n\\def\\ma{166.62}\t\n\n\n\n\n\\def\\mb{1000}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{182}\t\n\n\n\n\\def\\mb{111}\t\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma - \\mb$\\end{center}",
+                "reponse": "\\def\\ma{182}\t\\def\\mb{111}\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\ma{182}\t\n\n\n\n\\def\\mb{111}\t\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\ma{449.42}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{449.42}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 7 - solutions\n\t\n\\def\\ma{449.42}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_24_01_2025": {
+        "classe": "6ème",
+        "date": "24_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\ma{153.48}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{153.48}\t\\def\\mb{100}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 8 - solutions\n\t\n\\def\\ma{153.48}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\ma{278.15}\t\n\\def\\mb{14.7}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{278.15}\t\n\\def\\mb{14.7}\t\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 6 - solutions\n\\def\\ma{278.15}\t\n\\def\\mb{14.7}\t\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\ma{389.16}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{389.16}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 8 - solutions\n\t\n\\def\\ma{389.16}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    }
+}

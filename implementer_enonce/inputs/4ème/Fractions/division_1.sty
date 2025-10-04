@@ -1,0 +1,38 @@
+30
+    %%
+    \def\na{2<=x<100 x!=0 x!=1 int decimalesG1}
+    \def\da{2<=x<20 x!=0 x!=1 int}
+    \def\nb{2<=x<20 x!=0 x!=1 int}
+    \def\db{2<=x<100 x!=0 x!=1 int decimalesG1}
+
+    
+    %%
+    %court
+    
+    \acc{Effectuer} le calcul suivant et donner le résultat sous \acc{forme simplifiée}\\
+    \begin{center}$\dfrac{\na}{\da} \div \dfrac{\nb}{\db}$\end{center}
+    %%
+    %help
+
+    \begin{align*}
+        \dfrac{\na}{\da} \div \dfrac{\nb}{\db} = & \dfrac{\na}{\da} \times \dfrac{\db}{\nb}\\
+        = & \dfrac{\na\times \db}{\da\times \nb} \\
+        = & \dfrac{\fpeval{\na * \db}}{\fpeval{\da * \nb}}\\
+        = & \Simplification{\fpeval{\na * \db}}{\fpeval{\da * \nb}}
+    \end{align*}
+        
+    %%
+    %qcm
+
+    \textbf{Cocher} la réponse correcte : \\
+    $\dfrac{\na}{\da} \times \dfrac{\nb}{\db} = $
+    \begin{center} 
+        \listnode{\cb}{$\dfrac{\fpeval{\na / \nb}}{\fpeval{\da / \db}}$} 
+        \listnode{\ccb}{$\dfrac{\fpeval{\na * \db}}{\fpeval{\da * \nb}}$} 
+        \listnode{\cb}{$\dfrac{\fpeval{\na / \nb}}{\fpeval{\da / \db}}$} 
+        \listnode{\cb}{$\Simplification{\fpeval{\na * \nb}}{\fpeval{\da + \db}}$} 
+    \end{center}
+    %%
+    $\dfrac{\fpeval{\na * \db}}{\fpeval{\da * \nb}}$
+    %%
+    Divisions de fractions (1)

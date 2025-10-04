@@ -1,0 +1,51 @@
+
+30
+%%
+\def\numa{0<=x<=4 int}
+\def\numb{0<=x<=8 int}
+\def\numc{0<=x<=15 int}
+\def\numd{0<=x<=32 int}
+%%
+
+
+\acc{Calculer la différence} $\dfrac{\numa}{\numb} - \dfrac{\numc}{\numd}$ 
+
+
+
+%%
+
+
+\[
+\dfrac{\numa}{\numb} - \dfrac{\numc}{\numd} = \dfrac{\numa \times \numd - \numc \times \numb}{\numb \times \numd} = \dfrac{\fpeval{\numa * \numd} - \fpeval{\numc * \numb}}{\fpeval{\numb * \numd}} = \dfrac{\fpeval{\numa * \numd - \numc * \numb}}{\fpeval{\numb * \numd}}
+\] 
+
+
+
+%%
+
+
+\begin{enumerate}
+    \item \dfrac{\fpeval{\numa * \numd + \numc * \numb}}{\fpeval{\numb * \numd}}
+    \item \dfrac{\fpeval{\numa * \numd - \numc * \numb + 10}}{\fpeval{\numb * \numd}}
+    \item \dfrac{\fpeval{\numa * \numd - \numc * \numb}}{\fpeval{\numb * \numd}}
+    \item \dfrac{\fpeval{\numa * \numd - 2 * \numc * \numb}}{\fpeval{\numb * \numd}}
+\end{enumerate} 
+
+
+
+%%
+\[\dfrac{\fpeval{\numa * \numd - \numc * \numb}}{\fpeval{\numb * \numd}}\]
+%%
+Fractions
+%%
+{
+ "instructions": "Calculer la différence des fractions suivantes.",
+    "latex": [
+        "Calculer: \\( \\dfrac{4}{8} - \\dfrac{15}{32} \\rightarrow \\tcfillcrep{} \\)"
+    ],
+    "points": 1,
+    "correction": [
+        "\\( \\dfrac{-64}{256} \\)"
+    ]
+}
+

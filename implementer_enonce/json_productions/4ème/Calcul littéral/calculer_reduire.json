@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\numa{38}\n\n\\def\\numb{-4}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{38}\\def\\numb{-4}",
+        "details": "%version 1 - solutions\n\t\n\\def\\numa{38}\n\n\\def\\numb{-4}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\numa{48}\n\n\\def\\numb{4}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{48}\\def\\numb{4}",
+        "details": "%version 2 - solutions\n\t\n\\def\\numa{48}\n\n\\def\\numb{4}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\numa{14}\n\n\\def\\numb{11}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{14}\\def\\numb{11}",
+        "details": "%version 3 - solutions\n\t\n\\def\\numa{14}\n\n\\def\\numb{11}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\numa{41}\n\n\\def\\numb{-18}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{41}\\def\\numb{-18}",
+        "details": "%version 4 - solutions\n\t\n\\def\\numa{41}\n\n\\def\\numb{-18}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\numa{31}\n\n\\def\\numb{-11}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{31}\\def\\numb{-11}",
+        "details": "%version 5 - solutions\n\t\n\\def\\numa{31}\n\n\\def\\numb{-11}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\numa{15}\n\n\\def\\numb{11}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{15}\\def\\numb{11}",
+        "details": "%version 6 - solutions\n\t\n\\def\\numa{15}\n\n\\def\\numb{11}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\numa{35}\n\n\\def\\numb{16}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{35}\\def\\numb{16}",
+        "details": "%version 7 - solutions\n\t\n\\def\\numa{35}\n\n\\def\\numb{16}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\numa{10}\n\n\\def\\numb{-6}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{-6}",
+        "details": "%version 8 - solutions\n\t\n\\def\\numa{10}\n\n\\def\\numb{-6}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\numa{47}\n\n\\def\\numb{16}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{47}\\def\\numb{16}",
+        "details": "%version 9 - solutions\n\t\n\\def\\numa{47}\n\n\\def\\numb{16}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\numa{46}\n\n\\def\\numb{17}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{46}\\def\\numb{17}",
+        "details": "%version 10 - solutions\n\t\n\\def\\numa{46}\n\n\\def\\numb{17}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\numa{8}\n\n\\def\\numb{11}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{8}\\def\\numb{11}",
+        "details": "%version 11 - solutions\n\t\n\\def\\numa{8}\n\n\\def\\numb{11}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\numa{34}\n\n\\def\\numb{-2}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{34}\\def\\numb{-2}",
+        "details": "%version 12 - solutions\n\t\n\\def\\numa{34}\n\n\\def\\numb{-2}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\numa{38}\n\n\\def\\numb{-12}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{38}\\def\\numb{-12}",
+        "details": "%version 13 - solutions\n\t\n\\def\\numa{38}\n\n\\def\\numb{-12}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\numa{8}\n\n\\def\\numb{-15}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{8}\\def\\numb{-15}",
+        "details": "%version 14 - solutions\n\t\n\\def\\numa{8}\n\n\\def\\numb{-15}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\numa{9}\n\n\\def\\numb{1}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{9}\\def\\numb{1}",
+        "details": "%version 15 - solutions\n\t\n\\def\\numa{9}\n\n\\def\\numb{1}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\numa{18}\n\n\\def\\numb{-1}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{18}\\def\\numb{-1}",
+        "details": "%version 16 - solutions\n\t\n\\def\\numa{18}\n\n\\def\\numb{-1}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\numa{47}\n\n\\def\\numb{12}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{47}\\def\\numb{12}",
+        "details": "%version 17 - solutions\n\t\n\\def\\numa{47}\n\n\\def\\numb{12}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\numa{8}\n\n\\def\\numb{1}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{8}\\def\\numb{1}",
+        "details": "%version 18 - solutions\n\t\n\\def\\numa{8}\n\n\\def\\numb{1}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\numa{26}\n\n\\def\\numb{14}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{26}\\def\\numb{14}",
+        "details": "%version 19 - solutions\n\t\n\\def\\numa{26}\n\n\\def\\numb{14}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\numa{11}\n\n\\def\\numb{-7}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{-7}",
+        "details": "%version 20 - solutions\n\t\n\\def\\numa{11}\n\n\\def\\numb{-7}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\numa{28}\n\n\\def\\numb{-16}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{28}\\def\\numb{-16}",
+        "details": "%version 21 - solutions\n\t\n\\def\\numa{28}\n\n\\def\\numb{-16}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\numa{3}\n\n\\def\\numb{-2}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{-2}",
+        "details": "%version 22 - solutions\n\t\n\\def\\numa{3}\n\n\\def\\numb{-2}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\numa{44}\n\n\\def\\numb{-16}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{44}\\def\\numb{-16}",
+        "details": "%version 23 - solutions\n\t\n\\def\\numa{44}\n\n\\def\\numb{-16}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\numa{13}\n\n\\def\\numb{-8}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{-8}",
+        "details": "%version 24 - solutions\n\t\n\\def\\numa{13}\n\n\\def\\numb{-8}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\numa{34}\n\n\\def\\numb{-20}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{34}\\def\\numb{-20}",
+        "details": "%version 25 - solutions\n\t\n\\def\\numa{34}\n\n\\def\\numb{-20}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\numa{42}\n\n\\def\\numb{-6}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{42}\\def\\numb{-6}",
+        "details": "%version 26 - solutions\n\t\n\\def\\numa{42}\n\n\\def\\numb{-6}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\numa{14}\n\n\\def\\numb{-8}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{14}\\def\\numb{-8}",
+        "details": "%version 27 - solutions\n\t\n\\def\\numa{14}\n\n\\def\\numb{-8}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\numa{27}\n\n\\def\\numb{-16}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{27}\\def\\numb{-16}",
+        "details": "%version 28 - solutions\n\t\n\\def\\numa{27}\n\n\\def\\numb{-16}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\numa{26}\n\n\\def\\numb{-17}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{26}\\def\\numb{-17}",
+        "details": "%version 29 - solutions\n\t\n\\def\\numa{26}\n\n\\def\\numb{-17}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\numa{47}\n\n\\def\\numb{-3}\n\n\n\t\n\\acc{Calculer} et \\acc{réduire} l'expression : \t$$A=\\affiche{\\numa}x \\times (\\affiche{\\numb}x)$$\n",
+        "reponse": "\\def\\numa{47}\\def\\numb{-3}",
+        "details": "%version 30 - solutions\n\t\n\\def\\numa{47}\n\n\\def\\numb{-3}\n\n\n\t\n\n",
+        "theme": "\nCalcul littéral\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

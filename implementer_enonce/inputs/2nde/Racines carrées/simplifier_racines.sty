@@ -1,0 +1,54 @@
+
+30
+%%
+\def\numa[4,9,16,25,36,49,64,81]
+\def\numb{2<=x<=14 int}
+%%
+\acc{Simplifier} l'écriture de la racine suivante :
+\begin{center}
+$\sqrt{\fpeval{\numa*\numb}}$
+\end{center}
+
+%%
+Pour simplifier, on cherche les carrés parfaits dans la décomposition :
+        \begin{center}$\fpeval{\numa*\numb}=\Decomposition[Exposant]{\fpeval{\numa*\numb}}$\end{center}
+            
+            Ensuite on utilise la formule : $\sqrt{ab} = \sqrt{a} \times \sqrt{b}$ (si $a,b \geq 0$) et on simplifie l'écriture des racines avec des termes au carré.
+            
+            \columnbreak
+            
+            Résultat simplifié : \begin{center}$\fpeval{\numa*\numb}=\SimplificationRacine{\numa*\numb}$\end{center}
+
+%%
+
+
+\begin{enumerate}
+    \item $\affiche{\fpeval{floor(sqrt(gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)))+1}} \sqrt{\affiche{\fpeval{(\numa*\numb)/gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)}}}$
+    \item $\affiche{\fpeval{floor(sqrt(gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)))-1}} \sqrt{\affiche{\fpeval{(\numa*\numb)/gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)}}}$
+    \item $\affiche{\fpeval{floor(sqrt(gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)))}} \sqrt{\affiche{\fpeval{(\numa*\numb)/gcd(\numa*\numb, floor(sqrt(\numa*\numb))^2)}}}$
+    \item $\sqrt{\affiche{\fpeval{\numa*\numb}}}$
+\end{enumerate} 
+
+
+
+%%
+$\SimplificationRacine{\numa*\numb}$
+%%
+Racines carrées
+%%
+{
+
+{
+    "instructions": "Simplifier l'écriture de la racine carrée donnée",
+    "latex": [
+        "\\sqrt{\\fpeval{(\\typeoperation == 1) ? \\numa*\\numb : 0}\\fpeval{(\\typeoperation == 2) ? 1 : 0}\\ifnum\\typeoperation=2\\dfrac{\\affiche{\\numa}}{\\affiche{\\numb}}\\fi} = \\tcfillcrep{}"
+    ],
+    "points": 1,
+    "correction": [
+        "\\ifnum\\typeoperation=1\\affiche{\\fpeval{floor(sqrt(gcd(\\numa*\\numb, floor(sqrt(\\numa*\\numb))^2)))}} \\sqrt{\\affiche{\\fpeval{(\\numa*\\numb)/gcd(\\numa*\\numb, floor(sqrt(\\numa*\\numb))^2)}}}\\else\\dfrac{\\sqrt{\\affiche{\\numa}}}{\\sqrt{\\affiche{\\numb}}}\\fi"
+    ]
+}
+```
+
+}
+

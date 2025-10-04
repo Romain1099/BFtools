@@ -1,0 +1,302 @@
+\documentclass[a4paper,11pt,fleqn]{article}
+
+\usepackage[left=1cm,right=0.5cm,top=0.5cm,bottom=2cm]{geometry}
+
+\usepackage{bfcours}
+\usepackage{bfcours-fonts}
+\usepackage{pagecolor} % Pour colorer le fond de la page
+%\usetikzlibrary{backgrounds}
+\usepackage{expl3} % Nécessaire pour utiliser le langage LaTeX3
+\ExplSyntaxOn
+% Définition de la commande \mprefix
+\cs_new:Npn \mprefix #1
+  {
+    \int_case:nnF {#1}
+      {
+        {-12} { \text{pico} }
+        {-9}  { \text{nano} }
+        {-6}  { \text{micro} }
+        {-3}  { \text{milli} }
+        {-2}  { \text{centi} }
+        {-1}  { \text{deci} }
+        {0}   { \text{} } % Aucun préfixe pour la puissance 0
+        {1}   { \text{deca} }
+        {2}   { \text{hecto} }
+        {3}   { \text{kilo} }
+        {6}   { \text{mega} }
+        {9}   { \text{giga} }
+        {12}  { \text{tera} }
+      }
+      { \text{Valeur inconnue} } % Gestion des cas non pris en charge
+  }
+\ExplSyntaxOff
+
+
+% Calcul et affichage des diviseurs avec Lua
+\begin{luacode*}
+    function generate_divisors_table(n)
+      local seen = {} -- Table pour suivre les nombres déjà rencontrés
+      tex.print("\\noindent\\begin{tabular}{c|c}")
+      for i = 1, n do
+        if n % i == 0 then
+          local complement = math.floor(n / i) -- Calcul de la partie entière
+          -- Vérifier si le complément est déjà dans la table 'seen'
+          if seen[complement] then break end
+          -- Ajouter le diviseur et le complément dans la table
+          seen[i] = true
+          tex.print(i .. " & " .. complement .. " \\\\")
+        end
+      end
+      tex.print("\\end{tabular}")
+    end
+    \end{luacode*}
+    
+\newcommand{\divisorstable}[1]{%
+    \directlua{generate_divisors_table(#1)}%
+}
+
+% Commande pour s'adapter en fonction du choix
+\newcommand{\marchandcmd}[1]{%
+    \IfStrEqCase{#1}{%
+        {marchand}{\xdef\munite{articles}\def\intro{}\def\vend{vend}\def\tousSes{$\proportion$ de ses }\def\oeufs{$\quantite$\ articles}\def\labelvente{le nombre d'articles vendus}}
+        {agriculteur}{\xdef\munite{tonnes}\def\intro{Suite à des intempéries,}\def\vend{perd}\def\tousSes{les $\proportion$èmes}\def\oeufs{sa récolte, estimée à \quantite\  tonnes}\def\labelvente{la masse perdue}}
+        {boulanger}{\xdef\munite{baguettes}\def\intro{}\def\vend{vend}\def\tousSes{les $\proportion$èmes}\def\oeufs{de ses $\quantite$ baguettes}\def\labelvente{le nombre de baguettes vendues}}
+    }[\textcolor{red}{\textbf{Métier inconnu : #1}}]% Si aucune correspondance
+}
+\ExplSyntaxOn
+
+% Définition de la commande \para
+% Si \na > 0, retourne \na ; si \na < 0, retourne (\na)
+\cs_new:Npn \para #1
+  {
+    \int_compare:nNnTF {#1} > {0}
+      {#1} % Si #1 est positif, retourne #1
+      {(#1)} % Si #1 est négatif, retourne (#1)
+  }
+
+% Définition de la commande \expa
+% Si \puisxa = 0, retourne \para x^{\puisxa}, sinon retourne \para
+\cs_new:Npn \expa #1 #2
+  {
+    \int_compare:nNnTF {#2} = {0}
+      {\para{#1}} % Si la puissance est 0, affiche avec x^{#2}
+      {
+        \int_compare:nNnTF {#2} = {1}
+        {\para{#1}~x}
+        {\para{#1}~x^{#2}}
+      } % Sinon, retourne simplement \para
+  }
+\cs_new:Npn \finalsigne #1
+  {
+    \int_compare:nNnTF {#1} > {0}
+      {+} % Si la puissance est 0, affiche avec x^{#2}
+      {-} % Sinon, retourne simplement \para
+  }
+\ExplSyntaxOff
+% Définition de la couleur personnalisée
+\definecolor{customBackground}{RGB}{0, 43, 54}
+
+\def\boiteQFdetcouleur{customBackground}%{green!75!black}
+
+\newcommand\boiteQFdet[2]{
+    \begin{tcolorbox}[nobeforeafter,title=#1,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boiteQFdetcouleur,colframe=customBackground,coltitle=white,colback=white,left=0.2pt,right=0.2pt,width=17.5cm]
+        #2
+    \end{tcolorbox}
+}
+\def\boiteQFcouleur{blue!75!black}
+
+\newcommand\boiteQFQ[2]{
+    \begin{tcolorbox}[
+            nobeforeafter,
+            title=#1,
+            halign title=flush left,
+            fonttitle=\bfseries,
+            colbacktitle=customBackground,
+            colframe=customBackground,
+            coltitle=white,
+            colback=white,
+            left=0.2pt,
+            right=0.2pt,
+            height=4cm,
+            width=8.2cm
+        ]
+        %\begin{itembox}\textbf{#1}\end{itembox} 
+        #2
+    \end{tcolorbox}
+}
+%\def\boitereponsecouleur{gray!65!red}
+\def\boitereponsecouleur{red!75!black}
+\newcommand\boiteQFA[1]{
+    \begin{tcolorbox}[nobeforeafter,title=Réponses :,halign title=center,fonttitle=\bfseries,colbacktitle=\boitereponsecouleur,colframe=customBackground,coltitle=white,colback=white,left=5pt,right=0.2pt,height=4cm,width=8.2cm]
+        #1
+    \end{tcolorbox}
+}
+
+\def\myiconpath{}
+
+\getRandomIconPath
+
+\renewcommand\boiteQFA[1]{
+    \begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left, 
+                      fonttitle=\bfseries, colbacktitle=\boitereponsecouleur, 
+                      coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+                      height=4cm, width=8.2cm, enhanced, overlay={
+        \node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm] 
+            {
+                %\includegraphics[width=1.5cm]{../../../images/sticker_eclair.png}
+                \includegraphics[width=1.5cm]{\myiconpath }
+                %\randomincludegraphics[2cm][0cm][0cm]
+            };
+    }]
+        #1
+    \end{tcolorbox}
+}
+\newcommand\boiteQzeroFA[1]{
+    \begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left, 
+                      fonttitle=\bfseries, colbacktitle=\boitereponsecouleur, 
+                      coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+                      height=4cm, width=8.2cm, enhanced, overlay={
+        \node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm] 
+            {
+                \includegraphics[width=1.5cm]{C:/Users/Utilisateur/Desktop/Faire/Macros/Programmes_de_facilitation/QF_generator/images/sticker_eclair.png}%{../../../images/sticker_eclair.png}
+                %\includegraphics[width=1.5cm]{\myiconpath }
+                %\randomincludegraphics[2cm][0cm][0cm]
+            };
+    }]
+        \begin{center}
+            \includegraphics[height=2.8cm]{\myiconpath }%
+        \end{center}
+    \end{tcolorbox}
+}
+\newtcolorbox{itembox}[1][]{
+  baseline,
+  nobeforeafter, % Supprime les espaces avant et après
+  colframe=customBackground,
+  colback=customBackground,
+  coltext=white,
+  coltitle=white,
+  boxsep=1pt,
+  boxrule=0.5pt,
+  arc=2pt,
+  left=2pt,
+  right=2pt,
+  top=1pt,
+  bottom=1pt,
+  width=0.7cm,
+  #1
+}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{siunitx} % Pour la notation avec virgule
+\usepackage{xfp}
+% Configurer siunitx pour utiliser la virgule comme séparateur décimal
+%\sisetup{output-decimal-marker={,}}
+\newcommand{\cperso}[1]{\num{\fpeval{ #1 }}}
+% Configuration locale pour le formatage des nombres
+\sisetup{%
+%  round-mode=places,
+%  round-precision=5,
+  output-decimal-marker={,},
+%  group-separator={}
+}
+
+% Définir la commande \response
+\newcommand{\fracrep}[2]{%
+  \FPeval{\result}{round(#1/#2:8)} % Calculer la fraction et arrondir à 4 décimales
+  \num{\result} % Afficher le résultat avec une virgule
+}
+\opset{decimalsepsymbol={,}}
+% Activer ou désactiver l'affichage des boîtes pour les points
+%\displayitempointsfalse % Ne pas afficher les boîtes
+\displayitempointstrue % Afficher les boîtes
+
+\begin{document}
+
+\setcounter{pagecounter}{0}
+\setcounter{ExoMA}{0}
+
+\def\points{\phantom{AAA}}
+\def\difficulty{\phantom{AAA}}
+\chapitre[
+    %niveau% : $\mathbf{6^{\text{ème}}}$,$\mathbf{5^{\text{ème}}}$,$\mathbf{4^{\text{ème}}}$,$\mathbf{3^{\text{ème}}}$,$\mathbf{2^{\text{nde}}}$,$\mathbf{1^{\text{ère}}}$,$\mathbf{T^{\text{Le}}}$,
+    ]{
+    Questions Flash% : ,Equations
+    }{
+    Collège% : Collège,Lycée
+    }{
+    Amadis Jamyn% : Amadis Jamyn,Eugène Belgrand
+    }{
+    \tableauPresenteEvalSixieme{}{\getsavedtotalpoints}
+    }{
+    Devoir :
+    }
+
+\setrdcrep{seyes, correction=false, correction color=monrose, correction font = \large\bfseries}
+
+\vspace{-0.2cm}
+\begin{minipage}[t]{0.5\textwidth}%
+    \tableaucompetenceEval{
+        %competences
+    }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.415\textwidth}
+    \begin{minipage}[t]{0.75\textwidth}
+        \phantom{a}\\
+        Date : \repsim[3.5cm]{}\hfill \vrule \hfill \overlaychrono{15}
+    \end{minipage}\\
+    \begin{minipage}[t]{\textwidth}
+        \textbf{Modalités} :
+        \begin{itemize}[label=$\bullet$]
+            \item Calculatrice autorisée% : \item Calculatrice interdite, \item Calculatrice autorisée,\item 
+            \item Pas de prêt de matériel
+            \item Les réponses doivent être justifiées
+        \end{itemize}
+    \end{minipage}
+\end{minipage}
+\begin{EXO}{Questions Flash}{}
+%\begin{multicols}{2}
+    \begin{enumerate}
+        %questions
+    \end{enumerate}
+%\end{multicols}
+
+
+\exocorrection
+
+\begin{enumerate}
+    %answers
+\end{enumerate}
+
+\end{EXO}
+
+\newpage
+\setcounter{pagecounter}{0}
+\setcounter{ExoMA}{0}
+
+\chapitre[
+    %niveau%
+    ]{
+    Questions Flash%
+    }{
+    Collège%
+    }{
+    Amadis Jamyn%
+    }{
+    % supplement
+    }{
+    Solutions :
+    }
+\setrdcrep{seyes, correction=true, correction color=monrose, correction font = \large\bfseries}
+\tcbset{
+    rdexo/default/.cd,correction style/.style={
+        before upper=%
+        \textbf{\thelabel~
+        \thecorrectionnum~:~}
+    }
+}
+
+
+\rdexocorrection{0}
+
+\end{document}

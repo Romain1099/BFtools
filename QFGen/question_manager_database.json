@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Addition Simple",
+        "func_name": "addition",
+        "params": {
+            "a": {
+                "type":"int",
+                "default_value": 0,
+                "random_condition":"random.randint(0,20)"
+            },
+            "b": {
+                "type":"int",
+                "default_value": 0,
+                "random_condition":"random.randint(5,15)"
+            },
+            "completion_mode":{
+                "type":"str",
+                "default_value":"random"
+            }
+        },
+        "func_code":"if completion_mode == random :\n\b return f'a + b = {a + b}' ",
+        "conditions": {
+            "selection_type": ["manual","random"]
+        }
+    },
+    {
+        "title": "Multiplication",
+        "func_name": "multiplication",
+        "params": {
+            "x": 1,
+            "y": 1
+        },
+        "conditions": {
+            "selection": "random"
+        }
+    },
+    {
+        "title": "Conversion Celsius à Fahrenheit",
+        "func_name": "celsius_to_fahrenheit",
+        "params": {
+            "celsius": 0
+        },
+        "conditions": {
+            "selection": "conditional",
+            "condition": "celsius > -273.15"
+        }
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{866.41}\t\n\n\n\n\n\n\n\n\\def\\mb{67.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{866.41}\t\\def\\mb{67.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\ma{866.41}\t\n\n\n\n\n\n\n\n\\def\\mb{67.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{798.0}\t\n\n\n\n\n\n\n\n\\def\\mb{42.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{798.0}\t\\def\\mb{42.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\ma{798.0}\t\n\n\n\n\n\n\n\n\\def\\mb{42.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{712.83}\t\\def\\mb{31.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\ma{712.83}\t\n\n\n\n\n\n\n\n\\def\\mb{31.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{505.51}\t\n\n\n\n\n\n\n\n\\def\\mb{66.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{505.51}\t\\def\\mb{66.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\ma{505.51}\t\n\n\n\n\n\n\n\n\\def\\mb{66.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\ma{503.79}\t\n\n\n\n\n\n\n\n\\def\\mb{77.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{503.79}\t\\def\\mb{77.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\ma{503.79}\t\n\n\n\n\n\n\n\n\\def\\mb{77.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\ma{200.15}\t\n\n\n\n\n\n\n\n\\def\\mb{14.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{200.15}\t\\def\\mb{14.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\ma{200.15}\t\n\n\n\n\n\n\n\n\\def\\mb{14.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\ma{952.56}\t\n\n\n\n\n\n\n\n\\def\\mb{45.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{952.56}\t\\def\\mb{45.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\ma{952.56}\t\n\n\n\n\n\n\n\n\\def\\mb{45.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\ma{281.2}\t\n\n\n\n\n\n\n\n\\def\\mb{25.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{281.2}\t\\def\\mb{25.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\ma{281.2}\t\n\n\n\n\n\n\n\n\\def\\mb{25.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\ma{766.88}\t\n\n\n\n\n\n\n\n\\def\\mb{51.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{766.88}\t\\def\\mb{51.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\ma{766.88}\t\n\n\n\n\n\n\n\n\\def\\mb{51.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\ma{437.13}\t\n\n\n\n\n\n\n\n\\def\\mb{33.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{437.13}\t\\def\\mb{33.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\ma{437.13}\t\n\n\n\n\n\n\n\n\\def\\mb{33.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\ma{565.03}\t\n\n\n\n\n\n\n\n\\def\\mb{95.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{565.03}\t\\def\\mb{95.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\ma{565.03}\t\n\n\n\n\n\n\n\n\\def\\mb{95.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\ma{721.23}\t\n\n\n\n\n\n\n\n\\def\\mb{55.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{721.23}\t\\def\\mb{55.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\ma{721.23}\t\n\n\n\n\n\n\n\n\\def\\mb{55.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\ma{800.23}\t\n\n\n\n\n\n\n\n\\def\\mb{86.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{800.23}\t\\def\\mb{86.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\ma{800.23}\t\n\n\n\n\n\n\n\n\\def\\mb{86.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\ma{563.64}\t\n\n\n\n\n\n\n\n\\def\\mb{30.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{563.64}\t\\def\\mb{30.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\ma{563.64}\t\n\n\n\n\n\n\n\n\\def\\mb{30.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\ma{553.6}\t\n\n\n\n\n\n\n\n\\def\\mb{25.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{553.6}\t\\def\\mb{25.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\ma{553.6}\t\n\n\n\n\n\n\n\n\\def\\mb{25.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\ma{106.07}\t\n\n\n\n\n\n\n\n\\def\\mb{27.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{106.07}\t\\def\\mb{27.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\ma{106.07}\t\n\n\n\n\n\n\n\n\\def\\mb{27.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\ma{860.24}\t\n\n\n\n\n\n\n\n\\def\\mb{87.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{860.24}\t\\def\\mb{87.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\ma{860.24}\t\n\n\n\n\n\n\n\n\\def\\mb{87.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\ma{831.77}\t\n\n\n\n\n\n\n\n\\def\\mb{39.814}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{831.77}\t\\def\\mb{39.814}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\ma{831.77}\t\n\n\n\n\n\n\n\n\\def\\mb{39.814}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\ma{312.1}\t\n\n\n\n\n\n\n\n\\def\\mb{66.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{312.1}\t\\def\\mb{66.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\ma{312.1}\t\n\n\n\n\n\n\n\n\\def\\mb{66.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\ma{712.75}\t\n\n\n\n\n\n\n\n\\def\\mb{93.345}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{712.75}\t\\def\\mb{93.345}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\ma{712.75}\t\n\n\n\n\n\n\n\n\\def\\mb{93.345}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\ma{577.5}\t\n\n\n\n\n\n\n\n\\def\\mb{72.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{577.5}\t\\def\\mb{72.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\ma{577.5}\t\n\n\n\n\n\n\n\n\\def\\mb{72.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\ma{228.64}\t\n\n\n\n\n\n\n\n\\def\\mb{38.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{228.64}\t\\def\\mb{38.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\ma{228.64}\t\n\n\n\n\n\n\n\n\\def\\mb{38.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\ma{682.72}\t\n\n\n\n\n\n\n\n\\def\\mb{13.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{682.72}\t\\def\\mb{13.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\ma{682.72}\t\n\n\n\n\n\n\n\n\\def\\mb{13.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\ma{180.91}\t\n\n\n\n\n\n\n\n\\def\\mb{15.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{180.91}\t\\def\\mb{15.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\ma{180.91}\t\n\n\n\n\n\n\n\n\\def\\mb{15.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\ma{687.48}\t\n\n\n\n\n\n\n\n\\def\\mb{11.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{687.48}\t\\def\\mb{11.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\ma{687.48}\t\n\n\n\n\n\n\n\n\\def\\mb{11.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\ma{336.34}\t\n\n\n\n\n\n\n\n\\def\\mb{72.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{336.34}\t\\def\\mb{72.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\ma{336.34}\t\n\n\n\n\n\n\n\n\\def\\mb{72.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\ma{993.28}\t\n\n\n\n\n\n\n\n\\def\\mb{77.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{993.28}\t\\def\\mb{77.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\ma{993.28}\t\n\n\n\n\n\n\n\n\\def\\mb{77.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\ma{412.33}\t\n\n\n\n\n\n\n\n\\def\\mb{45.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{412.33}\t\\def\\mb{45.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\ma{412.33}\t\n\n\n\n\n\n\n\n\\def\\mb{45.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\ma{755.43}\t\n\n\n\n\n\n\n\n\\def\\mb{20.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{755.43}\t\\def\\mb{20.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\ma{755.43}\t\n\n\n\n\n\n\n\n\\def\\mb{20.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\ma{241.27}\t\n\n\n\n\n\n\n\n\\def\\mb{37.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{241.27}\t\\def\\mb{37.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\ma{241.27}\t\n\n\n\n\n\n\n\n\\def\\mb{37.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}\n\n",
+        "theme": "\n\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

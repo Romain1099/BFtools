@@ -1,0 +1,33 @@
+
+30
+%%
+\def\numa[2,3,5,7,11,13]
+\def\numb[2,3,5,7]
+\def\numc[2,3,5,7]
+\def\puisb{1<x<4 int}
+\def\puisc{1<x<3 int}
+%%
+\xdef\nombre{\fpeval{\numa*\numb^\puisb*\numc^\puisc}}
+Donner la \acc{décomposition} en produit de facteurs premiers du nombre $\num{\nombre}$.
+
+%%
+\xdef\nombre{\fpeval{\numa*\numb^\puisb*\numc^\puisc}}
+Par division succesives par des nombres premiers : 	
+\Decomposition[Tableau]{\nombre}
+	
+\columnbreak	
+	
+Par conséquent on écrit : 	
+
+\[\num{2450}=\Decomposition[Exposant]{\nombre}\]
+
+%%
+
+
+%%
+\xdef\nombre{\fpeval{\numa*\numb^\puisb*\numc^\puisc}}\Decomposition[Exposant]{\nombre}
+%%
+Arithmétique
+%%
+
+

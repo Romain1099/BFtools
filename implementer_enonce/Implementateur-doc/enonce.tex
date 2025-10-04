@@ -1,0 +1,226 @@
+\section{Introduction}
+
+\subsection{A quoi sert ce logiciel}
+Ce logiciel est un \acc{gestionnaire} d'énoncés destinés à être utilisés comme \acc{automatismes}. 
+
+Il pourra toutefois être utilisé à d'autres fins par modification de la configuration.
+
+Il permet, avec une syntaxe légère, de construire des énoncés respectant les contraintes suivantes : 
+\begin{tcbenumerate}
+    \tcbitem Les énoncés doivent être écrits $100\%$ en langage \LaTeX.
+    \tcbitem Définir des \acc{variables} au début d'énoncé, et répond à la question en utilisant \acc{exclusivement ces variables}.
+    \tcbitem Organiser et répertorier les énoncés produits. 
+    \tcbitem Permettre de générer des versions multiples grâce à des générateurs. 
+    \tcbitem Permettre une modification manuelle \acc{facilitée} par modification des variables. 
+\end{tcbenumerate}
+
+\subsection{Architecture}
+
+Le projet s'organise selon l'arborescence suivante :
+
+\dirtree{%
+.1 implementer\_enonce/.
+.2 main.py.
+.2 enonce\_implementator.py.
+.2 inputs/.
+.3 6ème/.
+.3 5ème/.
+.3 4ème/.
+.3 3ème/.
+.3 2nde/.
+.3 1ere/.
+.4 [Thème]/.
+.5 exercice.sty.
+.2 json\_productions/.
+.3 [même structure que inputs/].
+.2 productions/.
+.2 modules/.
+.3 UI\_v2.py.
+.3 version\_maker.py.
+.3 numbers\_def.py.
+.3 exo\_number.py.
+.3 number\_generators\_manager.py.
+.3 number\_generators/.
+.4 arithmetic\_number\_def.py.
+.4 float\_number\_def.py.
+.4 number\_generator.py.
+.3 abstractor/.
+.4 abstract\_exo\_ui.py.
+.4 question\_abstractor.py.
+.2 prompts/.
+}
+
+\subsubsection{Modules principaux}
+
+\begin{MultiColonnes}{2}[colframe=defi,colback=white,boxrule=0.4pt,coltitle=white]
+    \tcbitem[title=UI\_v2.py] Interface graphique avec \acc{CustomTkinter}. Classe \texttt{ExerciseEditor} gérant l'édition multi-onglets et l'intégration IA.
+
+    \tcbitem[title=version\_maker.py] Parsing du format \texttt{\%\%} et génération des versions. Gère les types \texttt{SHORT}, \texttt{HELP}, \texttt{FULL}, \texttt{QCM}.
+
+    \tcbitem[title=numbers\_def.py] Analyse syntaxique des définitions de variables et génération des valeurs aléatoires selon contraintes.
+
+    \tcbitem[title=number\_generators\_manager.py] Chargement dynamique des générateurs depuis \texttt{modules/number\_generators/}. Système extensible.
+\end{MultiColonnes} 
+
+\subsection{Dépendances externes}
+
+\begin{MultiColonnes}{2}
+\tcbitem Le module graphique est dépendant d'un module de \acc{QFGen}. 
+
+Ainsi il faut que les deux programmes soient dans le même dossier parent. 
+\tcbitem[halign=left,valign=top] \dirtree{%
+.1 Dossier parent.
+.2 implementer\_enonce/.
+.2 QFGen/.
+}
+\end{MultiColonnes}
+
+
+\section{Fonctionnalités}
+
+\subsection{\'Enoncé abstrait}
+
+Par appui sur le bouton \frquote{Abstraire un énoncé}, une modale de texte s'ouvre. 
+
+Cette modale est en réalité destinée à recevoir un prompt qui peut être de plusieurs nature : 
+
+\begin{tcbenumerate}[2]
+    \tcbitem Un exercice venu de votre collection. 
+    \tcbitem Un prompt basique. 
+    \tcbitem[raster multicolumn=2] Un exercice partiel ( par exemple récupéré par extraction de texte ) associé à un prompt. 
+    \tcbitem[raster multicolumn=2,colframe=black,boxrule=0.4pt] Dans tous les cas, plus il y aura de détails, plus l'agent réalisera votre idée. 
+    
+    De la même manière, Pplus le code \LaTeX est de qualité, moins l'agent aura de travail de production. 
+\end{tcbenumerate}
+
+Un agent s'occupe alors de générer les éléments suivants : 
+\begin{MultiColonnes}{2}[colframe=defi,colback=white,boxrule=0.4pt,coltitle=white]
+    \tcbitem[title=Variables] Une syntaxe particulière est réservée aux variables pour définir les bornes de la génération, la nature du nombre généré, valeurs interdites, liste de choix...
+    \tcbitem[title=Code \LaTeX] L'agent génère en fait un code \LaTeX\ respectant les contraintes de segmentation permettant à l'application d'interpréter l'énoncé, la solution détaillée, et la solution courte. 
+    \tcbitem[title=Métadonnées] Quelques métadonnées associées, notamment le thème de l'énoncé. 
+\end{MultiColonnes}
+
+\subsection{Génération de versions multiples}
+Une fois un énoncé saisi ou généré, il est possible de l'enregistrer en sélectionnant les différents paramètres dans le menu. 
+
+Ces paramètres sont simplement les \acc{noms des dossiers} dans la \acc{base de données} alimentée par l'application. 
+
+Cela permet d'\acc{organiser} les fichiers produits. 
+
+Ils pourront donc être utilisés par d'autres applications, par exemple \acc{QFGen}. 
+
+Pour réaliser mes \acc{automatismes}, je génère systématiquement $30$ versions pour chaque énoncé. 
+
+
+\section{Utilisation personnalisée}
+
+Les productions sont de deux natures : 
+
+\begin{MultiColonnes}{2}[colframe=defi,colback=white,boxrule=0.4pt,coltitle=white]
+    \tcbitem[title=Inputs] Des fichiers \frquote{.tex} contenant le code abstrait. 
+    Ces codes ne sont pas directement compilables, ce sont les \acc{modèles} servant à la génération. 
+    \tcbitem[title=json\_productions] Les versions générées sont stockées dans un dictionnaire \acc{.json}. Un simple algorithme python permet de sélectionner n'importe quelle version et de manipuler aisément son énoncé et tous les éléments qui l'accompagnent. 
+\end{MultiColonnes}
+\subsection{Dossier inputs}
+Il est possible de directement produire les fichiers d'énoncés, en les stockant dans le dossier \frquote{inputs}.
+
+Cela permet l'intervention de logiciels externes pour les productions d'énoncé qui respectent ce format ( voir les exemples déjà générés. )
+
+L'application les détectera automatiquement et il sera possible de générer les versions multiples.
+
+\subsubsection{Structure des fichiers .sty}
+
+Les fichiers \texttt{.sty} suivent une structure \acc{stricte} avec des séparateurs \texttt{\%\%}. L'ordre des compartiments est \acc{impératif} :
+
+\begin{tcbenumerate}
+    \tcbitem \textbf{Nombre de versions} : Un entier seul sur la première ligne
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Variables} : Définitions avec syntaxe spéciale (voir section suivante)
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{\'Enoncé} : Code \LaTeX\ de la question
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Solution détaillée} : Résolution complète avec explications
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Version QCM} : Liste \texttt{enumerate} avec la bonne réponse en dernier item
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Réponse courte} : Code \acc{concaténé sur une seule ligne}
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Thème} : Nom du thème (ex: \frquote{Polynomes degré 2})
+    \tcbitem \texttt{\%\%}
+    \tcbitem \textbf{Version HTML} : Bloc optionnel au format JSON
+\end{tcbenumerate}
+
+\begin{bfbox}{Contraintes critiques :}[colback=red!5,colbacktitle=red!75!black,colframe=red!75!black]
+\begin{itemize}
+    \item \textbf{Réponse courte (compartiment 11)} : \acc{AUCUN commentaire \LaTeX} (pas de \texttt{\%}). Le code doit être \acc{entièrement concaténé} sur une ligne unique sans retours chariots.
+    \item \textbf{Qualité du code} : L'application ne dispose \acc{pas de système de prévisualisation}. Une \acc{rigueur maximale} est exigée car les erreurs \LaTeX\ ne seront détectées qu'à la compilation finale.
+    \item \textbf{Respect de l'ordre} : Les compartiments doivent apparaître dans l'ordre exact indiqué. Toute inversion provoquera des erreurs de parsing.
+\end{itemize}
+\end{bfbox}
+
+\subsubsection{Syntaxe des variables}
+
+Le système supporte plusieurs syntaxes pour la définition de nombres aléatoires :
+
+\paragraph{Syntaxe de base (ExoNumber)}
+
+\begin{tcolorbox}[colback=white,colframe=defi,boxrule=0.4pt]
+\begin{verbatim}
+\def\n{2<=x<20 int}              % Entier entre 2 et 19
+\def\d{1<=x<=5 float decimalesD2} % Float avec 2 décimales
+\def\frac{1<x<=10 x!=0 frac}     % Fraction
+\def\nb{4<x x!=6 int decimalesG3} % Int à 3 chiffres
+\def\list[option1,option2,...]   % Choix aléatoire
+\end{verbatim}
+\end{tcolorbox}
+
+\paragraph{Paramètres disponibles}
+
+\begin{MultiColonnes}{2}[colframe=defi,colback=white,boxrule=0.4pt,coltitle=white]
+    \tcbitem[title=Bornes] \texttt{a<=x<=b}, \texttt{a<x<b}, \texttt{a<=x<b}, \texttt{a<x<=b}. Si borne absente : min=-100, max=100.
+
+    \tcbitem[title=Exclusions] \texttt{x!=valeur} pour exclure des valeurs (multiples possibles : \texttt{x!=2 x!=5}).
+
+    \tcbitem[title=Type] \texttt{int} (entier), \texttt{float} (décimal), \texttt{frac} (fraction \texttt{\textbackslash dfrac}).
+
+    \tcbitem[title=Décimales droite] \texttt{decimalesD$n$} pour $n$ décimales après la virgule (float uniquement).
+
+    \tcbitem[title=Décimales gauche] \texttt{decimalesG$n$} pour $n$ chiffres dans la partie entière.
+
+    \tcbitem[title=Listes] \texttt{\textbackslash def\textbackslash var[val1,val2,...]} choisit aléatoirement parmi les options.
+\end{MultiColonnes}
+
+\acc{Générateurs personnalisés} :
+
+Le système charge dynamiquement les générateurs depuis \texttt{modules/number\_generators/}. 
+
+Exemple d'utilisation :
+
+\begin{tcolorbox}[colback=white,colframe=defi,boxrule=0.4pt]
+\begin{verbatim}
+ArithmeticNumber(
+    allowed_generators=[2, 3, 5, 7, 11, 13],
+    prime_length=[2, 4],
+    inf=100,
+    sup=1000,
+    name="n"
+)
+\end{verbatim}
+\end{tcolorbox}
+
+\begin{itemize}
+    \item \texttt{allowed\_generators} : Liste des facteurs premiers autorisés
+    \item \texttt{prime\_length} : Nombre de facteurs (entier ou intervalle \texttt{[min, max]})
+    \item \texttt{inf/sup} : Bornes du résultat final
+    \item \texttt{name} : Nom de la variable (\texttt{"auto"} pour auto-génération)
+\end{itemize}
+
+\textbf{Extensibilité :} Tout nouveau générateur héritant de \texttt{NumberGenerator} placé dans \texttt{modules/number\_generators/} sera automatiquement disponible. 
+
+\subsection{Dossier json-productions}
+
+Ce dossier est destiné à être alimenté par l'application seulement. 
+
+Tout ce qu'il contient est susceptible d'être écrasé par des manipulations futures. 
+
+Il respecte la même architecture que le dossier \frquote{inputs}

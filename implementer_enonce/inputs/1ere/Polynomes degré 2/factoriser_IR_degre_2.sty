@@ -1,0 +1,149 @@
+
+30
+%%
+\def\a{1<=x<=11 int}
+\def\b{1<=x<=11 int}
+\def\typeIR{1<=x<=3 int}
+\def\positionx{1<=x<=2 int}
+%%
+\acc{Factoriser} l'expression suivante en utilisant une identité remarquable :
+\begin{center}$
+\IfEq{\typeIR}{1}{
+    \IfEq{\positionx}{1}{
+        \affiche{\fpeval{\a^2}}x^2 + \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}
+    }{
+        \affiche{\fpeval{\a^2}} + \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}x^2
+    }
+}{
+    \IfEq{\typeIR}{2}{
+        \IfEq{\positionx}{1}{
+            \affiche{\fpeval{\a^2}}x^2 - \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}
+        }{
+            \affiche{\fpeval{\a^2}} - \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}x^2
+        }
+    }{
+        \IfEq{\positionx}{1}{
+            \affiche{\fpeval{\a^2}}x^2 - \affiche{\fpeval{\b^2}}
+        }{
+            \affiche{\fpeval{\a^2}} - \affiche{\fpeval{\b^2}}x^2
+        }
+    }
+}$\end{center}
+
+
+
+%%
+\IfEq{\typeIR}{1}{
+    \textbf{Solution :} On reconnaît l'identité remarquable $(a + b)^2 = a^2 + 2ab + b^2$ avec $a>0$ et $b>0$.\\
+    
+    \IfEq{\positionx}{1}{
+        Ici, $a^2 = \affiche{\fpeval{\a^2}}x^2$ donc $a =\affiche{\a}x$
+        
+        Et $b^2 = \affiche{\fpeval{\b^2}}$ donc $b = \affiche{\b}$
+        	
+        Vérifions : $2ab = 2 \times \affiche{\a}x \times \affiche{\b} = \affiche{\fpeval{2*\a*\b}}x$
+        
+        Donc : \encadrer[defi]{$\affiche{\fpeval{\a^2}}x^2 + \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}} = (\affiche{\a}x + \affiche{\b})^2$	}
+    }{
+        Ici, $a^2 = \affiche{\fpeval{\a^2}}$ donc $a = \affiche{\a}$
+        
+        Et $b^2 = \affiche{\fpeval{\b^2}}x^2$ donc $b = \affiche{\b}x$
+        	
+        Vérifions : $2ab = 2 \times \affiche{\a} \times \affiche{\b}x = \affiche{\fpeval{2*\a*\b}}x$
+        
+        Donc : \encadrer[defi]{$\affiche{\fpeval{\a^2}} + \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}x^2 = (\affiche{\a} + \affiche{\b}x)^2$		}
+    }
+}{
+    \IfEq{\typeIR}{2}{
+        \textbf{Solution :} On reconnaît l'identité remarquable $(a - b)^2 = a^2 - 2ab + b^2$ avec $a>0$ et $b>0$.\\
+        
+        \IfEq{\positionx}{1}{
+            Ici, $a^2 = \affiche{\fpeval{\a^2}}x^2$ donc $a = \affiche{\a}x$
+            
+            Et $b^2 = \affiche{\fpeval{\b^2}}$ donc $b = \affiche{\b}$\\
+            	
+            Vérifions : $2ab = 2 \times \affiche{\a}x \times \affiche{\b} = \affiche{\fpeval{2*\a*\b}}x$ \\
+            
+            Donc : \encadrer[defi]{$\affiche{\fpeval{\a^2}}x^2 - \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}} = (\affiche{\a}x - \affiche{\b})^2$	}
+        }{
+            Ici, $a^2 = \affiche{\fpeval{\a^2}}$ donc $a = \affiche{\a}$
+            
+            Et $b^2 = \affiche{\fpeval{\b^2}}x^2$ donc $b = \affiche{\b}x$\\
+            	
+            Vérifions : $2ab = 2 \times \affiche{\a} \times \affiche{\b}x = \affiche{\fpeval{2*\a*\b}}x$ \\
+            
+            Donc : \encadrer[defi]{$\affiche{\fpeval{\a^2}} - \affiche{\fpeval{2*\a*\b}}x + \affiche{\fpeval{\b^2}}x^2 = (\affiche{\a} - \affiche{\b}x)^2$		}
+        }
+    }{
+        \textbf{Solution :} On reconnaît l'identité remarquable $a^2 - b^2 = (a + b)(a - b)$ avec $a>0$ et $b>0$.\\
+        
+        \IfEq{\positionx}{1}{
+            Ici, $a^2 = \affiche{\fpeval{\a^2}}x^2$ donc $a = \affiche{\a}x$
+            
+            Et $b^2 = \affiche{\fpeval{\b^2}}$ donc $b = \affiche{\b}$\\
+            
+            Donc :\encadrer[defi]{$\affiche{\fpeval{\a^2}}x^2 - \affiche{\fpeval{\b^2}} = (\affiche{\a}x + \affiche{\b})(\affiche{\a}x - \affiche{\b})$	}
+        }{
+            Ici, $a^2 = \affiche{\fpeval{\a^2}}$ donc $a = \affiche{\a}$
+            
+            Et $b^2 = \affiche{\fpeval{\b^2}}x^2$ donc $b = \affiche{\b}x$\\
+            
+            Donc : \encadrer[defi]{$\affiche{\fpeval{\a^2}} - \affiche{\fpeval{\b^2}}x^2 = (\affiche{\a} + \affiche{\b}x)(\affiche{\a} - \affiche{\b}x)$}
+        }
+    }
+}
+
+%%
+
+
+\begin{enumerate}
+    \item $(\affiche{\a}x + \affiche{\b})^2$
+    \item $(\affiche{\a}x - \affiche{\b})^2$
+    \item $(\affiche{\a} + \affiche{\b}x)(\affiche{\a} - \affiche{\b}x)$
+    \item \IfEq{\typeIR}{1}{
+        \IfEq{\positionx}{1}{
+            $(\affiche{\a}x + \affiche{\b})^2$
+        }{
+            $(\affiche{\a} + \affiche{\b}x)^2$
+        }
+    }{
+        \IfEq{\typeIR}{2}{
+            \IfEq{\positionx}{1}{
+                $(\affiche{\a}x - \affiche{\b})^2$
+            }{
+                $(\affiche{\a} - \affiche{\b}x)^2$
+            }
+        }{
+            \IfEq{\positionx}{1}{
+                $(\affiche{\a}x + \affiche{\b})(\affiche{\a}x - \affiche{\b})$
+            }{
+                $(\affiche{\a} + \affiche{\b}x)(\affiche{\a} - \affiche{\b}x)$
+            }
+        }
+    }
+\end{enumerate}
+
+
+
+
+%%
+\IfEq{\typeIR}{1}{    \IfEq{\positionx}{1}{        $(\affiche{\a}x + \affiche{\b})^2$    }{        $(\affiche{\a} + \affiche{\b}x)^2$    }}{    \IfEq{\typeIR}{2}{        \IfEq{\positionx}{1}{            $(\affiche{\a}x - \affiche{\b})^2$        }{            $(\affiche{\a} - \affiche{\b}x)^2$        }    }{        \IfEq{\positionx}{1}{            $(\affiche{\a}x + \affiche{\b})(\affiche{\a}x - \affiche{\b})$        }{            $(\affiche{\a} + \affiche{\b}x)(\affiche{\a} - \affiche{\b}x)$        }    }}
+%%
+Polynomes degré 2
+%%
+{
+
+{
+    "instructions": "Factoriser l'expression suivante en utilisant une identité remarquable",
+    "latex": [
+        "Expression à factoriser \\tcfillcrep{}"
+    ],
+    "points": 2,
+    "correction": [
+        "Forme factorisée avec identité remarquable"
+    ]
+}
+```
+
+}
+

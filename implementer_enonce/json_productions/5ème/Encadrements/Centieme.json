@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\nombre{2443.932}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{2443.932}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\nombre{2443.932}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{4316.518}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{4316.518}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{4316.518}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\nombre{8192.969}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{8192.969}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\nombre{8192.969}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\nombre{9998.281}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9998.281}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\nombre{9998.281}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\nombre{6814.203}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6814.203}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\nombre{6814.203}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\nombre{7315.632}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{7315.632}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\nombre{7315.632}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\nombre{4164.819}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{4164.819}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\nombre{4164.819}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\nombre{6168.303}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6168.303}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\nombre{6168.303}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\nombre{9639.838}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9639.838}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\nombre{9639.838}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\nombre{3333.713}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{3333.713}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\nombre{3333.713}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\nombre{2388.852}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{2388.852}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\nombre{2388.852}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\nombre{4965.344}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{4965.344}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\nombre{4965.344}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\nombre{8146.185}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{8146.185}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\nombre{8146.185}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6548.363}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\nombre{4316.24}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{4316.24}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\nombre{4316.24}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\nombre{9685.783}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9685.783}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\nombre{9685.783}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\nombre{3901.547}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{3901.547}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\nombre{3901.547}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\nombre{6413.554}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6413.554}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\nombre{6413.554}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\nombre{8855.756}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{8855.756}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\nombre{8855.756}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\nombre{6602.435}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6602.435}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\nombre{6602.435}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\nombre{1820.447}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{1820.447}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\nombre{1820.447}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\nombre{3883.525}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{3883.525}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\nombre{3883.525}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\nombre{3488.665}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{3488.665}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\nombre{3488.665}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\nombre{4872.429}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{4872.429}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\nombre{4872.429}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\nombre{9953.022}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9953.022}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\nombre{9953.022}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\nombre{5791.318}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{5791.318}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\nombre{5791.318}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\nombre{9517.62}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9517.62}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\nombre{9517.62}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\nombre{6651.724}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6651.724}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\nombre{6651.724}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\nombre{6675.538}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{6675.538}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\nombre{6675.538}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\nombre{9188.576}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.\n\n",
+        "reponse": "\\def\\nombre{9188.576}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\nombre{9188.576}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

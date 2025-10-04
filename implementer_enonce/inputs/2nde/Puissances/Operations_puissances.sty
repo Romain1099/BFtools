@@ -1,0 +1,102 @@
+
+30
+%%
+\def\a{2<=x<=11 int}
+\def\b{2<=x<=11 int}
+\def\m{-9<=x<=9 x!=0 int}
+\def\n{-9<=x<=9 x!=0 int}
+\def\mode{1<=x<=5 int}
+%%
+
+\textbf{\'Ecrire} sous la forme d'une \acc{puissance d'un nombre} : 	
+	\begin{center}
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=2}{$\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \dots$}{\ifthenelse{\mode=3}{$(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \dots$}{\ifthenelse{\mode=4}{$(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \dots$}{$\affiche{\a}^{-\affiche{\n}} = \dots$}}}}	
+\end{center}
+
+%%
+
+\ifthenelse{\mode=1}{
+    \textbf{Formule :} $a^m \times a^n = a^{m+n}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+    
+    $\affiche{\a}^{\affiche{\m}} \times \affiche{\a}^{\affiche{\n}} = \affiche{\a}^{\affiche{\m} + \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m + \n}}}$
+}{
+\ifthenelse{\mode=2}{
+    \textbf{Formule :} $\dfrac{a^m}{a^n} = a^{m-n}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+    
+    $\dfrac{\affiche{\a}^{\affiche{\m}}}{\affiche{\a}^{\affiche{\n}}} = \affiche{\a}^{\affiche{\m} - \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m - \n}}}$
+}{
+\ifthenelse{\mode=3}{
+    \textbf{Formule :} $(a^m)^n = a^{mn}$ avec $a = \affiche{\a}$, $m = \affiche{\m}$ et $n = \affiche{\n}$
+    
+    $(\affiche{\a}^{\affiche{\m}})^{\affiche{\n}} = \affiche{\a}^{\affiche{\m} \times \affiche{\n}} = \affiche{\a}^{\affiche{\fpeval{\m * \n}}}$
+}{
+\ifthenelse{\mode=4}{
+    \textbf{Formule :} $(ab)^n = a^n b^n$ avec $a = \affiche{\a}$, $b = \affiche{\b}$ et $n = \affiche{\n}$
+    
+    $(\affiche{\a} \times \affiche{\b})^{\affiche{\n}} = \affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$
+}{
+    \textbf{Formule :} $a^{-n} = \dfrac{1}{a^n}$ avec $a = \affiche{\a}$ et $n = \affiche{\n}$
+    
+    $\affiche{\a}^{-\affiche{\n}} = \dfrac{1}{\affiche{\a}^{\affiche{\n}}}$
+}}}} 
+
+%%
+
+\ifthenelse{\mode=1}{
+    \begin{enumerate}
+        \item $\affiche{\a}^{\affiche{\fpeval{\m + \n - 1}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$
+    \end{enumerate}
+}{
+\ifthenelse{\mode=2}{
+    \begin{enumerate}
+        \item $\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$
+        \item $\frac{1}{\affiche{\a}^{\affiche{\n}}}$
+    \end{enumerate}
+}{
+\ifthenelse{\mode=3}{
+    \begin{enumerate}
+        \item $\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$
+        \item $\affiche{\a}^{\affiche{\fpeval{\m / \n}}}$
+    \end{enumerate}
+}{
+\ifthenelse{\mode=4}{
+    \begin{enumerate}
+        \item $(\affiche{\a} + \affiche{\b})^{\affiche{\n}}$
+        \item $\affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$
+        \item $\affiche{\a}^{\affiche{\n}} + \affiche{\b}^{\affiche{\n}}$
+        \item $\affiche{\fpeval{\a * \b}}^{\affiche{\n}}$
+    \end{enumerate}
+}{
+    \begin{enumerate}
+        \item $\affiche{\a}^{\affiche{\n}}$
+        \item $\frac{1}{\affiche{\a}^{\affiche{\n}}}$
+        \item $-\affiche{\a}^{\affiche{\n}}$
+        \item $\frac{\affiche{\a}}{1}$
+    \end{enumerate}
+}}}} 
+
+%%
+\ifthenelse{\mode=1}{$\affiche{\a}^{\affiche{\fpeval{\m + \n}}}$}{\ifthenelse{\mode=2}{$\affiche{\a}^{\affiche{\fpeval{\m - \n}}}$}{\ifthenelse{\mode=3}{$\affiche{\a}^{\affiche{\fpeval{\m * \n}}}$}{\ifthenelse{\mode=4}{$\affiche{\a}^{\affiche{\n}} \times \affiche{\b}^{\affiche{\n}}$}{$\dfrac{1}{\affiche{\a}^{\affiche{\n}}}$}}}}
+%%
+Puissances
+%%
+
+{
+    "instructions": "Appliquer les règles sur les puissances",
+    "latex": [
+        "\\ifthenelse{\\mode=1}{$\\affiche{\\a}^{\\affiche{\\m}} \\times \\affiche{\\a}^{\\affiche{\\n}} = \\tcfillcrep{}$}{\\ifthenelse{\\mode=2}{$\\frac{\\affiche{\\a}^{\\affiche{\\m}}}{\\affiche{\\a}^{\\affiche{\\n}}} = \\tcfillcrep{}$}{\\ifthenelse{\\mode=3}{$(\\affiche{\\a}^{\\affiche{\\m}})^{\\affiche{\\n}} = \\tcfillcrep{}$}{\\ifthenelse{\\mode=4}{$(\\affiche{\\a} \\times \\affiche{\\b})^{\\affiche{\\n}} = \\tcfillcrep{}$}{$\\affiche{\\a}^{-\\affiche{\\n}} = \\tcfillcrep{}$}}}}"
+    ],
+    "points": 1,
+    "correction": [
+        "\\ifthenelse{\\mode=1}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m + \\n}}}$}{\\ifthenelse{\\mode=2}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m - \\n}}}$}{\\ifthenelse{\\mode=3}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m * \\n}}}$}{\\ifthenelse{\\mode=4}{$\\affiche{\\a}^{\\affiche{\\n}} \\times \\affiche{\\b}^{\\affiche{\\n}}$}{$\\frac{1}{\\affiche{\\a}^{\\affiche{\\n}}}$}}}}"
+    ]
+}
+```
+

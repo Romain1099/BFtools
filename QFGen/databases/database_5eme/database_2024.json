@@ -1,0 +1,458 @@
+{
+    "QF_03_06_2024": {
+        "classe": "5ème",
+        "date": "03/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Le triangle $KXY$ est-il \\textbf{constructible} ? \\\\\n\\hfill $KX = 21$ cm \\hfill $KY = 14$ cm \\hfill $XY = 50$ cm",
+                "reponse": "Le triangle $KXY$ n'est \\textbf{pas constructible}",
+                "details": "Pour qu'un triangle soit \\textbf{constructible}, il faut que la \\textbf{somme} des longueurs \\textbf{deux plus petits côtés} soit \\textbf{supérieure} à la longueur du \\textbf{plus grand côté}.\\\\\nPuisque $21 + 14 = 35 < 50$ alors :\\\\\nLe triangle $KXY$ n'est \\textbf{pas constructible}",
+                "theme": "Triangles"
+            },
+            "question2": {
+                "enonce": "Effectue la \\textbf{division euclidienne} de $234$ par $7$. \\\\\n\\'Ecris l'égalité en ligne correspondante.",
+                "reponse": "$234 = 33 \\times 7 + 3$",
+                "details": "On pose la division et on obtient : \n\\opidiv{234}{7}",
+                "theme": "Division euclidienne"
+            },
+            "question3": {
+                "enonce": "\\textbf{Donner l’abscisse du point F de deux manières différentes}\n\\begin{center}\n \\begin{tikzpicture}[scale=2]\n    % Axe des x\n    \\draw[->] (-0.2,0) -- (3.2,0);\n    \n    % Graduation et labels\n    \\foreach \\x in {0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3} {\n        \\draw (\\x,2pt) -- (\\x,-2pt); % Graduation\n    }\n    \\draw[line width=1.2pt] (0,2pt) -- (0,-2pt);\n     \\draw[line width=1.2pt] (1,2pt) -- (1,-2pt);\n      \\draw[line width=1.2pt] (2,2pt) -- (2,-2pt);\n       \\draw[line width=1.2pt] (3,2pt) -- (3,-2pt);\n    % Labels\n    \\draw (0,-0.1) node[below] {0};\n    \\draw (1,-0.1) node[below] {1};\n    \\draw (2,-0.1) node[below] {2};\n    \\draw (3,-0.1) node[below] {3};\n\n    \n    % Point F\n    \\draw[fill] (1.8,0) circle [radius=1pt];\n    \\draw (1.8,0) node[above] {F};\n\\end{tikzpicture}\n\\end{center}",
+                "reponse": "$F(1{,}8) \\text{ ou } F(\\dfrac{9}{5})$",
+                "details": "On peut remarquer que chaque \\textbf{unité} est divisée en $5$ \\textbf{parts égales}.\\\\\nChaque graduation correspond à $\\mathbf{0{,}2}$ ou $\\mathbf{\\dfrac{1}{5}}$. \\\\\nOn peut donc écrire l'abscisse de $F$ de deux manières différentes : \n\\[\n    F(1{,}8) \\text{ ou } F(\\dfrac{9}{5})\n\\]",
+                "theme": "Numération"
+            }
+        }
+    },
+    "QF_10_06_2024": {
+        "classe": "5ème",
+        "date": "10/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} l'aire d'un \\textbf{disque} de rayon \\\\ $r = 5{,}2$ cm. \\\\\nOn donnera le résultat \\textbf{arrondi aux centièmes} de cm$^2$",
+                "reponse": "$\\mathbf{Aire} \\approx 84{,}95 \\,\\text{cm}^2.$",
+                "details": "L'aire d'un \\textbf{disque} se \\textbf{calcule} grâce à la formule \n\\[\n\\mathbf{Aire} = \\pi \\times r^2\n\\]\nEn \\textbf{remplaçant} $r$ par $5{,}2$ cm, nous obtenons :\n\n\n\\[\n\\mathbf{Aire} = \\pi \\times (5{,}2)^2 \\approx  \\cperso{pi * 5.2^2}\n\\]\nAinsi, \\textbf{l'aire} du disque est environ \n\\[\n \\text{Aire}_{\\text{disque}} \\approx \\cperso{pi * 5.2^2}\n\\text{ cm}^2\n\\]",
+                "theme": "Aire - Cercle",
+                "prompt": "\\textbf{Calculer} l'\\textbf{aire} d'un \\textbf{cercle} de rayon $r = 5{,}2$ cm."
+            },
+            "question2": {
+                "enonce": "Déterminer l'\\textbf{échelle} d'une figure telle que $3\\,\\mathrm{cm}$ sur la figure correspondent à $36\\,\\mathrm{km}$ dans la réalité.\\\\ \n\\textbf{Quelle est l'échelle du plan} ?",
+                "reponse": "\\(\n\\textbf{Échelle} = 1 : 1\\,200\\,000\n\\)",
+                "details": "Pour déterminer l'\\textbf{échelle}, on utilise la relation suivante :\n\n\\[\n\\textbf{Échelle} = \\frac{\\text{distance sur la figure}}{\\text{distance réelle}}\n\\]\n\nIci, $3\\,\\mathrm{cm}$ sur la figure correspondent à $36\\,\\mathrm{km}$ dans la réalité.\n\n$1 $ cm sur la figure correspond à $ \\frac{36}{3} = 12\\,\\mathrm{km} $ dans la réalité.\n \n\\columnbreak\n\nDonc, $1 \\text{ cm : } 12 \\times 1000 \\text{ m } = 12\\,000 \\text{ m}$, soit $\\mathbf{1 : 1\\,200\\,000}$.\n\nAinsi, l'\\textbf{échelle} du plan est $\\mathbf{1 : 1\\,200\\,000}$.",
+                "theme": "échelle",
+                "prompt": "Sachons que toute mesure devra être reportée en notant bien les unités.\n\nDéterminer l'\\textbf{échelle} d'une figure telle que $3\\,\\mathrm{cm}$ sur la figure correspondent à $36\\,\\mathrm{km}$ dans la réalité. Quelle est l'échelle du plan ?"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} la valeur de $A$ lorsque $x$ est égal à $7$ :\n\n\\[ A = 5x + 3 - x^2 \\]",
+                "reponse": "$A = -11$",
+                "details": "Pour \\textbf{calculer} la valeur de $A$ lorsque $x = 7$, nous devons \\textbf{remplacer} $x$ par $7$ dans l'expression : \n\\[ A = 5x + 3 - x^2 \\]\nAinsi,\n\\[ A = 5\\times(7) + 3 - (7)^2 \\]\n\\[\nA = 35 + 3 - 49 \n\\]\n\\[\nA = (35 + 3) - 49 \n\\]\n\\[\nA = 38 - 49 \n\\]\n\\[\nA = -11\n\\]\nLa valeur de $A$ est \\textbf{$-11$} lorsque $x = 7$.",
+                "theme": "Calcul littéral",
+                "prompt": "\\textbf{Calculer} la valeur de l'expression $A$ lorsque $x$ est égal à $7$ :\n$A = 5x + 3 - x^2$"
+            }
+        }
+    },
+    "QF_17_06_2024": {
+        "classe": "5ème",
+        "date": "17/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "Comparer $-23{,}4$ et $-23{,}5$.",
+                "reponse": "$\n\\mathbf{-23{,}4 > -23{,}5}\n$",
+                "details": "Comparons les \\textbf{parties décimales} de $-23{,}4$ et $-23{,}5$.  \\\\\n\n $23{,}4 < 23{,}5$, donc $-23{,}4 > -23{,}5$.\\\\\n\nAinsi, \\textbf{le nombre $-23{,}4$ est plus grand que le nombre $-23{,}5$}. \\\\\n\n$\n\\mathbf{-23{,}4 > -23{,}5}\n$",
+                "theme": "Nombres",
+                "prompt": "Comparer : -23,4 - 23,5"
+            },
+            "question2": {
+                "enonce": "\\textbf{Convertir} $193$ \\textbf{minutes en heures et minutes.}",
+                "reponse": "\\(193 \\, \\text{minutes} = 3 \\, \\text{heures} \\, \\text{et} \\, 13 \\, \\text{minutes}\\)",
+                "details": "\\vspace{-0.3cm}\n\\textbf{Calculons} le nombre d'\\textbf{heures} et de \\textbf{minutes} dans \\(193\\) minutes. \\\\\n\\vspace{-0.3cm}\n\n\\textbf{Une heure} correspond à \\(60\\) minutes. \\\\\nLe \\textbf{quotient} et le \\textbf{reste} de la division de \\(193\\) par \\(60\\) donnent les heures et les minutes respectivement. \\\\\n\n\\vspace{-0.3cm}\n$193 = 60 \\times 3 + 13$ \\\\\n\n$193\\text{minutes} = 60\\, \\textbf{heures} \\, \\text{ et } 13 \\, \\textbf{minutes}$.\\\\\n\n\\vspace{-0.3cm} \nAinsi, $193$ minutes $\\boldsymbol{=}$ $\\boldsymbol{3}$ heures \\textbf{et} $\\boldsymbol{13}$ minutes.",
+                "theme": "Temps",
+                "prompt": "convertir 193 min en h et min"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} $50 \\%$ de $25$.",
+                "reponse": "$ 50 \\% \\times 25  = 12{,}50 $",
+                "details": "$50 \\%$ de $25$ consiste à \\textbf{multiplier} $25$ par la fraction $\\dfrac{50}{100}$ :\n\n\\[\n50 \\% \\times 25 = \\dfrac{50}{100} \\times 25\n\\]\n\n\\textbf{Simplifions} $\\dfrac{50}{100}$ à $\\dfrac{1}{2}$ :\n\n\\[\n\\dfrac{1}{2} \\times 25 = \\dfrac{25}{2} \n\\]\n\n\\textbf{Calculons} cette fraction :\n\n\\[\n\\dfrac{25}{2}= 12{,}50\n\\]\n\nAinsi, $50 \\%$ de $25$ \\textbf{vaut} $12{,}50$.",
+                "theme": "pourcentage",
+                "prompt": "50 % de 25 € c’est ..."
+            }
+        }
+    },
+    "QF_24_06_2024": {
+        "classe": "5ème",
+        "date": "24/06/2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Répondre en justifiant} : $123\\,321$ est-il divisible par $3$ ?",
+                "reponse": "$123\\,321$ est divisible par $3$.",
+                "details": "On utilise \\textbf{le critère de divisibilité par 3}.\\\\\nUn nombre est \\textbf{divisible} par $3$ si et seulement si la somme de ses chiffres est divisible par $3$.\n\n\\columnbreak\n\nLa \\textbf{somme des chiffres} de $123\\,321$ est : \\\\ $1 + 2 + 3 + 3 + 2 + 1 = \\mathbf{12}$\\\\\nDe plus : $12 \\div 3 = \\textbf{4}$\n\nPuisque $12$ est divisible par $3$ : \\\\\n$123\\,321$ est \\textbf{divisible par 3}.",
+                "theme": "Divisibilité",
+                "prompt": "123 321 est-il divisible par 3 ?"
+            },
+            "question2": {
+                "enonce": "\\textbf{Calculer} $75\\,\\%$ de $35\\,\\euro{}$.",
+                "reponse": "$75\\,\\% \\text{ de } 35\\,\\euro{} = 26{,}25\\,\\euro{}$",
+                "details": "Pour \\textbf{calculer} $75\\,\\%$ de $35\\,\\euro{}$, on utilise la \\textbf{formule} suivante :\n\n\\[\n\\textbf{Montant} = \\dfrac{75}{100} \\times 35\n\\]\n\n\\columnbreak\n\n\nOn peut alors \\textbf{simplifier} l'expression :\n\n\\[\n\\textbf{Montant} = \\dfrac{3}{4} \\times 35 = \\dfrac{3 \\times 35}{4} = \\dfrac{105}{4}\n\\]\n\nEn \\textbf{simplifiant} la fraction, on \\textbf{obtient} :\n\n\\[\n\\textbf{Montant} = 26{,}25\\,\\euro{}\n\\]\n\nAinsi, $75\\,\\%$ de $35\\,\\euro{}$ \\textbf{est} $26{,}25\\,\\euro{}$.",
+                "theme": "pourcentage",
+                "prompt": "\\textbf{Calculer} $75\\%$ de $35\\,\\euro{}$."
+            },
+            "question3": {
+                "enonce": "$ -0,304 \\ \\ldots \\ -0,340 $\\\\\n\\textbf{Quel est le signe de comparaison qui convient} ?",
+                "reponse": "$-0{,}304 \\mathbf{>} -0{,}340$",
+                "details": "Pour \\textbf{comparer} les deux nombres $-0{,}304$ et $-0{,}340$, on commence par  observer qu'ils sont tous deux \\textbf{négatifs}. \\\\\n\\textbf{Dans ce cas}, le nombre le \\textbf{plus grand} est le nombre qui est le plus \\textbf{proche} de 0. \\\\\n\\columnbreak\nAinsi : $ -0{,}304 \\mathbf{>} -0{,}340 $",
+                "theme": "inégalité",
+                "prompt": "Quel siigne de comparaison écrire dans les pointillés ?  -0,304 ……… -0,340"
+            }
+        }
+    },
+    "QF_10_12_2024": {
+        "classe": "5ème",
+        "date": "10_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} la somme des deux \\textbf{fractions} suivantes  :\t\\\\\n\t\n $\\dfrac{3}{5}$ et $\\dfrac{2}{30}$.",
+                "reponse": "$ \\dfrac{18}{30} $ et $ \\dfrac{2}{30} $",
+                "details": "On réduit les deux \\textbf{fractions} au même \\textbf{dénominateur}.\n\n\\begin{itemize}[label=$\\bullet$]\t\n    \\item $\\blue{6}\\times 5 = \\red{30}$. \\\\\t\nOn réduit les deux fractions au dénominateur $30$ :\n    \\item $    \\dfrac{3}{5} = \\dfrac{3 \\times \\blue{6}}{5 \\times \\blue{6}} = \\dfrac{18}{\\red{30}}$   \t\t\n\t\n\n\\columnbreak\n\t\t\n\n \\item La deuxième fraction ne change pas car elle a déjà le bon dénominateur :\n    $\\dfrac{2}{\\red{30}}$\n\\end{itemize}\t\n\nDonc : \t\n$\\dfrac{3}{5} + \\dfrac{2}{30} = \\dfrac{18+2}{30} = \\dfrac{20}{30}=\\dfrac{2}{3}$",
+                "theme": "fractions",
+                "prompt": "Une question demandant de réduire au même dénominateur deux fractions. genre 3/5 et 2/30. Pour la solution, on veut faire simple ( sans pgcd ) en utilisant les tables d multiplication"
+            },
+            "question2": {
+                "enonce": "\\textbf{Encadrer} le nombre $5\\,271{,}346$ à l'\\textbf{unité}.",
+                "reponse": "$\\red{5\\,271} < 5\\,271{,}346 < \\red{5\\,272}$",
+                "details": "La méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\t\t\n\t\n\\columnbreak\n\t\t\n\nPour le nombre $5\\,271{,}346$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n\\item $\\text{Valeur inférieure} =5\\,271$\n\n\\item $\\text{Valeur supérieure} =5\\,272$\t\n\\end{itemize}\t\n\nAinsi, le nombre $5\\,271{,}346$ \\textbf{est encadré} à l'\\textbf{unité} par $5\\,271$ et $5\\,272$ :\n\n$\\red{5\\,271} < 5\\,271{,}346 < \\red{5\\,272}$",
+                "theme": "Arrondi",
+                "prompt": "Une question demandant d'encadrer un nombre à l'unité. le nombre est 5271.346"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} le \\textbf{nombre} de chats noirs dans une population de $245$ chats si \\textbf{environ} $\\dfrac{7}{8}$ d'entre eux sont  des chats noirs.\\\\\t\n\t\n\\textit{Calculatrice autorisée}",
+                "reponse": "$214,375 \\approx \\red{214}$",
+                "details": "La \\textbf{proportion} de chats noirs dans la population est donnée par le \\textbf{produit} du \\textbf{total} de chats et de la \\textbf{fraction} indiquant les chats noirs. \t\n\t\t\n\n\\columnbreak\n\t\t\n\n\\textbf{Calculons} cette proportion :\n\n\n$\\text{Nombre de chats noirs} = 245 \\times \\dfrac{7}{8}\\\\\t\n= \\dfrac{245 \\times 7}{8}\\\\\n= \\num{\\fpeval{245*7/8}}\\\\\t\n\\approx \\red{214}$\t\t\t\n\t\n\\textbf{Remarque :} Le nombre de chats est un nombre \\textbf{entier}. Le résultat doit donc être \\textbf{arrondi} à l'unité.",
+                "theme": "proportion",
+                "prompt": "Une question demandant de calculer 7/8 de 245. Présenter sous forme de proportion genre le  de chats noirs dans une population de 245 chats est .."
+            }
+        }
+    },
+    "QF_12_12_2024": {
+        "classe": "5ème",
+        "date": "12_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\n{3}\n    \\def\\d{4}\n    \\def\\nb{9}\n     \\def\\multa{10}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n\\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \t\n\n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{3}    \\def\\d{4}    \\def\\nb{9}     \\def\\multa{10}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\n{3}\n    \\def\\d{4}\n    \\def\\nb{9}\n     \\def\\multa{10}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n        \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\na{7}\n    \\def\\addna{6}\n    \\def\\quantite{906}\n\\def\\marchand{agriculteur}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{7}    \\def\\addna{6}    \\def\\quantite{906}\\def\\marchand{agriculteur}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\na{7}\n    \\def\\addna{6}\n    \\def\\quantite{906}\n\\def\\marchand{agriculteur}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{5262.212}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{5262.212}$\\blue{\\num{\\fpeval{round(\\nombre,1)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{5262.212}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n\t\\item \\textbf{Valeur inférieure} = \\blue{\\num{\\fpeval{round(\\nombre,1)}}}\n    \\item \\textbf{Valeur supérieure} = \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\fpeval{round(\\nombre,1)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_12_2024": {
+        "classe": "5ème",
+        "date": "16_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\nombre{2311.227}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{2311.227}$\\blue{\\num{\\fpeval{round(\\nombre,1)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}$",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\nombre{2311.227}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n\t\\item \\textbf{Valeur inférieure} = \\blue{\\num{\\fpeval{round(\\nombre,1)}}}\n    \\item \\textbf{Valeur supérieure} = \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\fpeval{round(\\nombre,1)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,1)+0.1}}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\n{4}\n    \\def\\d{3}\n    \\def\\nb{3}\n     \\def\\multa{7}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{4}    \\def\\d{3}    \\def\\nb{3}     \\def\\multa{7}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\n{4}\n    \\def\\d{3}\n    \\def\\nb{3}\n     \\def\\multa{7}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\na{5}\n    \\def\\addna{8}\n    \\def\\quantite{890}\n\\def\\marchand{marchand}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}    \\def\\addna{8}    \\def\\quantite{890}\\def\\marchand{marchand}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\na{5}\n    \\def\\addna{8}\n    \\def\\quantite{890}\n\\def\\marchand{marchand}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_12_2024": {
+        "classe": "5ème",
+        "date": "17_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\nombre{7005.187}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{7005.187}$\\blue{\\num{\\fpeval{round(\\nombre,2)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,1)+0.01}}}$",
+                "details": "%version 4 - solutions\n\t\n\n\\def\\nombre{7005.187}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres  avec $2$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n\t\\item \\textbf{Valeur inférieure} = \\blue{\\num{\\fpeval{round(\\nombre,1)}}}\n    \\item \\textbf{Valeur supérieure} = \\red{\\num{\\fpeval{round(\\nombre,2)+0.01}}}\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\fpeval{round(\\nombre,1)}}} < \\mnombre < \\red{\\num{\\fpeval{round(\\nombre,2)+0.01}}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\na{5}\n    \\def\\addna{3}\n    \\def\\quantite{130}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}    \\def\\addna{3}    \\def\\quantite{130}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 4 - solutions\n\t\n\n\\def\\na{5}\n    \\def\\addna{3}\n    \\def\\quantite{130}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\n{2}\n    \\def\\d{5}\n    \\def\\nb{5}\n     \\def\\multa{6}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{2}    \\def\\d{5}    \\def\\nb{5}     \\def\\multa{6}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 4 - solutions\n\t\n\n\\def\\n{2}\n    \\def\\d{5}\n    \\def\\nb{5}\n     \\def\\multa{6}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_18_12_2024": {
+        "classe": "5ème",
+        "date": "18_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 5 - Court\n\t\n\n\\def\\nombre{6409.465}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{6409.465}\t\t\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} \n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 5 - solutions\n\t\n\n\\def\\nombre{6409.465}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\t\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\n\\def\\na{7}\n    \\def\\addna{10}\n    \\def\\quantite{695}\n\\def\\marchand{marchand}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{7}    \\def\\addna{10}    \\def\\quantite{695}\\def\\marchand{marchand}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 5 - solutions\n\t\n\n\\def\\na{7}\n    \\def\\addna{10}\n    \\def\\quantite{695}\n\\def\\marchand{marchand}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 5 - Court\n\t\n\n\\def\\n{4}\n    \\def\\d{2}\n    \\def\\nb{2}\n     \\def\\multa{6}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{4}    \\def\\d{2}    \\def\\nb{2}     \\def\\multa{6}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 5 - solutions\n\t\n\n\\def\\n{4}\n    \\def\\d{2}\n    \\def\\nb{2}\n     \\def\\multa{6}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_19_12_2024": {
+        "classe": "5ème",
+        "date": "19_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{4206.843}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{4206.843}\t\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{4206.843}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\na{8}\n    \\def\\addna{3}\n    \\def\\quantite{830}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{8}    \\def\\addna{3}    \\def\\quantite{830}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\na{8}\n    \\def\\addna{3}\n    \\def\\quantite{830}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\n{5}\n    \\def\\d{8}\n    \\def\\nb{10}\n     \\def\\multa{5}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{5}    \\def\\d{8}    \\def\\nb{10}     \\def\\multa{5}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\n{5}\n    \\def\\d{8}\n    \\def\\nb{10}\n     \\def\\multa{5}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_12_2025": {
+        "classe": "5ème",
+        "date": "06_12_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{403.62}\t\n\n\n\n\n\n\\def\\mb{15.0}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}",
+                "reponse": "\\def\\ma{403.62}\t\\def\\mb{15.0}\t\\opadd[style=text]{\\ma}{\\mb}",
+                "details": "%version 1 - solutions\n\t\n\n\\def\\ma{403.62}\t\n\n\n\n\n\n\\def\\mb{15.0}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}",
+                "theme": "Sommes",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{84.0}\t\n\n\n\n\n\n\\def\\mb{49}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma - \\mb$\\end{center}",
+                "reponse": "\\def\\ma{84.0}\t\\def\\mb{49}\t\\opsub[style=text]{\\ma}{\\mb}",
+                "details": "%version 1 - solutions\n\t\n\n\\def\\ma{84.0}\t\n\n\n\n\n\n\\def\\mb{49}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}",
+                "theme": "Différences",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{760.52}\t\n\n\n\n\n\n\n\n\\def\\mb{22.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma \\times \\mb$\\end{center}",
+                "reponse": "\\def\\ma{760.52}\t\\def\\mb{22.0}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 1 - solutions\n\t\n\n\\def\\ma{760.52}\t\n\n\n\n\n\n\n\n\\def\\mb{22.0}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_01_2024": {
+        "classe": "5ème",
+        "date": "06_01_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{4316.518}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{4316.518}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{4316.518}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\n{5}\n    \\def\\d{8}\n    \\def\\nb{10}\n     \\def\\multa{5}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{5}    \\def\\d{8}    \\def\\nb{10}     \\def\\multa{5}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\n{5}\n    \\def\\d{8}\n    \\def\\nb{10}\n     \\def\\multa{5}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\na{8}\n    \\def\\addna{3}\n    \\def\\quantite{830}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{8}    \\def\\addna{3}    \\def\\quantite{830}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\na{8}\n    \\def\\addna{3}\n    \\def\\quantite{830}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_01_2025": {
+        "classe": "5ème",
+        "date": "06_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\n\\def\\nombre{2908.668}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{2908.668}\t\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 1 - solutions\n\t\n\n\\def\\nombre{2908.668}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf +0.1}}       % Valeur supérieure\t\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\n{7}\n    \\def\\d{8}\n    \\def\\nb{9}\n     \\def\\multa{5}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}    \\def\\d{8}    \\def\\nb{9}     \\def\\multa{5}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\n{7}\n    \\def\\d{8}\n    \\def\\nb{9}\n     \\def\\multa{5}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\na{4}\n    \\def\\addna{2}\n    \\def\\quantite{201}\n\\def\\marchand{agriculteur}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{4}    \\def\\addna{2}    \\def\\quantite{201}\\def\\marchand{agriculteur}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\na{4}\n    \\def\\addna{2}\n    \\def\\quantite{201}\n\\def\\marchand{agriculteur}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_13_01_2025": {
+        "classe": "5ème",
+        "date": "13_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\nombre{8192.969}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{8192.969}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\nombre{8192.969}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\n\\def\\na{5}\n    \\def\\addna{10}\n    \\def\\quantite{189}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}    \\def\\addna{10}    \\def\\quantite{189}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 8 - solutions\n\t\n\n\\def\\na{5}\n    \\def\\addna{10}\n    \\def\\quantite{189}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 8 - Court\n\t\n\n\\def\\n{4}\n    \\def\\d{5}\n    \\def\\nb{2}\n     \\def\\multa{4}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{4}    \\def\\d{5}    \\def\\nb{2}     \\def\\multa{4}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 8 - solutions\n\t\n\n\\def\\n{4}\n    \\def\\d{5}\n    \\def\\nb{2}\n     \\def\\multa{4}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_15_01_2025": {
+        "classe": "5ème",
+        "date": "15_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\ma{446.98}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{446.98}\t\\def\\mb{100}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 4 - solutions\n\t\n\\def\\ma{446.98}\t\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\ma{365.96}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{365.96}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 2 - solutions\n\t\n\\def\\ma{365.96}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\n\\def\\nombre{9998.281}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{9998.281}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 4 - solutions\n\t\n\n\\def\\nombre{9998.281}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_01_2025": {
+        "classe": "5ème",
+        "date": "16_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\nombre{4077.132}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.",
+                "reponse": "\\def\\nombre{4077.132}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\nombre{4077.132}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n\n\\def\\na{6}\n    \\def\\addna{10}\n    \\def\\quantite{309}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{6}    \\def\\addna{10}    \\def\\quantite{309}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$  \\num{\\fpeval{trunc(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 9 - solutions\n\t\n\n\\def\\na{6}\n    \\def\\addna{10}\n    \\def\\quantite{309}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& = \\num{\\fpeval{\\na * \\quantite / \\da}}\t\\\\\n& \\approx \\affiche{\\fpeval{trunc(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{trunc(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\n\\def\\n{9}\n    \\def\\d{10}\n    \\def\\nb{6}\n     \\def\\multa{7}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{9}    \\def\\d{10}    \\def\\nb{6}     \\def\\multa{7}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 9 - solutions\n\t\n\n\\def\\n{9}\n    \\def\\d{10}\n    \\def\\nb{6}\n     \\def\\multa{7}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_01_2025": {
+        "classe": "5ème",
+        "date": "17_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{3118.554}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{3118.554}\\def\\nombre{6409.465}\t\t\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{3118.554}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\ma{238.2}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{238.2}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 3 - solutions\n\t\n\\def\\ma{238.2}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\n\\def\\n{4}\n    \\def\\d{6}\n    \\def\\nb{7}\n     \\def\\multa{6}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{4}    \\def\\d{6}    \\def\\nb{7}     \\def\\multa{6}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 10 - solutions\n\t\n\n\\def\\n{4}\n    \\def\\d{6}\n    \\def\\nb{7}\n     \\def\\multa{6}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    }
+}

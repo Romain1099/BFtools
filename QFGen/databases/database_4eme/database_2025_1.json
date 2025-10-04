@@ -1,0 +1,137 @@
+{
+    "QF_19_01_2025": {
+        "classe": "4ème",
+        "date": "19_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 12 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{2}\\def\\nb{11}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 12 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\cota{18.61}\n\\def\\cotb{18.9}\n\n\t\n\\acc{Calculez l'hypoténuse} dans un \\textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\\affiche{\\cota}$ et $\\affiche{\\cotb}$ cm, en donnant l'arrondi au \\acc{centième} près.",
+                "reponse": "\\def\\cota{18.61}\\def\\cotb{18.9}$c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$",
+                "details": "%version 3 - solutions\n\t\n\\def\\cota{18.61}\n\\def\\cotb{18.9}\n\n\t\nDans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que\t $$c^2 = a^2 + b^2 $$ \t, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}. \t\t\t\t\n\t\nAinsi : $c = \\sqrt{\\affiche{\\cota}^2 + \\affiche{\\cotb}^2}$\t\t\t\t\n\t\n\\textbf{Calculons} les carrés des côtés :\t\t\t\t\n\t\n$ \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\cota^2}} $ \\hfill $ \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cotb^2}}$\t\t\t\t\n\t\n\\textbf{Additionnons-les} :\t\t\t\n\t\n$ \\affiche{\\cota}^2 + \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cota^2 + \\cotb^2}} $\t\t\t\t\n\t\n\\textbf{En passant à la racine carrée}, on obtient l'\\textbf{hypoténuse} $c$ : \t\t\t\t\n\t\n$c = \\sqrt{\\affiche{\\fpeval{\\cota^2 + \\cotb^2}}} = \\affiche{\\fpeval{sqrt(\\cota^2 + \\cotb^2)}}$\t\t\t\n\t\nAinsi, $c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$.",
+                "theme": "Pythagore",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\na{-3}\n\\def\\nb{-3}\n\\def\\nc{7}\n\\def\\puisxa{0}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n\n%court\n\\def\\indicator{\\signe 1}\n\\def\\termea{\\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}}}\n\\def\\termeb{\\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}\n\\def\\expression{\n    \\termea \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\termeb\n}\n\n\\acc{Factoriser} le plus possible l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-3}\\def\\nb{-3}\\def\\nc{7}\\def\\puisxa{0}\\def\\puisxb{2}\\def\\puisxc{0}\\def\\signe{+}\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}$\\colorexpression$",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\na{-3}\n\\def\\nb{-3}\n\\def\\nc{7}\n\\def\\puisxa{0}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\\def\\indicator{\\signe 1}\t\n\\def\\termea{\\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}}}\n\\def\\termeb{\\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}\n\\def\\expression{\n    \\termea \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\termeb\n}\n\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c} = {\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c})$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nEn effet, on peut décomposer l'expression ainsi : \\\\\n\\begin{align*}\n& \\expression \\\\\n= & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\colorexpression\n\\end{align*}",
+                "theme": "Calcul littéral",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_19_01_2025": {
+        "classe": "4ème",
+        "date": "19_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\base{3}\n\\def\\exposanta{1}\n\\def\\exposantb{2}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $",
+                "reponse": "\\def\\base{3}\\def\\exposanta{1}\\def\\exposantb{2}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+                "details": "%version 6 - solutions\n\t\n\\def\\base{3}\n\\def\\exposanta{1}\n\\def\\exposantb{2}\n\n\t\nSelon la propriété des puissances : \t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\n\\begin{align*}\t\\base^{\\exposanta} \\times \\base^{\\exposantb} = & \\blue{\\Puissances{\\base}{\\exposanta}} \\times \\red{\\Puissances{\\base}{\\exposantb}}\\\\\t\t\n= & \\Puissances{\\base}{\\fpeval{\\exposanta + \\exposantb}} \t= & \\base^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}",
+                "theme": "Puissances",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\he{3}\n    \n\n\\def\\mi{17}\n    \n\n\\def\\dia{67}\n    \n\n\n\t\n%court    \t\t\t\n\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.    \t\t\n\t\nQuel est le \\acc{pourcentage} de dialogues ?",
+                "reponse": "\\def\\he{3}    \\def\\mi{17}    \\def\\dia{67}    $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 8 - solutions\n\t\n\\def\\he{3}\n    \n\n\\def\\mi{17}\n    \n\n\\def\\dia{67}\n    \n\n\n\t\nDans la série, il y a $\\dia~$minutes de dialogues.    \\begin{center}    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\    \\end{tcbtab}    \\end{center}    Le pourcentage voulu est calculé par : $100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}}$\\\\    Ainsi, $\\dia~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\base{4}\n\n\n\n\\def\\exposanta{1}\n\n\n\n\\def\\exposantb{3}\n\n\n\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} $ \\Puissance{\\base}{\\exposanta} \\times \\Puissance{\\base}{\\exposantb} $",
+                "reponse": "\\def\\base{4}\\def\\exposanta{1}\\def\\exposantb{3}$\\Puissance{\\base}{\\fpeval{\\exposanta + \\exposantb}}$",
+                "details": "%version 4 - solutions\n\t\n\\def\\base{4}\n\n\n\n\\def\\exposanta{1}\n\n\n\n\\def\\exposantb{3}\n\n\n\n\n\t\nSelon la propriété des puissances : Pour multiplier des puissances de même base, on additionne les exposants : $$ \\Puissance{\\base}{\\exposanta} \\times \\Puissance{\\base}{\\exposantb} = \\Puissance{\\base}{\\fpeval{\\exposanta + \\exposantb}} $$",
+                "theme": "Puissances",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_20_01_2025": {
+        "classe": "4ème",
+        "date": "20_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\base{16}\n\\def\\exposanta{-14}\n\\def\\exposantb{-15}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $",
+                "reponse": "\\def\\base{16}\\def\\exposanta{-14}\\def\\exposantb{-15}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+                "details": "%version 7 - solutions\n\t\n\\def\\base{16}\n\\def\\exposanta{-14}\n\\def\\exposantb{-15}\n\n\t\nSelon la propriété des puissances : \t\t\t\n\t\nPour multiplier des puissances de même base, on additionne les exposants : \t\t\n\t\n\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}",
+                "theme": "Puissances",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\he{3}\n    \n\n\\def\\mi{17}\n    \n\n\\def\\dia{67}\n    \n\n\n\t\n%court    \t\t\t\n\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.    \t\t\n\t\nQuel est le \\acc{pourcentage} de dialogues ?",
+                "reponse": "\\def\\he{3}    \\def\\mi{17}    \\def\\dia{67}    $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 8 - solutions\n\t\n\\def\\he{3}\n    \n\n\\def\\mi{17}\n    \n\n\\def\\dia{67}\n    \n\n\n\t\nDans la série, il y a $\\dia~$minutes de dialogues.    \\begin{center}    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\    \\end{tcbtab}    \\end{center}    Le pourcentage voulu est calculé par : $100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}}$\\\\    Ainsi, $\\dia~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\na{-2}\n\\def\\nb{-2}\n\\def\\nc{-6}\n\\def\\puisxa{2}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-2}\\def\\nb{-2}\\def\\nc{-6}\\def\\puisxa{2}\\def\\puisxb{2}\\def\\puisxc{0}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 11 - solutions\n\t\n\\def\\na{-2}\n\\def\\nb{-2}\n\\def\\nc{-6}\n\\def\\puisxa{2}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_21_01_2025": {
+        "classe": "4ème",
+        "date": "21_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\na{-7}\n\\def\\nb{-2}\n\\def\\nc{8}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{2}\n\\def\\signe{+}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-7}\\def\\nb{-2}\\def\\nc{8}\\def\\puisxa{1}\\def\\puisxb{0}\\def\\puisxc{2}\\def\\signe{+}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 12 - solutions\n\t\n\\def\\na{-7}\n\\def\\nb{-2}\n\\def\\nc{8}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{2}\n\\def\\signe{+}\n\n\n\t\n%help\t\n    \n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\base{-14}\n\\def\\exposanta{19}\n\\def\\exposantb{3}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$(\\base)^{\\exposanta} \\times (\\base)^{\\exposantb} $",
+                "reponse": "\\def\\base{-14}\\def\\exposanta{19}\\def\\exposantb{3}$(\\base)^{\\fpeval{\\exposanta + \\exposantb}}$",
+                "details": "%version 8 - solutions\n\t\n\\def\\base{-14}\n\\def\\exposanta{19}\n\\def\\exposantb{3}\n\n\t\nSelon la propriété des puissances : \t\t\t\t\t\n\t\nPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\t\n\t\n\\columnbreak \t\n\t\n\\begin{align*}\t(\\base) ^{\\exposanta} \\times (\\base) ^{\\exposantb} = & (\\base) ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  (\\base) ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}",
+                "theme": "Puissances",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\na{5}\n\\def\\addna{2}\n\\def\\quantite{229}\n\\def\\marchand{boulanger}\n\n\t\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}\\marchandcmd{\\marchand}    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}\\def\\addna{2}\\def\\quantite{229}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 13 - solutions\n\t\n\\def\\na{5}\n\\def\\addna{2}\n\\def\\quantite{229}\n\\def\\marchand{boulanger}\n\n\t\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\t\n\t\n\\columnbreak \t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_23_01_2025": {
+        "classe": "4ème",
+        "date": "23_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\nombre{7315.632}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{7315.632}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\nombre{7315.632}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 13 - Court\n\t\n    \\def\\n{7}\n    \\def\\d{11}\n    \\def\\nb{13}\n    \\def\\db{10}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}    \\def\\d{11}    \\def\\nb{13}    \\def\\db{10}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 13 - solutions\n\t\n    \\def\\n{7}\n    \\def\\d{11}\n    \\def\\nb{13}\n    \\def\\db{10}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\cota{13.9}\n\\def\\cotb{2.31}\n\n\t\n\\acc{Calculez l'hypoténuse} dans un \\textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\\affiche{\\cota}$ et $\\affiche{\\cotb}$ cm, en donnant l'arrondi au \\acc{centième} près.",
+                "reponse": "\\def\\cota{13.9}\\def\\cotb{2.31}$c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$",
+                "details": "%version 4 - solutions\n\t\n\\def\\cota{13.9}\n\\def\\cotb{2.31}\n\n\t\nDans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que\t $$c^2 = a^2 + b^2 $$ \t, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}. \t\t\t\t\n\t\nAinsi : $c = \\sqrt{\\affiche{\\cota}^2 + \\affiche{\\cotb}^2}$\t\t\t\t\n\t\n\\textbf{Calculons} les carrés des côtés :\t\t\t$ \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\cota^2}} $ \\hfill $ \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cotb^2}}$\t\t\t\t\n\t\n\\textbf{Additionnons-les} :\t\t$ \\affiche{\\cota}^2 + \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cota^2 + \\cotb^2}} $\t\t\t\t\n\t\n\\textbf{En passant à la racine carrée}, on obtient l'\\textbf{hypoténuse} $c$ : \t\t\t\t\n\t\n$c = \\sqrt{\\affiche{\\fpeval{\\cota^2 + \\cotb^2}}} = \\affiche{\\fpeval{sqrt(\\cota^2 + \\cotb^2)}}$\t\t\t\n\t\nAinsi, $c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$.",
+                "theme": "Pythagore",
+                "prompt": ""
+            }
+        }
+    }
+}

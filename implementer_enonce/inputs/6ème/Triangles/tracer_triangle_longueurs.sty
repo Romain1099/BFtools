@@ -1,0 +1,100 @@
+
+30
+%%
+\def\numAB{1.5<=x<=7.25 float decimalesD1}
+\def\numBC{1.5<=x<=5.1 float decimalesD1}
+\def\numCA{1.5<=x<=8.5 float decimalesD1}
+%%
+  
+Tracer le \textbf{triangle} dont les longueurs des trois \textbf{côtés} sont :  
+  
+$AB=\affiche{\numAB}~\text{cm}$ ; $BC=\affiche{\numBC}~\text{cm}$ ; $CA=\affiche{\numCA}~\text{cm}$.  
+
+
+%%
+  
+\textbf{Solution détaillée :}  
+  
+1. On définit les longueurs des côtés :  
+   \quad $AB=\affiche{\numAB}~\text{cm},\quad BC=\affiche{\numBC}~\text{cm},\quad CA=\affiche{\numCA}~\text{cm}$.  
+  
+2. Vérification des conditions d'existence du triangle :  
+   \[
+   \begin{array}{rcl}
+   AB+BC & = & \affiche{\fpeval{round(\numAB+\numBC,2)}} > \affiche{\numCA}, \\
+   BC+CA & = & \affiche{\fpeval{round(\numBC+\numCA,2)}} > \affiche{\numAB}, \\
+   CA+AB & = & \affiche{\fpeval{round(\numCA+\numAB,2)}} > \affiche{\numBC}.
+   \end{array}
+   \]
+   Chacune de ces inégalités est vérifiée.  
+  
+\tikzset{
+  cross/.style={
+    cross out, 
+    draw,
+    minimum size=5pt,
+    inner sep=0pt,
+    outer sep=0pt,
+    thick
+  }
+}
+\begin{tikzpicture}[scale=0.5,every node/.style={font=\small}]
+  \coordinate (B) at (0,0);
+  \coordinate (C) at (\numBC,0);
+   \pgfmathsetmacro{\xA}{((\numBC*\numBC)-((\numCA*\numCA)-(\numAB*\numAB)))/(2*\numBC)}
+  \pgfmathsetmacro{\yA}{sqrt((\numAB*\numAB)-(\xA*\xA))}
+  \coordinate (A) at (\xA,\yA);
+  
+  \draw (A) -- (B) -- (C) -- cycle;
+  
+  \node[cross] at (A) {};
+  \node[cross] at (B) {};
+  \node[cross] at (C) {};
+  
+  \node[above] at (A) {$A$};
+  \node[below left] at (B) {$B$};
+  \node[below right] at (C) {$C$};
+  
+  \path (A) -- (B) coordinate[midway] (ABmid);
+  \path (B) -- (C) coordinate[midway] (BCmid);
+  \path (A) -- (C) coordinate[midway] (ACmid);
+  \node[left] at (ABmid) {$\affiche{\numAB}~\text{cm}$};
+  \node[below] at (BCmid) {$\affiche{\numBC}~\text{cm}$};
+  \node[right] at (ACmid) {$\affiche{\numCA}~\text{cm}$};
+\end{tikzpicture}  
+
+
+
+%%
+  
+\textbf{Version QCM :}  
+  
+Quel énoncé est vrai concernant le triangle construit ?  
+\begin{enumerate}
+  \item Les sommes des longueurs de deux côtés sont toujours supérieures à la longueur du troisième côté.  
+  \item La somme des longueurs de deux côtés est égale à la longueur du troisième côté.  
+  \item Il existe un côté dont la somme avec l'autre est inférieure à la troisième longueur.
+\end{enumerate}  
+
+
+%%
+\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\longrightarrow$\hfill$\longrightarrow$\hfill\begin{tikzpicture}[scale=0.2,every node/.style={font=\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] 	  \coordinate (B) at (0,0);  \coordinate (C) at (\numBC,0);    \pgfmathsetmacro{\xA}{((\numBC*\numBC)-((\numCA*\numCA)-(\numAB*\numAB)))/(2*\numBC)}  \pgfmathsetmacro{\yA}{sqrt((\numAB*\numAB)-(\xA*\xA))}  \coordinate (A) at (\xA,\yA);    \draw (A) -- (B) -- (C) -- cycle;    \node[cross] at (A) {};  \node[cross] at (B) {};  \node[cross] at (C) {};    \node[above] at (A) {$A$};  \node[below left] at (B) {$B$};  \node[below right] at (C) {$C$};    \path (A) -- (B) coordinate[midway] (ABmid);  \path (B) -- (C) coordinate[midway] (BCmid);  \path (A) -- (C) coordinate[midway] (ACmid);  \node[left] at (ABmid) {$\affiche{\numAB}~\text{cm}$};  \node[below] at (BCmid) {$\affiche{\numBC}~\text{cm}$};  \node[right] at (ACmid) {$\affiche{\numCA}~\text{cm}$};\end{tikzpicture}
+%%
+Triangles
+%%
+  
+{
+    "instructions": "Tracer le triangle dont les côtés mesurent \\(\\affiche{\\numAB}~cm\\), \\(\\affiche{\\numBC}~cm\\) et \\(\\affiche{\\numCA}~cm\\). Vérifier que les conditions d'existence sont réunies et réaliser le tracé.",
+    "latex": [
+        "AB=\\(\\affiche{\\numAB}\\)~cm \\tcfillcrep{}",
+        "BC=\\(\\affiche{\\numBC}\\)~cm \\tcfillcrep{}",
+        "CA=\\(\\affiche{\\numCA}\\)~cm \\tcfillcrep{}"
+    ],
+    "points": 1,
+    "correction": [
+        "\\(\\affiche{\\numAB}+\\affiche{\\numBC}>\\affiche{\\numCA}\\)",
+        "\\(\\affiche{\\numBC}+\\affiche{\\numCA}>\\affiche{\\numAB}\\)",
+        "\\(\\affiche{\\numCA}+\\affiche{\\numAB}>\\affiche{\\numBC}\\)"
+    ]
+}
+

@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\nombre{3004.364}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{3004.364}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\nombre{3004.364}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\nombre{1842.469}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{1842.469}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\nombre{1842.469}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\nombre{4077.132}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{4077.132}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\nombre{4077.132}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\nombre{5361.393}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{5361.393}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\nombre{5361.393}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\nombre{2805.292}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{2805.292}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\nombre{2805.292}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\nombre{6988.908}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{6988.908}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\nombre{6988.908}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\nombre{2411.245}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{2411.245}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\nombre{2411.245}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\nombre{8839.253}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{8839.253}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\nombre{8839.253}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\nombre{4473.424}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{4473.424}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\nombre{4473.424}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\nombre{3811.834}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{3811.834}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\nombre{3811.834}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\nombre{7096.906}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{7096.906}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\nombre{7096.906}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\nombre{5441.35}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{5441.35}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\nombre{5441.35}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\nombre{7510.93}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{7510.93}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\nombre{7510.93}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\nombre{4911.326}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{4911.326}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\nombre{4911.326}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\nombre{9919.524}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{9919.524}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\nombre{9919.524}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\nombre{8880.028}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{8880.028}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\nombre{8880.028}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\nombre{4018.738}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{4018.738}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\nombre{4018.738}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\nombre{4368.95}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{4368.95}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\nombre{4368.95}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\nombre{8768.681}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{8768.681}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\nombre{8768.681}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\nombre{7670.97}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{7670.97}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\nombre{7670.97}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\nombre{6798.801}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{6798.801}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\nombre{6798.801}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\nombre{7329.365}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{7329.365}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\nombre{7329.365}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\nombre{5976.458}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{5976.458}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\nombre{5976.458}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\nombre{6363.412}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{6363.412}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\nombre{6363.412}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\nombre{3137.337}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{3137.337}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\nombre{3137.337}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\nombre{3523.578}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{3523.578}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\nombre{3523.578}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\nombre{2351.233}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{2351.233}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\nombre{2351.233}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\nombre{9888.742}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{9888.742}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\nombre{9888.742}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\nombre{3314.999}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{3314.999}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\nombre{3314.999}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\nombre{5708.125}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ à l'unité.\n\n",
+        "reponse": "\\def\\nombre{5708.125}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\nombre{5708.125}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre à l'\\textbf{unité} consiste à \\textbf{déterminer} deux nombres \\textbf{entiers} :\t\\\\\n\t\nLe plus proche nombre entier \\textbf{inférieur} et le plus proche nombre entier \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre)}} \n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 1}} \nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$\n\n",
+        "theme": "\n\nEncadrements\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

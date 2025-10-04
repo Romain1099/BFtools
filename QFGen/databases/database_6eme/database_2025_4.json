@@ -1,0 +1,29 @@
+{
+    "QF_01_04_2025": {
+        "classe": "6ème",
+        "date": "01_04_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 22 - Court\n\t\n\\def\\ma{427.53}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}",
+                "reponse": "\\def\\ma{427.53}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 22 - solutions\n\t\n\\def\\ma{427.53}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 27 - Court\n\t\n\\def\\numa{30.8}\n\\def\\numb{8}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{30.8}\\def\\numb{8}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 27 - solutions\n\t\n\\def\\numa{30.8}\n\\def\\numb{8}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 21 - Court\n\t\n\n\\def\\ma{577.5}\t\n\n\n\n\n\n\n\n\\def\\mb{72}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb}$\\end{center}",
+                "reponse": "\\def\\ma{577.5}\t\\def\\mb{72}\t\\opmul[style=text]{\\ma}{\\mb}",
+                "details": "%version 21 - solutions\n\t\n\n\\def\\ma{577.5}\t\n\n\n\n\n\n\n\n\\def\\mb{72}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opmul{\\ma}{\\mb}",
+                "theme": "Produits",
+                "prompt": ""
+            }
+        }
+    }
+}

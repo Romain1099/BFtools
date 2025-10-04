@@ -1,0 +1,1004 @@
+
+\documentclass[12pt]{article}
+\usepackage{geometry}
+
+\geometry{paperwidth=18cm, paperheight=8.7cm, margin=0.2cm}
+
+\usepackage{bfcours}
+\usepackage{bfcours-fonts}
+\usepackage{pagecolor} % Pour colorer le fond de la page
+%\usetikzlibrary{backgrounds}
+\usepackage{expl3} % Nécessaire pour utiliser le langage LaTeX3
+
+% Retourne la valeur absolue d'un entier
+\newcommand{\absnum}[1]{%
+    \ifnum #1<0 \number\numexpr -#1\relax\else \number\numexpr #1\relax\fi%
+}
+
+% Retourne le minimum de deux entiers
+\newcommand{\minnum}[2]{%
+    \ifnum #1<#2 #1\else #2\fi%
+}
+
+% Calcul récursif du PGCD de deux entiers (les arguments doivent être entiers)
+\newcommand{\gcdcalc}[2]{%
+    \ifnum #2=0 %
+    \absnum{#1}%
+    \else %
+    \gcdcalc{#2}{\the\numexpr #1 - (#1/#2)*#2 \relax}%
+    \fi%
+}
+\ExplSyntaxOn
+% Définition de la commande \mprefix
+\cs_new:Npn \mprefix #1
+{
+    \int_case:nnF {#1}
+    {
+        {-12} { \text{pico} }
+        {-9}  { \text{nano} }
+        {-6}  { \text{micro} }
+        {-3}  { \text{milli} }
+        {-2}  { \text{centi} }
+        {-1}  { \text{deci} }
+        {0}   { \text{} } % Aucun préfixe pour la puissance 0
+        {1}   { \text{deca} }
+        {2}   { \text{hecto} }
+        {3}   { \text{kilo} }
+        {6}   { \text{mega} }
+        {9}   { \text{giga} }
+        {12}  { \text{tera} }
+    }
+    { \text{Valeur inconnue} } % Gestion des cas non pris en charge
+}
+\ExplSyntaxOff
+
+
+% Calcul et affichage des diviseurs avec Lua
+\begin{luacode*}
+    function generate_divisors_table(n)
+    local seen = {} -- Table pour suivre les nombres déjà rencontrés
+    tex.print("\\noindent\\begin{tabular}{c|c}")
+    for i = 1, n do
+    if n % i == 0 then
+    local complement = math.floor(n / i) -- Calcul de la partie entière
+    -- Vérifier si le complément est déjà dans la table 'seen'
+    if seen[complement] then break end
+    -- Ajouter le diviseur et le complément dans la table
+    seen[i] = true
+    tex.print(i .. " & " .. complement .. " \\\\")
+    end
+    end
+    tex.print("\\end{tabular}")
+    end
+\end{luacode*}
+
+\newcommand{\divisorstable}[1]{%
+    \directlua{generate_divisors_table(#1)}%
+}
+
+% Commande pour s'adapter en fonction du choix
+\newcommand{\marchandcmd}[1]{%
+    \IfStrEqCase{#1}{%
+        {marchand}{\xdef\munite{articles}\def\intro{}\def\vend{vend}\def\tousSes{$\proportion$ de ses }\def\oeufs{$\quantite$\ articles}\def\labelvente{le nombre d'articles vendus}}
+        {agriculteur}{\xdef\munite{tonnes}\def\intro{Suite à des intempéries,}\def\vend{perd}\def\tousSes{les $\proportion$èmes}\def\oeufs{sa récolte, estimée à \quantite\  tonnes}\def\labelvente{la masse perdue}}
+        {boulanger}{\xdef\munite{baguettes}\def\intro{}\def\vend{vend}\def\tousSes{les $\proportion$èmes}\def\oeufs{de ses $\quantite$ baguettes}\def\labelvente{le nombre de baguettes vendues}}
+    }[\textcolor{red}{\textbf{Métier inconnu : #1}}]% Si aucune correspondance
+}
+
+% Définition de la commande criteredivisibilite
+\newcommand{\criteredivisibilite}[2]{%
+    % #1 est le diviseur (n), #2 est le nombre à tester (N)
+    \def\diviseur{#1}%
+    \def\nombre{#2}%
+    
+    % Calcul du dernier chiffre du nombre
+    \def\dernierchiffre{\intcalcMod{#2}{10}}
+    
+    % Calcul des deux derniers chiffres du nombre
+    \def\deuxdernierchiffres{\intcalcMod{#2}{100}}
+    
+    % Vérifier quel diviseur a été spécifié
+    \ifthenelse{\equal{\diviseur}{2}}{%
+        % Cas 2
+        \textbf{Critère de divisibilité par 2 :} Un nombre est divisible par 2 si son dernier chiffre est pair (0, 2, 4, 6 ou 8).
+        
+        \textbf{Application à \nombre :} Le dernier chiffre de \nombre{} est \dernierchiffre.
+        
+        \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+            Comme le dernier chiffre est \dernierchiffre{} (qui est pair), \nombre{} est divisible par 2.
+            }{%
+            Comme le dernier chiffre est \dernierchiffre{} (qui n'est pas pair), \nombre{} n'est pas divisible par 2.
+        }%
+        }{%
+        \ifthenelse{\equal{\diviseur}{3}}{%
+            % Cas 3
+            \textbf{Critère de divisibilité par 3 :} Un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3.
+            
+            \textbf{Application à \nombre :}
+            
+            Pour vérifier si \nombre{} est divisible par 3, calculons la somme de ses chiffres.
+            
+            % Dans un cas réel, on calculerait la somme des chiffres
+            \ifthenelse{\equal{\intcalcMod{\nombre}{3}}{0}}{%
+                La somme des chiffres de \nombre{} est divisible par 3, donc \nombre{} est divisible par 3.
+                }{%
+                La somme des chiffres de \nombre{} n'est pas divisible par 3, donc \nombre{} n'est pas divisible par 3.
+            }%
+            }{%
+            \ifthenelse{\equal{\diviseur}{4}}{%
+                % Cas 4
+                \textbf{Critère de divisibilité par 4 :} Un nombre est divisible par 4 si le nombre formé par ses deux derniers chiffres est divisible par 4.
+                
+                \textbf{Application à \nombre :}
+                \ifthenelse{\nombre < 100}{%
+                    Comme \nombre{} est inférieur à 100, nous vérifions directement si \nombre{} est divisible par 4.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\nombre}{4}}{0}}{%
+                        Le reste de la division de \nombre{} par 4 est 0, donc \nombre{} est divisible par 4.
+                        }{%
+                        Le reste de la division de \nombre{} par 4 est \intcalcMod{\nombre}{4}, donc \nombre{} n'est pas divisible par 4.
+                    }%
+                    }{%
+                    Les deux derniers chiffres de \nombre{} forment le nombre \deuxdernierchiffres.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\deuxdernierchiffres}{4}}{0}}{%
+                        Comme \deuxdernierchiffres{} est divisible par 4, \nombre{} est divisible par 4.
+                        }{%
+                        Comme \deuxdernierchiffres{} n'est pas divisible par 4 (reste \intcalcMod{\deuxdernierchiffres}{4}), \nombre{} n'est pas divisible par 4.
+                    }%
+                }%
+                }{%
+                \ifthenelse{\equal{\diviseur}{5}}{%
+                    % Cas 5
+                    \textbf{Critère de divisibilité par 5 :} Un nombre est divisible par 5 si son dernier chiffre est 0 ou 5.
+                    
+                    \textbf{Application à \nombre :} Le dernier chiffre de \nombre{} est \dernierchiffre.
+                    
+                    \ifthenelse{\equal{\intcalcMod{\nombre}{5}}{0}}{%
+                        Comme le dernier chiffre est \dernierchiffre{} (qui est
+                        \ifthenelse{\equal{\dernierchiffre}{0}}{0}{5}), \nombre{} est divisible par 5.
+                        }{%
+                        Comme le dernier chiffre est \dernierchiffre, qui n'est ni 0 ni 5, \nombre{} n'est pas divisible par 5.
+                    }%
+                    }{%
+                    \ifthenelse{\equal{\diviseur}{6}}{%
+                        % Cas 6
+                        \textbf{Critère de divisibilité par 6 :} Un nombre est divisible par 6 s'il est divisible à la fois par 2 et par 3.
+                        
+                        \textbf{Application à \nombre :}
+                        
+                        \textbf{Divisibilité par 2 :} Un nombre est divisible par 2 si son dernier chiffre est pair.
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+                            Le dernier chiffre de \nombre{} est \dernierchiffre, qui est pair, donc \nombre{} est divisible par 2.
+                            }{%
+                            Le dernier chiffre de \nombre{} est \dernierchiffre, qui n'est pas pair, donc \nombre{} n'est pas divisible par 2.
+                        }%
+                        
+                        \textbf{Divisibilité par 3 :} Un nombre est divisible par 3 si la somme de ses chiffres est divisible par 3.
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{3}}{0}}{%
+                            La somme des chiffres de \nombre{} est divisible par 3, donc \nombre{} est divisible par 3.
+                            }{%
+                            La somme des chiffres de \nombre{} n'est pas divisible par 3, donc \nombre{} n'est pas divisible par 3.
+                        }%
+                        
+                        \textbf{Conclusion :}
+                        
+                        \ifthenelse{\equal{\intcalcMod{\nombre}{6}}{0}}{%
+                            Comme \nombre{} est divisible à la fois par 2 et par 3, \nombre{} est divisible par 6.
+                            }{%
+                            \ifthenelse{\equal{\intcalcMod{\nombre}{2}}{0}}{%
+                                Comme \nombre{} n'est pas divisible par 3, \nombre{} n'est pas divisible par 6.
+                                }{%
+                                Comme \nombre{} n'est pas divisible par 2, \nombre{} n'est pas divisible par 6.
+                            }%
+                        }%
+                        }{%
+                        \ifthenelse{\equal{\diviseur}{9}}{%
+                            % Cas 9
+                            \textbf{Critère de divisibilité par 9 :} Un nombre est divisible par 9 si la somme de ses chiffres est divisible par 9.
+                            
+                            \textbf{Application à \nombre :}
+                            
+                            Pour vérifier si \nombre{} est divisible par 9, calculons la somme de ses chiffres.
+                            
+                            % Pour les besoins de l'exemple, nous affichons directement le résultat
+                            \ifthenelse{\equal{\intcalcMod{\nombre}{9}}{0}}{%
+                                La somme des chiffres de \nombre{} est divisible par 9, donc \nombre{} est divisible par 9.
+                                }{%
+                                La somme des chiffres de \nombre{} n'est pas divisible par 9, donc \nombre{} n'est pas divisible par 9.
+                            }%
+                            }{%
+                            % Diviseur invalide
+                            %\textbf{Erreur :} Le diviseur \diviseur{} n'est pas dans la liste autorisée (2, 3, 4, 5, 6, 9).
+                            Aucun critère ne fonctionne.
+                        }%
+                    }%
+                }%
+            }%
+        }%
+    }%
+}
+
+
+\ExplSyntaxOn
+
+% Définition de la commande \para
+% Si \na > 0, retourne \na ; si \na < 0, retourne (\na)
+\cs_new:Npn \para #1
+{
+    \int_compare:nNnTF {#1} > {0}
+    {#1} % Si #1 est positif, retourne #1
+    {(#1)} % Si #1 est négatif, retourne (#1)
+}
+
+% Définition de la commande \expa
+% Si \puisxa = 0, retourne \para x^{\puisxa}, sinon retourne \para
+\cs_new:Npn \expa #1 #2
+{
+    \int_compare:nNnTF {#2} = {0}
+    {\para{#1}} % Si la puissance est 0, affiche avec x^{#2}
+    {
+        \int_compare:nNnTF {#2} = {1}
+        {\para{#1}~x}
+        {\para{#1}~x^{#2}}
+    } % Sinon, retourne simplement \para
+}
+\cs_new:Npn \expan #1 #2
+{
+    \int_compare:nNnTF {#2} = {0}
+    {#1} % Si la puissance est 0, affiche avec x^{#2}
+    {
+        \int_compare:nNnTF {#2} = {1}
+        {#1~x}
+        {#1~x^{#2}}
+    } % Sinon, retourne simplement \para
+}
+\cs_new:Npn \finalsigne #1
+{
+    \int_compare:nNnTF {#1} > {0}
+    {+} % Si la puissance est 0, affiche avec x^{#2}
+    {-} % Sinon, retourne simplement \para
+}
+\ExplSyntaxOff
+% Définition de la couleur personnalisée
+\definecolor{customBackground}{RGB}{0, 43, 54}
+
+\def\boiteQFdetcouleur{customBackground}%{green!75!black}
+
+\newcommand\boiteQFdet[2]{
+    \begin{tcolorbox}[nobeforeafter,title=#1,halign title=flush left,fonttitle=\bfseries,colbacktitle=\boiteQFdetcouleur,colframe=customBackground,coltitle=white,colback=white,left=0.2pt,right=0.2pt,width=17.5cm]
+        #2
+    \end{tcolorbox}
+}
+\newcommand{\calculatriceAutorisee}{}
+% On définit un booléen pour la détection
+\newif\ifcalcAllowed
+\newcommand\boiteQFQ[2]{%
+    % Vérifie si #2 contient la chaîne "\calculatriceAutorisee"
+    \IfSubStr{\detokenize{#2}}{\string\calculatriceAutorisee}{%
+        % Si trouvé : titre avec l'icône
+        \calcAllowedtrue
+        }{%
+        \calcAllowedfalse
+    }%
+    %\def\mytitle{#1}
+    \begin{tcolorbox}[%
+        nobeforeafter,
+        title=#1,
+        halign title=flush left,
+        fonttitle=\bfseries,
+        colbacktitle=customBackground,
+        colframe=customBackground,
+        coltitle=white,
+        colback=white,
+        left=0.2pt,
+        right=0.2pt,
+        height=4cm,
+        width=8.2cm,
+        % L'overlay ne modifie pas la géométrie du titre
+        overlay={%
+            \ifcalcAllowed
+            % Place l'image en overlay à la droite du titre (ajustez xshift/yshift si besoin)
+        \node[anchor=base west] at ([xshift=2.5cm,yshift=-0.325cm]title.west) {%xshift=-0.93cm,yshift=-0.325cm]title.east
+            \includegraphics[width=0.8cm,height=0.8cm]{C:/Users/Utilisateur/Desktop/Faire/Macros/Programmes_de_facilitation/QF_generator/images/je_calcule.png}%
+        };
+        \fi
+    }%
+]
+%\begin{itembox}\textbf{#1}\end{itembox}
+#2
+\end{tcolorbox}
+}
+%\def\boitereponsecouleur{gray!65!red}
+\def\boitereponsecouleur{red!75!black}
+\newcommand\boiteQFA[1]{
+\begin{tcolorbox}[nobeforeafter,title=Réponses :,halign title=center,fonttitle=\bfseries,colbacktitle=\boitereponsecouleur,colframe=customBackground,coltitle=white,colback=white,left=5pt,right=0.2pt,height=4cm,width=8.2cm]
+#1
+\end{tcolorbox}
+}
+
+\def\myiconpath{}
+
+\getRandomIconPath
+
+\renewcommand\boiteQFA[1]{
+\begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left,
+fonttitle=\bfseries, colbacktitle=\boitereponsecouleur,
+coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+height=4cm, width=8.2cm, enhanced, overlay={
+    \node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm]
+    {
+        %\includegraphics[width=1.5cm]{../../../images/sticker_eclair.png}
+        \includegraphics[width=1.5cm]{\myiconpath }
+        %\randomincludegraphics[2cm][0cm][0cm]
+    };
+}]
+#1
+\end{tcolorbox}
+}
+\newcommand\boiteQzeroFA[1]{
+\begin{tcolorbox}[nobeforeafter, title=Réponses :, halign title= flush left,
+fonttitle=\bfseries, colbacktitle=\boitereponsecouleur,
+coltitle=white, colback=white,colframe=customBackground, left=5pt, right=0.2pt,
+height=4cm, width=8.2cm, enhanced, overlay={
+\node[anchor=center] at (frame.north west) [xshift=-0.5cm, yshift=0cm]
+{
+    \includegraphics[width=1.5cm]{C:/Users/Utilisateur/Desktop/Faire/Macros/Programmes_de_facilitation/QF_generator/images/sticker_eclair.png}%{../../../images/sticker_eclair.png}
+    %\includegraphics[width=1.5cm]{\myiconpath }
+    %\randomincludegraphics[2cm][0cm][0cm]
+};
+}]
+\begin{center}
+\includegraphics[height=2.8cm]{\myiconpath }%
+\end{center}
+\end{tcolorbox}
+}
+\newtcolorbox{itembox}[1][]{
+baseline,
+nobeforeafter, % Supprime les espaces avant et après
+colframe=customBackground,
+colback=customBackground,
+coltext=white,
+coltitle=white,
+boxsep=1pt,
+boxrule=0.5pt,
+arc=2pt,
+left=2pt,
+right=2pt,
+top=1pt,
+bottom=1pt,
+width=0.7cm,
+#1
+}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{siunitx} % Pour la notation avec virgule
+\usepackage{xfp}
+% Configurer siunitx pour utiliser la virgule comme séparateur décimal
+%\sisetup{output-decimal-marker={,}}
+\newcommand{\cperso}[1]{\num{\fpeval{ #1 }}}
+% Configuration locale pour le formatage des nombres
+\sisetup{%
+%  round-mode=places,
+%  round-precision=5,
+output-decimal-marker={,},
+%  group-separator={}
+}
+
+% Définir la commande \response
+\newcommand{\fracrep}[2]{%
+\FPeval{\result}{round(#1/#2:8)} % Calculer la fraction et arrondir à 4 décimales
+\num{\result} % Afficher le résultat avec une virgule
+}
+\opset{decimalsepsymbol={,}}
+%\newcommand{\degree}{^\circ}
+\begin{document}
+%niveau estimé : 1ere
+%date de projection : 01_10_2025
+%themes abordés : Polynomes degré 2, Trigonométrie, Fractions
+\pagecolor{customBackground}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 7 - Court
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+}
+\boiteQFQ{Question 2 :}{
+%version 1 - Court
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+}
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 8 - Court
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQzeroFA{}
+\end{multicols}
+
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 7 - Court
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+}
+\boiteQFQ{Question 2 :}{
+%version 1 - Court
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 8 - Court
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\coeffa{-7}\def\coeffb{-4}\def\coeffc{-3}\def\mode{2}\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}\ifthenelse{\mode=1}{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$}{$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+\end{itemize}
+}
+\end{multicols}
+\newpage
+\vspace{-0.5cm}
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 7 - Court
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+}
+\boiteQFQ{Question 2 :}{
+%version 1 - Court
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 8 - Court
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\coeffa{-7}\def\coeffb{-4}\def\coeffc{-3}\def\mode{2}\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}\ifthenelse{\mode=1}{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$}{$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}\foreach \numang/\denang/\valcos/\valsin in {1/6/\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-1/6/-\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},2/6/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/6/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/6/0/1,-3/6/0/-1,4/6/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-4/6/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},5/6/-\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-5/6/\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},6/6/-1/0,-6/6/-1/0,1/4/\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-1/4/\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},2/4/0/1,-2/4/0/-1,3/4/-\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-3/4/-\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},4/4/-1/0,-4/4/-1/0,1/3/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-1/3/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},2/3/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/3/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/3/-1/0,-3/3/-1/0,1/2/0/1,-1/2/0/-1,2/2/-1/0,-2/2/-1/0}{\ifnum\numang=\mnum\ifnum\denang=\mden\IfStrEq{\mfonction}{cos}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valcos$}{}\IfStrEq{\mfonction}{sin}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valsin$}{}\fi\fi}
+\end{itemize}
+}
+\end{multicols}
+\newpage
+
+\begin{multicols}{2}
+\boiteQFQ{Question 1 :}{
+%version 7 - Court
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+}
+\boiteQFQ{Question 2 :}{
+%version 1 - Court
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+}
+
+\end{multicols}
+\vspace{-0.85cm}
+\begin{multicols}{2}
+
+\boiteQFQ{Question 3 :}{
+%version 8 - Court
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+}
+\boiteQFA{
+\vspace{-0.35cm}
+\begin{itemize}[itemsep=0.2em]
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{1.} \end{itembox}}] \def\coeffa{-7}\def\coeffb{-4}\def\coeffc{-3}\def\mode{2}\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}\ifthenelse{\mode=1}{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$}{$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{2.} \end{itembox}}] \def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}\foreach \numang/\denang/\valcos/\valsin in {1/6/\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-1/6/-\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},2/6/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/6/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/6/0/1,-3/6/0/-1,4/6/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-4/6/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},5/6/-\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-5/6/\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},6/6/-1/0,-6/6/-1/0,1/4/\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-1/4/\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},2/4/0/1,-2/4/0/-1,3/4/-\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-3/4/-\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},4/4/-1/0,-4/4/-1/0,1/3/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-1/3/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},2/3/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/3/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/3/-1/0,-3/3/-1/0,1/2/0/1,-1/2/0/-1,2/2/-1/0,-2/2/-1/0}{\ifnum\numang=\mnum\ifnum\denang=\mden\IfStrEq{\mfonction}{cos}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valcos$}{}\IfStrEq{\mfonction}{sin}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valsin$}{}\fi\fi}
+\item[\raisebox{-0.1cm}{\begin{itembox} \textbf{3.} \end{itembox}}] \def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}\def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    $\displaystyle\Simplification{\nresb}{\dresb}$
+\end{itemize}
+}
+\end{multicols}
+
+\newpage
+
+%\begin{multicols}{2}
+\boiteQFdet{Solution détaillée de la question 1 :}{
+
+%version 7 - Court
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(4*\coeffa)}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{4*\coeffa}}}}
+
+
+
+\ifthenelse{\mode=1}{\acc{Développer} \begin{center}$\affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$\end{center}}{\acc{Déterminer la forme canonique de} \begin{center}$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}$\end{center}}
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+
+%version 7 - solutions
+
+\def\coeffa{-7}
+\def\coeffb{-4}
+\def\coeffc{-3}
+\def\mode{2}
+
+
+
+
+\def\myalpha{\fpeval{-\coeffb/(2*\coeffa)}}
+\def\mybeta{\fpeval{(\coeffb*\coeffb-4*\coeffa*\coeffc)/(-4*\coeffa)}}
+\def\mybetanum{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}
+\def\mybetaden{\fpeval{-4*\coeffa}}
+\xdef\myalphafrac{\dfrac{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}
+\xdef\mybetafrac{\dfrac{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}
+\xdef\myalphasimp{\displaystyle{\Simplification{\fpeval{-\coeffb}}{\fpeval{2*\coeffa}}}}
+\xdef\mybetasimp{\displaystyle{\Simplification{\fpeval{\coeffb*\coeffb-4*\coeffa*\coeffc}}{\fpeval{-4*\coeffa}}}}
+
+\ifthenelse{\mode=1}{
+\textbf{Rappel :} $(x - \alpha)^2 = x^2 - 2\alpha x + \alpha^2$
+
+Développons :
+\begin{align*}
+&\affiche{\coeffa}(x - \myalphasimp)^2 + \mybetasimp\\
+&= \affiche{\coeffa}\left[x^2 - 2 \times \myalphasimp \times x + \left(\myalphasimp\right)^2\right] + \mybetasimp\\
+&\approx \affiche{\coeffa}x^2 - \affiche{\fpeval{round(\coeffa*2*\myalpha,0)}}x + \affiche{\fpeval{round(\coeffa*\myalpha^2,2)}} + \affiche{\fpeval{round(\mybetanum/\mybetaden,2)}} \\
+&= \affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc}
+\end{align*}
+}{
+\textbf{Détermination de la forme canonique :}
+
+Pour $ax^2 + bx + c$, la forme canonique est $a(x - \alpha)^2 + \beta$ avec :
+\begin{multicols}{2}
+\begin{itemize}
+    \item $\alpha = -\dfrac{b}{2a}$
+    \item $\beta = -\dfrac{b^2 - 4ac}{4a}$
+\end{itemize}
+\columnbreak
+
+Avec $a = \affiche{\coeffa}$,
+
+$b = \affiche{\coeffb}$ et $c = \affiche{\coeffc}$ :
+\end{multicols}
+
+\columnbreak
+
+$\alpha = -\dfrac{\affiche{\coeffb}}{2 \times \affiche{\coeffa}} = \myalphafrac =$ \encadrer[defi]{$\myalphasimp$}
+
+$\beta = -\dfrac{\affiche{\coeffb}^2 - 4 \times \affiche{\coeffa} \times \affiche{\coeffc}}{4 \times \affiche{\coeffa}} = -\dfrac{\affiche{\fpeval{\coeffb*\coeffb}} - \affiche{\fpeval{4*\coeffa*\coeffc}}}{\affiche{\fpeval{4*\coeffa}}}$
+
+$\phantom{\beta } = \mybetafrac = $\encadrer[defi]{$\mybetasimp$}
+
+Donc :
+
+\begin{center}
+\encadrer[defi]{$\affiche{\coeffa}x^2 + \affiche{\coeffb}x + \affiche{\coeffc} = \affiche{\coeffa}\left(x - \myalphasimp\right)^2 + \mybetasimp$}
+\end{center}
+}
+
+\end{multicols}
+}
+
+\newpage
+
+\boiteQFdet{Solution détaillée de la question 2 :}{
+
+%version 1 - Court
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+%version 1 - solutions
+
+\def\mfonction{sin}
+\def\mden{3}
+\def\mnum{-2}
+
+
+
+
+
+Pour déterminer $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$, on place le point $M$ associé à une rotation de $\alpha =\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi$ sur le cercle trigonométrique.
+\def\mapropreliste{1/6/\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},
+-1/6/-\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},
+2/6/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-2/6/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+3/6/0/1,
+-3/6/0/-1,
+4/6/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-4/6/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+5/6/-\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},
+-5/6/\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},
+6/6/-1/0,
+-6/6/-1/0,
+1/4/\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},
+-1/4/\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},
+2/4/0/1,
+-2/4/0/-1,
+3/4/-\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},
+-3/4/-\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},
+4/4/-1/0,
+-4/4/-1/0,
+1/3/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-1/3/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+2/3/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-2/3/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+3/3/-1/0,
+-3/3/-1/0,
+1/2/0/1,
+-1/2/0/-1,
+2/2/-1/0,
+-2/2/-1/0}
+
+Le \IfStrEq{\mfonction}{cos}{\encadrer[defi]{cosinus}}{\encadrer[defi]{sinus}} de l'angle $\alpha=\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi$ correspond à \IfStrEq{\mfonction}{cos}{\encadrer[defi]{l'abscisse}}{\encadrer[defi]{l'ordonnée}} du point $M$.
+
+Ainsi :
+\foreach \numang/\denang/\valcos/\valsin in \mapropreliste {
+\ifnum\numang=\mnum
+\ifnum\denang=\mden
+\IfStrEq{\mfonction}{cos}{%
+\begin{center}\encadrer[defi]{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valcos$}\end{center}
+}{}
+\IfStrEq{\mfonction}{sin}{%
+\begin{center}\encadrer[defi]{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valsin$}\end{center}
+}{}
+\fi
+\fi
+}
+
+
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5,cap=round,>=latex]
+    % draw the coordinates
+    %\draw[->] (-1.2cm,0cm) -- (1.2cm,0cm) node[right,fill=white] {$x$};
+    %\draw[->] (0cm,-1.2cm) -- (0cm,1.2cm) node[above,fill=white] {$y$};
+    % draw symmetries (axes and center) in dark green
+    \draw[defi,thick] (-1.2cm,0cm) -- (1.2cm,0cm); % axe horizontal
+    \draw[defi,thick] (0cm,-1.2cm) -- (0cm,1.2cm); % axe vertical
+    \filldraw[defi] (0,0) circle(1.5pt); % centre O
+    % draw the unit circle
+    \draw[thick] (0cm,0cm) circle(1cm);
+    % draw direct rotation (sens trigonométrique)
+    %\draw[->,black,thin] (30:1.8) arc (30:60:1.15) node[midway,right] {\scriptsize $+$};
+    % draw key angles
+    \foreach \x in {0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330} {
+        \draw[gray,thin] (0cm,0cm) -- (\x:1cm);
+    }
+    % draw the angle
+    \draw[red,thick] (0,0) -- ({180*\mnum/\mden}:1cm);
+    % highlight the points
+    \filldraw[red] ({180*\mnum/\mden}:1cm) circle(1.2pt);
+    % draw dotted lines to show coordinates
+    \draw[dotted,red,line width=0.8pt] ({180*\mnum/\mden}:1cm) -- ({cos(180*\mnum/\mden)},0);
+    \draw[dotted,red,line width=0.8pt] ({180*\mnum/\mden}:1cm) -- (0,{sin(180*\mnum/\mden)});
+    % Points images par symétries en vert foncé
+    % Symétrie axiale par rapport à l'axe x : (x, -y)
+    \filldraw[defi] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) circle(1.2pt);
+    \draw[dotted,defi,line width=0.8pt] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- ({cos(180*\mnum/\mden)},0);
+    \draw[dotted,defi,line width=0.8pt] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- (0,{-sin(180*\mnum/\mden)});
+    % Symétrie axiale par rapport à l'axe y : (-x, y)
+    \filldraw[defi] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) circle(1.2pt);
+    \draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) -- ({-cos(180*\mnum/\mden)},0);
+    \draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) -- (0,{sin(180*\mnum/\mden)});
+    % Symétrie centrale par rapport à O : (-x, -y)
+    \filldraw[defi] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) circle(1.2pt);
+    \draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- ({-cos(180*\mnum/\mden)},0);
+    \draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- (0,{-sin(180*\mnum/\mden)});
+    % Calcul de l'angle et détection du cadrant
+    \pgfmathsetmacro{\anglefinal}{180*\mnum/\mden}
+    \pgfmathsetmacro{\angleabs}{abs(\anglefinal)}
+    \pgfmathsetmacro{\radius}{1.1}
+    
+    % Déterminer le cadrant et les ancres appropriées
+    % Cadrant 1: 0° à 90° (supérieur droit) -> anchor=south west
+    % Cadrant 2: 90° à 180° (supérieur gauche) -> anchor=south east
+    % Cadrant 3: -180° à -90° ou 180° à 270° (inférieur gauche) -> anchor=north east
+    % Cadrant 4: -90° à 0° ou 270° à 360° (inférieur droit) -> anchor=north west
+    
+    \pgfmathsetmacro{\cadrant}{
+        (\anglefinal >= 0 && \anglefinal <= 90) ? 1 :
+        (\anglefinal > 90 && \anglefinal <= 180) ? 2 :
+        (\anglefinal < 0 && \anglefinal >= -90) ? 4 :
+        3
+    }
+    
+    % Affichage de l'angle avec position adaptée et graduation
+    \pgfmathsetmacro{\absnum}{abs(\mnum)}
+    \ifdim\anglefinal pt<0pt
+    \ifnum\mnum=-1
+    \ifdim\anglefinal pt>-90pt
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below right] {\normalsize $\alpha=\dfrac{-\pi}{\mden}$};
+    \else
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below left] {\normalsize $\alpha=\dfrac{-\pi}{\mden}$};
+    \fi
+    \else
+    \ifdim\anglefinal pt>-90pt
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below right] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+    \else
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below left] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+    \fi
+    \fi
+    % Graduation de l'angle (angles négatifs)
+    \foreach \i in {1,...,\absnum} {
+        \pgfmathsetmacro{\tickangle}{-\i*180/\mden}
+        \draw[prop] (\tickangle:\radius-0.05) -- (\tickangle:\radius+0.05);
+    }
+    \else
+    \ifnum\mnum=1
+    \ifdim\anglefinal pt<90pt
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above right] {\normalsize $\alpha=\dfrac{\pi}{\mden}$};
+    \else
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above left] {\normalsize $\alpha=\dfrac{\pi}{\mden}$};
+    \fi
+    \else
+    \ifdim\anglefinal pt<90pt
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above right] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+    \else
+    \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above left] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+    \fi
+    \fi
+    % Graduation de l'angle (angles positifs)
+    \foreach \i in {1,...,\mnum} {
+        \pgfmathsetmacro{\tickangle}{\i*180/\mden}
+        \draw[prop] (\tickangle:\radius-0.05) -- (\tickangle:\radius+0.05);
+    }
+    \fi
+    
+    % Affichage des coordonnées depuis \mapropreliste avec position adaptée au cadrant
+    \foreach \numang/\denang/\valcos/\valsin in \mapropreliste {
+        \ifnum\numang=\mnum
+        \ifnum\denang=\mden
+        \pgfmathsetmacro{\myangle}{180*\mnum/\mden}
+        % Cadrant 1: 0° à 90° (supérieur droit)
+        \ifdim\myangle pt<0pt
+        \ifdim\myangle pt>-90pt
+        % Cadrant 4: -90° à 0° (inférieur droit)
+        \node[red,anchor=north west] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+        \else
+        % Cadrant 3: -180° à -90° (inférieur gauche)
+        \node[red,anchor=north east] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+        \fi
+        \else
+        \ifdim\myangle pt>90pt
+        % Cadrant 2: 90° à 180° (supérieur gauche)
+        \node[red,anchor=south east] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+        \else
+        % Cadrant 1: 0° à 90° (supérieur droit)
+        \node[red,anchor=south west] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+        \fi
+        \fi
+        \fi
+        \fi
+    }
+\end{tikzpicture}
+\end{center}
+
+\end{multicols}
+}
+
+%\columnbreak
+\newpage
+
+
+\boiteQFdet{Solution détaillée de la question 3 :}{
+
+%version 8 - Court
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+Effectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\dfrac{\n}{\d} + \dfrac{\nb}{\db}$$
+
+\tikz{\draw[dashed, line width=1pt] (0,0) -- (\linewidth,0);}
+
+\vspace{-0.25cm}\setlength{\columnseprule}{0.4pt}\begin{multicols}{2}
+
+%version 8 - solutions
+
+\def\n{11}
+\def\d{12}
+\def\nb{5}
+\def\db{16}
+
+
+\def\decnum{\Decomposition[Longue]{\fpeval{\n * \db + \nb * \d}}}    \def\decden{\Decomposition[Longue]{\fpeval{\d * \db}}}    \begin{align*}        \dfrac{\n}{\d} + \dfrac{\nb}{\db}         &=~ \dfrac{\n \times \db}{\d \times \db} + \dfrac{\nb \times \d}{\db \times \d}\\        &=~ \dfrac{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}\\        &=~ \dfrac{\decnum}{\decden}\\        &=~ \Simplification{\fpeval{\n * \db + \nb * \d}}{\fpeval{\d * \db}}    \end{align*}
+
+\end{multicols}
+}
+%\end{multicols}
+\end{document}

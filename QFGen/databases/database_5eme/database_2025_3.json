@@ -1,0 +1,299 @@
+{
+    "QF_03_03_2025": {
+        "classe": "5ème",
+        "date": "03_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 11 - Court\n\t\n\n\\def\\nombre{2388.852}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{2388.852}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 11 - solutions\n\t\n\n\\def\\nombre{2388.852}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 23 - Court\n\t\n\\def\\na{5}\n\\def\\addna{2}\n\\def\\quantite{307}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}\\def\\addna{2}\\def\\quantite{307}\\def\\marchand{marchand}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 23 - solutions\n\t\n\\def\\na{5}\n\\def\\addna{2}\n\\def\\quantite{307}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\multa{80}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}",
+                "reponse": "\\def\\numa{30}\\def\\numb{20}\\def\\multa{80}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+                "details": "%version 1 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\multa{80}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_04_03_2025": {
+        "classe": "5ème",
+        "date": "04_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{50}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}",
+                "reponse": "\\def\\numa{90}\\def\\numb{50}\\def\\numc{60}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "details": "%version 2 - solutions\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{50}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+                "theme": "Calcul_ligne",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 24 - Court\n\t\n\\def\\na{9}\n\\def\\addna{7}\n\\def\\quantite{460}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{9}\\def\\addna{7}\\def\\quantite{460}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 24 - solutions\n\t\n\\def\\na{9}\n\\def\\addna{7}\n\\def\\quantite{460}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{20}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}",
+                "reponse": "\\def\\numa{10}\\def\\numb{70}\\def\\multa{20}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+                "details": "%version 2 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{20}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_10_03_2025": {
+        "classe": "5ème",
+        "date": "10_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 25 - Court\n\t\n\\def\\na{10}\n\\def\\addna{3}\n\\def\\quantite{695}\n\\def\\marchand{agriculteur}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{10}\\def\\addna{3}\\def\\quantite{695}\\def\\marchand{agriculteur}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 25 - solutions\n\t\n\\def\\na{10}\n\\def\\addna{3}\n\\def\\quantite{695}\n\\def\\marchand{agriculteur}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 12 - Court\n\t\n\n\\def\\nombre{4965.344}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{4965.344}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 12 - solutions\n\t\n\n\\def\\nombre{4965.344}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\numa{10}\n\\def\\numb{-5}\n\\def\\numc{-37}\n\\def\\numd{-48}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{10}\\def\\numb{-5}\\def\\numc{-37}\\def\\numd{-48}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 1 - solutions\n\t\n\\def\\numa{10}\n\\def\\numb{-5}\n\\def\\numc{-37}\n\\def\\numd{-48}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_11_03_2025": {
+        "classe": "5ème",
+        "date": "11_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\numa{30}\n\\def\\numb{-47}\n\\def\\numc{31}\n\\def\\numd{-13}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} -\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{30}\\def\\numb{-47}\\def\\numc{31}\\def\\numd{-13}$\\fpeval{\\numa - \\numb + \\numc + \\numd}$",
+                "details": "%version 2 - solutions\n\t\n\\def\\numa{30}\n\\def\\numb{-47}\n\\def\\numc{31}\n\\def\\numd{-13}\n\n\t\n$\\affiche{\\numa} -\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa - \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 15 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{3}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 15 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 26 - Court\n\t\n\\def\\na{8}\n\\def\\addna{3}\n\\def\\quantite{705}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{8}\\def\\addna{3}\\def\\quantite{705}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 26 - solutions\n\t\n\\def\\na{8}\n\\def\\addna{3}\n\\def\\quantite{705}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_14_03_2025": {
+        "classe": "5ème",
+        "date": "14_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\numa{0.8}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{0.8}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 1 - solutions\n\t\n\\def\\numa{0.8}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\nombre{9281.663}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{9281.663}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 6 - solutions\n\t\n\\def\\nombre{9281.663}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\numa{17}\n\\def\\numb{-28}\n\\def\\numc{-35}\n\\def\\numd{-36}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{17}\\def\\numb{-28}\\def\\numc{-35}\\def\\numd{-36}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 3 - solutions\n\t\n\\def\\numa{17}\n\\def\\numb{-28}\n\\def\\numc{-35}\n\\def\\numd{-36}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_03_2025": {
+        "classe": "5ème",
+        "date": "17_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numa{41}\n\\def\\numb{-9}\n\\def\\numc{41}\n\\def\\numd{-28}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{41}\\def\\numb{-9}\\def\\numc{41}\\def\\numd{-28}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 4 - solutions\n\t\n\\def\\numa{41}\n\\def\\numb{-9}\n\\def\\numc{41}\n\\def\\numd{-28}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\numAB{2.1}\n\\def\\numBC{4.0}\n\\def\\numCA{2.4}\n\n\t\n  \nTracer le \\textbf{triangle} dont les longueurs des trois \\textbf{côtés} sont :  \n  \n$AB=\\affiche{\\numAB}~\\text{cm}$ ; $BC=\\affiche{\\numBC}~\\text{cm}$ ; $CA=\\affiche{\\numCA}~\\text{cm}$.",
+                "reponse": "\\def\\numAB{2.1}\\def\\numBC{4.0}\\def\\numCA{2.4}\\tikzset{  cross/.style={    cross out,     draw,    minimum size=5pt,    inner sep=0pt,    outer sep=0pt,    thick  }}$\\longrightarrow$\\hfill$\\longrightarrow$\\hfill\\begin{tikzpicture}[scale=0.2,every node/.style={font=\\tiny}, overlay, remember picture,xshift=-6.5cm,yshift=-7.2cm] \t  \\coordinate (B) at (0,0);  \\coordinate (C) at (\\numBC,0);    \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}  \\coordinate (A) at (\\xA,\\yA);    \\draw (A) -- (B) -- (C) -- cycle;    \\node[cross] at (A) {};  \\node[cross] at (B) {};  \\node[cross] at (C) {};    \\node[above] at (A) {$A$};  \\node[below left] at (B) {$B$};  \\node[below right] at (C) {$C$};    \\path (A) -- (B) coordinate[midway] (ABmid);  \\path (B) -- (C) coordinate[midway] (BCmid);  \\path (A) -- (C) coordinate[midway] (ACmid);  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\\end{tikzpicture}",
+                "details": "%version 3 - solutions\n\t\n\\def\\numAB{2.1}\n\\def\\numBC{4.0}\n\\def\\numCA{2.4}\n\n\t\n  \n\\textbf{Solution détaillée :}  \n  \n1. On définit les longueurs des côtés :  \n   \\quad $AB=\\affiche{\\numAB}~\\text{cm},\\quad BC=\\affiche{\\numBC}~\\text{cm},\\quad CA=\\affiche{\\numCA}~\\text{cm}$.  \n  \n2. Vérification des conditions d'existence du triangle :  \n   \\[\n   \\begin{array}{rcl}\n   AB+BC & = & \\affiche{\\fpeval{round(\\numAB+\\numBC,2)}} > \\affiche{\\numCA}, \\\\\n   BC+CA & = & \\affiche{\\fpeval{round(\\numBC+\\numCA,2)}} > \\affiche{\\numAB}, \\\\\n   CA+AB & = & \\affiche{\\fpeval{round(\\numCA+\\numAB,2)}} > \\affiche{\\numBC}.\n   \\end{array}\n   \\]\n   Chacune de ces inégalités est vérifiée.  \n  \n\\tikzset{\n  cross/.style={\n    cross out, \n    draw,\n    minimum size=5pt,\n    inner sep=0pt,\n    outer sep=0pt,\n    thick\n  }\n}\n\\begin{tikzpicture}[scale=0.5,every node/.style={font=\\small}]\n  \\coordinate (B) at (0,0);\n  \\coordinate (C) at (\\numBC,0);\n   \\pgfmathsetmacro{\\xA}{((\\numBC*\\numBC)-((\\numCA*\\numCA)-(\\numAB*\\numAB)))/(2*\\numBC)}\n  \\pgfmathsetmacro{\\yA}{sqrt((\\numAB*\\numAB)-(\\xA*\\xA))}\n  \\coordinate (A) at (\\xA,\\yA);\n  \n  \\draw (A) -- (B) -- (C) -- cycle;\n  \n  \\node[cross] at (A) {};\n  \\node[cross] at (B) {};\n  \\node[cross] at (C) {};\n  \n  \\node[above] at (A) {$A$};\n  \\node[below left] at (B) {$B$};\n  \\node[below right] at (C) {$C$};\n  \n  \\path (A) -- (B) coordinate[midway] (ABmid);\n  \\path (B) -- (C) coordinate[midway] (BCmid);\n  \\path (A) -- (C) coordinate[midway] (ACmid);\n  \\node[left] at (ABmid) {$\\affiche{\\numAB}~\\text{cm}$};\n  \\node[below] at (BCmid) {$\\affiche{\\numBC}~\\text{cm}$};\n  \\node[right] at (ACmid) {$\\affiche{\\numCA}~\\text{cm}$};\n\\end{tikzpicture}",
+                "theme": "Triangles",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\he{3}\n\\def\\mi{54}\n\\def\\dia{72}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{3}\\def\\mi{54}\\def\\dia{72}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 10 - solutions\n\t\n\\def\\he{3}\n\\def\\mi{54}\n\\def\\dia{72}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_17_03_2025": {
+        "classe": "5ème",
+        "date": "17_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\numa{2.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{2.65}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 2 - solutions\n\t\n\\def\\numa{2.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 14 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 14 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\he{2}\n\\def\\mi{4}\n\\def\\dia{106}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{2}\\def\\mi{4}\\def\\dia{106}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 11 - solutions\n\t\n\\def\\he{2}\n\\def\\mi{4}\n\\def\\dia{106}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_18_03_2025": {
+        "classe": "5ème",
+        "date": "18_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 16 - Court\n\t\n\n\\def\\n{9}\n    \\def\\d{5}\n    \\def\\nb{6}\n     \\def\\multa{7}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{9}    \\def\\d{5}    \\def\\nb{6}     \\def\\multa{7}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 16 - solutions\n\t\n\n\\def\\n{9}\n    \\def\\d{5}\n    \\def\\nb{6}\n     \\def\\multa{7}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numa{-44}\n\\def\\numb{-21}\n\\def\\numc{-15}\n\\def\\numd{-42}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-44}\\def\\numb{-21}\\def\\numc{-15}\\def\\numd{-42}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 5 - solutions\n\t\n\\def\\numa{-44}\n\\def\\numb{-21}\n\\def\\numc{-15}\n\\def\\numd{-42}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 13 - Court\n\t\n\\def\\he{3}\n\\def\\mi{14}\n\\def\\dia{107}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{3}\\def\\mi{14}\\def\\dia{107}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 13 - solutions\n\t\n\\def\\he{3}\n\\def\\mi{14}\n\\def\\dia{107}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_24_03_2025": {
+        "classe": "5ème",
+        "date": "24_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 17 - Court\n\t\n\n\\def\\n{7}\n    \\def\\d{3}\n    \\def\\nb{9}\n     \\def\\multa{9}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}    \\def\\d{3}    \\def\\nb{9}     \\def\\multa{9}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 17 - solutions\n\t\n\n\\def\\n{7}\n    \\def\\d{3}\n    \\def\\nb{9}\n     \\def\\multa{9}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 14 - Court\n\t\n\\def\\he{3}\n\\def\\mi{39}\n\\def\\dia{64}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{3}\\def\\mi{39}\\def\\dia{64}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 14 - solutions\n\t\n\\def\\he{3}\n\\def\\mi{39}\n\\def\\dia{64}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 17 - Court\n\t\n\n\\def\\na{11}\n\\def\\nb{5}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{11}\\def\\nb{5}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 17 - solutions\n\t\n\n\\def\\na{11}\n\\def\\nb{5}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_25_03_2025": {
+        "classe": "5ème",
+        "date": "25_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 27 - Court\n\t\n\\def\\na{5}\n\\def\\addna{10}\n\\def\\quantite{407}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{5}\\def\\addna{10}\\def\\quantite{407}\\def\\marchand{marchand}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 27 - solutions\n\t\n\\def\\na{5}\n\\def\\addna{10}\n\\def\\quantite{407}\n\\def\\marchand{marchand}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 18 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 18 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 15 - Court\n\t\n\\def\\he{2}\n\\def\\mi{20}\n\\def\\dia{99}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{2}\\def\\mi{20}\\def\\dia{99}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 15 - solutions\n\t\n\\def\\he{2}\n\\def\\mi{20}\n\\def\\dia{99}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_28_03_2025": {
+        "classe": "5ème",
+        "date": "28_03_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 18 - Court\n\t\n\n\\def\\n{9}\n    \\def\\d{7}\n    \\def\\nb{6}\n     \\def\\multa{9}\n\n\n\t\n\n%court\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    \\acc{Effectuer} le calcul suivant en donnant le résultat sous \\acc{forme simplifiée} lorsque c'est possible : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{9}    \\def\\d{7}    \\def\\nb{6}     \\def\\multa{9}\\def\\db{\\fpeval{\\d*\\multa}}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}$",
+                "details": "%version 18 - solutions\n\t\n\n\\def\\n{9}\n    \\def\\d{7}\n    \\def\\nb{6}\n     \\def\\multa{9}\n\n\n\t\n\n%help\n    \\def\\db{\\fpeval{\\d*\\multa}}\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\multa + \\nb}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\multa}}}\n\t\nOn remarque que $\\d \\times \\blue{\\multa} = \\db$ donc on peut \\acc{réduire} les deux fractions au \\acc{dénominateur} $\\db$.\n\n\\columnbreak\n\n\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\blue{\\multa}}{\\d \\times \\blue{\\multa}} + \\dfrac{\\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\n \\times \\blue{\\multa} + \\nb}{\\d \\times \\blue{\\multa}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\multa + \\nb}}{\\fpeval{\\d * \\multa}}\n    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 28 - Court\n\t\n\\def\\na{3}\n\\def\\addna{2}\n\\def\\quantite{186}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{3}\\def\\addna{2}\\def\\quantite{186}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 28 - solutions\n\t\n\\def\\na{3}\n\\def\\addna{2}\n\\def\\quantite{186}\n\\def\\marchand{boulanger}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 16 - Court\n\t\n\\def\\he{2}\n\\def\\mi{42}\n\\def\\dia{65}\n\n\t\n\t\t\t\nDans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.   \t\n\t\nQuel est le \\acc{pourcentage} de dialogues ? ( arrondi au dixième près )",
+                "reponse": "\\def\\he{2}\\def\\mi{42}\\def\\dia{65}$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 16 - solutions\n\t\n\\def\\he{2}\n\\def\\mi{42}\n\\def\\dia{65}\n\n\t\n\nLa série dure $\\he \\times 60 + \\mi = \\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}~$minutes au total.\t\t\n\nDans cette série, il y a $\\dia~$minutes de dialogues.  \t\n\n\\begin{center}    \t\n\\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}        \\cellcolor{gray!10}\\bfseries Dialogues & $\\dia$ &{\\color{red} $\\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$ }\\\\\t\n\\hline        \t\n\\cellcolor{gray!10}\\bfseries Total & $\\mathbf{\\num{\\fpeval{\\he * 60 + \\mi}}}$ & 100\\\\\n\\end{tcbtab}    \t\n\\end{center}    \t\nLe pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}} = \\mathbf{\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}}$   \t\n\t\nAinsi, $\\dia~$minutes de dialogues représentent environ $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    }
+}

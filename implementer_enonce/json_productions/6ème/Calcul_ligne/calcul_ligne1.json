@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\n\n\n\\def\\numa{11}\n\\def\\numb{19}\n\\def\\numc{12}\n\\def\\numd{50}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{19}\\def\\numc{12}\\def\\numd{50}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 1 - solutions\n\t\n\n\n\n\n\\def\\numa{11}\n\\def\\numb{19}\n\\def\\numc{12}\n\\def\\numd{50}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{50}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{90}\\def\\numb{50}\\def\\numc{60}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 2 - solutions\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{50}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\n\n\n\\def\\numa{17}\n\\def\\numb{80}\n\\def\\numc{50}\n\\def\\numd{12}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{17}\\def\\numb{80}\\def\\numc{50}\\def\\numd{12}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 3 - solutions\n\t\n\n\n\n\n\\def\\numa{17}\n\\def\\numb{80}\n\\def\\numc{50}\n\\def\\numd{12}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\numc{40}\n\\def\\numd{12}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{20}\\def\\numc{40}\\def\\numd{12}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 4 - solutions\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\numc{40}\n\\def\\numd{12}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{30}\n\\def\\numc{90}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{12}\\def\\numb{30}\\def\\numc{90}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 5 - solutions\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{30}\n\\def\\numc{90}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\n\n\n\\def\\numa{10}\n\\def\\numb{12}\n\\def\\numc{50}\n\\def\\numd{18}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{12}\\def\\numc{50}\\def\\numd{18}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 6 - solutions\n\t\n\n\n\n\n\\def\\numa{10}\n\\def\\numb{12}\n\\def\\numc{50}\n\\def\\numd{18}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\n\n\n\\def\\numa{13}\n\\def\\numb{16}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{16}\\def\\numc{60}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 7 - solutions\n\t\n\n\n\n\n\\def\\numa{13}\n\\def\\numb{16}\n\\def\\numc{60}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\n\n\n\\def\\numa{18}\n\\def\\numb{17}\n\\def\\numc{14}\n\\def\\numd{30}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{18}\\def\\numb{17}\\def\\numc{14}\\def\\numd{30}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 8 - solutions\n\t\n\n\n\n\n\\def\\numa{18}\n\\def\\numb{17}\n\\def\\numc{14}\n\\def\\numd{30}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\n\n\n\\def\\numa{19}\n\\def\\numb{30}\n\\def\\numc{11}\n\\def\\numd{13}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{19}\\def\\numb{30}\\def\\numc{11}\\def\\numd{13}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 9 - solutions\n\t\n\n\n\n\n\\def\\numa{19}\n\\def\\numb{30}\n\\def\\numc{11}\n\\def\\numd{13}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\n\n\n\\def\\numa{10}\n\\def\\numb{50}\n\\def\\numc{15}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{50}\\def\\numc{15}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 10 - solutions\n\t\n\n\n\n\n\\def\\numa{10}\n\\def\\numb{50}\n\\def\\numc{15}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{19}\n\\def\\numc{40}\n\\def\\numd{60}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{12}\\def\\numb{19}\\def\\numc{40}\\def\\numd{60}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 11 - solutions\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{19}\n\\def\\numc{40}\n\\def\\numd{60}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\n\n\n\\def\\numa{13}\n\\def\\numb{14}\n\\def\\numc{12}\n\\def\\numd{16}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{14}\\def\\numc{12}\\def\\numd{16}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 12 - solutions\n\t\n\n\n\n\n\\def\\numa{13}\n\\def\\numb{14}\n\\def\\numc{12}\n\\def\\numd{16}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\n\n\n\\def\\numa{70}\n\\def\\numb{11}\n\\def\\numc{30}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{70}\\def\\numb{11}\\def\\numc{30}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 13 - solutions\n\t\n\n\n\n\n\\def\\numa{70}\n\\def\\numb{11}\n\\def\\numc{30}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{15}\n\\def\\numc{40}\n\\def\\numd{18}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{15}\\def\\numc{40}\\def\\numd{18}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 14 - solutions\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{15}\n\\def\\numc{40}\n\\def\\numd{18}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\n\n\n\\def\\numa{60}\n\\def\\numb{16}\n\\def\\numc{20}\n\\def\\numd{70}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{60}\\def\\numb{16}\\def\\numc{20}\\def\\numd{70}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 15 - solutions\n\t\n\n\n\n\n\\def\\numa{60}\n\\def\\numb{16}\n\\def\\numc{20}\n\\def\\numd{70}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{15}\n\\def\\numc{11}\n\\def\\numd{90}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{15}\\def\\numc{11}\\def\\numd{90}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 16 - solutions\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{15}\n\\def\\numc{11}\n\\def\\numd{90}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\n\n\n\\def\\numa{80}\n\\def\\numb{30}\n\\def\\numc{19}\n\\def\\numd{17}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{80}\\def\\numb{30}\\def\\numc{19}\\def\\numd{17}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 17 - solutions\n\t\n\n\n\n\n\\def\\numa{80}\n\\def\\numb{30}\n\\def\\numc{19}\n\\def\\numd{17}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\numc{19}\n\\def\\numd{11}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{10}\\def\\numc{19}\\def\\numd{11}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 18 - solutions\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\numc{19}\n\\def\\numd{11}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\n\n\n\\def\\numa{16}\n\\def\\numb{11}\n\\def\\numc{70}\n\\def\\numd{17}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{16}\\def\\numb{11}\\def\\numc{70}\\def\\numd{17}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 19 - solutions\n\t\n\n\n\n\n\\def\\numa{16}\n\\def\\numb{11}\n\\def\\numc{70}\n\\def\\numd{17}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\n\n\n\\def\\numa{16}\n\\def\\numb{30}\n\\def\\numc{13}\n\\def\\numd{20}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{16}\\def\\numb{30}\\def\\numc{13}\\def\\numd{20}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 20 - solutions\n\t\n\n\n\n\n\\def\\numa{16}\n\\def\\numb{30}\n\\def\\numc{13}\n\\def\\numd{20}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{70}\n\\def\\numc{17}\n\\def\\numd{15}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{90}\\def\\numb{70}\\def\\numc{17}\\def\\numd{15}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 21 - solutions\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{70}\n\\def\\numc{17}\n\\def\\numd{15}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{30}\n\\def\\numc{90}\n\\def\\numd{15}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{30}\\def\\numc{90}\\def\\numd{15}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 22 - solutions\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{30}\n\\def\\numc{90}\n\\def\\numd{15}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\n\n\n\\def\\numa{14}\n\\def\\numb{15}\n\\def\\numc{18}\n\\def\\numd{30}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{14}\\def\\numb{15}\\def\\numc{18}\\def\\numd{30}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 23 - solutions\n\t\n\n\n\n\n\\def\\numa{14}\n\\def\\numb{15}\n\\def\\numc{18}\n\\def\\numd{30}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{30}\n\\def\\numc{15}\n\\def\\numd{17}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{12}\\def\\numb{30}\\def\\numc{15}\\def\\numd{17}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 24 - solutions\n\t\n\n\n\n\n\\def\\numa{12}\n\\def\\numb{30}\n\\def\\numc{15}\n\\def\\numd{17}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\n\n\n\\def\\numa{50}\n\\def\\numb{90}\n\\def\\numc{30}\n\\def\\numd{14}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{50}\\def\\numb{90}\\def\\numc{30}\\def\\numd{14}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 25 - solutions\n\t\n\n\n\n\n\\def\\numa{50}\n\\def\\numb{90}\n\\def\\numc{30}\n\\def\\numd{14}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{11}\n\\def\\numc{15}\n\\def\\numd{13}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{11}\\def\\numc{15}\\def\\numd{13}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 26 - solutions\n\t\n\n\n\n\n\\def\\numa{30}\n\\def\\numb{11}\n\\def\\numc{15}\n\\def\\numd{13}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\numc{50}\n\\def\\numd{13}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{10}\\def\\numc{50}\\def\\numd{13}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 27 - solutions\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\numc{50}\n\\def\\numd{13}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{50}\n\\def\\numc{15}\n\\def\\numd{18}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{50}\\def\\numc{15}\\def\\numd{18}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 28 - solutions\n\t\n\n\n\n\n\\def\\numa{20}\n\\def\\numb{50}\n\\def\\numc{15}\n\\def\\numd{18}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\n\n\n\\def\\numa{80}\n\\def\\numb{16}\n\\def\\numc{60}\n\\def\\numd{13}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{80}\\def\\numb{16}\\def\\numc{60}\\def\\numd{13}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 29 - solutions\n\t\n\n\n\n\n\\def\\numa{80}\n\\def\\numb{16}\n\\def\\numc{60}\n\\def\\numd{13}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{20}\n\\def\\numc{19}\n\\def\\numd{18}\n\t\nFernando a obtenu le nombre $\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$ à partir des nombres suivants : \\numa, \\numb, \\numc \\ et \\numd.\n\\vspace{-0.3cm}\\begin{multicols}{2}Voici ses calculs :  \\\\\t\n$\\numa \\times \\numb=\\fpeval{\\numa * \\numb}$\\\\$\\numc + \\numd=\\fpeval{\\numc + \\numd}$\\\\\t\n$\\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\t\n\t\n\\columnbreak\t\n\t\nLes écrire en une \\acc{seule ligne}.\t\n\\end{multicols}\n\n",
+        "reponse": "\\def\\numa{90}\\def\\numb{20}\\def\\numc{19}\\def\\numd{18}$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$",
+        "details": "%version 30 - solutions\n\t\n\n\n\n\n\\def\\numa{90}\n\\def\\numb{20}\n\\def\\numc{19}\n\\def\\numd{18}\n\t\n$\\numa \\times \\numb - (\\numc + \\numd)\\\\\t\t\n= \\fpeval{\\numa * \\numb} - \\fpeval{\\numc + \\numd}=\\fpeval{\\numa * \\numb - (\\numc + \\numd)}$\n\n",
+        "theme": "\nCalcul_ligne\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

@@ -1,0 +1,49 @@
+
+30
+%%
+\def\na{-30<=x<30 x!=0 x!=1 int}
+\def\da{-30<=x<30 x!=0 x!=1 int}
+\def\nb{-30<=x<30 x!=0 x!=1 int}
+\def\db{-30<=x<30 x!=0 x!=1 int}
+%%
+
+    %court
+    
+    \acc{Effectuer} le calcul suivant et donner le résultat sous \acc{forme simplifiée}\\
+    \begin{center}$\dfrac{\na}{\da} \div \dfrac{\nb}{\db}$\end{center}
+    
+
+%%
+
+    %help
+
+    \begin{align*}
+        \dfrac{\na}{\da} \div \dfrac{\nb}{\db} = & \dfrac{\na}{\da} \times \dfrac{\db}{\nb}\\
+        = & \dfrac{\na\times \db}{\da\times \nb} \\
+        = & \dfrac{\fpeval{\na * \para{\db}}}{\fpeval{\da * \para{\nb}}}\\
+        = & \Simplification{\fpeval{\na * \db}}{\fpeval{\da * \nb}}
+    \end{align*}
+        
+    
+
+%%
+
+    %qcm
+
+    \textbf{Cocher} la réponse correcte : \\
+    $\dfrac{\na}{\da} \times \dfrac{\nb}{\db} = $
+    \begin{center} 
+        \listnode{\cb}{$\dfrac{\fpeval{\na / \nb}}{\fpeval{\da / \db}}$} 
+        \listnode{\cb}{$\dfrac{\fpeval{\na / \nb}}{\fpeval{\da / \db}}$} 
+        \listnode{\cb}{$\Simplification{\fpeval{\na * \nb}}{\fpeval{\da + \db}}$} 
+        \listnode{\ccb}{$\dfrac{\fpeval{\na * \db}}{\fpeval{\da * \nb}}$} 
+    \end{center}
+    
+
+%%
+$\dfrac{\fpeval{\na * \db}}{\fpeval{\da * \nb}}=\Simplification{\fpeval{\na * \db}}{\fpeval{\da * \nb}}$
+%%
+Fractions
+%%
+
+

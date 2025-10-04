@@ -1,0 +1,16 @@
+
+30
+%%
+\def\base{-20<=x<=20 x!=0 x!=1 int}
+\def\exposanta{-20<=x<=20 x!=0 x!=1 int}
+\def\exposantb{-20<=x<=20 x!=0 x!=1 int}
+%%
+\acc{\'Ecrire sous la forme d'une seule puissance} 		$\base^{\exposanta} \times \base^{\exposantb} $
+%%
+Selon la propriété des puissances : 				Pour multiplier des puissances de même base, on additionne les exposants : 			\begin{align*}	\base ^{\exposanta} \times \base ^{\exposantb} = & \base ^{\exposanta + \affiche{\exposantb}}\\	= &  \base ^{\fpeval{\exposanta + \exposantb}}\end{align*}
+%%
+\begin{enumerate}    \item $\Puissances{\base}{\fpeval{\exposanta + \exposantb + 1}}$    \item $\Puissances{\base}{\fpeval{\exposanta + \exposantb}}$ % réponse correcte   	 	\item $\Puissances{\base}{\fpeval{\exposanta + \exposantb - 2}}$    	\item $\Puissances{\base}{\fpeval{\exposanta - \exposantb}}$\end{enumerate}
+%%
+$\base^{\fpeval{\exposanta + \exposantb}}$
+%%
+Puissances

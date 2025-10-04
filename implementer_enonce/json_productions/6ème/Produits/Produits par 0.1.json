@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\ma{197.25}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{197.25}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 1 - solutions\n\t\n\\def\\ma{197.25}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\ma{365.96}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{365.96}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 2 - solutions\n\t\n\\def\\ma{365.96}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\ma{238.2}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{238.2}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 3 - solutions\n\t\n\\def\\ma{238.2}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\ma{470.03}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{470.03}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 4 - solutions\n\t\n\\def\\ma{470.03}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\ma{379.8}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{379.8}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 5 - solutions\n\t\n\\def\\ma{379.8}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\ma{260.83}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{260.83}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 6 - solutions\n\t\n\\def\\ma{260.83}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\ma{449.42}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{449.42}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 7 - solutions\n\t\n\\def\\ma{449.42}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\ma{389.16}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{389.16}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 8 - solutions\n\t\n\\def\\ma{389.16}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\ma{292.95}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{292.95}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 9 - solutions\n\t\n\\def\\ma{292.95}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\ma{355.46}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{355.46}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 10 - solutions\n\t\n\\def\\ma{355.46}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\ma{498.48}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{498.48}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 11 - solutions\n\t\n\\def\\ma{498.48}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\ma{380.88}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{380.88}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 12 - solutions\n\t\n\\def\\ma{380.88}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\ma{307.38}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{307.38}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 13 - solutions\n\t\n\\def\\ma{307.38}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\ma{58.45}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{58.45}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 14 - solutions\n\t\n\\def\\ma{58.45}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\ma{335.86}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{335.86}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 15 - solutions\n\t\n\\def\\ma{335.86}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\ma{7.91}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{7.91}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 16 - solutions\n\t\n\\def\\ma{7.91}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\ma{493.28}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{493.28}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 17 - solutions\n\t\n\\def\\ma{493.28}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\ma{209.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{209.77}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 18 - solutions\n\t\n\\def\\ma{209.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\ma{256.82}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{256.82}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 19 - solutions\n\t\n\\def\\ma{256.82}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\ma{230.17}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{230.17}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 20 - solutions\n\t\n\\def\\ma{230.17}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\ma{485.32}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{485.32}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 21 - solutions\n\t\n\\def\\ma{485.32}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\ma{427.53}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{427.53}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 22 - solutions\n\t\n\\def\\ma{427.53}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\ma{378.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{378.77}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 23 - solutions\n\t\n\\def\\ma{378.77}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\ma{208.73}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{208.73}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 24 - solutions\n\t\n\\def\\ma{208.73}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\ma{124.45}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{124.45}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 25 - solutions\n\t\n\\def\\ma{124.45}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\ma{175.1}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{175.1}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 26 - solutions\n\t\n\\def\\ma{175.1}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\ma{260.9}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{260.9}\t\\def\\mb{0.01}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 27 - solutions\n\t\n\\def\\ma{260.9}\t\n\n\\def\\mb{0.01}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\ma{448.69}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{448.69}\t\\def\\mb{0.001}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 28 - solutions\n\t\n\\def\\ma{448.69}\t\n\n\\def\\mb{0.001}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\ma{442.38}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{442.38}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 29 - solutions\n\t\n\\def\\ma{442.38}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\ma{186.31}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\acc{Calculer} sans poser l'opération : \t\t\\begin{center}$\\num{\\ma} \\times \\num{\\mb} = ... $\\end{center}\n",
+        "reponse": "\\def\\ma{186.31}\t\\def\\mb{0.1}\t\\opmul[style=text]{\\ma}{\\mb}",
+        "details": "%version 30 - solutions\n\t\n\\def\\ma{186.31}\t\n\n\\def\\mb{0.1}\t\n\n\n\t\n\\opmul{\\ma}{\\mb}\n",
+        "theme": "\nProduits\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

@@ -1,0 +1,299 @@
+
+30
+%%
+\def\mfonction[cos,sin]
+\def\mden[2,3,4,6]
+\def\mnum{-6<=x<=6 int x!=0}
+%%
+
+
+
+
+
+
+\acc{Déterminer la valeur exacte de} $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$
+
+
+
+
+
+
+
+
+
+
+
+
+%%
+
+
+
+Pour déterminer $\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right)$, on place le point $M$ associé à une rotation de $\alpha =\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi$ sur le cercle trigonométrique.
+\def\mapropreliste{1/6/\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},
+-1/6/-\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},
+2/6/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-2/6/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+3/6/0/1,
+-3/6/0/-1,
+4/6/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-4/6/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+5/6/-\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},
+-5/6/\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},
+6/6/-1/0,
+-6/6/-1/0,
+1/4/\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},
+-1/4/\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},
+2/4/0/1,
+-2/4/0/-1,
+3/4/-\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},
+-3/4/-\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},
+4/4/-1/0,
+-4/4/-1/0,
+1/3/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-1/3/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+2/3/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},
+-2/3/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},
+3/3/-1/0,
+-3/3/-1/0,
+1/2/0/1,
+-1/2/0/-1,
+2/2/-1/0,
+-2/2/-1/0}
+
+Le \IfStrEq{\mfonction}{cos}{\encadrer[defi]{cosinus}}{\encadrer[defi]{sinus}} de l'angle $\alpha=\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi$ correspond à \IfStrEq{\mfonction}{cos}{\encadrer[defi]{l'abscisse}}{\encadrer[defi]{l'ordonnée}} du point $M$.
+
+Ainsi :
+\foreach \numang/\denang/\valcos/\valsin in \mapropreliste {
+\ifnum\numang=\mnum
+\ifnum\denang=\mden
+\IfStrEq{\mfonction}{cos}{%
+\begin{center}\encadrer[defi]{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valcos$}\end{center}
+}{}
+\IfStrEq{\mfonction}{sin}{%
+\begin{center}\encadrer[defi]{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valsin$}\end{center}
+}{}
+\fi
+\fi
+}
+
+
+\columnbreak
+
+\begin{center}
+\begin{tikzpicture}[scale=1.5,cap=round,>=latex]
+% draw the coordinates
+%\draw[->] (-1.2cm,0cm) -- (1.2cm,0cm) node[right,fill=white] {$x$};
+%\draw[->] (0cm,-1.2cm) -- (0cm,1.2cm) node[above,fill=white] {$y$};
+% draw symmetries (axes and center) in dark green
+\draw[defi,thick] (-1.2cm,0cm) -- (1.2cm,0cm); % axe horizontal
+\draw[defi,thick] (0cm,-1.2cm) -- (0cm,1.2cm); % axe vertical
+\filldraw[defi] (0,0) circle(1.5pt); % centre O
+% draw the unit circle
+\draw[thick] (0cm,0cm) circle(1cm);
+% draw direct rotation (sens trigonométrique)
+%\draw[->,black,thin] (30:1.8) arc (30:60:1.15) node[midway,right] {\scriptsize $+$};
+% draw key angles
+\foreach \x in {0,30,45,60,90,120,135,150,180,210,225,240,270,300,315,330} {
+\draw[gray,thin] (0cm,0cm) -- (\x:1cm);
+}
+% draw the angle
+\draw[red,thick] (0,0) -- ({180*\mnum/\mden}:1cm);
+% highlight the points
+\filldraw[red] ({180*\mnum/\mden}:1cm) circle(1.2pt);
+% draw dotted lines to show coordinates
+\draw[dotted,red,line width=0.8pt] ({180*\mnum/\mden}:1cm) -- ({cos(180*\mnum/\mden)},0);
+\draw[dotted,red,line width=0.8pt] ({180*\mnum/\mden}:1cm) -- (0,{sin(180*\mnum/\mden)});
+% Points images par symétries en vert foncé
+% Symétrie axiale par rapport à l'axe x : (x, -y)
+\filldraw[defi] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) circle(1.2pt);
+\draw[dotted,defi,line width=0.8pt] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- ({cos(180*\mnum/\mden)},0);
+\draw[dotted,defi,line width=0.8pt] ({cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- (0,{-sin(180*\mnum/\mden)});
+% Symétrie axiale par rapport à l'axe y : (-x, y)
+\filldraw[defi] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) circle(1.2pt);
+\draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) -- ({-cos(180*\mnum/\mden)},0);
+\draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{sin(180*\mnum/\mden)}) -- (0,{sin(180*\mnum/\mden)});
+% Symétrie centrale par rapport à O : (-x, -y)
+\filldraw[defi] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) circle(1.2pt);
+\draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- ({-cos(180*\mnum/\mden)},0);
+\draw[dotted,defi,line width=0.8pt] ({-cos(180*\mnum/\mden)},{-sin(180*\mnum/\mden)}) -- (0,{-sin(180*\mnum/\mden)});
+% Calcul de l'angle et détection du cadrant
+\pgfmathsetmacro{\anglefinal}{180*\mnum/\mden}
+\pgfmathsetmacro{\angleabs}{abs(\anglefinal)}
+\pgfmathsetmacro{\radius}{1.1}
+
+% Déterminer le cadrant et les ancres appropriées
+% Cadrant 1: 0° à 90° (supérieur droit) -> anchor=south west
+% Cadrant 2: 90° à 180° (supérieur gauche) -> anchor=south east
+% Cadrant 3: -180° à -90° ou 180° à 270° (inférieur gauche) -> anchor=north east
+% Cadrant 4: -90° à 0° ou 270° à 360° (inférieur droit) -> anchor=north west
+
+\pgfmathsetmacro{\cadrant}{
+    (\anglefinal >= 0 && \anglefinal <= 90) ? 1 :
+    (\anglefinal > 90 && \anglefinal <= 180) ? 2 :
+    (\anglefinal < 0 && \anglefinal >= -90) ? 4 :
+    3
+}
+
+% Affichage de l'angle avec position adaptée et graduation
+\pgfmathsetmacro{\absnum}{abs(\mnum)}
+\ifdim\anglefinal pt<0pt
+    \ifnum\mnum=-1
+        \ifdim\anglefinal pt>-90pt
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below right] {\normalsize $\alpha=\dfrac{-\pi}{\mden}$};
+        \else
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below left] {\normalsize $\alpha=\dfrac{-\pi}{\mden}$};
+        \fi
+    \else
+        \ifdim\anglefinal pt>-90pt
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below right] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+        \else
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,below left] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+        \fi
+    \fi
+    % Graduation de l'angle (angles négatifs)
+    \foreach \i in {1,...,\absnum} {
+        \pgfmathsetmacro{\tickangle}{-\i*180/\mden}
+        \draw[prop] (\tickangle:\radius-0.05) -- (\tickangle:\radius+0.05);
+    }
+\else
+    \ifnum\mnum=1
+        \ifdim\anglefinal pt<90pt
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above right] {\normalsize $\alpha=\dfrac{\pi}{\mden}$};
+        \else
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above left] {\normalsize $\alpha=\dfrac{\pi}{\mden}$};
+        \fi
+    \else
+        \ifdim\anglefinal pt<90pt
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above right] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+        \else
+            \draw[->,prop,thick] (\radius,0) arc (0:\anglefinal:\radius) node[midway,above left] {\normalsize $\alpha=\dfrac{\mnum\pi}{\mden}$};
+        \fi
+    \fi
+    % Graduation de l'angle (angles positifs)
+    \foreach \i in {1,...,\mnum} {
+        \pgfmathsetmacro{\tickangle}{\i*180/\mden}
+        \draw[prop] (\tickangle:\radius-0.05) -- (\tickangle:\radius+0.05);
+    }
+\fi
+
+% Affichage des coordonnées depuis \mapropreliste avec position adaptée au cadrant
+\foreach \numang/\denang/\valcos/\valsin in \mapropreliste {
+    \ifnum\numang=\mnum
+    \ifnum\denang=\mden
+        \pgfmathsetmacro{\myangle}{180*\mnum/\mden}
+        % Cadrant 1: 0° à 90° (supérieur droit)
+        \ifdim\myangle pt<0pt
+            \ifdim\myangle pt>-90pt
+                % Cadrant 4: -90° à 0° (inférieur droit)
+                \node[red,anchor=north west] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+            \else
+                % Cadrant 3: -180° à -90° (inférieur gauche)
+                \node[red,anchor=north east] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+            \fi
+        \else
+            \ifdim\myangle pt>90pt
+                % Cadrant 2: 90° à 180° (supérieur gauche)
+                \node[red,anchor=south east] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+            \else
+                % Cadrant 1: 0° à 90° (supérieur droit)
+                \node[red,anchor=south west] at ({180*\mnum/\mden}:1.2cm) {\scriptsize $M\left(\valcos~;~\valsin\right)$};
+            \fi
+        \fi
+    \fi
+    \fi
+}
+\end{tikzpicture}
+\end{center}
+
+
+
+
+
+
+
+%%
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{enumerate}
+    \item $0$
+    \item $\dfrac{1}{2}$
+    \item $-\dfrac{1}{2}$
+    \item $\dfrac{\sqrt{2}}{2}$
+    \item $-\dfrac{\sqrt{2}}{2}$
+    \item $\dfrac{\sqrt{3}}{2}$
+    \item $-\dfrac{\sqrt{3}}{2}$
+    \item $1$
+    \item $-1$
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%
+\foreach \numang/\denang/\valcos/\valsin in {1/6/\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-1/6/-\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},2/6/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/6/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/6/0/1,-3/6/0/-1,4/6/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-4/6/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},5/6/-\dfrac{\sqrt{3}}{2}/\dfrac{1}{2},-5/6/\dfrac{\sqrt{3}}{2}/-\dfrac{1}{2},6/6/-1/0,-6/6/-1/0,1/4/\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-1/4/\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},2/4/0/1,-2/4/0/-1,3/4/-\dfrac{\sqrt{2}}{2}/\dfrac{\sqrt{2}}{2},-3/4/-\dfrac{\sqrt{2}}{2}/-\dfrac{\sqrt{2}}{2},4/4/-1/0,-4/4/-1/0,1/3/\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-1/3/\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},2/3/-\dfrac{1}{2}/\dfrac{\sqrt{3}}{2},-2/3/-\dfrac{1}{2}/-\dfrac{\sqrt{3}}{2},3/3/-1/0,-3/3/-1/0,1/2/0/1,-1/2/0/-1,2/2/-1/0,-2/2/-1/0}{\ifnum\numang=\mnum\ifnum\denang=\mden\IfStrEq{\mfonction}{cos}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valcos$}{}\IfStrEq{\mfonction}{sin}{$\text{\mfonction}\left(\ifnum\mnum=1\dfrac{\pi}{\mden}\else\ifnum\mnum=-1\dfrac{-\pi}{\mden}\else\dfrac{\mnum\pi}{\mden}\fi\fi\right) = \valsin$}{}\fi\fi}
+%%
+Trigonométrie
+%%
+{
+{
+{
+{
+{
+{
+{
+
+{
+    "instructions": "Déterminer la valeur exacte de la fonction trigonométrique donnée.",
+    "latex": [
+        "$\\affiche{\\fonction}\\left(\\dfrac{\\affiche{\\num}\\pi}{\\affiche{\\den}}\\right) = \\tcfillcrep{}$"
+    ],
+    "points": 1,
+    "correction": [
+        "Voir tableau des valeurs remarquables"
+    ]
+}
+```
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+
+}
+

@@ -1,0 +1,176 @@
+# ===================================
+# Configuration sensible (API Keys)
+# ===================================
+qf_gen_config/api_key.txt
+qf_gen_config/tcl_path.txt
+
+# ===================================
+# Python
+# ===================================
+# Environnement virtuel
+venv/
+env/
+ENV/
+.venv
+
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# ===================================
+# LaTeX - Fichiers de compilation
+# ===================================
+# Fichiers auxiliaires
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.synctex.gz(busy)
+*.pdfsync
+*.nav
+*.snm
+*.vrb
+
+# Fichiers temporaires LaTeX
+*.bak
+*.backup
+*~
+*.tmp
+*.temp
+
+# Fichiers profCollege/bfcours spécifiques
+*.comp
+*.voc
+*.bfpoints
+
+# Fichiers TikZ
+*.dpth
+*.md5
+*.auxlock
+
+# Répertoires LaTeX temporaires
+_minted*/
+.auctex-auto/
+
+# ===================================
+# Fichiers générés par l'application
+# ===================================
+# Bases de données temporaires
+last_questions_data.json
+latexcompiler_compilation_times.txt
+
+# Fichiers de cache
+*.cache
+
+# Logs de l'application
+*.log
+
+# ===================================
+# Documents générés (optionnel)
+# ===================================
+# Décommenter si vous ne voulez pas versionner les PDFs/TEX générés
+# generated/tex/**/*.tex
+# generated/pdf/**/*.pdf
+# generated/eval_tex/**/*.tex
+# generated/eval_pdf/**/*.pdf
+
+# Mais garder la structure des dossiers
+!generated/tex/.gitkeep
+!generated/pdf/.gitkeep
+!generated/eval_tex/.gitkeep
+!generated/eval_pdf/.gitkeep
+
+# ===================================
+# Éditeurs et IDE
+# ===================================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ===================================
+# OS
+# ===================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ===================================
+# Autres
+# ===================================
+# Sauvegardes
+*.bak
+backup/
+backups/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation compilée (optionnel)
+# QFgen_doc/*.pdf
+# Mais garder les images
+!QFgen_doc/images/**

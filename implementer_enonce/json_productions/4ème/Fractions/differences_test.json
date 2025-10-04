@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\numa{0}\n\\def\\numb{4}\n\\def\\numc{8}\n\\def\\numd{25}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{0}\\def\\numb{4}\\def\\numc{8}\\def\\numd{25}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 1 - solutions\n\t\n\\def\\numa{0}\n\\def\\numb{4}\n\\def\\numc{8}\n\\def\\numd{25}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{7}\n\\def\\numc{14}\n\\def\\numd{2}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{7}\\def\\numc{14}\\def\\numd{2}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 2 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{7}\n\\def\\numc{14}\n\\def\\numd{2}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{4}\n\\def\\numc{13}\n\\def\\numd{1}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{4}\\def\\numc{13}\\def\\numd{1}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 3 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{4}\n\\def\\numc{13}\n\\def\\numd{1}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{5}\n\\def\\numc{4}\n\\def\\numd{26}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{5}\\def\\numc{4}\\def\\numd{26}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 4 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{5}\n\\def\\numc{4}\n\\def\\numd{26}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{4}\n\\def\\numd{9}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{0}\\def\\numc{4}\\def\\numd{9}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 5 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{4}\n\\def\\numd{9}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\numa{0}\n\\def\\numb{3}\n\\def\\numc{10}\n\\def\\numd{31}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{0}\\def\\numb{3}\\def\\numc{10}\\def\\numd{31}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 6 - solutions\n\t\n\\def\\numa{0}\n\\def\\numb{3}\n\\def\\numc{10}\n\\def\\numd{31}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{4}\n\\def\\numc{0}\n\\def\\numd{21}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{4}\\def\\numc{0}\\def\\numd{21}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 7 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{4}\n\\def\\numc{0}\n\\def\\numd{21}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{5}\n\\def\\numc{12}\n\\def\\numd{30}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{5}\\def\\numc{12}\\def\\numd{30}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 8 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{5}\n\\def\\numc{12}\n\\def\\numd{30}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{0}\n\\def\\numd{9}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{2}\\def\\numc{0}\\def\\numd{9}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 9 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{0}\n\\def\\numd{9}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{5}\n\\def\\numc{1}\n\\def\\numd{28}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{5}\\def\\numc{1}\\def\\numd{28}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 10 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{5}\n\\def\\numc{1}\n\\def\\numd{28}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{0}\n\\def\\numc{11}\n\\def\\numd{10}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{0}\\def\\numc{11}\\def\\numd{10}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 11 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{0}\n\\def\\numc{11}\n\\def\\numd{10}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{5}\n\\def\\numd{28}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{0}\\def\\numc{5}\\def\\numd{28}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 12 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{5}\n\\def\\numd{28}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{8}\n\\def\\numc{5}\n\\def\\numd{28}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{8}\\def\\numc{5}\\def\\numd{28}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 13 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{8}\n\\def\\numc{5}\n\\def\\numd{28}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{8}\n\\def\\numd{13}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{2}\\def\\numc{8}\\def\\numd{13}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 14 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{8}\n\\def\\numd{13}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{0}\n\\def\\numc{7}\n\\def\\numd{27}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{0}\\def\\numc{7}\\def\\numd{27}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 15 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{0}\n\\def\\numc{7}\n\\def\\numd{27}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{2}\n\\def\\numc{2}\n\\def\\numd{9}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{2}\\def\\numc{2}\\def\\numd{9}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 16 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{2}\n\\def\\numc{2}\n\\def\\numd{9}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{7}\n\\def\\numc{14}\n\\def\\numd{3}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{7}\\def\\numc{14}\\def\\numd{3}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 17 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{7}\n\\def\\numc{14}\n\\def\\numd{3}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\numd{7}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{2}\\def\\numc{3}\\def\\numd{7}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 18 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\numd{7}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{0}\n\\def\\numc{2}\n\\def\\numd{26}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{0}\\def\\numc{2}\\def\\numd{26}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 19 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{0}\n\\def\\numc{2}\n\\def\\numd{26}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{8}\n\\def\\numc{10}\n\\def\\numd{17}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{8}\\def\\numc{10}\\def\\numd{17}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 20 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{8}\n\\def\\numc{10}\n\\def\\numd{17}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{7}\n\\def\\numc{0}\n\\def\\numd{11}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{7}\\def\\numc{0}\\def\\numd{11}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 21 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{7}\n\\def\\numc{0}\n\\def\\numd{11}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{4}\n\\def\\numc{6}\n\\def\\numd{13}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{4}\\def\\numc{6}\\def\\numd{13}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 22 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{4}\n\\def\\numc{6}\n\\def\\numd{13}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{1}\n\\def\\numc{14}\n\\def\\numd{1}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{1}\\def\\numc{14}\\def\\numd{1}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 23 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{1}\n\\def\\numc{14}\n\\def\\numd{1}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\numd{19}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{5}\\def\\numc{5}\\def\\numd{19}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 24 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\numd{19}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{12}\n\\def\\numd{17}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{7}\\def\\numc{12}\\def\\numd{17}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 25 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{12}\n\\def\\numd{17}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{15}\n\\def\\numd{3}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{3}\\def\\numc{15}\\def\\numd{3}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 26 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{15}\n\\def\\numd{3}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{7}\n\\def\\numc{4}\n\\def\\numd{22}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{7}\\def\\numc{4}\\def\\numd{22}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 27 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{7}\n\\def\\numc{4}\n\\def\\numd{22}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{3}\n\\def\\numd{31}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{0}\\def\\numc{3}\\def\\numd{31}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 28 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{0}\n\\def\\numc{3}\n\\def\\numd{31}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\numa{1}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\numd{20}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{1}\\def\\numb{3}\\def\\numc{7}\\def\\numd{20}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 29 - solutions\n\t\n\\def\\numa{1}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\numd{20}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\numa{4}\n\\def\\numb{1}\n\\def\\numc{11}\n\\def\\numd{25}\n\n\t\n\n\n\\acc{Calculer la différence} $\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd}$ \n\n\n\n",
+        "reponse": "\\def\\numa{4}\\def\\numb{1}\\def\\numc{11}\\def\\numd{25}\\[\\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\\]",
+        "details": "%version 30 - solutions\n\t\n\\def\\numa{4}\n\\def\\numb{1}\n\\def\\numc{11}\n\\def\\numd{25}\n\n\t\n\n\n\\[\n\\dfrac{\\numa}{\\numb} - \\dfrac{\\numc}{\\numd} = \\dfrac{\\numa \\times \\numd - \\numc \\times \\numb}{\\numb \\times \\numd} = \\dfrac{\\fpeval{\\numa * \\numd} - \\fpeval{\\numc * \\numb}}{\\fpeval{\\numb * \\numd}} = \\dfrac{\\fpeval{\\numa * \\numd - \\numc * \\numb}}{\\fpeval{\\numb * \\numd}}\n\\] \n\n\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

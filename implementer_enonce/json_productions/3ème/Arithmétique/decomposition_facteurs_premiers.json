@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{5}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{5}\\def\\numb{5}\\def\\numc{3}\\def\\puisb{1}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 1 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{5}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\numa{13}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{3}\\def\\numc{7}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 2 - solutions\n\t\n\\def\\numa{13}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\numa{11}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{2}\\def\\numc{5}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 3 - solutions\n\t\n\\def\\numa{11}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{5}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 4 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{5}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{1}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 5 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{7}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{7}\\def\\numc{5}\\def\\puisb{4}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 6 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{7}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{3}\\def\\numc{5}\\def\\puisb{4}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 7 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{7}\n\\def\\numc{3}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{7}\\def\\numc{3}\\def\\puisb{4}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 8 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{7}\n\\def\\numc{3}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\puisb{2}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{5}\\def\\numc{5}\\def\\puisb{2}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 9 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\puisb{2}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\numa{13}\n\\def\\numb{5}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{5}\\def\\numc{3}\\def\\puisb{1}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 10 - solutions\n\t\n\\def\\numa{13}\n\\def\\numb{5}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\numa{11}\n\\def\\numb{5}\n\\def\\numc{7}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{5}\\def\\numc{7}\\def\\puisb{4}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 11 - solutions\n\t\n\\def\\numa{11}\n\\def\\numb{5}\n\\def\\numc{7}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{3}\\def\\numc{7}\\def\\puisb{4}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 12 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\numa{13}\n\\def\\numb{2}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{2}\\def\\numc{7}\\def\\puisb{2}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 13 - solutions\n\t\n\\def\\numa{13}\n\\def\\numb{2}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\numa{13}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{2}\\def\\numc{5}\\def\\puisb{1}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 14 - solutions\n\t\n\\def\\numa{13}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{5}\\def\\numc{5}\\def\\puisb{4}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 15 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{5}\n\\def\\numc{5}\n\\def\\puisb{4}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\numa{13}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{13}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{4}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 16 - solutions\n\t\n\\def\\numa{13}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{2}\\def\\numc{3}\\def\\puisb{1}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 17 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{3}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{5}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{3}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 18 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{3}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{5}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{5}\\def\\numc{2}\\def\\puisb{1}\\def\\puisc{2}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 19 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{5}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{2}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{3}\n\\def\\numc{3}\n\\def\\puisb{4}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{3}\\def\\numc{3}\\def\\puisb{4}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 20 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{3}\n\\def\\numc{3}\n\\def\\puisb{4}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\numa{11}\n\\def\\numb{3}\n\\def\\numc{3}\n\\def\\puisb{3}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{3}\\def\\numc{3}\\def\\puisb{3}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 21 - solutions\n\t\n\\def\\numa{11}\n\\def\\numb{3}\n\\def\\numc{3}\n\\def\\puisb{3}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\numa{11}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{2}\\def\\numc{5}\\def\\puisb{1}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 22 - solutions\n\t\n\\def\\numa{11}\n\\def\\numb{2}\n\\def\\numc{5}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{5}\\def\\numb{3}\\def\\numc{7}\\def\\puisb{2}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 23 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{3}\n\\def\\numc{7}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{7}\n\\def\\puisb{3}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{7}\\def\\numc{7}\\def\\puisb{3}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 24 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{7}\n\\def\\puisb{3}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{5}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{5}\\def\\numc{2}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 25 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{5}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\numa{11}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{11}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{2}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 26 - solutions\n\t\n\\def\\numa{11}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{2}\\def\\numc{3}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 27 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{3}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{7}\\def\\numb{2}\\def\\numc{3}\\def\\puisb{3}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 28 - solutions\n\t\n\\def\\numa{7}\n\\def\\numb{2}\n\\def\\numc{3}\n\\def\\puisb{3}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{3}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{2}\\def\\puisc{1}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 29 - solutions\n\t\n\\def\\numa{3}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{1}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{2}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.\n\n",
+        "reponse": "\\def\\numa{2}\\def\\numb{3}\\def\\numc{2}\\def\\puisb{4}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+        "details": "%version 30 - solutions\n\t\n\\def\\numa{2}\n\\def\\numb{3}\n\\def\\numc{2}\n\\def\\puisb{4}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]\n\n\n",
+        "theme": "\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

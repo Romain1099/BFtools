@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{476}\t\n\n\n\n\n\n\\def\\mb{459}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{476}\t\\def\\mb{459}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\ma{476}\t\n\n\n\n\n\n\\def\\mb{459}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{755}\t\n\n\n\n\n\n\\def\\mb{397}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{755}\t\\def\\mb{397}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\ma{755}\t\n\n\n\n\n\n\\def\\mb{397}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{334}\t\n\n\n\n\n\n\\def\\mb{34}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{334}\t\\def\\mb{34}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\ma{334}\t\n\n\n\n\n\n\\def\\mb{34}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{761}\t\n\n\n\n\n\n\\def\\mb{446}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{761}\t\\def\\mb{446}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\ma{761}\t\n\n\n\n\n\n\\def\\mb{446}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\ma{615}\t\n\n\n\n\n\n\\def\\mb{59}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{615}\t\\def\\mb{59}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\ma{615}\t\n\n\n\n\n\n\\def\\mb{59}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\ma{230}\t\n\n\n\n\n\n\\def\\mb{670}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{230}\t\\def\\mb{670}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\ma{230}\t\n\n\n\n\n\n\\def\\mb{670}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\ma{652}\t\n\n\n\n\n\n\\def\\mb{942}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{652}\t\\def\\mb{942}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\ma{652}\t\n\n\n\n\n\n\\def\\mb{942}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\ma{776}\t\n\n\n\n\n\n\\def\\mb{865}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{776}\t\\def\\mb{865}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\ma{776}\t\n\n\n\n\n\n\\def\\mb{865}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\ma{632}\t\n\n\n\n\n\n\\def\\mb{487}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{632}\t\\def\\mb{487}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\ma{632}\t\n\n\n\n\n\n\\def\\mb{487}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\ma{555}\t\n\n\n\n\n\n\\def\\mb{734}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{555}\t\\def\\mb{734}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\ma{555}\t\n\n\n\n\n\n\\def\\mb{734}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\ma{546}\t\n\n\n\n\n\n\\def\\mb{530}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{546}\t\\def\\mb{530}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\ma{546}\t\n\n\n\n\n\n\\def\\mb{530}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\ma{220}\t\n\n\n\n\n\n\\def\\mb{887}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{220}\t\\def\\mb{887}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\ma{220}\t\n\n\n\n\n\n\\def\\mb{887}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\ma{613}\t\n\n\n\n\n\n\\def\\mb{93}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{613}\t\\def\\mb{93}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\ma{613}\t\n\n\n\n\n\n\\def\\mb{93}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\ma{141}\t\n\n\n\n\n\n\\def\\mb{887}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{141}\t\\def\\mb{887}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\ma{141}\t\n\n\n\n\n\n\\def\\mb{887}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\ma{593}\t\n\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{593}\t\\def\\mb{100}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\ma{593}\t\n\n\n\n\n\n\\def\\mb{100}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\ma{283}\t\n\n\n\n\n\n\\def\\mb{59}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{283}\t\\def\\mb{59}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\ma{283}\t\n\n\n\n\n\n\\def\\mb{59}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\ma{858}\t\n\n\n\n\n\n\\def\\mb{803}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{858}\t\\def\\mb{803}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\ma{858}\t\n\n\n\n\n\n\\def\\mb{803}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\ma{935}\t\n\n\n\n\n\n\\def\\mb{696}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{935}\t\\def\\mb{696}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\ma{935}\t\n\n\n\n\n\n\\def\\mb{696}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\ma{358}\t\n\n\n\n\n\n\\def\\mb{269}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{358}\t\\def\\mb{269}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\ma{358}\t\n\n\n\n\n\n\\def\\mb{269}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\ma{696}\t\n\n\n\n\n\n\\def\\mb{123}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{696}\t\\def\\mb{123}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\ma{696}\t\n\n\n\n\n\n\\def\\mb{123}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\ma{871}\t\n\n\n\n\n\n\\def\\mb{405}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{871}\t\\def\\mb{405}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\ma{871}\t\n\n\n\n\n\n\\def\\mb{405}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\ma{271}\t\n\n\n\n\n\n\\def\\mb{396}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{271}\t\\def\\mb{396}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\ma{271}\t\n\n\n\n\n\n\\def\\mb{396}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\ma{445}\t\n\n\n\n\n\n\\def\\mb{803}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{445}\t\\def\\mb{803}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\ma{445}\t\n\n\n\n\n\n\\def\\mb{803}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\ma{600}\t\n\n\n\n\n\n\\def\\mb{46}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{600}\t\\def\\mb{46}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\ma{600}\t\n\n\n\n\n\n\\def\\mb{46}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\ma{887}\t\n\n\n\n\n\n\\def\\mb{553}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{887}\t\\def\\mb{553}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\ma{887}\t\n\n\n\n\n\n\\def\\mb{553}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\ma{713}\t\n\n\n\n\n\n\\def\\mb{159}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{713}\t\\def\\mb{159}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\ma{713}\t\n\n\n\n\n\n\\def\\mb{159}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\ma{35}\t\n\n\n\n\n\n\\def\\mb{736}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{35}\t\\def\\mb{736}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\ma{35}\t\n\n\n\n\n\n\\def\\mb{736}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\ma{466}\t\n\n\n\n\n\n\\def\\mb{452}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{466}\t\\def\\mb{452}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\ma{466}\t\n\n\n\n\n\n\\def\\mb{452}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\ma{713}\t\n\n\n\n\n\n\\def\\mb{516}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{713}\t\\def\\mb{516}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\ma{713}\t\n\n\n\n\n\n\\def\\mb{516}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\ma{303}\t\n\n\n\n\n\n\\def\\mb{917}\t\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\t\\begin{center}$\\ma + \\mb$\\end{center}\n\n",
+        "reponse": "\\def\\ma{303}\t\\def\\mb{917}\t\\opadd[style=text]{\\ma}{\\mb}",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\ma{303}\t\n\n\n\n\n\n\\def\\mb{917}\t\n\n\n\n\n\n\n\n\n\n\t\n\n\\opadd{\\ma}{\\mb}\n\n",
+        "theme": "\n\nSommes\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

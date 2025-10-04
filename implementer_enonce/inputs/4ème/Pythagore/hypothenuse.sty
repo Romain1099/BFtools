@@ -1,0 +1,42 @@
+
+30
+%%
+\def\cota{1<=x<=30 float decimalesD2}
+\def\cotb{1<=x<=30 float decimalesD2}
+%%
+
+\acc{Calculez l'hypoténuse} dans un \textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\affiche{\cota}$ et $\affiche{\cotb}$ cm, en donnant l'arrondi au \acc{centième} près.
+
+
+%%
+
+Dans un \textbf{triangle rectangle}, l'\textbf{hypoténuse} $c$ est \textbf{calculée} à l'aide du \textbf{théorème de Pythagore}, qui énonce que	 $$c^2 = a^2 + b^2 $$ 	, où $a$ et $b$ sont les \textbf{côtés de l'angle droit}. 			
+
+Ainsi : $c = \sqrt{\affiche{\cota}^2 + \affiche{\cotb}^2}$			\\
+
+\textbf{Calculons} les carrés des côtés :			
+
+$ \affiche{\cota}^2 = \affiche{\fpeval{\cota^2}} $ \hfill $ \affiche{\cotb}^2 = \affiche{\fpeval{\cotb^2}}$			
+	
+\columnbreak
+
+\textbf{Additionnons-les} :		$ \affiche{\cota}^2 + \affiche{\cotb}^2 = \affiche{\fpeval{\cota^2 + \cotb^2}} $			\\
+
+\textbf{En passant à la racine carrée}, on obtient l'\textbf{hypoténuse} $c$ :\\ 				
+$c = \sqrt{\affiche{\fpeval{\cota^2 + \cotb^2}}} = \affiche{\fpeval{sqrt(\cota^2 + \cotb^2)}}$		\\
+
+Ainsi, $c \approx \affiche{\fpeval{round(sqrt(\cota^2 + \cotb^2),2)}}\ \mathrm{cm}$.
+
+
+%%
+
+\begin{enumerate}    \item $\affiche{\fpeval{round(sqrt(3.2^2 + 4.7^2),2)+0.5}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2+4.7^2),2)-0.2}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2+4.7^2),2)}}$    \item $\affiche{\fpeval{round(sqrt(3.2^2 + 4.5^2),2)}}$\end{enumerate}
+
+
+%%
+$c \approx \affiche{\fpeval{round(sqrt(\cota^2 + \cotb^2),2)}}\ \mathrm{cm}$
+%%
+Pythagore
+%%
+
+

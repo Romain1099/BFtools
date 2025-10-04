@@ -1,0 +1,101 @@
+
+30
+%%
+\def\na{0<=x<10 x!=0 x!=1 int}
+\def\nb{-10<=x<10 x!=0 x!=1 int}
+\def\nc{0<=x<10 x!=0 x!=1 int}
+\def\puisxa[0,1]
+\def\puisxb[1]
+\def\puisxc[0,2]
+\def\signe[+,-]
+%%
+
+\def\indicator{\signe 1}	\def\termea{\expan{\fpeval{\para{\na}*\para{\nb}}}{\fpeval{\puisxa + \puisxb}}}	\def\termeb{\expa{\fpeval{abs(\para{\na}*\para{\nc})}}{\fpeval{\puisxa + \puisxc}}}	\def\expression{    \termea \finalsigne{(\indicator)*\fpeval{\na*\para{\nc}}} \termeb}		
+	
+\acc{Factoriser} le plus possible l'expression suivante :		
+\begin{center}    $\expression$\end{center}
+
+
+
+
+%%
+\def\indicator{\signe 1}	\def\termea{\expan{\fpeval{\para{\na}*\para{\nb}}}{\fpeval{\puisxa + \puisxb}}}	\def\termeb{\expa{\fpeval{abs(\para{\na}*\para{\nc})}}{\fpeval{\puisxa + \puisxc}}}
+            \def\expression{    \termea \finalsigne{(\indicator)*\fpeval{\para{\na}*\para{\nc}}} \termeb}	\def\resexpr{\expa{\na}{\puisxa} (\expa{\nb}{\puisxb} \signe \expa{\nc}{\puisxc})}
+            \edef\tb{\fpeval{\na*\nb}}
+            \edef\tc{\fpeval{\na*\nc}}
+            % Calcul de l'exposant commun (minimum de \puisxb et \puisxc)
+            \edef\factorexp{\minnum{\puisxb}{\puisxc}}%
+            % Calcul du PGCD (en valeur absolue) des coefficients de la parenthèse
+            \edef\factornum{\gcdcalc{\absnum{\tb}}{\absnum{\tc}}}%
+            % Calcul des coefficients restants une fois le PGCD extrait
+            %   
+            \providecommand{\checkSigns}{%
+                \def\tempSigne{-}%
+                \ifx\signe\tempSigne
+                    \ifnum\nb<0
+                        \edef\factornum{-\factornum}%
+                        \def\fsigne{+}%
+                    \fi
+                    \ifnum\nb>0
+                        \ifnum\nc<0
+                            \def\fsigne{}
+                        \fi
+                        \ifnum\nc>0
+                            \def\fsigne{}
+                        \fi
+                    \fi
+                \else
+                    \def\fsigne{+}%
+                \fi
+            }%
+            \checkSigns
+            % Appel de la vérification des signes
+            \edef\coefA{\the\numexpr \tb/\factornum \relax}%
+            \edef\coefB{\the\numexpr \signe\tc/\factornum \relax}
+            % Définition de l'affichage de l'expression factorisée
+            \def\colorexpression{%
+            {\color{red}\expan{\factornum}{\fpeval{\factorexp + \puisxa}}}\Bigl(%
+            {\color{blue}\expan{\coefA}{\the\numexpr \puisxb-\factorexp \relax}}\,\fsigne\,%
+            {\color{purple}\expan{\coefB}{\the\numexpr \puisxc-\factorexp \relax}}%
+            \Bigr)%
+            }
+            
+            On utilise la formule de \acc{distributivité} :
+            
+            \begin{center}    ${\color{red}a}\times {\color{blue}b} + {\color{red}a}\times {\color{purple}c} = {\color{red}a} \times ({\color{blue}b} + {\color{purple}c})$
+            \end{center} avec :
+            $\left\{
+                \begin{array}{l}    a = {\color{red}\expan{\factornum}{\factorexp}} \\    b = {\color{blue}\expan{\coefA}{\fpeval{\puisxb-\factorexp}}} \\    c = {\color{purple}\expan{\coefB}{\fpeval{\puisxc-\factorexp}}}
+                \end{array}
+                \right.$
+                
+                \columnbreak
+                
+                En effet, on peut décomposer l'expression ainsi : \\
+                \begin{align*}& \expression \\= & {\color{red}\expan{\factornum}{\fpeval{\factorexp + \puisxa}}}\times {\color{blue}\expa{\coefA}{\fpeval{\puisxb-\factorexp}}} + {\color{red}\expa{\factornum}{\fpeval{\factorexp + \puisxa}}}\times {\color{purple}\expa{\coefB}{\fpeval{\puisxc-\factorexp}}}\\    = & \colorexpression
+                \end{align*}
+
+%%
+
+
+
+\def\erreura{a}\def\erreurb{b}\def\erreurc{c}\textbf{Cocher} l'expression \acc{factorisée} correspondant à $$ \expression $$\\\begin{center}     \listnode{\cb}{$\erreurb$}     \listnode{\ccb}{$\resexpr$}     \listnode{\cb}{$\numerreur$}     \listnode{\cb}{$\erreurc$} \end{center}
+
+
+
+
+
+
+%%
+\edef\tb{\fpeval{\na*\nb}}\edef\tc{\fpeval{\na*\nc}}\edef\factorexp{\minnum{\puisxb}{\puisxc}}\edef\factornum{\gcdcalc{\absnum{\tb}}{\absnum{\tc}}}            	\providecommand{\checkSigns}{                \def\tempSigne{-}                \ifx\signe\tempSigne                    \ifnum\nb<0                        \edef\factornum{-\factornum}                        \def\fsigne{+}                    \fi                    \ifnum\nb>0                        \ifnum\nc<0                            \def\fsigne{}                        \fi                        \ifnum\nc>0                            \def\fsigne{}                        \fi                    \fi                \else                    \def\fsigne{+}                \fi            }            \checkSigns            \edef\coefA{\the\numexpr \tb/\factornum \relax}            \edef\coefB{\the\numexpr \signe\tc/\factornum \relax}            \def\colorexpression{            {\color{red}\expan{\factornum}{\fpeval{\factorexp + \puisxa}}}\Bigl(            {\color{blue}\expan{\coefA}{\the\numexpr \puisxb-\factorexp \relax}}\,\fsigne\,            {\color{purple}\expan{\coefB}{\the\numexpr \puisxc-\factorexp \relax}}            \Bigr)            }	$\colorexpression$
+%%
+Calcul littéral
+%%
+{
+{
+
+
+}
+
+}
+

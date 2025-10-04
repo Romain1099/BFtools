@@ -1,0 +1,80 @@
+
+30
+%%
+\def\numa{2<=x<=20 int}
+\def\numb{2<=x<=20 int}
+\def\signe[+,-]
+%%
+
+  
+\acc{Résoudre l'équation :} 	
+$$\affiche{\numa} x \signe \affiche{\numb}=0$$
+
+
+
+
+%%
+\providecommand{\antisigne}[1]{%
+  \ifdim\fpeval{#1 * 1}pt<0pt%
+    +% Si l'expression évaluée est négative, on retourne +
+  \else%
+    -% Si l'expression évaluée est positive ou nulle, on retourne -
+  \fi%
+}
+\edef\anti{\antisigne{\signe1}}
+On \acc{isole} $x$ du côté gauche de l'égalité en effectuant des \acc{manipulation algébriques} :	
+	
+
+$\affiche{\numa}\times x \signe \affiche{\numb}=0$
+
+$\Longleftrightarrow \affiche{\numa}\times x \signe \affiche{\numb}\red{ \anti \affiche {\numb}}= \red{\anti \affiche {\numb}}$
+
+$\Longleftrightarrow \affiche{\numa}\times x= \affiche{\fpeval{\anti \numb}}$
+
+$\Longleftrightarrow \dfrac{\affiche{\numa}\times x}{\red{\numa}}= \dfrac{\affiche{\fpeval{\anti \numb}}}{\red{\numa}}$
+
+$\Longleftrightarrow x = \dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}  = \displaystyle{\Simplification{\fpeval{(\signe\numb*(-1))}}{\numa}}=  \affiche{\fpeval{(\signe\numb*(-1) )/\numa}}$
+	
+\columnbreak
+
+On vérifie que la solution est correcte en remplaçant $x$ par $ \dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}$ :
+
+$\affiche{\numa}\times \red{\dfrac{\fpeval{(\signe\numb*(-1) )}}{\numa}} \signe \affiche{\numb}$
+
+$= \fpeval{\numa * (\signe\numb*(-1))/\numa} \signe \affiche{\numb}$
+
+$=  \fpeval{\numa * (\signe\numb*(-1))/\numa  \signe \numb}$
+
+%%
+
+  
+\begin{enumerate}
+    \item $\affiche{\fpeval{\numb/\numa}}$
+    \item $\affiche{\fpeval{\numb*\numa}}$
+    \item $\affiche{\fpeval{\numa/\numa}}$
+    \item $\affiche{\fpeval{-\numb/\numa}}$
+\end{enumerate}  
+
+
+
+
+%%
+$\displaystyle{\Simplification{\fpeval{(\signe \numb * (-1) )}}{\numa}} =  \affiche{\fpeval{(\signe \numb * (-1) )/\numa}}$
+%%
+Equations
+%%
+{
+  
+{
+    "instructions": "Résoudre l'équation \\(\\affiche{\\numa}\\times x = \\affiche{\\numb}\\).",
+    "latex": [
+        "\\acc{Résoudre l\\'equation} $\\affiche{\\numa}\\times x = \\affiche{\\numb}$ \\tcfillcrep{}"
+    ],
+    "points": 1,
+    "correction": [
+        "\\(x=\\fpeval{\\numb/\\numa}\\)"
+    ]
+}
+
+}
+

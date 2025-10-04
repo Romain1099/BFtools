@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\base{-8}\n\\def\\exposanta{20}\n\\def\\exposantb{5}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-8}\\def\\exposanta{20}\\def\\exposantb{5}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 1 - solutions\n\t\n\\def\\base{-8}\n\\def\\exposanta{20}\n\\def\\exposantb{5}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\base{18}\n\\def\\exposanta{8}\n\\def\\exposantb{-10}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{18}\\def\\exposanta{8}\\def\\exposantb{-10}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 2 - solutions\n\t\n\\def\\base{18}\n\\def\\exposanta{8}\n\\def\\exposantb{-10}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\base{13}\n\\def\\exposanta{-19}\n\\def\\exposantb{-20}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{13}\\def\\exposanta{-19}\\def\\exposantb{-20}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 3 - solutions\n\t\n\\def\\base{13}\n\\def\\exposanta{-19}\n\\def\\exposantb{-20}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\base{-19}\n\\def\\exposanta{-1}\n\\def\\exposantb{6}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-19}\\def\\exposanta{-1}\\def\\exposantb{6}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 4 - solutions\n\t\n\\def\\base{-19}\n\\def\\exposanta{-1}\n\\def\\exposantb{6}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\base{-7}\n\\def\\exposanta{9}\n\\def\\exposantb{-9}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-7}\\def\\exposanta{9}\\def\\exposantb{-9}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 5 - solutions\n\t\n\\def\\base{-7}\n\\def\\exposanta{9}\n\\def\\exposantb{-9}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\base{14}\n\\def\\exposanta{-13}\n\\def\\exposantb{18}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{14}\\def\\exposanta{-13}\\def\\exposantb{18}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 6 - solutions\n\t\n\\def\\base{14}\n\\def\\exposanta{-13}\n\\def\\exposantb{18}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\base{-4}\n\\def\\exposanta{-4}\n\\def\\exposantb{-13}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-4}\\def\\exposanta{-4}\\def\\exposantb{-13}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 7 - solutions\n\t\n\\def\\base{-4}\n\\def\\exposanta{-4}\n\\def\\exposantb{-13}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\base{-14}\n\\def\\exposanta{19}\n\\def\\exposantb{3}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-14}\\def\\exposanta{19}\\def\\exposantb{3}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 8 - solutions\n\t\n\\def\\base{-14}\n\\def\\exposanta{19}\n\\def\\exposantb{3}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\base{-18}\n\\def\\exposanta{-10}\n\\def\\exposantb{8}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-18}\\def\\exposanta{-10}\\def\\exposantb{8}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 9 - solutions\n\t\n\\def\\base{-18}\n\\def\\exposanta{-10}\n\\def\\exposantb{8}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\base{-11}\n\\def\\exposanta{-17}\n\\def\\exposantb{-6}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-11}\\def\\exposanta{-17}\\def\\exposantb{-6}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 10 - solutions\n\t\n\\def\\base{-11}\n\\def\\exposanta{-17}\n\\def\\exposantb{-6}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\base{-16}\n\\def\\exposanta{15}\n\\def\\exposantb{19}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-16}\\def\\exposanta{15}\\def\\exposantb{19}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 11 - solutions\n\t\n\\def\\base{-16}\n\\def\\exposanta{15}\n\\def\\exposantb{19}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\base{-10}\n\\def\\exposanta{11}\n\\def\\exposantb{17}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-10}\\def\\exposanta{11}\\def\\exposantb{17}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 12 - solutions\n\t\n\\def\\base{-10}\n\\def\\exposanta{11}\n\\def\\exposantb{17}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\base{19}\n\\def\\exposanta{7}\n\\def\\exposantb{11}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{19}\\def\\exposanta{7}\\def\\exposantb{11}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 13 - solutions\n\t\n\\def\\base{19}\n\\def\\exposanta{7}\n\\def\\exposantb{11}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\base{9}\n\\def\\exposanta{-10}\n\\def\\exposantb{-6}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{9}\\def\\exposanta{-10}\\def\\exposantb{-6}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 14 - solutions\n\t\n\\def\\base{9}\n\\def\\exposanta{-10}\n\\def\\exposantb{-6}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\base{3}\n\\def\\exposanta{-7}\n\\def\\exposantb{4}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{3}\\def\\exposanta{-7}\\def\\exposantb{4}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 15 - solutions\n\t\n\\def\\base{3}\n\\def\\exposanta{-7}\n\\def\\exposantb{4}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\base{-10}\n\\def\\exposanta{-2}\n\\def\\exposantb{-7}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-10}\\def\\exposanta{-2}\\def\\exposantb{-7}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 16 - solutions\n\t\n\\def\\base{-10}\n\\def\\exposanta{-2}\n\\def\\exposantb{-7}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\base{-18}\n\\def\\exposanta{-13}\n\\def\\exposantb{-5}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-18}\\def\\exposanta{-13}\\def\\exposantb{-5}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 17 - solutions\n\t\n\\def\\base{-18}\n\\def\\exposanta{-13}\n\\def\\exposantb{-5}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\base{15}\n\\def\\exposanta{-4}\n\\def\\exposantb{-3}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{15}\\def\\exposanta{-4}\\def\\exposantb{-3}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 18 - solutions\n\t\n\\def\\base{15}\n\\def\\exposanta{-4}\n\\def\\exposantb{-3}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\base{14}\n\\def\\exposanta{-10}\n\\def\\exposantb{-18}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{14}\\def\\exposanta{-10}\\def\\exposantb{-18}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 19 - solutions\n\t\n\\def\\base{14}\n\\def\\exposanta{-10}\n\\def\\exposantb{-18}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\base{8}\n\\def\\exposanta{17}\n\\def\\exposantb{10}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{8}\\def\\exposanta{17}\\def\\exposantb{10}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 20 - solutions\n\t\n\\def\\base{8}\n\\def\\exposanta{17}\n\\def\\exposantb{10}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\base{18}\n\\def\\exposanta{14}\n\\def\\exposantb{-3}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{18}\\def\\exposanta{14}\\def\\exposantb{-3}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 21 - solutions\n\t\n\\def\\base{18}\n\\def\\exposanta{14}\n\\def\\exposantb{-3}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\base{-18}\n\\def\\exposanta{-2}\n\\def\\exposantb{6}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-18}\\def\\exposanta{-2}\\def\\exposantb{6}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 22 - solutions\n\t\n\\def\\base{-18}\n\\def\\exposanta{-2}\n\\def\\exposantb{6}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\base{-11}\n\\def\\exposanta{19}\n\\def\\exposantb{19}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-11}\\def\\exposanta{19}\\def\\exposantb{19}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 23 - solutions\n\t\n\\def\\base{-11}\n\\def\\exposanta{19}\n\\def\\exposantb{19}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\base{-4}\n\\def\\exposanta{-14}\n\\def\\exposantb{-3}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-4}\\def\\exposanta{-14}\\def\\exposantb{-3}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 24 - solutions\n\t\n\\def\\base{-4}\n\\def\\exposanta{-14}\n\\def\\exposantb{-3}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\base{8}\n\\def\\exposanta{14}\n\\def\\exposantb{-19}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{8}\\def\\exposanta{14}\\def\\exposantb{-19}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 25 - solutions\n\t\n\\def\\base{8}\n\\def\\exposanta{14}\n\\def\\exposantb{-19}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\base{-14}\n\\def\\exposanta{-3}\n\\def\\exposantb{19}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-14}\\def\\exposanta{-3}\\def\\exposantb{19}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 26 - solutions\n\t\n\\def\\base{-14}\n\\def\\exposanta{-3}\n\\def\\exposantb{19}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\base{13}\n\\def\\exposanta{5}\n\\def\\exposantb{19}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{13}\\def\\exposanta{5}\\def\\exposantb{19}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 27 - solutions\n\t\n\\def\\base{13}\n\\def\\exposanta{5}\n\\def\\exposantb{19}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\base{-5}\n\\def\\exposanta{-14}\n\\def\\exposantb{13}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-5}\\def\\exposanta{-14}\\def\\exposantb{13}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 28 - solutions\n\t\n\\def\\base{-5}\n\\def\\exposanta{-14}\n\\def\\exposantb{13}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\base{-6}\n\\def\\exposanta{4}\n\\def\\exposantb{-14}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-6}\\def\\exposanta{4}\\def\\exposantb{-14}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 29 - solutions\n\t\n\\def\\base{-6}\n\\def\\exposanta{4}\n\\def\\exposantb{-14}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\base{-14}\n\\def\\exposanta{17}\n\\def\\exposantb{6}\n\n\t\n\\acc{\\'Ecrire sous la forme d'une seule puissance} \t\t$\\base^{\\exposanta} \\times \\base^{\\exposantb} $\n",
+        "reponse": "\\def\\base{-14}\\def\\exposanta{17}\\def\\exposantb{6}$\\base^{\\fpeval{\\exposanta + \\exposantb}}$",
+        "details": "%version 30 - solutions\n\t\n\\def\\base{-14}\n\\def\\exposanta{17}\n\\def\\exposantb{6}\n\n\t\nSelon la propriété des puissances : \t\t\t\tPour multiplier des puissances de même base, on additionne les exposants : \t\t\t\\begin{align*}\t\\base ^{\\exposanta} \\times \\base ^{\\exposantb} = & \\base ^{\\exposanta + \\affiche{\\exposantb}}\\\\\t= &  \\base ^{\\fpeval{\\exposanta + \\exposantb}}\\end{align*}\n",
+        "theme": "\nPuissances\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

@@ -1,0 +1,164 @@
+{
+    "QF_09_05_2025": {
+        "classe": "5ème",
+        "date": "09_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 13 - Court\n\t\n\n\\def\\nombre{8146.185}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{8146.185}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 13 - solutions\n\t\n\n\\def\\nombre{8146.185}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 30 - Court\n\t\n\\def\\na{7}\n\\def\\addna{5}\n\\def\\quantite{320}\n\\def\\marchand{agriculteur}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}    \t\n\\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\t\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{7}\\def\\addna{5}\\def\\quantite{320}\\def\\marchand{agriculteur}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 30 - solutions\n\t\n\\def\\na{7}\n\\def\\addna{5}\n\\def\\quantite{320}\n\\def\\marchand{agriculteur}\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\t\n\\xdef\\da{\\fpeval{\\na+\\addna}}\t\n\\marchandcmd{\\marchand}\t\n\t\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \t\n\t\n$ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\t\n\t\nOn a : \\begin{itemize}[label=$\\bullet$]\t\\item Proportion $ = \\blue{\\proportion}$\t\t\n\t\n\\item Quantité $ = \\red{\\quantite}$\\end{itemize}\\columnbreak\t\n\t\nAppliquons cette méthode : \t\n\\begin{align*}\t \t\n\\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,3)}}\\\\\t\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\t\n\\end{align*}\t\n    \n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\numa{-44}\n\\def\\numb{-43}\n\\def\\numc{-34}\n\\def\\numd{-15}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-44}\\def\\numb{-43}\\def\\numc{-34}\\def\\numd{-15}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 6 - solutions\n\t\n\\def\\numa{-44}\n\\def\\numb{-43}\n\\def\\numc{-34}\n\\def\\numd{-15}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_05_2025": {
+        "classe": "5ème",
+        "date": "16_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 14 - Court\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{6548.363}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 14 - solutions\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numa{2.7}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$",
+                "reponse": "\\def\\numa{2.7}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "details": "%version 4 - solutions\n\t\n\\def\\numa{2.7}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\numa{-37}\n\\def\\numb{-20}\n\\def\\numc{11}\n\\def\\numd{-24}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-37}\\def\\numb{-20}\\def\\numc{11}\\def\\numd{-24}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 7 - solutions\n\t\n\\def\\numa{-37}\n\\def\\numb{-20}\n\\def\\numc{11}\n\\def\\numd{-24}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_19_05_2025": {
+        "classe": "5ème",
+        "date": "19_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\nombre{8780.283}\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux dixièmes.",
+                "reponse": "\\def\\nombre{8780.283}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}} $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 8 - solutions\n\t\n\\def\\nombre{8780.283}\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{dixièmes} consiste à \\textbf{déterminer} deux nombres  avec $1$ chiffre à \\acc{droite} de la virgule :\t\\\\\tLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 10) / 10}} \\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.1}}       \t\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]    \n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$    \n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n    Ainsi : $\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\numa{8}\n\\def\\numb{-45}\n\\def\\numc{-34}\n\\def\\numd{-20}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{8}\\def\\numb{-45}\\def\\numc{-34}\\def\\numd{-20}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 8 - solutions\n\t\n\\def\\numa{8}\n\\def\\numb{-45}\n\\def\\numc{-34}\n\\def\\numd{-20}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 29 - Court\n\t\n\\def\\numa{35.59}\n\\def\\numb{21}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{35.59}\\def\\numb{21}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 29 - solutions\n\t\n\\def\\numa{35.59}\n\\def\\numb{21}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_23_05_2025": {
+        "classe": "5ème",
+        "date": "23_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 15 - Court\n\t\n\n\\def\\nombre{4316.245}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{4316.245}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 15 - solutions\n\t\n\n\\def\\nombre{4316.245}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\numa{32}\n\\def\\numb{-24}\n\\def\\numc{-21}\n\\def\\numd{-3}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{32}\\def\\numb{-24}\\def\\numc{-21}\\def\\numd{-3}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 9 - solutions\n\t\n\\def\\numa{32}\n\\def\\numb{-24}\n\\def\\numc{-21}\n\\def\\numd{-3}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 30 - Court\n\t\n\\def\\numa{59.98}\n\\def\\numb{8}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{59.98}\\def\\numb{8}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 30 - solutions\n\t\n\\def\\numa{59.98}\n\\def\\numb{8}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_23_05_2025": {
+        "classe": "5ème",
+        "date": "23_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 16 - Court\n\t\n\n\\def\\nombre{9685.783}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{9685.783}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 16 - solutions\n\t\n\n\\def\\nombre{9685.783}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "Encadrements",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\numa{-46}\n\\def\\numb{-35}\n\\def\\numc{17}\n\\def\\numd{-21}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-46}\\def\\numb{-35}\\def\\numc{17}\\def\\numd{-21}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 10 - solutions\n\t\n\\def\\numa{-46}\n\\def\\numb{-35}\n\\def\\numc{17}\n\\def\\numd{-21}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "Relatifs",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\numa{17.88}\n\\def\\numb{12}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{17.88}\\def\\numb{12}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 1 - solutions\n\t\n\\def\\numa{17.88}\n\\def\\numb{12}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "Quotients",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_26_05_2025": {
+        "classe": "5ème",
+        "date": "26_05_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 14 - Court\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\n\\xdef\\mnombre{\\num{\\nombre}}\\acc{Encadrer} le nombre $\\mnombre$ aux centièmes.",
+                "reponse": "\\def\\nombre{6548.363}\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}}\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "details": "%version 14 - solutions\n\t\n\n\\def\\nombre{6548.363}\n\n\n\t\n\nLa méthode pour \\textbf{encadrer} un nombre aux \\textbf{centièmes} consiste à \\textbf{déterminer} deux nombres avec $2$ chiffres à \\acc{droite} de la virgule :\t\\\\\n\t\nLe plus proche \\textbf{inférieur} et le plus proche \\textbf{supérieur}.\t\t\t\n\n\n\n\\columnbreak\n\n\\edef\\arrondiinf{\\fpeval{trunc(\\nombre * 100) / 100}} % Valeur inférieure\n\\edef\\arrondisup{\\fpeval{\\arrondiinf + 0.01}}       % Valeur supérieure\t\n\nPour le nombre $\\mnombre$, nous avons :\n\\begin{itemize}[label=$\\bullet$]\n    \\item \\textbf{Valeur inférieure} = $\\blue{\\num{\\arrondiinf}}$\n    \\item \\textbf{Valeur supérieure} = $\\red{\\num{\\arrondisup}}$\n\\end{itemize}\n\nAinsi : \n\n\n$\\blue{\\num{\\arrondiinf}} < \\mnombre < \\red{\\num{\\arrondisup}}$",
+                "theme": "",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\numa{-44}\n\\def\\numb{-43}\n\\def\\numc{-34}\n\\def\\numd{-15}\n\n\t\nCalculer la somme suivante : \t\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd}$",
+                "reponse": "\\def\\numa{-44}\\def\\numb{-43}\\def\\numc{-34}\\def\\numd{-15}$\\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "details": "%version 6 - solutions\n\t\n\\def\\numa{-44}\n\\def\\numb{-43}\n\\def\\numc{-34}\n\\def\\numd{-15}\n\n\t\n$\\affiche{\\numa} +\\affiche{\\numb} + \\affiche{\\numc} + \\affiche{\\numd} = \\fpeval{\\numa + \\numb + \\numc + \\numd}$",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 30 - Court\n\t\n\\def\\numa{59.98}\n\\def\\numb{8}\n\n\t\n\n\n\\acc{Poser la division} $\\affiche{\\numa} \\div \\affiche{\\numb}$ et donner la valeur approchée aux centièmes du quotient.",
+                "reponse": "\\def\\numa{59.98}\\def\\numb{8}$\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "details": "%version 30 - solutions\n\t\n\\def\\numa{59.98}\n\\def\\numb{8}\n\n\t\n\n\nCalculons $\\affiche{\\numa} \\div \\affiche{\\numb}$ :\t\n\t\n\t\n$\\opdiv[displayintermediary=nonzero,maxdivstep=4]{\\numa}{\\numb}$\n\t\n\\columnbreak \t\n\nLe valeur affichée par la calculatrice est $\\affiche{\\fpeval{\\numa/\\numb}}$.\t\n\t\n\nValeur approchée aux centièmes :\t\n\t\n $\\affiche{\\fpeval{round(\\numa/\\numb,2)}}$.",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    }
+}

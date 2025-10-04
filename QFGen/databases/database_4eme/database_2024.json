@@ -1,0 +1,866 @@
+{
+    "QF_08_10_2024": {
+        "classe": "4ème",
+        "date": "08_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} la \\textbf{somme} des nombres relatifs $-12$ et $-8$.",
+                "reponse": "$-20$",
+                "details": "\\textbf{Calculer} la \\textbf{somme} des nombres relatifs $-12$ et $-8$ revient à \\textbf{additionner} ces deux nombres :\n$$ (-12) + (-8) = -12 - 8 $$\n\nOn applique la propriété de \\textbf{somme} des nombres relatifs, selon laquelle additionner deux nombres négatifs revient à additionner leurs valeurs absolues avec le signe négatif :\n$$ \\Rightarrow -12 - 8 = - (12 + 8) $$\n\\[\n- (12 + 8) = -20\n\\]\n\nAinsi, la \\textbf{somme} des nombres relatifs $-12$ et $-8$ est \\textcolor{red}{$-20$}.",
+                "theme": "Addition",
+                "prompt": "une question de calcul sur les additions de nombres  relatifs genre : -12 + ( -8)"
+            },
+            "question2": {
+                "enonce": "\\textbf{Calculer} la valeur de l'expression $E = 5x + 2$ lorsque $x = 3$.",
+                "reponse": "$\nE = 5 \\times 3 + 2 = 15 + 2 = 17\n$",
+                "details": "Pour \\textbf{calculer} la valeur de l'expression $E = 5x + 2$ lorsque $x = 3$, on \\textbf{remplace} $x$ par $3$ :\n\n\\[\nE = 5 \\times 3 + 2\n\\]\n\nEffectuons les \\textbf{calculs} :\n\n\\[\nE = 15 + 2 = 17\n\\]\n\nLa valeur de l'expression est donc $\\boxed{17}$.",
+                "theme": "Évaluation",
+                "prompt": "question de calcul littéral demandant de calculer la valeur d'une expression simple sans terme au carré pour x valant 3"
+            },
+            "question3": {
+                "enonce": "\\textbf{Déterminer} le nombre \\textbf{négatif} $x$ tel que $x^2 = 36$.",
+                "reponse": "$x = -6$",
+                "details": "Pour \\textbf{déterminer} le nombre négatif $x$ tel que $x^2 = 36$, on cherche déjà les nombres dont le carré vaut 36. \\\\\n\nOn remarque que $6^2 = 36$ et que $(-6)^2=36$\\\\\n\n\n$6$ et $-6$ sont candidats, mais seul $-6$ est négatif.\n\n\nAinsi, la solution est $x= -6$.",
+                "theme": "Équations",
+                "prompt": "une question demandant de déterminer le nombre qui, une fois élevé au carré vaut 36"
+            }
+        }
+    },
+    "QF_10_10_2024": {
+        "classe": "4ème",
+        "date": "10_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} la valeur de l'expression $3x - 7$ pour $x = -5$.",
+                "reponse": "$\\boxed{-22}$",
+                "details": "\\textbf{Calculons} la valeur de l'expression $3x - 7$ pour $x = -5$.\n\nRemplaçons $x$ par $-5$ :\n\n$$3(-5) - 7.$$\n\n\\textbf{Traitons} les opérations :\n\n- \\textbf{Multiplions} : $3 \\times (-5) = -15$.\n\n- \\textbf{Soustrayons} : $-15 - 7 = -22$.\n\nAinsi, la valeur de l'expression pour $x = -5$ est $\\boxed{-22}$.",
+                "theme": "Algèbre",
+                "prompt": "question de calcul littéral demandant de calculer la valeur d'une expression simple sans terme au carré pour x valant -5"
+            },
+            "question2": {
+                "enonce": "\\textbf{Trouver} le nombre positif $x$ tel que $x^2=64$.",
+                "reponse": "$\\mathbf{x = 8} $",
+                "details": "Pour \\textbf{trouver} le nombre positif $x$ tel que $x^2 = 64$, nous devons \\textbf{résoudre} l'équation:\n\n\\[ \nx^2 = 64 \n\\]\n\nEn \\textbf{appliquant} la racine carrée des deux côtés, nous obtenons:\n\n\\[ \nx = \\sqrt{64} \n\\]\n\nPuisque nous cherchons le nombre positif, \n\n\\[ \nx = 8 \n\\]\n\nAinsi, le nombre positif est $\\mathbf{x = 8}$.",
+                "theme": "Équations",
+                "prompt": "Une question demandant de trouver le nombre positif qui, une fois élevé au carré vaut 64"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} la somme des fractions $\\dfrac{3}{4}$ et $\\dfrac{5}{12}$.",
+                "reponse": "$\\dfrac{7}{6}$",
+                "details": "\\textbf{Pour additionner} deux fractions, comme $\\dfrac{3}{4}$ et $\\dfrac{5}{12}$, nous devons \\textbf{utiliser} un dénominateur commun.\n\nLe \\textbf{plus petit commun multiple} des dénominateurs $4$ et $12$ est $12$. \n\n\\textbf{Transformons} la première fraction : \n\\[\n\\dfrac{3}{4} = \\dfrac{3 \\times 3}{4 \\times 3} = \\dfrac{9}{12}\n\\]\n\nAinsi, la somme est :\n\\[\n\\dfrac{9}{12} + \\dfrac{5}{12} = \\dfrac{9+5}{12}\n\\]\n\nEnfin, \\textbf{calculons} la somme :\n\\[\n\\dfrac{14}{12}\n\\]\n\n\\textbf{Simplifions} la fraction $\\dfrac{14}{12}$ :\n\\[\n\\dfrac{14}{12} = \\dfrac{14 \\div 2}{12 \\div 2} = \\dfrac{7}{6}\n\\]\n\n\\textbf{La somme des fractions} est donc $\\dfrac{7}{6}$.",
+                "theme": "Addition",
+                "prompt": "Une question demandant de calculer la somme de deux fractions dont les dénominateurs sont dans la même table de multiplication ( genre 4 et 12 les dénominateurs )"
+            }
+        }
+    },
+    "QF_11_10_2024": {
+        "classe": "4ème",
+        "date": "11_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} la valeur de l'expression\n \\[\n3x^2 + 5x - 7\n\\] \nen remplaçant $x$ par $4$.",
+                "reponse": "$61$",
+                "details": "\\textbf{Remplacer} $x$ par $4$ dans l'expression $3x^2 + 5x - 7$ :\n\n\\[ \n3\\times(4)^2 + 5\\times(4) - 7 \n\\]\n\n\\textbf{Calculer} en effectuant les opérations :\n\n\\[ \n= 3 \\times 16 + 20 - 7 \n\\]\n\n\\[ \n= 48 + 20 - 7 \n\\]\n\n\\[ \n= 68 - 7 \n\\]\n\n\\[ \n= 61 \n\\]\n\nLa \\textbf{valeur} de l'expression est donc $\\mathbf{61}$.",
+                "theme": "Évaluation",
+                "prompt": "Une question de calcul littéral demandant de calculer la valeur d'une expressions avc un terme au carré en remplaçant x par 4"
+            },
+            "question2": {
+                "enonce": "\\textbf{Écrire} l'\\textbf{égalité} de \\textbf{Pythagore} pour le triangle $KLM$, rectangle en $M$.",
+                "reponse": "$KL^2 = KM^2 + LM^2$",
+                "details": "Pour le \\textbf{triangle rectangle} $KLM$ avec l'angle droit en $M$, le segment $[KL]$ est l'\\textbf{hypoténuse}. \\\\L'\\textbf{égalité de Pythagore} est donc :\n\\[\nKL^2 = KM^2 + LM^2\n\\]",
+                "theme": "Pythagore",
+                "prompt": "Une question demandant d'écrire l'égalité de pythagore d'un triangle rectangle KLM. Il faut aussi la figure très simple sans mesure indiquée de ce triangle dans lequel l'angle droit sera marqué."
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculez} la somme des \\textbf{fractions} : \\\\$\\dfrac{5}{3}$ et $\\dfrac{2}{7}$\\\\ \\textbf{Exprimez} le résultat sous forme d'une \\textbf{fraction} simplifiée.",
+                "reponse": "$\\dfrac{41}{21}$",
+                "details": "La \\textbf{somme} de deux \\textbf{fractions} se calcule en trouvant un dénominateur commun.\\\\ Pour $\\dfrac{5}{3}$ et $\\dfrac{2}{7}$, le \\textbf{plus petit commun multiple} des dénominateurs $3$ et $7$ est $21$. Nous devons donc \\textbf{réduire les fractions au même dénominateur} :\\\\\n$\n\\dfrac{5}{3} = \\dfrac{5 \\times 7}{3 \\times 7} = \\dfrac{35}{21}$\n$\n\\dfrac{2}{7} = \\dfrac{2 \\times 3}{7 \\times 3} = \\dfrac{6}{21}$\\\\\n\n\\textbf{Additionnons} ensuite ces deux \\textbf{fractions} :\\\\\n$\n\\dfrac{35}{21} + \\dfrac{6}{21} = \\dfrac{35 + 6}{21} = \\dfrac{41}{21}$\n\nLa fraction $\\dfrac{41}{21}$ ne peut pas être \\textbf{simplifiée} davantage, car $41$ et $21$ n'ont pas de diviseur commun autre que $1$. Ainsi, la somme souhaitée est $\\dfrac{41}{21}$.",
+                "theme": "Fractions.",
+                "prompt": "Une question d'addition de fractions dont les dénominateurs ne sont pas dans la même table de multiplication genre 3 et 7 les dénominateurs"
+            }
+        }
+    },
+    "QF_11_10_2024_1": {
+        "classe": "4ème",
+        "date": "11_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Remplacer} $x$ par $-3$ dans l'expression suivante et \\textbf{calculer} la valeur : $5x^2 - 4x + 7$.",
+                "reponse": "$5\\times(-3)^2 - 4\\times(-3) + 7 = 64$",
+                "details": "Pour \\textbf{calculer} la valeur de l'expression $5x^2 - 4x + 7$ lorsque $x = -3$, on procède comme suit :\n\n1. \\textbf{Remplacer} $x$ par $-3$ dans l'expression :\n   \\[\n   5\\times(-3)^2 - 4\\times(-3) + 7\n   \\]\n\n2. \\textbf{Calculer} chaque terme :\n   \\[\n   5 \\times (-3)^2 = 5 \\times 9 = 45\n   \\]\n   \\[\n   -4 \\times (-3) = 12\n   \\]\n\n3. \\textbf{Additionner} les termes :\n   \\[\n   45 + 12 + 7 = \\fpeval{45 + 12 + 7}\n   \\]\n\nAinsi, la valeur de l'expression est $\\fpeval{45 + 12 + 7}$.",
+                "theme": "substitution",
+                "prompt": "Une question de calcul littéral demandant de remplacer x par un nombre négatif genre -3 dans une expression simple comportant un terme au carré."
+            },
+            "question2": {
+                "enonce": "\\textbf{Calculez} la valeur de l'expression : $-(5{-}3) + (7 - 9) - (-2) + 4$.",
+                "reponse": "$2$",
+                "details": "L'expression à \\textbf{calculer} est :\\\\\n$ -(5{-}3) + (7 - 9) - (-2) + 4 $\\\\\n\\textbf{Évaluons} chaque partie séparément : \\\\\n$-(5-3) = -2$ \\\\\n$(7 - 9) = -2$ \\\\\n$-(-2) = 2$ \\\\\n\\textbf{Ajoutons} les valeurs obtenues et $4$ : \\\\\n$-2 + (-2) + 2 + 4 = \\mathbf{2}$\n\n\n\\text{La valeur de l'expression est donc \\textbf{2}.}",
+                "theme": "Arithmétique.",
+                "prompt": "Une question d'opérations de nombres relatifs comportant 3 termes avec un comportant des parenthèses avec un petite expression dedans ."
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculer} le \\textbf{nouveau prix} d'un article coûtant $30\\,\\text{\\euro{}}$ après une \\textbf{réduction} de $15\\%$.",
+                "reponse": "$\\textbf{Nouveau prix} = 25{,}5 \\, \\text{\\euro{}} $",
+                "details": "Le \\textbf{prix initial} de l'article est $30\\,\\text{\\euro{}}$. \\\\\nLa \\textbf{réduction} appliquée est de $15\\%$, ce qui correspond à \\\\\n$30\\times\\dfrac {15}{100} = 4{,}5 \\text{\\euro{}}$. \n\nAinsi, le \\textbf{nouveau prix}, après \\textbf{réduction}, est :\n\n\\[\n\\text{{Nouveau prix}} = 30 - 4{,}5 =  25{,}5  \\, \\text{\\euro{}}\n\\]\n\nLe \\textbf{nouveau prix} est donc $\\fpeval{30 * 0.85} \\, \\text{\\euro{}}$.",
+                "theme": "pourcentage",
+                "prompt": "Une question demandant de calculer le nouveau prix  d'un article coutant 30\\euro{} et qui subit une réduction de 15\\%"
+            }
+        }
+    },
+    "QF_15_10_2024": {
+        "classe": "4ème",
+        "date": "15_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Déterminer} la liste des \\textbf{diviseurs} de $30$.",
+                "reponse": "$1,\\, 2,\\, 3,\\, 5,\\, 6,\\, 10,\\, 15,\\, 30$",
+                "details": "Pour \\textbf{déterminer} les \\textbf{diviseurs} d'un nombre entier, il suffit de \\textbf{trouver} les produits qui donnent ce nombre. Prenons le nombre $30$ par exemple.\n\nOn cherche les \\textbf{produits} qui donnent $30$ :\n\n\\begin{itemize}\n    \\item $1 \\times 30 = 30$,\n    \\item $2 \\times 15 = 30$,\n    \\item $3 \\times 10 = 30$,\n    \\item $5 \\times 6 = 30$.\n\\end{itemize}\n\nAinsi, les \\textbf{diviseurs} de $30$ sont les nombres $1$, $2$, $3$, $5$, $6$, $10$, $15$, et $30$.",
+                "theme": "Divisors.",
+                "prompt": "une question demandant de déterminer  la liste des divisurs de 30"
+            },
+            "question2": {
+                "enonce": "\\textbf{Compléter} l'opération suivante en respectant les priorités : $(-8) \\times (3 + 5) \\div (-4)$.",
+                "reponse": "$16 $",
+                "details": "L'opération donnée est $(-8) \\times (3 + 5) \\div (-4)$. Pour \\textbf{compléter} cette opération, respectons les \\textbf{priorités} des opérations :\n\n1. \\textbf{Calculer} d'abord l'expression entre parenthèses : $3 + 5 = 8$.\n\n\\[\n(-8) \\times 8 \\div (-4)\n\\]\n\n2. \\textbf{Effectuer} ensuite la multiplication : \\\\\n$(-8) \\times 8 = -64$\n\n\\[\n-64 \\div (-4)\n\\]\n\n3. \\textbf{Calculer} enfin la division : \n\n\\[\n-64 \\div (-4) = 16\n\\]\n\nAinsi, le résultat de l'opération est $16$.",
+                "theme": "Calcul",
+                "prompt": "Une question d'opérations de nombres relatifs comportant 3 termes avec un comportant des parenthèses avec un petite expression dedans .multiplications et divisions"
+            },
+            "question3": {
+                "enonce": "Calculez le \\textbf{nouveau prix} d'un article coûtant $12\\,\\text{\\euro}$ après une \\textbf{augmentation} de $20\\%$.",
+                "reponse": "$\\text{Nouveau prix} = 12 \\times 1{,}20 = 14{,}40 \\,\\text{\\euro} $",
+                "details": "Le \\textbf{nouveau prix} après une \\textbf{augmentation} de \\(20\\%\\) revient à \\textbf{calculer} le \\textbf{quotient} de l'\\textbf{augmentation} par le \\textbf{prix initial}, et à l'\\textbf{ajouter} au \\textbf{prix initial}.\n\n\\begin{enumerate}\n    \\item \\textbf{Calculer} l'\\textbf{augmentation} :\n    \n    \\[\n    \\text{Augmentation} = 12 \\times \\dfrac{20}{100} \\]\n    \\[ \\text{Augmentation} = 12 \\times 0{,}20 = \\num{\\fpeval{12*0.2}}\n    \\]\n    \n    \\item \\textbf{Nouveau prix} :\n    \n    \\[\n    \\text{Nouveau prix} = 12 + \\num{\\fpeval{12*0.2}} = \\num{\\fpeval{12+12*0.2}}\\,\\text{\\euro}\n    \\]\n\\end{enumerate}\n\nAinsi, le \\textbf{nouveau prix} de l'article est \\(\\mathbf{\\num{\\fpeval{12+12*0.2}}}\\,\\text{\\euro}\\).",
+                "theme": "Calcul.",
+                "prompt": "Une question demandant de calculer le nouveau prix  d'un article coutant 12\\euro{} et qui subit une augmentation de 20\\%"
+            }
+        }
+    },
+    "QF_16_10_2024": {
+        "classe": "4ème",
+        "date": "16_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Calculer} le nouveau prix d'un article coûtant $75\\, \\text{\\euro}$ après une \\textbf{réduction} de $35 \\%$.",
+                "reponse": "$48{,}75\\, \\text{\\euro} $",
+                "details": "Le \\textbf{nouveau prix} d'un article après une \\textbf{réduction} peut être \\textbf{calculé} en utilisant la \\textbf{formule} suivante :\n\\[ \\text{Nouveau prix} = \\text{Prix initial} \\times \\left(1 - \\dfrac{\\text{taux de réduction}}{100}\\right) \\]\n\nEn appliquant cette \\textbf{formule} au cas présent :\n\\[ \n\\text{Nouveau prix} = 75 \\times \\left( 1 - \\dfrac{35}{100} \\right) \n\\]\n\n\\[ \n= 75 \\times 0{,}65 \n\\]\n\nDonc, le nouveau prix est :\n\\[ \n\\boxed{75 \\times 0{,}65} \n\\]\nPour évaluer cette expression, utiliser un calculateur afin de trouver :\n\\[ \n\\text{Nouveau prix} = 48{,}75\\, \\text{\\euro} \n\\]",
+                "theme": "Réduction",
+                "prompt": "Une question demandant de calculer le nouveau prix  d'un article coutant 75\\euro{} et qui subit une réduction de 35\\%"
+            },
+            "question2": {
+                "enonce": "\\textbf{Trouver} tous les \\textbf{diviseurs} de $42$.",
+                "reponse": "$\\textbf{Diviseurs: } 1, 2, 3, 6, 7, 14, 21, 42.$",
+                "details": "\\textbf{Calcul des Diviseurs:}\n\nOn repère les diviseurs de 42 en utilisant la méthode de recherche suivante :\\\\\n\n \\begin{center} \\begin{tikzpicture}\n        \\node at (0, 0) {\n            \\begin{tabular}{r|l}\n                1 & 42 \\\\\n                2 & 21 \\\\\n                3 & 14 \\\\\n                6 & 7 \\\\\n            \\end{tabular}\n        };\n        % Ligne de division verticale\n        %\\draw[thick] (0, 0.8) -- (0, -1.2);\n    \\end{tikzpicture}\n        \n    \\end{center}\n$42$ a donc $8$ \\textbf{diviseurs :} $1, 2, 3, 6, 7, 14, 21,$ et $42$.",
+                "theme": "Arithmétique",
+                "prompt": "une question demandant de déterminer  la liste des divisurs de 42"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calculez} la valeur de l'expression suivante : $\\dfrac{7}{18} \\times \\dfrac{9}{16}$.",
+                "reponse": "$\\dfrac{7}{32}$",
+                "details": "\\textbf{Pour calculer} la \\textbf{valeur} de l'expression $ \\dfrac{7}{18} \\times \\dfrac{9}{16}$, on peut procéder de deux façons différentes :\\\\\n\n   \\[\n   \\dfrac{7}{18} \\times \\dfrac{9}{16} = \\dfrac{7 \\times 9}{18 \\times 16} = \\dfrac{63}{288}.\n   \\]\n   La fraction peut être simplifiée par le \\textbf{PGCD} de \\(63\\) et \\(288\\) qui vaut $9$:\n   \\[\n   \\dfrac{63}{288} = \\dfrac{63 \\div 9}{288 \\div 9} = \\dfrac{7}{32}.\n   \\]\n\n\n\\columnbreak\n\nIl est préférable de simplifier \\textbf{avant} d'effectuer la multiplication : \\\\\n  \\[\n   \\dfrac{7}{18} \\times \\dfrac{9}{16} = \\dfrac{7 \\times 9}{18 \\times 16}\n   \\]\n   \\[\n   \\qquad= \\dfrac{7 \\times \\color{red}{\\mathbf{9} }  }{\\color{red}{\\mathbf{9}} \\color{black}\\times 2 \\times 16}\n\\]\n   \\[\n   \\qquad= \\dfrac{7}{ 2 \\times 16} =  \\dfrac{7}{32} \n\\]",
+                "theme": "fractions",
+                "prompt": "Une question demandant de calculer des opérations variées avec des fractions comportant additions soustractions et multiplications avec des dénominateurs qui ne sont pas dans la même table de multiplication"
+            }
+        }
+    },
+    "QF_18_10_2024": {
+        "classe": "4ème",
+        "date": "18_10_2024",
+        "questions": {
+            "question1": {
+                "enonce": "Un article coûte $22{,}50\\,\\text{\\euro{}}$ et subit une \\textbf{augmentation} de $25\\%$ de son prix.\\\\ \\textbf{Calculer} le nouveau prix de l'article.",
+                "reponse": "\\def\\newprice{\\num{\\fpeval{22.50*0.25}}}\n$28{,}13 \\text{\\euro{}}\\,$",
+                "details": "Pour \\textbf{calculer} le nouveau prix de l'article après une \\textbf{augmentation} de $25\\%$, on calcule le prix de l'augmentation :\n\nAugmentation $=\\text{Prix initial} \\times 25 \\div 100$\\\\\n\n\\def\\augm{\\num{\\fpeval{22.50*0.25}}}\n\n\\def\\newprice{\\num{\\fpeval{22.50*1.25}}}\n\nAugmentation $= 22{,}50 \\times 25 \\div 100 =\\augm $\n\n\\columnbreak\n\nOn peut donc calculer le nouveau prix de l'article :\n\n$ \\text{Nouveau prix} = \\text{Ancien prix} + \\text{Augmentation}$\n\nNouveau prix $= 22{,}50 + \\augm = \\newprice$\n\nAinsi, le \\textbf{nouveau prix} de l'article est $ 28{,}13\\text{\\euro{}}$ ( arrondi aux centièmes ).",
+                "theme": "Pourcentage",
+                "prompt": "Une question demandant de calculer le nouveau prix  d'un article coutant 22{,]50\\euro{} et qui subit une auglentation de 25\\% de son prix initial."
+            },
+            "question2": {
+                "enonce": "\\textbf{Déterminer} tous les \\textbf{diviseurs} du nombre $68$.",
+                "reponse": "$1, \\, 2, \\, 4, \\, 17, \\, 34, \\, 68$",
+                "details": "\\textbf{Calcul des Diviseurs:}\n\nOn repère les diviseurs de 68 en utilisant la méthode de recherche suivante :\\\\\n\n\\begin{center}\n    \\begin{tikzpicture}\n        \\node at (0, 0) {\n            \\begin{tabular}{r|l}\n                1 & 68 \\\\\n                2 & 34 \\\\\n                4 & 17 \\\\\n            \\end{tabular}\n        };\n    \\end{tikzpicture}\n\\end{center}\n\n$68$ a donc $6$ \\textbf{diviseurs :} $1, 2, 4, 17, 34,$ et $68$.",
+                "theme": "Diviseurs",
+                "prompt": "une question demandant de déterminer  la liste des divisurs de 68"
+            },
+            "question3": {
+                "enonce": "\\textbf{Calcule} la somme des fractions suivantes : \\[\\dfrac{3}{7} + \\dfrac{5}{9}\\]",
+                "reponse": "$\\dfrac{62}{63}$",
+                "details": "Pour \\textbf{calculer} la somme des deux \\textbf{fractions} $\\dfrac{3}{7} + \\dfrac{5}{9}$, nous devons d'abord les mettre sur un \\textbf{dénominateur commun}. \n\nLe \\textbf{plus petit dénominateur commun} des dénominateurs $7$ et $9$ est $63$. Donc, nous convertissons chaque fraction pour avoir ce même dénominateur :\n\n\\[\n\\dfrac{3}{7} = \\dfrac{3 \\times 9}{7 \\times 9} = \\dfrac{27}{63}\n\\]\n\\[\n\\dfrac{5}{9} = \\dfrac{5 \\times 7}{9 \\times 7} = \\dfrac{35}{63}\n\\]\n\nEnsuite, nous \\textbf{additionnons} ces nouvelles fractions par leurs numérateurs :\n\n\\[\n\\dfrac{27}{63} + \\dfrac{35}{63} = \\dfrac{27 + 35}{63} = \\dfrac{62}{63}\n\\]\n\nPar conséquent, la somme des fractions est \\(\\boxed{\\dfrac{62}{63}}\\).",
+                "theme": "Addition",
+                "prompt": "Une question demandant de calculer la somme de deux fractionsdont des dénominateurs qui ne sont pas dans la même table de multiplication"
+            }
+        }
+    },
+    "QF_18_11_2024": {
+        "classe": "4ème",
+        "date": "18_11_2024",
+        "questions": {
+            "question1": {
+                "enonce": "Calculez le \\textbf{nouveau prix} d'un article qui coûte $13{,}30$ \\euro{} après une \\textbf{réduction} de $5\\%$ de son prix.",
+                "reponse": "$ \\num{12.64} ~$\\euro{}",
+                "details": "Pour \\textbf{calculer} le \\textbf{nouveau prix} après une \\textbf{réduction} de $5\\%$, on utilise la formule suivante : \\\\\n\nNouveau Prix $= \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right) + $Ancien Prix\\\\\n\noù $t$ est le taux d'augmentation. Ici, $\\text{Ancien Prix} = 13{,}30$ et $t = 5$.\\\\\n\n Nouveau Prix $= 13{,}30  - 13{,}30 \\times \\left(\\dfrac{5}{100}\\right)  $\\\\\n\nNouveau Prix $= 13{,}30 - \\num{\\fpeval{13.30*0.05}} $\\\\\n\nAinsi  :\\\\\n\nNouveau Prix $= \\num{\\fpeval{13.30*0.95}}\\approx12{,}64$\\\\\n\nOn donne l'arrondi au \\textbf{centime} près car il s'agit d'un prix en euros.",
+                "theme": "prix",
+                "prompt": "Une question demandant de calculer le nouveau prix  d'un article coutant 13{,]30\\euro{} et qui subit une auglentation de 5\\% de son prix initial."
+            },
+            "question2": {
+                "enonce": "\\textbf{Déterminer} tous les \\textbf{diviseurs} du nombre $\\fpeval{3*5*7}$.",
+                "reponse": "$1,3, 5, 7, 15,21,35,$ et \\fpeval{3*5*7}",
+                "details": "\\textbf{Calcul des Diviseurs:}\n\nOn repère les diviseurs de \\fpeval{3*5*7} en utilisant la méthode de recherche suivante :\\\\\n\n\\begin{center}\n    \\begin{tikzpicture}\n        \\node at (0, 0) {\n            \\begin{tabular}{r|l}\n                1 & \\fpeval{3*5*7} \\\\\n                3 & \\fpeval{5*7} \\\\\n                5 &  \\fpeval{3*7} \\\\\n                7 &  \\fpeval{5*3}\\\\\n            \\end{tabular}\n        };\n    \\end{tikzpicture}\n\\end{center}\n\n\\fpeval{3*5*7} a donc $8$ \\textbf{diviseurs :} $1,3, 5, 7, 15,21,35,$ et \\fpeval{3*5*7}.",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "\\textbf{Calcule} la somme des fractions suivantes : \\[\\dfrac{5}{18} + \\dfrac{5}{2}\\]",
+                "reponse": "$\\dfrac{25}{9}$",
+                "details": "Pour \\textbf{calculer} la somme des deux \\textbf{fractions} $\\dfrac{5}{18} + \\dfrac{5}{2}$, nous devons d'abord les mettre sur un \\textbf{dénominateur commun}. \n\nLe \\textbf{plus petit dénominateur commun} des dénominateurs $18$ et $2$ est $18$. Donc, nous convertissons chaque fraction pour avoir ce même dénominateur :\n\n\n$\\dfrac{5}{18}$ est déjà au dénominateur $18$\n\n\\columnbreak\n\n\n\\[\n\\dfrac{5}{2} = \\dfrac{5 \\times 9}{2 \\times 9} = \\dfrac{45}{18}\n\\]\n\nEnsuite, nous \\textbf{additionnons} ces nouvelles fractions par leurs numérateurs :\n\n\\[\n\\dfrac{5}{18} + \\dfrac{5}{2} = \\dfrac{5}{18} + \\dfrac{45}{18} \\\\ = \\dfrac{50}{18} = \\dfrac{25}{9}\n\\]\n\nPar conséquent,  $\\dfrac{5}{18} + \\dfrac{5}{2} = \\dfrac{25}{9}$",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_19_11_2024": {
+        "classe": "4ème",
+        "date": "19_11_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\def\\n{11}\n    \\def\\d{-12}\n    \\def\\nb{10}\n    \\def\\db{-4}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{11}\n    \\def\\d{-12}\n    \\def\\nb{10}\n    \\def\\db{-4}\n$\\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}$",
+                "details": "\\def\\n{11}\n    \\def\\d{-12}\n    \\def\\nb{10}\n    \\def\\db{-4}\n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db}\n        + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}.\n    \\end{align*}",
+                "theme": "",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\def\\na{23.77}\n    \\def\\augmentation{38}\n    \n    \n\t\n    %court\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{23.77}\n    \\def\\augmentation{38}\n    % Définir le texte et le calcul en fonction du signe\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\checkaugmentation\n     $ \\num{\\rounded}$\\",
+                "details": "\\def\\na{23.77}\n    \\def\\augmentation{38}\n    \n    % Définitions des macros\n    % Définir le texte et le calcul en fonction du signe\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\} % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} % Si différents\n      }\n    \\checkaugmentation\n        Pour \\textbf{calculer} le \\textbf{nouveau prix} après une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$, on utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        Nouveau Prix $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "\\def\\he{3}\n    \\def\\mi{54}\n    \\def\\dia{57}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\\\\\n    Quel est le \\textbf{pourcentage de dialogues} ?\\\\",
+                "reponse": "\\def\\he{3}\n    \\def\\mi{54}\n    \\def\\dia{57}\n    \n$\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "\\def\\he{3}\n    \\def\\mi{54}\n    \\def\\dia{57}\n\t\n    %help\n\n    Dans la série, il y a $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues.\n\n\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n\n    Ainsi, $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_25_11_2024": {
+        "classe": "4ème",
+        "date": "25_11_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\def\\he{4}\n    \\def\\mi{54}\n    \\def\\dia{85}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?",
+                "reponse": "\\def\\he{4}\n    \\def\\mi{54}\n    \\def\\dia{85}\n   $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "\\def\\he{4}\n    \\def\\mi{54}\n    \\def\\dia{85}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\\n\n    \n\t\n    %help\n\n    Dans la série, il y a $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues.\n\n\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n\n    Ainsi, $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\def\\na{89.7}\n    \\def\\augmentation{-24}\n    \n    \n\t\n    %court\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{89.7}\n    \\def\\augmentation{-24}\n    \n    \n\t\n    %court\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n            \n$\\rounded$",
+                "details": "\\def\\na{89.7}\n    \\def\\augmentation{-24}\n    \n    \n\t\n    %court\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n \n\t\n    %help\n\n    % Définitions des macros\n    % Définir le texte et le calcul en fonction du signe \n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} % Si différents\n      }\n    \\checkaugmentation\nOn utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        Nouveau Prix $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n    \\def\\n{3}\n    \\def\\d{14}\n    \\def\\nb{19}\n    \\def\\db{7}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{3}    \\def\\d{14}    \\def\\nb{19}    \\def\\db{7}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 3 - solutions\n\t\n    \\def\\n{3}\n    \\def\\d{14}\n    \\def\\nb{19}\n    \\def\\db{7}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_26_11_2024": {
+        "classe": "4ème",
+        "date": "26_11_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\def\\n{3}\n    \\def\\d{5}\n    \\def\\nb{20}\n    \\def\\db{2}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{3}\n    \\def\\d{5}\n    \\def\\nb{20}\n    \\def\\db{2}\n     \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}",
+                "details": "\\def\\n{3}\n    \\def\\d{5}\n    \\def\\nb{20}\n    \\def\\db{2}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db}\n        + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}.\n    \\end{align*}",
+                "theme": "",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\def\\na{8.69}\n    \\def\\augmentation{20}\n    \n\\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{8.69}\n    \\def\\augmentation{20}\n    \n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n$\\num{\\calculation} \\approx \\num{\\rounded}$",
+                "details": "\\def\\na{8.69}\n    \\def\\augmentation{20}\n    \n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n\\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} % Si différents\n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        Nouveau Prix $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n\n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "\\def\\he{3}\n    \\def\\mi{52}\n    \\def\\dia{101}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\",
+                "reponse": "\\def\\he{3}\n    \\def\\mi{52}\n    \\def\\dia{101}\n    $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "\\def\\he{3}\n    \\def\\mi{52}\n    \\def\\dia{101}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\\n\n    \n\t\n    %help\n\n    La série dure $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes.\\\\\n    \n\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n    Par produit en croix : $100 \\times \\dia \\div \\fpeval{\\he * 60 + \\mi} = \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}$\n\n\n    Ainsi, $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_28_11_2024": {
+        "classe": "4ème",
+        "date": "28_11_2024",
+        "questions": {
+            "question1": {
+                "enonce": "\\def\\n{8}\n    \\def\\d{6}\n    \\def\\nb{5}\n    \\def\\db{9}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{8}\n    \\def\\d{6}\n    \\def\\nb{5}\n    \\def\\db{9}\n$\\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}$",
+                "details": "\\def\\n{8}\n    \\def\\d{6}\n    \\def\\nb{5}\n    \\def\\db{9}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\def\\na{101.65}\n    \\def\\augmentation{-49}\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{101.65}\n    \\def\\augmentation{-49}\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    \\num{\\rounded}",
+                "details": "\\def\\na{101.65}\n    \\def\\augmentation{-49}\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$\n  \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} % Si différents\n      }\n    \\checkaugmentation\n        Pour \\textbf{calculer} le \\textbf{nouveau prix} après une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$, on utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\ \n        \n        Nouveau Prix $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "\\def\\he{3}\n    \\def\\mi{11}\n    \\def\\dia{61}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\\\\\n    Quel est le pourcentage de dialogues ?",
+                "reponse": "\\def\\he{3}\n    \\def\\mi{11}\n    \\def\\dia{61}\n    $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "\\def\\he{3}\n    \\def\\mi{11}\n    \\def\\dia{61}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\\n\n    \n\t\n    %help\n\n    La série dure $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes.\\\\\n\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{2cm}|p{2cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n\nPar produit en croix : \\\\\n\n$100 \\times \\dia \\div \\num{\\fpeval{\\he * 60 + \\mi}} = \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}$\n\n\n\n    Ainsi, $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_01_12_2024": {
+        "classe": "4ème",
+        "date": "01_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n    \\def\\na{3}\n    \\def\\da{5}\n    \\def\\nb{3}\n    \\def\\db{5}\n\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}",
+                "reponse": "\\def\\na{3}    \\def\\da{5}    \\def\\nb{3}    \\def\\db{5}            $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+                "details": "%version 2 - solutions\n\t\n    \\def\\na{3}\n    \\def\\da{5}\n    \\def\\nb{3}\n    \\def\\db{5}\n\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n    \\def\\na{3}\n    \\def\\da{5}\n    \\def\\nb{6}\n    \\def\\db{5}\n\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}",
+                "reponse": "\\def\\na{3}    \\def\\da{5}    \\def\\nb{6}    \\def\\db{5}            $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+                "details": "%version 3 - solutions\n\t\n    \\def\\na{3}\n    \\def\\da{5}\n    \\def\\nb{6}\n    \\def\\db{5}\n\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n    \\def\\na{5}\n    \\def\\da{5}\n    \\def\\nb{8}\n    \\def\\db{8}\n\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db}$\\end{center}",
+                "reponse": "\\def\\na{5}    \\def\\da{5}    \\def\\nb{8}    \\def\\db{8}            $\\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}$",
+                "details": "%version 4 - solutions\n\t\n    \\def\\na{5}\n    \\def\\da{5}\n    \\def\\nb{8}\n    \\def\\db{8}\n\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\times \\dfrac{\\nb}{\\db} = & \\dfrac{\\na\\times \\nb}{\\da\\times \\db} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\nb}}{\\fpeval{\\da * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_1_12_2024": {
+        "classe": "4ème",
+        "date": "1_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{-8}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{-8}\\def\\puisxa{2}\\def\\puisxb{1}\\def\\puisxc{0}\\def\\signe{+}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\fpeval{\\para{\\na}*\\para{\\nb}}x^{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\fpeval{abs(\\para{\\na}*\\para{\\nc})}x^{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 2 - solutions\n\t\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{-8}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 1 - Court\n\t\n    \\def\\n{8}\n    \\def\\d{10}\n    \\def\\nb{4}\n    \\def\\db{13}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{10}    \\def\\d{10}    \\def\\nb{4}    \\def\\db{13}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 1 - solutions\n\t\n    \\def\\n{8}\n    \\def\\d{10}\n    \\def\\nb{4}\n    \\def\\db{13}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n\\def\\puissance{9}\n\\def\\nombrebase{5.312}\n\\def\\decalage{1}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nCalculer l'\\acc{écriture décimale} du nombre suivant :\n\\begin{center}\n    $\\numa$\n\\end{center}\nDéterminer son \\acc{ordre de grandeur} et le \\acc{préfixe} qui lui est associé.",
+                "reponse": "\\def\\puissance{9}\\def\\nombrebase{5.312}\\def\\decalage{1}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\num{\\numerique}$ \\hfill - $10^{\\puissance}$ - \\hfill \\mprefix{\\puissance}",
+                "details": "%version 1 - solutions\n\t\n\\def\\puissance{9}\n\\def\\nombrebase{5.312}\n\\def\\decalage{1}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\nLe nombre $\\numa$ correspond au nombre $\\num{\\numerique}$ en \\acc{écriture décimale}.\\\\\nCe nombre est l'\\acc{ordre de grandeur} $10^{\\puissance}$ qui correspond au \n\\acc{préfixe} \\mprefix{\\puissance}",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_1_12_2024_1": {
+        "classe": "4ème",
+        "date": "1_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 1 - Court\n\t\n    \\def\\na{7}\n    \\def\\da{4}\n\n    \n    \n\t\n    %court\n    \n    \\acc{Déterminer} l'inverse de la fraction $\\dfrac{\\na}{\\da}$",
+                "reponse": "\\def\\na{7}    \\def\\da{4}            $\\dfrac{\\da}{\\na}$",
+                "details": "%version 1 - solutions\n\t\n    \\def\\na{7}\n    \\def\\da{4}\n\n    \n    \n\t\n    %help\n\n    L'inverse de $\\dfrac{\\na}{\\da}$ est $\\dfrac{\\da}{\\na}$",
+                "theme": "Déterminer l'inverse d'une fraction",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 1 - Court\n\t\n    \\def\\he{5}\n    \\def\\mi{50}\n    \\def\\dia{111}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\",
+                "reponse": "\\def\\he{5}    \\def\\mi{50}    \\def\\dia{111}        $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 1 - solutions\n\t\n    \\def\\he{5}\n    \\def\\mi{50}\n    \\def\\dia{111}\n    \n\t\n    %help\n\n    Dans la série, il y a $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues.\n\n\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n\n    Ainsi, $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.\n\n\n    %Ou encore : \\\\\n    %$\\dfrac{\\dia}{\\minutefilm} = \\Simplification{\\dia}{\\fpeval{\\he * 60 + \\mi}} = \\dfrac{\\fpeval{round(100 * \\dia / \\he * 60 + \\mi ,1)}}{100}$",
+                "theme": "Déterminer un pourcentage",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 1 - Court\n\t\n    \\def\\na{82.8}\n    \\def\\augmentation{-1}\n    \n    \n\t\n    %court\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{82.8}    \\def\\augmentation{-1}            \\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {             \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {           \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$",
+                "details": "%version 1 - solutions\n\t\n    \\def\\na{82.8}\n    \\def\\augmentation{-1}\n    \n    \n\t\n    %help\n\n    % Définitions des macros\n    % Définir le texte et le calcul en fonction du signe\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { % Cas augmentation\n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { % Cas réduction\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\} % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} % Si différents\n      }\n    \\checkaugmentation\n        Pour \\textbf{calculer} le \\textbf{nouveau prix} après une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$, on utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        Nouveau Prix $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Pourcentage augmentation réduction",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_02_12_2024": {
+        "classe": "4ème",
+        "date": "02_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n    \\def\\n{8}\n    \\def\\d{9}\n    \\def\\nb{10}\n    \\def\\db{12}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{8}    \\def\\d{9}    \\def\\nb{10}    \\def\\db{12}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 2 - solutions\n\t\n    \\def\\n{8}\n    \\def\\d{9}\n    \\def\\nb{10}\n    \\def\\db{12}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\na{5}\n\\def\\nb{8}\n\\def\\nc{3}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{5}\\def\\nb{8}\\def\\nc{3}\\def\\puisxa{1}\\def\\puisxb{0}\\def\\puisxc{1}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 3 - solutions\n\t\n\\def\\na{5}\n\\def\\nb{8}\n\\def\\nc{3}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n    \\def\\he{4}\n    \\def\\mi{8}\n    \\def\\dia{59}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\",
+                "reponse": "\\def\\he{4}    \\def\\mi{8}    \\def\\dia{59}        $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 2 - solutions\n\t\n    \\def\\he{4}\n    \\def\\mi{8}\n    \\def\\dia{59}\n    \n\t\n    %help\n\n    Dans la série, il y a $\\dia~$minutes de dialogues. \n    \n    La série dure $\\fpeval{\\he * 60 + \\mi}$ minutes. \n\n    \\begin{center}\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n    \\end{center}\n\n    Le pourcentage voulu est calculé par : \\\\ $100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}}$\\\\\n    \n\n    Ainsi, $\\dia$ minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.\n\n\n    %Ou encore : \\\\\n    %$\\dfrac{\\dia}{\\minutefilm} = \\Simplification{\\dia}{\\fpeval{\\he * 60 + \\mi}} = \\dfrac{\\fpeval{round(100 * \\dia / \\he * 60 + \\mi ,1)}}{100}$",
+                "theme": "Déterminer un pourcentage",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_12_2024": {
+        "classe": "4ème",
+        "date": "06_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n    \\def\\na{66.4}\n    \\def\\augmentation{-23}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{66.4}    \\def\\augmentation{-23}            \\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$",
+                "details": "%version 3 - solutions\n\t\n    \\def\\na{66.4}\n    \\def\\augmentation{-23}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Calculer une réduction ou une augmentation",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\na{3}\n\\def\\nb{4}\n\\def\\nc{-1}\n\\def\\puisxa{2}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{3}\\def\\nb{4}\\def\\nc{-1}\\def\\puisxa{2}\\def\\puisxb{0}\\def\\puisxc{1}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 5 - solutions\n\t\n\\def\\na{3}\n\\def\\nb{4}\n\\def\\nc{-1}\n\\def\\puisxa{2}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 3 - Court\n\t\n\\def\\puissance{-2}\n\\def\\nombrebase{4.368}\n\\def\\decalage{5}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{-2}\\def\\nombrebase{4.368}\\def\\decalage{5}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 3 - solutions\n\t\n\\def\\puissance{-2}\n\\def\\nombrebase{4.368}\n\\def\\decalage{5}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_07_12_2024": {
+        "classe": "4ème",
+        "date": "07_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\na{2}\n\\def\\nb{-8}\n\\def\\nc{5}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{2}\n\\def\\nb{-8}\n\\def\\nc{5}\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 6 - solutions\n\t\n\\def\\na{2}\n\\def\\nb{-8}\n\\def\\nc{5}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n    \\def\\n{9}\n    \\def\\d{4}\n    \\def\\nb{7}\n    \\def\\db{13}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{9}    \\def\\d{4}    \\def\\nb{7}    \\def\\db{13}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 6 - solutions\n\t\n   \\def\\n{9}\n    \\def\\d{4}\n    \\def\\nb{7}\n    \\def\\db{13}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        %&=~ \\dfrac{\\decnum}{\\decden}\\\\\n        %&=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{2.796}\n\\def\\decalage{3}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{6}\\def\\nombrebase{2.796}\\def\\decalage{3}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 4 - solutions\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{2.796}\n\\def\\decalage{3}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_07_12_2024_1": {
+        "classe": "4ème",
+        "date": "07_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\puissance{7}\n\\def\\nombrebase{5.996}\n\\def\\decalage{1}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{7}\\def\\nombrebase{5.996}\\def\\decalage{1}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 5 - solutions\n\t\n\\def\\puissance{7}\n\\def\\nombrebase{5.996}\n\\def\\decalage{1}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 3 - Court\n\t\n    \\def\\he{4}\n    \\def\\mi{58}\n    \\def\\dia{65}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\",
+                "reponse": "\\def\\he{4}    \\def\\mi{58}    \\def\\dia{65}        $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 3 - solutions\n\t\n    \\def\\he{4}\n    \\def\\mi{58}\n    \\def\\dia{65}\n    \n\t\n    %help\n\n    La série dure $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes.\n\n    \\begin{center}\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n    \\end{center}\n\n    Le pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}}$\t\n\n    Ainsi, $\\dia$ minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.\t\n\n\n    %Ou encore : \\\\\n    %$\\dfrac{\\dia}{\\minutefilm} = \\Simplification{\\dia}{\\fpeval{\\he * 60 + \\mi}} = \\dfrac{\\fpeval{round(100 * \\dia / \\he * 60 + \\mi ,1)}}{100}$",
+                "theme": "Déterminer un pourcentage",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\na{-6}\n\\def\\nb{-1}\n\\def\\nc{-7}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-6}\\def\\nb{-1}\\def\\nc{-7}\\def\\puisxa{2}\\def\\puisxb{1}\\def\\puisxc{0}\\def\\signe{+}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 7 - solutions\n\t\n\\def\\na{-6}\n\\def\\nb{-1}\n\\def\\nc{-7}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_08_12_2024": {
+        "classe": "4ème",
+        "date": "08_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 13 - Court\n\t\n    \\def\\n{7}\n    \\def\\d{11}\n    \\def\\nb{13}\n    \\def\\db{10}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}    \\def\\d{11}    \\def\\nb{13}    \\def\\db{10}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 13 - solutions\n\t\n    \\def\\n{7}\n    \\def\\d{11}\n    \\def\\nb{13}\n    \\def\\db{10}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n    \\def\\he{2}\n    \\def\\mi{32}\n    \\def\\dia{83}\n    \n\t\n    %court\n    Dans une série de $\\he$ h $\\mi$ min, il y a $\\dia$ min de dialogues.\n    Quel est le pourcentage de dialogues ?\\\\",
+                "reponse": "\\def\\he{2}    \\def\\mi{32}    \\def\\dia{83}        $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$",
+                "details": "%version 4 - solutions\n\t\n    \\def\\he{2}\n    \\def\\mi{32}\n    \\def\\dia{83}\n    \n\t\n    %help\n\n    La série dure $\\num{\\fpeval{\\he * 60 + \\mi}}~$minutes.\n\n    \\begin{center}\n    \\begin{tcbtab}[Tableau de proportionnalité]{p{2.5cm}|p{1.5cm}|p{1.5cm}}\n        \\cellcolor{gray!10}\\bfseries Quantité & $\\dia$ & \\color{red} \\bfseries \\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}\\\\\\hline\n        \\cellcolor{gray!10}\\bfseries Total& \\num{\\fpeval{\\he * 60 + \\mi}} & 100\\\\\n    \\end{tcbtab}\n    \\end{center}\n\n    Le pourcentage voulu est calculé par : \t\n\t\n$100 \\times \\dia \\div \\num{\\fpeval{(\\he * 60 + \\mi)}}$\t\n\t\n\n    Ainsi, $\\dia~$minutes de dialogues représentent $\\num{\\fpeval{round(100 * \\dia / (\\he * 60 + \\mi),1)}}~\\%$ de la série.\n\n\n    %Ou encore : \\\\\n    %$\\dfrac{\\dia}{\\minutefilm} = \\Simplification{\\dia}{\\fpeval{\\he * 60 + \\mi}} = \\dfrac{\\fpeval{round(100 * \\dia / \\he * 60 + \\mi ,1)}}{100}$",
+                "theme": "Déterminer un pourcentage",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\puissance{3}\n\\def\\nombrebase{6.534}\n\\def\\decalage{-2}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nCalculer l'\\acc{écriture décimale} du nombre suivant :\n\\begin{center}\n    $\\numa$\n\\end{center}\nDéterminer son \\acc{ordre de grandeur} et le \\acc{préfixe} qui lui est associé.",
+                "reponse": "\\def\\puissance{3}\\def\\nombrebase{6.534}\\def\\decalage{-2}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\num{\\numerique}$ \\hfill - \\hfill $10^{\\puissance}$ \\hfill - \\hfill \\mprefix{\\puissance}",
+                "details": "%version 2 - solutions\n\t\n\\def\\puissance{3}\n\\def\\nombrebase{6.534}\n\\def\\decalage{-2}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\nLe nombre $\\numa$ correspond au nombre $\\num{\\numerique}$ en \\acc{écriture décimale}.\\\\\nCe nombre est l'\\acc{ordre de grandeur} $10^{\\puissance}$ qui correspond au \n\\acc{préfixe} \\mprefix{\\puissance}",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_12_12_2024": {
+        "classe": "4ème",
+        "date": "12_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\na{-3}\n\\def\\nb{9}\n\\def\\nc{6}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-3}\n\\def\\nb{9}\n\\def\\nc{6}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 8 - solutions\n\t\n\\def\\na{-3}\n\\def\\nb{9}\n\\def\\nc{6}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 4 - Court\n\t\n    \\def\\n{14}\n    \\def\\d{13}\n    \\def\\nb{-2}\n    \\def\\db{5}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{14}\n    \\def\\d{13}\n    \\def\\nb{-2}\n    \\def\\db{5} \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 4 - solutions\n\t\n   \\def\\n{14}\n    \\def\\d{13}\n    \\def\\nb{-2}\n    \\def\\db{5}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\blue{\\d}} + \\dfrac{\\nb}{\\red{\\db}} \n        &=~ \\dfrac{\\n \\times \\red{\\db}}{\\blue{\\d} \\times \\red{\\db}} + \\dfrac{\\nb \\times \\blue{\\d}}{\\red{\\db} \\times \\blue{\\d}}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 8 - Court\n\t\n\\def\\puissance{9}\n\\def\\nombrebase{7.894}\n\\def\\decalage{-3}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{9}\\def\\nombrebase{7.894}\\def\\decalage{-3}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 8 - solutions\n\t\n\\def\\puissance{9}\n\\def\\nombrebase{7.894}\n\\def\\decalage{-3}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\red{\\numa}$\\\\\n\t\nOn \\acc{vérifie} à la \\acc{calculatrice} que le nombre de départ et l'écriture scientifique trouvée ont la même \\acc{écriture décimale}.",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_12_2024": {
+        "classe": "4ème",
+        "date": "16_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\\def\\puissance{4}\n\\def\\nombrebase{6.382}\n\\def\\decalage{1}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{4}\\def\\nombrebase{6.382}\\def\\decalage{1}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 6 - solutions\n\t\n\\def\\puissance{4}\n\\def\\nombrebase{6.382}\n\\def\\decalage{1}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n    \\def\\n{7}\n    \\def\\d{15}\n    \\def\\nb{13}\n    \\def\\db{25}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}\n    \\def\\d{15}\n    \\def\\nb{13}\n    \\def\\db{25}\t\n     \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 7 - solutions\n\t\n        \\def\\n{7}\n    \\def\\d{15}\n    \\def\\nb{13}\n    \\def\\db{25}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n    \\def\\na{13.0}\n    \\def\\augmentation{-45}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{13.0}    \\def\\augmentation{-45}            \\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$",
+                "details": "%version 4 - solutions\n\t\n    \\def\\na{13.0}\n    \\def\\augmentation{-45}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Calculer une réduction ou une augmentation",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_12_2024": {
+        "classe": "4ème",
+        "date": "17_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{1.405}\n\\def\\decalage{4}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{6}\\def\\nombrebase{1.405}\\def\\decalage{4}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 10 - solutions\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{1.405}\n\\def\\decalage{4}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n    \\def\\na{94.6}\n    \\def\\augmentation{25}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et qui subit une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{94.6}    \\def\\augmentation{25}            \\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$",
+                "details": "%version 5 - solutions\n\t\n    \\def\\na{94.6}\n    \\def\\augmentation{25}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Calculer une réduction ou une augmentation",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\na{-9}\n\\def\\nb{-3}\n\\def\\nc{-4}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{2}\n\\def\\signe{+}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-9}\\def\\nb{-3}\\def\\nc{-4}\\def\\puisxa{1}\\def\\puisxb{0}\\def\\puisxc{2}\\def\\signe{+}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 9 - solutions\n\t\n\\def\\na{-9}\n\\def\\nb{-3}\n\\def\\nc{-4}\n\\def\\puisxa{1}\n\\def\\puisxb{0}\n\\def\\puisxc{2}\n\\def\\signe{+}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_19_12_2024": {
+        "classe": "4ème",
+        "date": "19_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{5}\n\\def\\nc{2}\n\\def\\puisxa{2}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{+}\n\n\n\t\n\n%court\n\\def\\indicator{\\signe 1}\n\\def\\termea{\\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}}}\n\\def\\termeb{\\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}\n\\def\\expression{\n    \\termea \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\termeb\n}\n\n\\acc{Factoriser} le plus possible l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{7}\\def\\nb{5}\\def\\nc{2}\\def\\puisxa{2}\\def\\puisxb{0}\\def\\puisxc{1}\\def\\signe{+}\\def\\indicator{\\signe 1}\n\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\t\n$\\resexpr$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{5}\n\\def\\nc{2}\n\\def\\puisxa{2}\n\\def\\puisxb{0}\n\\def\\puisxc{1}\n\\def\\signe{+}\n\n\n\t\n\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c} = {\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c})$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nEn effet, on peut décomposer l'expression ainsi : \\\\\n\\begin{align*}\n& \\expression \\\\\n= & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\colorexpression\n\\end{align*}",
+                "theme": "Calcul littéral",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{3}\\def\\nb{3}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 6 - Court\n\t\n    \\def\\na{74.1}\n    \\def\\augmentation{-17}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{74.1}    \\def\\augmentation{-17}            \\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$ \\euro{}",
+                "details": "%version 6 - solutions\n\t\n    \\def\\na{74.1}\n    \\def\\augmentation{-17}\n    \n    \n\t\n    \\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$ \\euro{}\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\\\\\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Calculer une réduction ou une augmentation",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_20_12_2024": {
+        "classe": "4ème",
+        "date": "20_12_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 3 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{7}\\def\\nb{7}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 3 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 5 - Court\n\t\n    \\def\\n{19}\n    \\def\\d{13}\n    \\def\\nb{7}\n    \\def\\db{12}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{19}    \\def\\d{13}    \\def\\nb{7}    \\def\\db{12}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 5 - solutions\n\t\n    \\def\\n{19}\n    \\def\\d{13}\n    \\def\\nb{7}\n    \\def\\db{12}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n\\def\\puissance{-7}\n\\def\\nombrebase{4.818}\n\\def\\decalage{-2}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{-7}\\def\\nombrebase{4.818}\\def\\decalage{-2}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 7 - solutions\n\t\n\\def\\puissance{-7}\n\\def\\nombrebase{4.818}\n\\def\\decalage{-2}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_01_2024": {
+        "classe": "4ème",
+        "date": "06_01_2024",
+        "questions": {
+            "question1": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 2 - Court\n\t\n\n\\def\\na{-8}\n\\def\\nb{3}\n\\def\\nc{3}\n\\def\\puisxa{1}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n\n%court\n\\def\\indicator{\\signe 1}\n\\def\\termea{\\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}}}\n\\def\\termeb{\\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}\n\\def\\expression{\n    \\termea \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\termeb\n}\n\n\\acc{Factoriser} le plus possible l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-8}\\def\\nb{3}\\def\\nc{3}\\def\\puisxa{1}\\def\\puisxb{2}\\def\\puisxc{0}\\def\\signe{+}\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\\def\\colorexpression{{\\color{red}-24x} ({\\color{blue}x^2} + {\\color{purple}1})}\t\n$\\colorexpression$",
+                "details": "%version 2 - solutions\n\t\n\n\\def\\na{-8}\n\\def\\nb{3}\n\\def\\nc{3}\n\\def\\puisxa{1}\n\\def\\puisxb{2}\n\\def\\puisxc{0}\n\\def\\signe{+}\n\n\n\t\n\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\n\\def\\colorexpression{{\\color{red}-24x} ({\\color{blue}x^2} + {\\color{purple}1})}\t\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c} = {\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c})$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}-24x}\\\\\n    b = {\\color{blue}x^2} \\\\\n    c = {\\color{purple}1}\n\\end{array} \\right.$\t\n\n\\columnbreak\n\nEn effet, on peut décomposer l'expression ainsi : \\\\\n\\begin{align*}\n& \\expression \\\\\n= & {\\color{red}-24x}\\times {\\color{blue}x^2} + {\\color{red}(-24x)}\\times {\\color{purple}1}\\\\\n    = & \\colorexpression\n\\end{align*}",
+                "theme": "Calcul littéral",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{1.405}\n\\def\\decalage{4}\n\n\n\t\n%court\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\nDonner la \\acc{notation scientifique} du nombre suivant :\n\\begin{center}\n    $\\numerreur$\n\\end{center}",
+                "reponse": "\\def\\puissance{6}\\def\\nombrebase{1.405}\\def\\decalage{4}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}$\\numa$",
+                "details": "%version 10 - solutions\n\t\n\\def\\puissance{6}\n\\def\\nombrebase{1.405}\n\\def\\decalage{4}\n\n\n\t\n%help\n\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\n\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\n\\def\\numerreur{\\num{\\fpeval{\\nombrebase*10^(\\decalage)}}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\n\\textbf{Rappel de la notation scientifique :} Un nombre est en notation scientifique s'il est écrit sous la forme : \n\\begin{center}\n    $a \\times 10^n$\n\\end{center}\noù $1 \\leq |a| < 10$ et $n$ est un entier relatif.\n\n\\columnbreak\n\nLe nombre $\\numerreur$ correspond au nombre $\\num{\\numerique}$ en écriture décimale.\\\\\nSon écriture scientifique est donc : $\\numa$",
+                "theme": "Notation scientifique (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_06_02_2025": {
+        "classe": "4ème",
+        "date": "06_02_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\na{-9}\n\\def\\nb{3}\n\\def\\nc{4}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{2}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{-9}\n\\def\\nb{3}\n\\def\\nc{4}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{2}\n\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 9 - solutions\n\\def\\na{-9}\n\\def\\nb{3}\n\\def\\nc{4}\n\\def\\puisxa{1}\n\\def\\puisxb{1}\n\\def\\puisxc{2}\n\\def\\signe{-}\n\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{3}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 7 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 7 - Court\n\t\n    \\def\\n{7}\n    \\def\\d{3}\n    \\def\\nb{8}\n    \\def\\db{11}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}\n    \\def\\d{3}\n    \\def\\nb{8}\n    \\def\\db{11}       \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 7 - solutions\n\\def\\n{7}\n    \\def\\d{3}\n    \\def\\nb{8}\n    \\def\\db{11}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_09_01_2025": {
+        "classe": "4ème",
+        "date": "09_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 29 - Court\n\t\n    \\def\\n{5}\n    \\def\\d{20}\n    \\def\\nb{11}\n    \\def\\db{8}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{5}    \\def\\d{20}    \\def\\nb{11}    \\def\\db{8}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 29 - solutions\n\t\n    \\def\\n{5}\n    \\def\\d{20}\n    \\def\\nb{11}\n    \\def\\db{8}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "\\'Ecrire le quotient suivant sous la forme d'une puissance d'un nombre $a^p$ :\t\n\t\n\\begin{center}\t\n$\\dfrac{5^3}{5^7} = ?$\n\\end{center}",
+                "reponse": "$5^{-4}\t$",
+                "details": "On revient à la définition des puissances : \t\n\t\n$\\dfrac{5^3}{5^7} = \\dfrac{5\\times 5 \\times 5}{5\\times 5 \\times 5 \\times 5\\times 5 \\times 5 \\times5}$\t\n\t\nEn simplifiant les facteurs : \t\n\t\n$\\dfrac{5^3}{5^7} = \\dfrac{1}{5\\times 5 \\times 5 \\times 5}\\\\ = \\dfrac{1}{5^4}\\\\ =5^{-4}$\t\n\t\n\t\n\\columnbreak\t\n\t\nOn peut aussi utiliser la formule : \t\n\t\n$\\dfrac{a^n}{a^m} = a^{n-m}\t$ avec $a=5$, $n=3$ et $m=7$.\t\n\t\n$\\dfrac{5^3}{5^7} = 5^{3 - 7} = 5^{-4}$",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\na{5}\n\\def\\nb{-6}\n\\def\\nc{7}\n\\def\\puisxa{0}\n\\def\\puisxb{1}\n\\def\\puisxc{2}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{5}\\def\\nb{-6}\\def\\nc{7}\\def\\puisxa{0}\\def\\puisxb{1}\\def\\puisxc{2}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 10 - solutions\n\t\n\\def\\na{5}\n\\def\\nb{-6}\n\\def\\nc{7}\n\\def\\puisxa{0}\n\\def\\puisxb{1}\n\\def\\puisxc{2}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_13_01_2025": {
+        "classe": "4ème",
+        "date": "13_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 8 - Court\n\t\n    \\def\\n{11}\n    \\def\\d{10}\n    \\def\\nb{8}\n    \\def\\db{2}\n    \n\t\n    %court\n   \\hfill%\n\\begin{minipage}[t]{0.75\\linewidth}\n\t Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \t\n\n\\end{minipage}%\n\\hfill%\n\\begin{minipage}[t]{0.22\\linewidth}\n\t\n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$\n\n\\end{minipage}\\hfill",
+                "reponse": "\\def\\n{11}    \\def\\d{10}    \\def\\nb{8}    \\def\\db{2}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 8 - solutions\n\t\n    \\def\\n{11}\n    \\def\\d{10}\n    \\def\\nb{8}\n    \\def\\db{2}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 6 - Court\n\t\n\n\\def\\na{21.1}\n    \\def\\augmentation{-45}\n\n\n\t\n\n\\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{21.1}    \\def\\augmentation{-45}\\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$ \\euro{}",
+                "details": "%version 6 - solutions\n\t\n\n\\def\\na{21.1}\n    \\def\\augmentation{-45}\n\n\n\t\n\n\\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$ \\euro{}\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec\n\n $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\n\n\\columnbreak\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Pourcentages",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 9 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{5}\\def\\nb{11}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 9 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_16_01_2025": {
+        "classe": "4ème",
+        "date": "16_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 11 - Court\n\t\n    \\def\\n{4}\n    \\def\\d{17}\n    \\def\\nb{10}\n    \\def\\db{20}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{4}    \\def\\d{17}    \\def\\nb{10}    \\def\\db{20}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 11 - solutions\n\t\n    \\def\\n{4}\n    \\def\\d{17}\n    \\def\\nb{10}\n    \\def\\db{20}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "Dans un \\textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\\affiche{3.2}$ et $\\affiche{4.7}$ cm, \\textbf{calculez} l'\\textbf{hypoténuse} en donnant l'arrondi au \\acc{centième} près.",
+                "reponse": "$c \\approx \\affiche{\\fpeval{round(sqrt(3.2^2+4.7^2),2)}}$ cm.",
+                "details": "Dans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que $c^2 = a^2 + b^2$, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}.\n\nAinsi :\n\n\\[\nc = \\sqrt{3{,}2^2 + 4{,}7^2}\n\\]\n\n\\textbf{Calculons} les carrés des côtés :\n\n\\[\n3{,}2^2 = \\affiche{\\fpeval{3.2^2}}\n\\]\n\n\\[\n4{,}7^2 = \\affiche{\\fpeval{4.7^2}}\n\\]\n\n\\textbf{Les additionner} :\n\n\\[\n3{,}2^2 + 4{,}7^2 = \\affiche{\\fpeval{3.2^2+4.7^2}}\n\\]\n\n\\textbf{En passant à la racine carrée}, on obtient l'\\textbf{hypoténuse} $c$ :\n\n\\[\nc = \\sqrt{\\affiche{\\fpeval{3.2^2+4.7^2}}} = \\affiche{\\fpeval{sqrt(3.2^2+4.7^2)}}\n\\] \n\nAinsi, l'\\textbf{hypoténuse} $c \\approx \\affiche{\\fpeval{round(sqrt(3.2^2+4.7^2),2)}}$ cm.",
+                "theme": "Pythagore",
+                "prompt": "Une question qui demande de calculer l'hypoténuse manquante dans un triangle rectangle."
+            },
+            "question3": {
+                "enonce": "%version 11 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.",
+                "reponse": "\\def\\na{7}\\def\\nb{3}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+                "details": "%version 11 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}",
+                "theme": "Arithmétique",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_01_2025": {
+        "classe": "4ème",
+        "date": "17_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\cota{16.62}\n\\def\\cotb{29.87}\n\n\t\n\\acc{Calculez l'hypoténuse} dans un \\textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\\affiche{\\cota}$ et $\\affiche{\\cotb}$ cm, en donnant l'arrondi au \\acc{centième} près.",
+                "reponse": "\\def\\cota{16.62}\\def\\cotb{29.87}$c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$",
+                "details": "%version 2 - solutions\n\t\n\\def\\cota{16.62}\n\\def\\cotb{29.87}\n\n\t\nDans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que\t $$c^2 = a^2 + b^2 $$ \t, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}. \t\t\t\t\n\t\nAinsi : $c = \\sqrt{\\affiche{\\cota}^2 + \\affiche{\\cotb}^2}$\t\t\t\t\n\t\n\\textbf{Calculons} les carrés des côtés :\t\t\\\\\t\t\n\t\n$ \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\cota^2}} $ \\hfill $ \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cotb^2}}$\t\t\t\t\n\t\n\\textbf{Additionnons-les} :\t\t\t\n$$ \\affiche{\\cota}^2 + \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cota^2 + \\cotb^2}} $$\n\t\n\\textbf{En passant à la racine carrée}, on obtient l'\\textbf{hypoténuse} $c$ : \t\t\t\t\n\t\n$$c = \\sqrt{\\affiche{\\fpeval{\\cota^2 + \\cotb^2}}} = \\affiche{\\fpeval{sqrt(\\cota^2 + \\cotb^2)}}...$$\t\t\t\n\t\nAinsi, $c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$.",
+                "theme": "Pythagore",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n    \\def\\n{2}\n    \\def\\d{15}\n    \\def\\nb{17}\n    \\def\\db{25}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{2}    \\def\\d{15}    \\def\\nb{17}    \\def\\db{25}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 9 - solutions\n\t\n    \\def\\n{2}\n    \\def\\d{15}\n    \\def\\nb{17}\n    \\def\\db{25}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\n\\def\\na{10}\n    \\def\\addna{9}\n    \\def\\quantite{418}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{10}    \\def\\addna{9}    \\def\\quantite{418}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 10 - solutions\n\t\n\n\\def\\na{10}\n    \\def\\addna{9}\n    \\def\\quantite{418}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_17_01_2025_1": {
+        "classe": "4ème",
+        "date": "17_01_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 2 - Court\n\t\n\\def\\cota{16.62}\n\\def\\cotb{29.87}\n\n\t\n\\acc{Calculez l'hypoténuse} dans un \\textbf{triangle rectangle} dont les côtés de l'angle droit mesurent $\\affiche{\\cota}$ et $\\affiche{\\cotb}$ cm, en donnant l'arrondi au \\acc{centième} près.",
+                "reponse": "\\def\\cota{16.62}\\def\\cotb{29.87}$c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$",
+                "details": "%version 2 - solutions\n\t\n\\def\\cota{16.62}\n\\def\\cotb{29.87}\n\n\t\nDans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que\t $$c^2 = a^2 + b^2 $$ \t, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}. \t\t\t\t\n\t\nAinsi : $c = \\sqrt{\\affiche{\\cota}^2 + \\affiche{\\cotb}^2}$\t\t\t\t\n\t\n\\textbf{Calculons} les carrés des côtés :\t\t\\\\\t\t\n\t\n$ \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\cota^2}} $ \\hfill $ \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cotb^2}}$\t\t\t\t\n\t\n\\textbf{Additionnons-les} :\t\t\t\n$$ \\affiche{\\cota}^2 + \\affiche{\\cotb}^2 = \\affiche{\\fpeval{\\cota^2 + \\cotb^2}} $$\n\t\n\\textbf{En passant à la racine carrée}, on obtient l'\\textbf{hypoténuse} $c$ : \t\t\t\t\n\t\n$$c = \\sqrt{\\affiche{\\fpeval{\\cota^2 + \\cotb^2}}} = \\affiche{\\fpeval{sqrt(\\cota^2 + \\cotb^2)}}...$$\t\t\t\n\t\nAinsi, $c \\approx \\affiche{\\fpeval{round(sqrt(\\cota^2 + \\cotb^2),2)}}\\ \\mathrm{cm}$.",
+                "theme": "Pythagore",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n    \\def\\n{2}\n    \\def\\d{15}\n    \\def\\nb{17}\n    \\def\\db{25}\n    \n\t\n    %court\n    Effectuer le calcul suivant en donnant le résultat sous forme simplifiée : \n    $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{2}    \\def\\d{15}    \\def\\nb{17}    \\def\\db{25}        \\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 9 - solutions\n\t\n    \\def\\n{2}\n    \\def\\d{15}\n    \\def\\nb{17}\n    \\def\\db{25}\n    \n\t\n    %help\n\n    % Définitions des macros\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}\n    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}\n\n    \\begin{align*}\n        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db} \n        &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\\n        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\\n        &=~ \\dfrac{\\decnum}{\\decden}\\\\\n        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\n    \\end{align*}",
+                "theme": "Multiplier des fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\n\\def\\na{10}\n    \\def\\addna{9}\n    \\def\\quantite{418}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\n    \\intro\\ Un \\marchand\\ \\vend\\ \\tousSes\\ \\oeufs.\n\n\\acc{Calculer}\\ \\labelvente.  ( valeur approchée à l'unité )",
+                "reponse": "\\def\\na{10}    \\def\\addna{9}    \\def\\quantite{418}\\def\\marchand{boulanger}\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\\xdef\\da{\\fpeval{\\na+\\addna}}$ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite",
+                "details": "%version 10 - solutions\n\t\n\n\\def\\na{10}\n    \\def\\addna{9}\n    \\def\\quantite{418}\n\\def\\marchand{boulanger}\n\n\n\t\n\n\\def\\proportion{\\dfrac{\\na}{\\fpeval{\\na + \\addna}}}\n\\xdef\\da{\\fpeval{\\na+\\addna}}\n\n\\marchandcmd{\\marchand}\nPour calculer la \\acc{proportion} d'une \\acc{quantité}, on utilise la formule suivante : \n\n$\\ \\text{\\blue{Proportion} d'une \\red{Quantité}} \\\\\n=\\text{\\blue{Proportion}} \\times \\text{\\red{Quantité}} $\n\nOn a : \\begin{itemize}[label=$\\bullet$]\n\t\\item Proportion $ = \\blue{\\proportion}$\n\t\\item Quantité $ = \\red{\\quantite}$\n\\end{itemize}\n\n\\columnbreak\n\nAppliquons cette méthode : \n\n\\begin{align*}\n\t \\blue{\\proportion} \\times \\red{\\quantite} & =  \\blue{\\na} \\times \\red{\\quantite} \\div \\blue{\\da}\\\\\n& \\approx \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}\n\\end{align*}\n\n\\labelvente\\ est $ \\num{\\fpeval{round(\\na * \\quantite / \\da,0)}}$ \\munite\\ ( arrondi à l'unité ).",
+                "theme": "Fractions",
+                "prompt": ""
+            }
+        }
+    }
+}

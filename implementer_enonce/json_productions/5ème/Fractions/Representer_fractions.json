@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\\def\\numa{2.27}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.27}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 1 - solutions\n\t\n\\def\\numa{2.27}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\\def\\numa{2.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.65}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 2 - solutions\n\t\n\\def\\numa{2.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\\def\\numa{2.93}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.93}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 3 - solutions\n\t\n\\def\\numa{2.93}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\\def\\numa{2.7}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.7}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 4 - solutions\n\t\n\\def\\numa{2.7}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\\def\\numa{2.98}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.98}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 5 - solutions\n\t\n\\def\\numa{2.98}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\\def\\numa{0.72}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.72}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 6 - solutions\n\t\n\\def\\numa{0.72}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\\def\\numa{1.23}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.23}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 7 - solutions\n\t\n\\def\\numa{1.23}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\\def\\numa{2.13}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.13}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 8 - solutions\n\t\n\\def\\numa{2.13}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\\def\\numa{1.83}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.83}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 9 - solutions\n\t\n\\def\\numa{1.83}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\\def\\numa{2.13}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.13}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 10 - solutions\n\t\n\\def\\numa{2.13}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\\def\\numa{1.18}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.18}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 11 - solutions\n\t\n\\def\\numa{1.18}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\\def\\numa{0.75}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.75}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 12 - solutions\n\t\n\\def\\numa{0.75}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\\def\\numa{1.71}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.71}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 13 - solutions\n\t\n\\def\\numa{1.71}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\\def\\numa{1.09}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.09}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 14 - solutions\n\t\n\\def\\numa{1.09}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\\def\\numa{0.55}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.55}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 15 - solutions\n\t\n\\def\\numa{0.55}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\\def\\numa{0.71}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.71}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 16 - solutions\n\t\n\\def\\numa{0.71}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\\def\\numa{1.26}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.26}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 17 - solutions\n\t\n\\def\\numa{1.26}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\\def\\numa{0.4}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.4}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 18 - solutions\n\t\n\\def\\numa{0.4}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\\def\\numa{1.03}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.03}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 19 - solutions\n\t\n\\def\\numa{1.03}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\\def\\numa{0.15}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.15}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 20 - solutions\n\t\n\\def\\numa{0.15}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\\def\\numa{1.33}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.33}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 21 - solutions\n\t\n\\def\\numa{1.33}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\\def\\numa{1.84}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.84}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 22 - solutions\n\t\n\\def\\numa{1.84}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\\def\\numa{2.17}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.17}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 23 - solutions\n\t\n\\def\\numa{2.17}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\\def\\numa{1.19}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.19}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 24 - solutions\n\t\n\\def\\numa{1.19}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\\def\\numa{0.42}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{0.42}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 25 - solutions\n\t\n\\def\\numa{0.42}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\\def\\numa{2.97}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.97}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 26 - solutions\n\t\n\\def\\numa{2.97}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\\def\\numa{1.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.65}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 27 - solutions\n\t\n\\def\\numa{1.65}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\\def\\numa{1.62}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{1.62}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 28 - solutions\n\t\n\\def\\numa{1.62}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\\def\\numa{2.11}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.11}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 29 - solutions\n\t\n\\def\\numa{2.11}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\\def\\numa{2.76}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t\n\\acc{Déterminer les différentes écritures du nombre suivant.}  \t\n\n$\\dfrac{\\repsim{}}{100} = \\dfrac{\\repsim{}}{\\repsim{}} = \\affiche{\\numa} = \\repsim{}\\%$ \n\n\n",
+        "reponse": "\\def\\numa{2.76}\\def\\pourcentage{\\fpeval{\\numa*100}}\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$",
+        "details": "%version 30 - solutions\n\t\n\\def\\numa{2.76}\n\n\t\n\\def\\pourcentage{\\fpeval{\\numa*100}}\n\\def\\fractionSimple{\\Simplification{\\pourcentage}{100}}\t$\\dfrac{\\affiche{\\pourcentage}}{100} = \\fractionSimple = \\affiche{\\numa} = \\affiche{\\pourcentage}\\%$ \n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

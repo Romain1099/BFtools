@@ -1,0 +1,22 @@
+
+30
+%%
+\def\na{0<=x<24 int}
+\def\nb{0<=x<=59 int}
+\def\nc{0<=x<=59 int}
+%%
+\vspace{-0.35cm}\begin{minipage}{0.5\linewidth} \Horloge[Secondes=false]{\na:\nb} \end{minipage}\hfill\begin{minipage}{0.42\linewidth}Quelle heure affiche l'horloge ?\end{minipage}
+
+
+%%
+  Il est $\intcalcMod{\na}{24}~\text{h}~\nb\text{min}$\\	ou bien :  $\intcalcMod{\fpeval{\na + 12}}{24}~\text{h}~\nb\text{min}$
+
+
+%%
+ \def\nresa{\fpeval{\n + \nb}}    \def\nresb{\fpeval{\n * \db + \nb * \d}}    \def\nresc{\fpeval{\n + \nb * \d / \db}}    \def\nresd{\fpeval{\n * \db + \nb * \d}}    \def\dresa{\fpeval{\d + \db}}    \def\dresb{\fpeval{\d * \db}}    \def\dresc{\fpeval{\d}}    \def\dresd{\fpeval{\d + \db}}    \textbf{Cocher} la ou les réponses correctes : \\    $\dfrac{\n}{\d} + \dfrac{\nb}{\db} = ... $\\    \begin{center}         \listnode{\cb}{$\dfrac{\nresa}{\dresa}$}         \listnode{\ccb}{$\dfrac{\nresb}{\dresb}$}         \listnode{\ccb}{$\Simplification{\nresb}{\dresb}$}         \listnode{\cb}{$\Simplification{\nresd}{\dresd}$}     \end{center}
+
+
+%%
+$\intcalcMod{\na}{24}~\text{h}~\nb\text{min}$ ou $\intcalcMod{\fpeval{\na + 12}}{24}~\text{h}~\nb\text{min}$
+%%
+Durées

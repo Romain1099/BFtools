@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\ma{59.004}\t\n\n\n\n\n\n\n\n\\def\\mb{39}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{59.004}\t\\def\\mb{39}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\ma{59.004}\t\n\n\n\n\n\n\n\n\\def\\mb{39}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\ma{83.0}\t\n\n\n\n\n\n\n\n\\def\\mb{62}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{83.0}\t\\def\\mb{62}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\ma{83.0}\t\n\n\n\n\n\n\n\n\\def\\mb{62}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\ma{60.0}\t\n\n\n\n\n\n\n\n\\def\\mb{97}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{60.0}\t\\def\\mb{97}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\ma{60.0}\t\n\n\n\n\n\n\n\n\\def\\mb{97}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\ma{67.621}\t\n\n\n\n\n\n\n\n\\def\\mb{63.694547721116045}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{67.621}\t\\def\\mb{63.694547721116045}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\ma{67.621}\t\n\n\n\n\n\n\n\n\\def\\mb{63.694547721116045}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\ma{44.0}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{44.0}\t\\def\\mb{48}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\ma{44.0}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\ma{70.0}\t\n\n\n\n\n\n\n\n\\def\\mb{63}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{70.0}\t\\def\\mb{63}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\ma{70.0}\t\n\n\n\n\n\n\n\n\\def\\mb{63}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\ma{38.0}\t\n\n\n\n\n\n\n\n\\def\\mb{54}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{38.0}\t\\def\\mb{54}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\ma{38.0}\t\n\n\n\n\n\n\n\n\\def\\mb{54}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\ma{70.0}\t\n\n\n\n\n\n\n\n\\def\\mb{80}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{70.0}\t\\def\\mb{80}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\ma{70.0}\t\n\n\n\n\n\n\n\n\\def\\mb{80}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\ma{80.0}\t\n\n\n\n\n\n\n\n\\def\\mb{88}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{80.0}\t\\def\\mb{88}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\ma{80.0}\t\n\n\n\n\n\n\n\n\\def\\mb{88}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\ma{50.0}\t\n\n\n\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{50.0}\t\\def\\mb{10}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\ma{50.0}\t\n\n\n\n\n\n\n\n\\def\\mb{10}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\ma{81.0}\t\n\n\n\n\n\n\n\n\\def\\mb{96}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{81.0}\t\\def\\mb{96}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\ma{81.0}\t\n\n\n\n\n\n\n\n\\def\\mb{96}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\ma{68.0}\t\n\n\n\n\n\n\n\n\\def\\mb{71}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{68.0}\t\\def\\mb{71}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\ma{68.0}\t\n\n\n\n\n\n\n\n\\def\\mb{71}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\ma{19.0}\t\n\n\n\n\n\n\n\n\\def\\mb{32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{19.0}\t\\def\\mb{32}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\ma{19.0}\t\n\n\n\n\n\n\n\n\\def\\mb{32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\ma{69.0}\t\n\n\n\n\n\n\n\n\\def\\mb{27}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{69.0}\t\\def\\mb{27}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\ma{69.0}\t\n\n\n\n\n\n\n\n\\def\\mb{27}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\ma{93.0}\t\n\n\n\n\n\n\n\n\\def\\mb{58.80497766873019}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{93.0}\t\\def\\mb{58.80497766873019}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\ma{93.0}\t\n\n\n\n\n\n\n\n\\def\\mb{58.80497766873019}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\ma{73.0}\t\n\n\n\n\n\n\n\n\\def\\mb{90}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{73.0}\t\\def\\mb{90}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\ma{73.0}\t\n\n\n\n\n\n\n\n\\def\\mb{90}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\ma{21.0}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{21.0}\t\\def\\mb{48}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\ma{21.0}\t\n\n\n\n\n\n\n\n\\def\\mb{48}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\ma{32.0}\t\n\n\n\n\n\n\n\n\\def\\mb{84}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{32.0}\t\\def\\mb{84}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\ma{32.0}\t\n\n\n\n\n\n\n\n\\def\\mb{84}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\ma{72.0}\t\n\n\n\n\n\n\n\n\\def\\mb{61}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{72.0}\t\\def\\mb{61}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\ma{72.0}\t\n\n\n\n\n\n\n\n\\def\\mb{61}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\ma{45.0}\t\n\n\n\n\n\n\n\n\\def\\mb{11}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{45.0}\t\\def\\mb{11}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\ma{45.0}\t\n\n\n\n\n\n\n\n\\def\\mb{11}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\ma{66.0}\t\n\n\n\n\n\n\n\n\\def\\mb{61}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{66.0}\t\\def\\mb{61}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\ma{66.0}\t\n\n\n\n\n\n\n\n\\def\\mb{61}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\ma{52.0}\t\n\n\n\n\n\n\n\n\\def\\mb{39}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{52.0}\t\\def\\mb{39}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\ma{52.0}\t\n\n\n\n\n\n\n\n\\def\\mb{39}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\ma{79.0}\t\n\n\n\n\n\n\n\n\\def\\mb{79}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{79.0}\t\\def\\mb{79}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\ma{79.0}\t\n\n\n\n\n\n\n\n\\def\\mb{79}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\ma{54.0}\t\n\n\n\n\n\n\n\n\\def\\mb{37}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{54.0}\t\\def\\mb{37}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\ma{54.0}\t\n\n\n\n\n\n\n\n\\def\\mb{37}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\ma{11.0}\t\n\n\n\n\n\n\n\n\\def\\mb{17}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{11.0}\t\\def\\mb{17}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\ma{11.0}\t\n\n\n\n\n\n\n\n\\def\\mb{17}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\ma{82.0}\t\n\n\n\n\n\n\n\n\\def\\mb{32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{82.0}\t\\def\\mb{32}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\ma{82.0}\t\n\n\n\n\n\n\n\n\\def\\mb{32}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\ma{19.0}\t\n\n\n\n\n\n\n\n\\def\\mb{51}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{19.0}\t\\def\\mb{51}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\ma{19.0}\t\n\n\n\n\n\n\n\n\\def\\mb{51}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\ma{71.0}\t\n\n\n\n\n\n\n\n\\def\\mb{43}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{71.0}\t\\def\\mb{43}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\ma{71.0}\t\n\n\n\n\n\n\n\n\\def\\mb{43}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\ma{63.0}\t\n\n\n\n\n\n\n\n\\def\\mb{95.98813034002882}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{63.0}\t\\def\\mb{95.98813034002882}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\ma{63.0}\t\n\n\n\n\n\n\n\n\\def\\mb{95.98813034002882}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\ma{49.89}\t\n\n\n\n\n\n\n\n\\def\\mb{24}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\nPoser et calculer : \t\n\\begin{center}$\\num{\\ma} - \\num{\\mb}$\\end{center}\n\n",
+        "reponse": "\\def\\ma{49.89}\t\\def\\mb{24}\t\\opsub[style=text]{\\ma}{\\mb}",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\ma{49.89}\t\n\n\n\n\n\n\n\n\\def\\mb{24}\t\n\n\n\n\n\n\n\n\n\n\n\n\n\t\n\n\\opsub{\\ma}{\\mb}\n\n",
+        "theme": "\n\nDifférences\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

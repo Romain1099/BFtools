@@ -1,0 +1,33 @@
+
+30
+%%
+\def\mina{INT 22<=x<60}
+\def\heurea{17<=x<=21 INT}
+\def\ajoutmin{31<=x<60 INT}
+\def\ajoutheure{1<=x<=3}
+%%
+
+Une série qui a commencé à $\heurea~\text{h}~\mina~\text{min}$ doit durer $\ajoutheure~\text{h}~\ajoutmin~\text{min}$.	
+	
+\acc{Déterminer} en \acc{justifiant par un calcul} à quelle heure la série se termine.
+
+%%
+Calculons 	
+$\heurea~\text{h}~\mina~\text{min} + \ajoutheure~\text{h}~\ajoutmin~\text{min} \\	
+= \fpeval{\heurea+\ajoutheure}~\text{h} + \fpeval{\mina + \ajoutmin}~\text{min} \\		
+= \fpeval{\heurea+\ajoutheure + floor((\mina+\ajoutmin)/60)}~\text{h}+ \fpeval{(\mina+\ajoutmin)-60*floor((\mina+\ajoutmin)/60)}~\text{min}$		
+	
+\columnbreak
+	
+La série se terminera à $\fpeval{\heurea+\ajoutheure + floor((\mina+\ajoutmin)/60)}~\text{h}~ \fpeval{(\mina+\ajoutmin)-60*floor((\mina+\ajoutmin)/60)}~\text{min}$	.
+
+%%
+
+
+%%
+$\fpeval{\heurea+\ajoutheure + floor((\mina+\ajoutmin)/60)}~\text{h}~ \fpeval{(\mina+\ajoutmin)-60*floor((\mina+\ajoutmin)/60)}~\text{min}$
+%%
+Durées
+%%
+
+

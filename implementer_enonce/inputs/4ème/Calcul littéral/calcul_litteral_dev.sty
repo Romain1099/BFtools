@@ -1,0 +1,81 @@
+
+30
+
+%%
+
+\def\na{-9<=x<9 x!=0 x!=1 int}
+\def\nb{-9<=x<9 x!=0 x!=1 int}
+\def\nc{-9<=x<9 x!=0 x!=1 int}
+\def\puisxa[0,1,2]
+\def\puisxb[0,1,2]
+\def\puisxc[0,1,2]
+\def\signe[+,-]
+
+%%
+
+%court
+\def\expression{\expa{\na}{\puisxa} (\expa{\nb}{\puisxb} \signe \expa{\nc}{\puisxc})}
+Développer l'expression suivante :
+\begin{center}
+    $\expression$
+\end{center}
+
+%%
+
+%help
+\def\indicator{\signe 1}
+\def\resexpr{
+    \expa{\fpeval{\para{\na}*\para{\nb}}}{\fpeval{\puisxa + \puisxb}} \finalsigne{(\indicator)*\fpeval{\para{\na}*\para{\nc}}} \expa{\fpeval{abs(\para{\na}*\para{\nc})}}{\fpeval{\puisxa + \puisxc}}
+}
+\def\colorexpression{{\color{red}\expa{\na}{\puisxa}} ({\color{blue}\expa{\nb}{\puisxb}} \signe {\color{purple}\expa{\nc}{\puisxc}})}
+
+On utilise la formule de \acc{distributivité} :
+\begin{center}
+    ${\color{red}a} \times ({\color{blue}b} \signe {\color{purple}c}) = {\color{red}a}\times {\color{blue}b} \signe {\color{red}a}\times {\color{purple}c}$
+\end{center}
+avec : $\left\{ \begin{array}{l}
+    a = {\color{red}\expa{\na}{\puisxa}} \\
+    b = {\color{blue}\expa{\nb}{\puisxb}} \\
+    c = {\color{purple}\expa{\nc}{\puisxc}}
+\end{array} \right.$
+
+\columnbreak
+
+Ainsi, l'expression \acc{développée} est : \\
+\begin{align*}
+    &\colorexpression\\
+    = & {\color{red}\expa{\na}{\puisxa}}\times {\color{blue}\expa{\nb}{\puisxb}} \signe {\color{red}\expa{\na}{\puisxa}}\times {\color{purple}\expa{\nc}{\puisxc}}\\
+    = & \resexpr
+\end{align*}
+
+%%
+
+%qcm
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance - \decalage}}}
+\def\erreura{\num{\nombrebase} \times 10^{\fpeval{\puissance-1}}}
+\def\erreurb{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance + \decalage}}}
+\def\erreurc{\num{\fpeval{\nombrebase*10^(\decalage)}}\times 10^{\fpeval{\puissance}}}
+\textbf{Cocher} la réponse correcte pour déterminer si $\numerreur$ est en notation scientifique :\\
+\begin{center} 
+    \listnode{\cb}{$\erreurb$} 
+    \listnode{\ccb}{$\numa$} 
+    \listnode{\cb}{$\numerreur$} 
+    \listnode{\cb}{$\erreurc$} 
+\end{center}
+
+%%
+
+\def\numa{\num{\nombrebase} \times 10^{\puissance}}
+\def\numerique{\fpeval{\nombrebase*10^(\puissance)}}
+\def\numerreur{\fpeval{\nombrebase*10^(\decalage)}\times 10^{\fpeval{\puissance - \decalage}}}
+\def\indicator{\signe 1}
+\def\resexpr{
+    \expa{\fpeval{\para{\na}*\para{\nb}}}{\fpeval{\puisxa + \puisxb}} \finalsigne{(\indicator)*\fpeval{\para{\na}*\para{\nc}}} \expa{\fpeval{abs(\para{\na}*\para{\nc})}}{\fpeval{\puisxa + \puisxc}}
+}
+$\resexpr$
+
+%%
+
+calcul_litteral

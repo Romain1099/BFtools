@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\multa{80}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{20}\\def\\multa{80}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 1 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{20}\n\\def\\multa{80}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{20}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{70}\\def\\multa{20}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 2 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{20}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\n\n\\def\\numa{70}\n\\def\\numb{40}\n\\def\\multa{60}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{70}\\def\\numb{40}\\def\\multa{60}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 3 - solutions\n\t\n\n\n\n\\def\\numa{70}\n\\def\\numb{40}\n\\def\\multa{60}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{80}\n\\def\\multa{10}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{80}\\def\\multa{10}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 4 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{80}\n\\def\\multa{10}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\n\n\\def\\numa{50}\n\\def\\numb{80}\n\\def\\multa{10}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{50}\\def\\numb{80}\\def\\multa{10}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 5 - solutions\n\t\n\n\n\n\\def\\numa{50}\n\\def\\numb{80}\n\\def\\multa{10}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{40}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{10}\\def\\multa{40}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 6 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{40}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\n\n\\def\\numa{80}\n\\def\\numb{40}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{80}\\def\\numb{40}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 7 - solutions\n\t\n\n\n\n\\def\\numa{80}\n\\def\\numb{40}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{70}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 8 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{10}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 9 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\n\n\\def\\numa{90}\n\\def\\numb{40}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{90}\\def\\numb{40}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 10 - solutions\n\t\n\n\n\n\\def\\numa{90}\n\\def\\numb{40}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{80}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{80}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 11 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{80}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{60}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{60}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 12 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{60}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{10}\\def\\multa{90}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 13 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{90}\n\\def\\multa{60}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{90}\\def\\multa{60}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 14 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{90}\n\\def\\multa{60}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{80}\n\\def\\multa{90}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{80}\\def\\multa{90}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 15 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{80}\n\\def\\multa{90}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{60}\\def\\numb{70}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 16 - solutions\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{10}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 17 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{70}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 18 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{70}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{40}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{10}\\def\\multa{40}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 19 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{10}\n\\def\\multa{40}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{50}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{50}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 20 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{50}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\n\n\\def\\numa{70}\n\\def\\numb{20}\n\\def\\multa{30}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{70}\\def\\numb{20}\\def\\multa{30}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 21 - solutions\n\t\n\n\n\n\\def\\numa{70}\n\\def\\numb{20}\n\\def\\multa{30}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\n\n\\def\\numa{50}\n\\def\\numb{40}\n\\def\\multa{10}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{50}\\def\\numb{40}\\def\\multa{10}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 22 - solutions\n\t\n\n\n\n\\def\\numa{50}\n\\def\\numb{40}\n\\def\\multa{10}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\n\n\\def\\numa{80}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{80}\\def\\numb{10}\\def\\multa{90}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 23 - solutions\n\t\n\n\n\n\\def\\numa{80}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{80}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{10}\\def\\multa{80}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 24 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{80}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{40}\n\\def\\multa{20}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{40}\\def\\multa{20}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 25 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{40}\n\\def\\multa{20}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{50}\n\\def\\multa{60}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{30}\\def\\numb{50}\\def\\multa{60}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 26 - solutions\n\t\n\n\n\n\\def\\numa{30}\n\\def\\numb{50}\n\\def\\multa{60}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{30}\n\\def\\multa{60}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{10}\\def\\numb{30}\\def\\multa{60}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 27 - solutions\n\t\n\n\n\n\\def\\numa{10}\n\\def\\numb{30}\n\\def\\multa{60}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{90}\n\\def\\multa{70}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{60}\\def\\numb{90}\\def\\multa{70}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 28 - solutions\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{90}\n\\def\\multa{70}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{20}\\def\\numb{10}\\def\\multa{90}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 29 - solutions\n\t\n\n\n\n\\def\\numa{20}\n\\def\\numb{10}\n\\def\\multa{90}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{40}\n\\def\\multa{20}\n\t\nSimplifier la fraction suivante au maximum.\t\t\n\n\\begin{center}$\\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}\t$\\end{center}\n\n",
+        "reponse": "\\def\\numa{60}\\def\\numb{40}\\def\\multa{20}$\\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}}$",
+        "details": "%version 30 - solutions\n\t\n\n\n\n\\def\\numa{60}\n\\def\\numb{40}\n\\def\\multa{20}\n\t\n$ \\dfrac{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} = \\Simplification{\\fpeval{\\numa * \\multa}}{\\fpeval{\\numb * \\multa}} $\n\n",
+        "theme": "\nFractions\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

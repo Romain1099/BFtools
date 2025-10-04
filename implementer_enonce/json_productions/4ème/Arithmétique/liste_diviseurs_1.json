@@ -1,0 +1,212 @@
+[
+    {
+        "enonce": "%version 1 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{2}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{7}\\def\\nc{2}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 1 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{2}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 2 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{3}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 2 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 3 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{7}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 3 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 4 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{11}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 4 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 5 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{2}\n\\def\\nc{11}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{2}\\def\\nc{11}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 5 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{2}\n\\def\\nc{11}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 6 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 6 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 7 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{3}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 7 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 8 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{2}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{3}\\def\\nc{2}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 8 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{2}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 9 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{11}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 9 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 10 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{2}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{11}\\def\\nc{2}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 10 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{2}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 11 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{3}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 11 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 12 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{11}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 12 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 13 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 13 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 14 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 14 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 15 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{3}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 15 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{3}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 16 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 16 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 17 - Court\n\t\n\n\\def\\na{11}\n\\def\\nb{5}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{11}\\def\\nb{5}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 17 - solutions\n\t\n\n\\def\\na{11}\n\\def\\nb{5}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 18 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 18 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 19 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{3}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{3}\\def\\nc{3}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 19 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{3}\n\\def\\nc{3}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 20 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{5}\n\\def\\nc{11}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{5}\\def\\nc{11}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 20 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{5}\n\\def\\nc{11}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 21 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 21 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 22 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{2}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{2}\\def\\nc{2}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 22 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{2}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 23 - Court\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{7}\\def\\nb{7}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 23 - solutions\n\t\n\n\\def\\na{7}\n\\def\\nb{7}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 24 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{11}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{2}\\def\\nc{11}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 24 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{2}\n\\def\\nc{11}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 25 - Court\n\t\n\n\\def\\na{11}\n\\def\\nb{3}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{11}\\def\\nb{3}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 25 - solutions\n\t\n\n\\def\\na{11}\n\\def\\nb{3}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 26 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 26 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 27 - Court\n\t\n\n\\def\\na{11}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{11}\\def\\nb{3}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 27 - solutions\n\t\n\n\\def\\na{11}\n\\def\\nb{3}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 28 - Court\n\t\n\n\\def\\na{3}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{3}\\def\\nb{7}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 28 - solutions\n\t\n\n\\def\\na{3}\n\\def\\nb{7}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 29 - Court\n\t\n\n\\def\\na{2}\n\\def\\nb{3}\n\\def\\nc{5}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{2}\\def\\nb{3}\\def\\nc{5}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 29 - solutions\n\t\n\n\\def\\na{2}\n\\def\\nb{3}\n\\def\\nc{5}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    },
+    {
+        "enonce": "%version 30 - Court\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n%court\n\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *  \\nb * \\nc}}}\n\n\\acc{Déterminer} la liste des diviseurs de $\\mnombre$.\n\n",
+        "reponse": "\\def\\na{5}\\def\\nb{11}\\def\\nc{7}\\def\\nombre{ \\fpeval{\\na *  \\nb * \\nc}}\\Decomposition[Diviseurs]{\\nombre}",
+        "details": "%version 30 - solutions\n\t\n\n\\def\\na{5}\n\\def\\nb{11}\n\\def\\nc{7}\n\n\n\t\n\n\\def\\nombre{ \\fpeval{\\na *\\nb *\\nc}}\n\\def\\mnombre{ \\num{\\fpeval{\\na *\\nb *\\nc}}}\nOn détermine la liste des diviseurs de $\\nombre$ en calculant les \\acc{produits} de deux nombres qui sont égaux à $\\nombre$.\n\nOn a :\n\n\\begin{center}\\divisorstable{\\nombre}\\end{center}\n\n\\columnbreak\n\n\nLa liste des diviseurs de $\\mnombre$ est : \n\n\\Decomposition[Diviseurs]{\\nombre}\n\n",
+        "theme": "\n\nArithmétique\n",
+        "prompt": "Depuis la bibliothèque aléatoire"
+    }
+]

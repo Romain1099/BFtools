@@ -1,0 +1,110 @@
+{
+    "QF_03_10_2025": {
+        "classe": "2nde",
+        "date": "03_10_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 11 - Court\n\t\n\\def\\a{11}\n\\def\\b{2}\n\\def\\m{-6}\n\\def\\n{8}\n\\def\\mode{2}\n\n\t\n\n\\textbf{\\'Ecrire} sous la forme d'une \\acc{puissance d'un nombre} : \t\n\t\\begin{center}\n\\ifthenelse{\\mode=1}{$\\affiche{\\a}^{\\affiche{\\m}} \\times \\affiche{\\a}^{\\affiche{\\n}} = \\dots$}{\\ifthenelse{\\mode=2}{$\\dfrac{\\affiche{\\a}^{\\affiche{\\m}}}{\\affiche{\\a}^{\\affiche{\\n}}} = \\dots$}{\\ifthenelse{\\mode=3}{$(\\affiche{\\a}^{\\affiche{\\m}})^{\\affiche{\\n}} = \\dots$}{\\ifthenelse{\\mode=4}{$(\\affiche{\\a} \\times \\affiche{\\b})^{\\affiche{\\n}} = \\dots$}{$\\affiche{\\a}^{-\\affiche{\\n}} = \\dots$}}}}\t\n\\end{center}",
+                "reponse": "\\def\\a{11}\\def\\b{2}\\def\\m{-6}\\def\\n{8}\\def\\mode{2}\\ifthenelse{\\mode=1}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m + \\n}}}$}{\\ifthenelse{\\mode=2}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m - \\n}}}$}{\\ifthenelse{\\mode=3}{$\\affiche{\\a}^{\\affiche{\\fpeval{\\m * \\n}}}$}{\\ifthenelse{\\mode=4}{$\\affiche{\\a}^{\\affiche{\\n}} \\times \\affiche{\\b}^{\\affiche{\\n}}$}{$\\dfrac{1}{\\affiche{\\a}^{\\affiche{\\n}}}$}}}}",
+                "details": "%version 11 - solutions\n\t\n\\def\\a{11}\n\\def\\b{2}\n\\def\\m{-6}\n\\def\\n{8}\n\\def\\mode{2}\n\n\t\n\n\\ifthenelse{\\mode=1}{\n    \\textbf{Formule :} $a^m \\times a^n = a^{m+n}$ avec $a = \\affiche{\\a}$, $m = \\affiche{\\m}$ et $n = \\affiche{\\n}$\n    \n    $\\affiche{\\a}^{\\affiche{\\m}} \\times \\affiche{\\a}^{\\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\m} + \\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\fpeval{\\m + \\n}}}$\n}{\n\\ifthenelse{\\mode=2}{\n    \\textbf{Formule :} $\\dfrac{a^m}{a^n} = a^{m-n}$ avec $a = \\affiche{\\a}$, $m = \\affiche{\\m}$ et $n = \\affiche{\\n}$\n    \n    $\\dfrac{\\affiche{\\a}^{\\affiche{\\m}}}{\\affiche{\\a}^{\\affiche{\\n}}} = \\affiche{\\a}^{\\affiche{\\m} - \\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\fpeval{\\m - \\n}}}$\n}{\n\\ifthenelse{\\mode=3}{\n    \\textbf{Formule :} $(a^m)^n = a^{mn}$ avec $a = \\affiche{\\a}$, $m = \\affiche{\\m}$ et $n = \\affiche{\\n}$\n    \n    $(\\affiche{\\a}^{\\affiche{\\m}})^{\\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\m} \\times \\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\fpeval{\\m * \\n}}}$\n}{\n\\ifthenelse{\\mode=4}{\n    \\textbf{Formule :} $(ab)^n = a^n b^n$ avec $a = \\affiche{\\a}$, $b = \\affiche{\\b}$ et $n = \\affiche{\\n}$\n    \n    $(\\affiche{\\a} \\times \\affiche{\\b})^{\\affiche{\\n}} = \\affiche{\\a}^{\\affiche{\\n}} \\times \\affiche{\\b}^{\\affiche{\\n}}$\n}{\n    \\textbf{Formule :} $a^{-n} = \\dfrac{1}{a^n}$ avec $a = \\affiche{\\a}$ et $n = \\affiche{\\n}$\n    \n    $\\affiche{\\a}^{-\\affiche{\\n}} = \\dfrac{1}{\\affiche{\\a}^{\\affiche{\\n}}}$\n}}}}",
+                "theme": "Puissances",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 9 - Court\n\t\n\\def\\n{7}\n\\def\\d{13}\n\\def\\nb{11}\n\\def\\db{2}\n\n\t\nEffectuer le calcul suivant en donnant le résultat sous forme simplifiée :     $$\\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}$$",
+                "reponse": "\\def\\n{7}\\def\\d{13}\\def\\nb{11}\\def\\db{2}\\def\\nresa{\\fpeval{\\n + \\nb}}    \\def\\nresb{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\nresc{\\fpeval{\\n + \\nb * \\d / \\db}}    \\def\\nresd{\\fpeval{\\n * \\db + \\nb * \\d}}    \\def\\dresa{\\fpeval{\\d + \\db}}    \\def\\dresb{\\fpeval{\\d * \\db}}    \\def\\dresc{\\fpeval{\\d}}    \\def\\dresd{\\fpeval{\\d + \\db}}    $\\Simplification{\\nresb}{\\dresb}$",
+                "details": "%version 9 - solutions\n\t\n\\def\\n{7}\n\\def\\d{13}\n\\def\\nb{11}\n\\def\\db{2}\n\n\t\n    \\def\\decnum{\\Decomposition[Longue]{\\fpeval{\\n * \\db + \\nb * \\d}}}    \\def\\decden{\\Decomposition[Longue]{\\fpeval{\\d * \\db}}}    \\begin{align*}        \\dfrac{\\n}{\\d} + \\dfrac{\\nb}{\\db}         &=~ \\dfrac{\\n \\times \\db}{\\d \\times \\db} + \\dfrac{\\nb \\times \\d}{\\db \\times \\d}\\\\        &=~ \\dfrac{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}\\\\        &=~ \\dfrac{\\decnum}{\\decden}\\\\        &=~ \\Simplification{\\fpeval{\\n * \\db + \\nb * \\d}}{\\fpeval{\\d * \\db}}    \\end{align*}",
+                "theme": "Fractions",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 4 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.",
+                "reponse": "\\def\\numa{5}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{2}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+                "details": "%version 4 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{2}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]",
+                "theme": "Arithmétique",
+                "prompt": ""
+            }
+        }
+    },
+    "QF1_03_10_2025": {
+        "classe": "2nde",
+        "date": "03_10_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 5 - Court\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nDonner la \\acc{décomposition} en produit de facteurs premiers du nombre $\\num{\\nombre}$.",
+                "reponse": "\\def\\numa{5}\\def\\numb{7}\\def\\numc{2}\\def\\puisb{1}\\def\\puisc{3}\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\\Decomposition[Exposant]{\\nombre}",
+                "details": "%version 5 - solutions\n\t\n\\def\\numa{5}\n\\def\\numb{7}\n\\def\\numc{2}\n\\def\\puisb{1}\n\\def\\puisc{3}\n\n\t\n\\xdef\\nombre{\\fpeval{\\numa*\\numb^\\puisb*\\numc^\\puisc}}\nPar division succesives par des nombres premiers : \t\n\\Decomposition[Tableau]{\\nombre}\n\t\n\\columnbreak\t\n\t\nPar conséquent on écrit : \t\n\n\\[\\num{2450}=\\Decomposition[Exposant]{\\nombre}\\]",
+                "theme": "Arithmétique",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 7 - Court\n\t\n    \\def\\na{12}\n    \\def\\da{14}\n    \\def\\nb{3}\n    \\def\\db{21}\n\n    \n    \n\t\n    %court\n    \n    \\acc{Effectuer} le calcul suivant et donner le résultat sous \\acc{forme simplifiée}\\\\\n    \\begin{center}$\\dfrac{\\na}{\\da} \\div \\dfrac{\\nb}{\\db}$\\end{center}",
+                "reponse": "\\def\\na{12}\n    \\def\\da{14}\n    \\def\\nb{3}\n    \\def\\db{21}$\\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}$",
+                "details": "%version 7 - solutions\n\t\n  \\def\\na{12}\n    \\def\\da{14}\n    \\def\\nb{3}\n    \\def\\db{21}\n\n    \n    \n\t\n    %help\n\n    \\begin{align*}\n        \\dfrac{\\na}{\\da} \\div \\dfrac{\\nb}{\\db} = & \\dfrac{\\na}{\\da} \\times \\dfrac{\\db}{\\nb}\\\\\n        = & \\dfrac{\\na\\times \\db}{\\da\\times \\nb} \\\\\n        = & \\dfrac{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\\\\\n        = & \\Simplification{\\fpeval{\\na * \\db}}{\\fpeval{\\da * \\nb}}\n    \\end{align*}",
+                "theme": "Divisions de fractions (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 19 - Court\n\t\n\n\\def\\na{82.9}\n    \\def\\augmentation{22}\n\n\n\t\n\n\\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        {\n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100 ), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \\checkaugmentation\n    Déterminer le nouveau prix d'un article coutant $\\num{\\na}~$\\euro{} et dont le nouveau prix a une \\operation\\  de $\\fpeval{abs(\\augmentation)}~\\%$",
+                "reponse": "\\def\\na{82.9}    \\def\\augmentation{22}\\def\\checkaugmentation{        \\ifthenelse{\\augmentation > 0}        {            \\def\\operation{augmentation}            \\def\\operationtext{augmenté}            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}            \\def\\sign{+}        }        {            \\def\\operation{réduction}            \\def\\operationtext{diminué}            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}            \\def\\sign{-}        }    }    \\checkaugmentation    $\\num{\\rounded}$ \\euro{}",
+                "details": "%version 19 - solutions\n\t\n\n\\def\\na{82.9}\n    \\def\\augmentation{22}\n\n\n\t\n\n\\def\\checkaugmentation{\n        \\ifthenelse{\\augmentation > 0}\n        { \n            \\def\\operation{augmentation}\n            \\def\\operationtext{augmenté}\n            \\def\\calculation{\\fpeval{\\na * (1 + abs(\\augmentation) / 100)}}\n            \\def\\rounded{\\fpeval{round(\\na * (1 + abs(\\augmentation) / 100), 2)}}\n\n            \\def\\sign{+}\n        }\n        { \n            \\def\\operation{réduction}\n            \\def\\operationtext{diminué}\n            \\def\\calculation{\\fpeval{\\na * (1 - abs(\\augmentation) / 100)}}\n\n            \\def\\rounded{\\fpeval{round(\\na * (1 - abs(\\augmentation) / 100), 2)}}\n            \\def\\sign{-}\n        }\n    }\n    \n    \\def\\afficherresultat{\n        \\ifthenelse{\\equal{\\calculation}{\\rounded}}\n          {Nouveau Prix $= \\num{\\rounded}$\\\\ } % Si égaux\n          {Nouveau Prix $= \\num{\\calculation} \\approx \\num{\\rounded}$ \\euro{}\\\\\n          On donne l'arrondi au \\textbf{centième} près car il s'agit d'un prix en euros.} \n      }\n    \\checkaugmentation\n        On utilise la formule suivante : \\\\\n        \n        Nouveau Prix $= \\text{Ancien Prix} \\sign \\text{Ancien Prix} \\times \\left( \\dfrac{t}{100}\\right)  $ \\\\\n        \n        où $t$ est le taux d'augmentation ou de réduction. \n        \n        Ici il s'agit d'une \\operation, avec\n\n $\\text{Ancien Prix} = \\num{\\na}$ et $t = \\num{\\fpeval{abs(\\augmentation)}}$.\n\n\\columnbreak\n        \n        Nouveau Prix $= \\num{\\na} \\sign \\num{\\na} \\times \\dfrac{\\num{\\fpeval{abs(\\augmentation)}}}{100}$\\\\\n        \n        \\phantom{Nouveau Prix} $=\\num{\\na} \\sign \\num{\\fpeval{\\na * abs(\\augmentation) / 100}} $\\\\\n        \n        Ainsi  :\\\\\n        \\afficherresultat",
+                "theme": "Pourcentages",
+                "prompt": ""
+            }
+        }
+    },
+    "QF2_03_10_2025": {
+        "classe": "2nde",
+        "date": "03_10_2025",
+        "questions": {
+            "question1": {
+                "enonce": "%version 12 - Court\n\t\n\\def\\numa{49}\n\\def\\numb{14}\n\\def\\typeoperation{1}\n\n\t\n\\acc{Simplifier} l'écriture de la racine suivante :\n\\begin{center}\n$\\sqrt{\\fpeval{\\numa*\\numb}}$\n\\end{center}",
+                "reponse": "\\def\\numa{49}\\def\\numb{14}\\def\\typeoperation{1}$\\SimplificationRacine{\\numa*\\numb}$",
+                "details": "%version 12 - solutions\n\t\n\\def\\numa{49}\n\\def\\numb{14}\n\\def\\typeoperation{1}\n\n\t\nPour simplifier, on cherche les carrés parfaits dans la décomposition :\n        \\begin{center}$\\fpeval{\\numa*\\numb}=\\Decomposition[Exposant]{\\fpeval{\\numa*\\numb}}$\\end{center}\n            \n            Ensuite on utilise la formule : $\\sqrt{ab} = \\sqrt{a} \\times \\sqrt{b}$ (si $a,b \\geq 0$) et on simplifie l'écriture des racines avec des termes au carré.\n            \n            \\columnbreak\n            \n            Résultat simplifié : \\begin{center}$\\fpeval{\\numa*\\numb}=\\SimplificationRacine{\\numa*\\numb}$\\end{center}",
+                "theme": "Racines carrées",
+                "prompt": ""
+            },
+            "question2": {
+                "enonce": "%version 21 - Court\n\t\n\\def\\na{8}\n\\def\\nb{-1}\n\\def\\nc{-7}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%court\n\\def\\expression{\\expa{\\na}{\\puisxa} (\\expa{\\nb}{\\puisxb} \\signe \\expa{\\nc}{\\puisxc})}\nDévelopper l'expression suivante :\n\\begin{center}\n    $\\expression$\n\\end{center}",
+                "reponse": "\\def\\na{8}\\def\\nb{-1}\\def\\nc{-7}\\def\\puisxa{2}\\def\\puisxb{1}\\def\\puisxc{0}\\def\\signe{-}\\def\\numa{\\num{\\nombrebase} \\times 10^{\\puissance}}\\def\\numerique{\\fpeval{\\nombrebase*10^(\\puissance)}}\\def\\numerreur{\\fpeval{\\nombrebase*10^(\\decalage)}\\times 10^{\\fpeval{\\puissance - \\decalage}}}\\def\\indicator{\\signe 1}\\def\\resexpr{    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}}$\\resexpr$",
+                "details": "%version 21 - solutions\n\t\n\\def\\na{8}\n\\def\\nb{-1}\n\\def\\nc{-7}\n\\def\\puisxa{2}\n\\def\\puisxb{1}\n\\def\\puisxc{0}\n\\def\\signe{-}\n\n\n\t\n%help\n\\def\\indicator{\\signe 1}\n\\def\\resexpr{\n    \\expa{\\fpeval{\\para{\\na}*\\para{\\nb}}}{\\fpeval{\\puisxa + \\puisxb}} \\finalsigne{(\\indicator)*\\fpeval{\\para{\\na}*\\para{\\nc}}} \\expa{\\fpeval{abs(\\para{\\na}*\\para{\\nc})}}{\\fpeval{\\puisxa + \\puisxc}}\n}\n\\def\\colorexpression{{\\color{red}\\expa{\\na}{\\puisxa}} ({\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{purple}\\expa{\\nc}{\\puisxc}})}\n\nOn utilise la formule de \\acc{distributivité} :\n\\begin{center}\n    ${\\color{red}a} \\times ({\\color{blue}b} \\signe {\\color{purple}c}) = {\\color{red}a}\\times {\\color{blue}b} \\signe {\\color{red}a}\\times {\\color{purple}c}$\n\\end{center}\navec : $\\left\\{ \\begin{array}{l}\n    a = {\\color{red}\\expa{\\na}{\\puisxa}} \\\\\n    b = {\\color{blue}\\expa{\\nb}{\\puisxb}} \\\\\n    c = {\\color{purple}\\expa{\\nc}{\\puisxc}}\n\\end{array} \\right.$\n\n\\columnbreak\n\nAinsi, l'expression \\acc{développée} est : \\\\\n\\begin{align*}\n    &\\colorexpression\\\\\n    = & {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{blue}\\expa{\\nb}{\\puisxb}} \\signe {\\color{red}\\expa{\\na}{\\puisxa}}\\times {\\color{purple}\\expa{\\nc}{\\puisxc}}\\\\\n    = & \\resexpr\n\\end{align*}",
+                "theme": "Développer une expression (1)",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "%version 10 - Court\n\t\n\\def\\cota{25.84}\n\\def\\diffhyp{21.42}\n\n\t\n\n\\edef\\hyp{\\fpeval{\\cota+\\diffhyp}}\n\\acc{Calculez la longueur} du côté manquant dans un \\textbf{triangle rectangle} dont un côté de l'angle droit mesure $\\affiche{\\cota}$ cm et l'hypoténuse mesure $\\affiche{\\hyp}$ cm.\t\n\t\nDonner l'arrondi au \\acc{mm} près.",
+                "reponse": "\\def\\cota{25.84}\\def\\diffhyp{21.42}\\edef\\hyp{\\fpeval{\\cota+\\diffhyp}} $b \\approx \\affiche{\\fpeval{round(sqrt(\\hyp^2 - \\cota^2),1)}}\\ \\mathrm{cm}$.",
+                "details": "%version 10 - solutions\n\t\n\\def\\cota{25.84}\n\\def\\diffhyp{21.42}\n\n\t\n\nDans un \\textbf{triangle rectangle}, l'\\textbf{hypoténuse} $c$ est \\textbf{calculée} à l'aide du \\textbf{théorème de Pythagore}, qui énonce que\t $$c^2 = a^2 + b^2 $$ \t, où $a$ et $b$ sont les \\textbf{côtés de l'angle droit}. \t\t\t\n\nEn remplaçant les longueurs connues : \t\n\t\n$\\num{\\hyp}^2 = \\affiche{\\cota}^2 + b^2$\t\t\t\n\nAinsi la longueur cherchée est : \t\n\t\n$b = \\sqrt{\\num{\\hyp}^2 - \\affiche{\\cota}^2}$\t\n\t\n\\columnbreak\t\n\t\n\n\\textbf{Calculons} les carrés des côtés :\t\t\t\n\n$ \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\cota^2}} $ \\hfill et \\hfill $ \\affiche{\\hyp}^2 = \\affiche{\\fpeval{\\hyp^2}}$\t\t\t\n\n\\textbf{Soustrayons-les} :\t\t\t\t\n\n$ \\affiche{\\hyp}^2 - \\affiche{\\cota}^2 = \\affiche{\\fpeval{\\hyp^2 - \\cota^2}}$\t\t\t\n\n\\textbf{En passant à la racine carrée}, on obtient la longueur manquante :\n\n    $b = \\sqrt{\\affiche{\\fpeval{\\hyp^2 - \\cota^2}}} = \\affiche{\\fpeval{sqrt(\\hyp^2 - \\cota^2)}}$\t\t\n\nAinsi, $b \\approx \\affiche{\\fpeval{round(sqrt(\\hyp^2 - \\cota^2),1)}}\\ \\mathrm{cm}$.",
+                "theme": "Pythagore",
+                "prompt": ""
+            }
+        }
+    },
+    "QF_04_10_2025": {
+        "classe": "2nde",
+        "date": "03_10_2025",
+        "questions": {
+            "question1": {
+                "enonce": "\\textbf{Résoudre} l'équation suivante :\n\\begin{center}$7x + 23 = -4x + 68$\\end{center}",
+                "reponse": "$x = \\dfrac{45}{11}$",
+                "details": "Pour \\textbf{résoudre} cette équation, on utilise la \\textbf{méthode de transposition} : on regroupe les termes en $x$ d'un côté et les constantes de l'autre.\n\n$7x + 23 = -4x + 68$\n\nOn \\textbf{ajoute} $4x$ aux deux membres :\t\n\n$7x + 4x + 23 = 68$\n\nOn \\textbf{soustrait} $23$ aux deux membres :\t\n\n$11x = 68 - 23$\n\n$11x = 45$\n\nOn \\textbf{divise} par $11$ :\t\n\n$x = \\dfrac{45}{11}$\n\nLa \\textbf{solution} de l'équation est : $\\mathbf{\\color{red} x = \\dfrac{45}{11}}$",
+                "theme": "Équations",
+                "prompt": "Un exercice sur la résolution d'équation de premier degré ax+b=cx+d"
+            },
+            "question2": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": ""
+            },
+            "question3": {
+                "enonce": "",
+                "reponse": "",
+                "details": "",
+                "theme": "",
+                "prompt": ""
+            }
+        }
+    }
+}

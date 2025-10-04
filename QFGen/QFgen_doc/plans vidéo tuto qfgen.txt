@@ -1,0 +1,27 @@
+plans vidéo tuto qfgen :
+fonctionnement général 
+	interface vision globale
+	simplicité d'action - peu de commandes
+
+présentation de créer une nouvelle série de questions
+	bouton à actionner
+	question vide qu'il va falloir remplir
+
+présentation fenetre latextext
+	coloration - police 
+	fenetre secondaire grande 
+	fenetre modification avancée
+
+présentation remplir le contenu des questions :
+	manuellement
+	charger une série de question déjà faite et la modifier
+	charger un modèle de question aléatoire générée par un logiciel tiers. 
+	charger une question par appel IA. 
+
+présentation de créer une évaluation :
+	formulaire de création
+	fonctionnement général de la fonctionnalité
+	
+présentation de la fonctionnalité de compilation et accès aux documents compilés
+	compilation
+	ouvrir le répertoire des documents produits

@@ -1,0 +1,63 @@
+
+30
+%%
+\def\na{2<=x<10 x!=0 int}
+\def\addna{2<=x<10 x!=0 x!=1 int}
+\def\quantite{150<=x<1000 x!=0 int}
+\def\marchand[marchand,agriculteur,boulanger]
+%%
+
+\def\proportion{\dfrac{\na}{\fpeval{\na + \addna}}}	
+\xdef\da{\fpeval{\na+\addna}}	
+\marchandcmd{\marchand}    	
+\intro\ Un \marchand\ \vend\ \tousSes\ \oeufs.	
+\acc{Calculer}\ \labelvente.  ( valeur approchée à l'unité )
+
+
+%%
+
+\def\proportion{\dfrac{\na}{\fpeval{\na + \addna}}}	
+\xdef\da{\fpeval{\na+\addna}}	
+\marchandcmd{\marchand}	
+	
+Pour calculer la \acc{proportion} d'une \acc{quantité}, on utilise la formule suivante : 	
+	
+$ \text{\blue{Proportion} d'une \red{Quantité}} \\=\text{\blue{Proportion}} \times \text{\red{Quantité}} $	
+	
+On a : \begin{itemize}[label=$\bullet$]	\item Proportion $ = \blue{\proportion}$		
+	
+\item Quantité $ = \red{\quantite}$\end{itemize}\columnbreak	
+	
+Appliquons cette méthode : 	
+\begin{align*}	 	
+\blue{\proportion} \times \red{\quantite} & =  \blue{\na} \times \red{\quantite} \div \blue{\da}\\	
+& \approx \num{\fpeval{round(\na * \quantite / \da,3)}}\\	
+& \approx \num{\fpeval{round(\na * \quantite / \da,0)}}	
+\end{align*}	
+    
+
+\labelvente\ est $ \num{\fpeval{round(\na * \quantite / \da,0)}}$ \munite\ ( arrondi à l'unité ).
+
+
+%%
+
+%qcm    	
+\def\db{\fpeval{\d*\multa}}    	
+\def\nresa{\fpeval{\n + \nb}}    	
+\def\nresb{\fpeval{\n * \db + \nb * \d}}    	
+\def\nresc{\fpeval{\n + \nb * \d / \db}}    	
+\def\nresd{\fpeval{\n * \db + \nb * \d}}    	
+\def\dresa{\fpeval{\d + \db}}    	
+\def\dresb{\fpeval{\d * \db}}    	
+\def\dresc{\fpeval{\d}}    	
+\def\dresd{\fpeval{\d + \db}}    	
+\textbf{Cocher} la ou les réponses correctes : \\    	
+$\dfrac{\n}{\d} + \dfrac{\nb}{\db} = ... $\\    	
+\begin{center}         \listnode{\cb}{$\dfrac{\nresa}{\dresa}$}         \listnode{\ccb}{$\dfrac{\nresb}{\dresb}$}         \listnode{\ccb}{$\Simplification{\nresb}{\dresb}$}         \listnode{\cb}{$\Simplification{\nresd}{\dresd}$}     	
+\end{center}
+
+
+%%
+\def\proportion{\dfrac{\na}{\fpeval{\na + \addna}}}\xdef\da{\fpeval{\na+\addna}}$ \num{\fpeval{round(\na * \quantite / \da,0)}}$ \munite
+%%
+Fractions

@@ -3,6 +3,18 @@ Un dépot ou je place les outils que j'utilise dans mon quotidien de professeur 
 
 # Fonctionnalités disponibles 
 
+## Implementer-enonce
+
+Un Logiciel permettant d'écrire des énoncé versionnables. Avec intégration de l'IA
+
+## QFGen
+
+Un logiciel de gestion de questions flash. 
+
+Utilise les production de 'implementer-enonce' et ses différentes versions pour alimenter les fichiers de questions flash. 
+
+Intégration de l'IA pour utilisation dans le logiciel. 
+
 ## usb-synchro
 
 Un programme permettant de synchroniser des fichiers sur une clé usb. 

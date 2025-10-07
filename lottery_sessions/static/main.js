@@ -119,7 +119,13 @@ function setupEventListeners() {
     });
 
     // === WINDOW CLOSE ===
+    // beforeunload : fermeture d'onglet
     window.addEventListener('beforeunload', () => {
+        navigator.sendBeacon('/api/shutdown');
+    });
+
+    // pagehide : plus fiable pour la fermeture complète du navigateur
+    window.addEventListener('pagehide', () => {
         navigator.sendBeacon('/api/shutdown');
     });
 }

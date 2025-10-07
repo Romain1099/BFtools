@@ -13,7 +13,6 @@ __pycache__/
 # PyInstaller
 build/
 dist/
-*.exe
 
 # IDE
 .vscode/
@@ -26,6 +25,7 @@ dist/
 data/backups/
 data/cycles/
 data/*.csv
+!data/classe_template*.csv
 
 # Logs
 *.log

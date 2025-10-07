@@ -17,6 +17,3 @@ if not exist venv (
 REM Activer le venv et lancer l'application
 call venv\Scripts\activate.bat
 python lottery_sessions.py
-
-REM Le script s'arrête ici quand l'application se ferme
-pause
